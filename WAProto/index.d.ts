@@ -36464,12 +36464,12 @@ export namespace proto {
 
         /** WebMessageInfo newsletterServerId */
         newsletterServerId?: (number|Long|null);
-
+ 
         /** WebMessageInfo viewOnceMessageV2 */
-        viewOnceMessageV2?: IViewOnceMessageV2 | null; //Adicionado
+        viewOnceMessageV2?: IViewOnceMessageV2 | null; //Adicionado ALEX
 
         /** WebMessageInfo viewOnceMessageV2Extension **/
-        viewOnceMessageV2Extension?: IViewOnceMessageV2Extesion | null; //Adicionado
+        viewOnceMessageV2Extension?: IViewOnceMessageV2Extesion | null; //Adicionado ALEX
     }
 
     /** Represents a WebMessageInfo. */
