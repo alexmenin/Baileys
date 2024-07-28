@@ -9605,6 +9605,28 @@ export namespace proto {
         ON = 2
     }
 
+    //adicionado
+     /** Properties of a ViewOnceMessageV2. */
+     interface IViewOnceMessageV2 {
+
+        /** ViewOnceMessageV2 messageContextInfo */
+        messageContextInfo?: IMessageContextInfo|null;
+
+        /** ViewOnceMessageV2 message */
+        message?: IMessage|null;
+    }
+
+     /** Properties of a ViewOnceMessageV2. */
+     interface IViewOnceMessageV2Extesion {
+
+        /** ViewOnceMessageV2 messageContextInfo */
+        messageContextInfo?: IMessageContextInfo|null;
+
+        /** ViewOnceMessageV2 message */
+        message?: IMessage|null;
+    }
+    //adicionado
+
     /** Properties of a Message. */
     interface IMessage {
 
@@ -36442,6 +36464,12 @@ export namespace proto {
 
         /** WebMessageInfo newsletterServerId */
         newsletterServerId?: (number|Long|null);
+
+        /** WebMessageInfo viewOnceMessageV2 */
+        viewOnceMessageV2?: IViewOnceMessageV2 | null; //Adicionado
+
+        /** WebMessageInfo viewOnceMessageV2Extension **/
+        viewOnceMessageV2Extension?: IViewOnceMessageV2Extesion | null; //Adicionado
     }
 
     /** Represents a WebMessageInfo. */
