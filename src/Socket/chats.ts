@@ -209,23 +209,27 @@ export const makeChatsSocket = (config: SocketConfig) => {
 	}
 
 	/** update the profile picture for yourself or a group */
-	const updateProfilePicture = async(jid: string, content: WAMediaUpload) => {
-		const { img } = await generateProfilePicture(content)
+	const updateProfilePicture = async(jid: string, type: 'preview', timeoutMs) => {
+		//const { img } = await generateProfilePicture(content)
 		await query({
 			tag: 'iq',
 			attrs: {
-				to: jidNormalizedUser(jid),
-				type: 'set',
+				target: jidNormalizedUser(jid),
+				to: S_WHATSAPP_NET,
+				type: 'get',
 				xmlns: 'w:profile:picture'
 			},
 			content: [
 				{
 					tag: 'picture',
-					attrs: { type: 'image' },
-					content: img
+					attrs:  { 
+								type, 
+								query: 'url'
+							} 
 				}
 			]
-		})
+		}, timeoutMs)
+		
 	}
 
 	/** remove the profile picture for yourself or a group */
