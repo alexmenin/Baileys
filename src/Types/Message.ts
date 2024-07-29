@@ -75,14 +75,14 @@ type Editable = {
 }
 type Listable = {
     /** Sections of the List */
-    sections?: proto.Message.ListMessage.ISection[]
-
+    sections?: proto.Message.ListMessage.ISection[];
     /** Title of a List Message only */
-    title?: string
-
-    /** Text of the bnutton on the list (required) */
-    buttonText?: string
-}
+    title?: string;
+    /** Text of the button on the list (required) */
+    buttonText?: string;
+    /** ListType of the List */
+    listType?: proto.Message.ListMessage.ListType;
+};
 type WithDimensions = {
     width?: number
     height?: number

@@ -133,13 +133,12 @@ export const makeSocket = (config: SocketConfig) => {
 	}
 
 	/** send a binary node */
-	const sendNode = (frame: BinaryNode) => {
-		if(logger.level === 'trace') {
-			logger.trace({ xml: binaryNodeToString(frame), msg: 'xml send' })
-		}
+	const sendNode = async(frame: BinaryNode) => {
+			console.log( 'xml:', binaryNodeToString(frame), 'msg: xml send' )
+		
 
-		const buff = encodeBinaryNode(frame)
-		return sendRawMessage(buff)
+		const buff = encodeBinaryNode(frame);
+		return sendRawMessage(buff); // Certifique-se de que `sendRawMessage` é uma função assíncrona
 	}
 
 	/** log & process any unexpected errors */
@@ -324,9 +323,8 @@ export const makeSocket = (config: SocketConfig) => {
 			if(!(frame instanceof Uint8Array)) {
 				const msgId = frame.attrs.id
 
-				if(logger.level === 'trace') {
-					logger.trace({ xml: binaryNodeToString(frame), msg: 'recv xml' })
-				}
+					console.log('xml: ', binaryNodeToString(frame), ' msg: recv xml' )
+				
 
 				/* Check if this is a response to a message we sent */
 				anyTriggered = ws.emit(`${DEF_TAG_PREFIX}${msgId}`, frame) || anyTriggered

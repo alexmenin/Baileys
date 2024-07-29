@@ -6,19 +6,19 @@ export namespace proto {
     interface IADVDeviceIdentity {
 
         /** ADVDeviceIdentity rawId */
-        rawId?: (number|null);
+        rawId?: (number | null);
 
         /** ADVDeviceIdentity timestamp */
-        timestamp?: (number|Long|null);
+        timestamp?: (number | Long | null);
 
         /** ADVDeviceIdentity keyIndex */
-        keyIndex?: (number|null);
+        keyIndex?: (number | null);
 
         /** ADVDeviceIdentity accountType */
-        accountType?: (proto.ADVEncryptionType|null);
+        accountType?: (proto.ADVEncryptionType | null);
 
         /** ADVDeviceIdentity deviceType */
-        deviceType?: (proto.ADVEncryptionType|null);
+        deviceType?: (proto.ADVEncryptionType | null);
     }
 
     /** Represents a ADVDeviceIdentity. */
@@ -34,7 +34,7 @@ export namespace proto {
         public rawId: number;
 
         /** ADVDeviceIdentity timestamp. */
-        public timestamp: (number|Long);
+        public timestamp: (number | Long);
 
         /** ADVDeviceIdentity keyIndex. */
         public keyIndex: number;
@@ -76,7 +76,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ADVDeviceIdentity;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ADVDeviceIdentity;
 
         /**
          * Decodes a ADVDeviceIdentity message from the specified reader or buffer, length delimited.
@@ -85,14 +85,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ADVDeviceIdentity;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ADVDeviceIdentity;
 
         /**
          * Verifies a ADVDeviceIdentity message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a ADVDeviceIdentity message from a plain object. Also converts values to their respective internal types.
@@ -126,19 +126,19 @@ export namespace proto {
     interface IADVKeyIndexList {
 
         /** ADVKeyIndexList rawId */
-        rawId?: (number|null);
+        rawId?: (number | null);
 
         /** ADVKeyIndexList timestamp */
-        timestamp?: (number|Long|null);
+        timestamp?: (number | Long | null);
 
         /** ADVKeyIndexList currentIndex */
-        currentIndex?: (number|null);
+        currentIndex?: (number | null);
 
         /** ADVKeyIndexList validIndexes */
-        validIndexes?: (number[]|null);
+        validIndexes?: (number[] | null);
 
         /** ADVKeyIndexList accountType */
-        accountType?: (proto.ADVEncryptionType|null);
+        accountType?: (proto.ADVEncryptionType | null);
     }
 
     /** Represents a ADVKeyIndexList. */
@@ -154,7 +154,7 @@ export namespace proto {
         public rawId: number;
 
         /** ADVKeyIndexList timestamp. */
-        public timestamp: (number|Long);
+        public timestamp: (number | Long);
 
         /** ADVKeyIndexList currentIndex. */
         public currentIndex: number;
@@ -196,7 +196,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ADVKeyIndexList;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ADVKeyIndexList;
 
         /**
          * Decodes a ADVKeyIndexList message from the specified reader or buffer, length delimited.
@@ -205,14 +205,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ADVKeyIndexList;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ADVKeyIndexList;
 
         /**
          * Verifies a ADVKeyIndexList message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a ADVKeyIndexList message from a plain object. Also converts values to their respective internal types.
@@ -240,16 +240,16 @@ export namespace proto {
     interface IADVSignedDeviceIdentity {
 
         /** ADVSignedDeviceIdentity details */
-        details?: (Uint8Array|null);
+        details?: (Uint8Array | null);
 
         /** ADVSignedDeviceIdentity accountSignatureKey */
-        accountSignatureKey?: (Uint8Array|null);
+        accountSignatureKey?: (Uint8Array | null);
 
         /** ADVSignedDeviceIdentity accountSignature */
-        accountSignature?: (Uint8Array|null);
+        accountSignature?: (Uint8Array | null);
 
         /** ADVSignedDeviceIdentity deviceSignature */
-        deviceSignature?: (Uint8Array|null);
+        deviceSignature?: (Uint8Array | null);
     }
 
     /** Represents a ADVSignedDeviceIdentity. */
@@ -304,7 +304,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ADVSignedDeviceIdentity;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ADVSignedDeviceIdentity;
 
         /**
          * Decodes a ADVSignedDeviceIdentity message from the specified reader or buffer, length delimited.
@@ -313,14 +313,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ADVSignedDeviceIdentity;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ADVSignedDeviceIdentity;
 
         /**
          * Verifies a ADVSignedDeviceIdentity message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a ADVSignedDeviceIdentity message from a plain object. Also converts values to their respective internal types.
@@ -348,13 +348,13 @@ export namespace proto {
     interface IADVSignedDeviceIdentityHMAC {
 
         /** ADVSignedDeviceIdentityHMAC details */
-        details?: (Uint8Array|null);
+        details?: (Uint8Array | null);
 
         /** ADVSignedDeviceIdentityHMAC hmac */
-        hmac?: (Uint8Array|null);
+        hmac?: (Uint8Array | null);
 
         /** ADVSignedDeviceIdentityHMAC accountType */
-        accountType?: (proto.ADVEncryptionType|null);
+        accountType?: (proto.ADVEncryptionType | null);
     }
 
     /** Represents a ADVSignedDeviceIdentityHMAC. */
@@ -406,7 +406,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ADVSignedDeviceIdentityHMAC;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ADVSignedDeviceIdentityHMAC;
 
         /**
          * Decodes a ADVSignedDeviceIdentityHMAC message from the specified reader or buffer, length delimited.
@@ -415,14 +415,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ADVSignedDeviceIdentityHMAC;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ADVSignedDeviceIdentityHMAC;
 
         /**
          * Verifies a ADVSignedDeviceIdentityHMAC message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a ADVSignedDeviceIdentityHMAC message from a plain object. Also converts values to their respective internal types.
@@ -450,13 +450,13 @@ export namespace proto {
     interface IADVSignedKeyIndexList {
 
         /** ADVSignedKeyIndexList details */
-        details?: (Uint8Array|null);
+        details?: (Uint8Array | null);
 
         /** ADVSignedKeyIndexList accountSignature */
-        accountSignature?: (Uint8Array|null);
+        accountSignature?: (Uint8Array | null);
 
         /** ADVSignedKeyIndexList accountSignatureKey */
-        accountSignatureKey?: (Uint8Array|null);
+        accountSignatureKey?: (Uint8Array | null);
     }
 
     /** Represents a ADVSignedKeyIndexList. */
@@ -508,7 +508,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ADVSignedKeyIndexList;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ADVSignedKeyIndexList;
 
         /**
          * Decodes a ADVSignedKeyIndexList message from the specified reader or buffer, length delimited.
@@ -517,14 +517,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ADVSignedKeyIndexList;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ADVSignedKeyIndexList;
 
         /**
          * Verifies a ADVSignedKeyIndexList message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a ADVSignedKeyIndexList message from a plain object. Also converts values to their respective internal types.
@@ -552,10 +552,10 @@ export namespace proto {
     interface IActionLink {
 
         /** ActionLink url */
-        url?: (string|null);
+        url?: (string | null);
 
         /** ActionLink buttonTitle */
-        buttonTitle?: (string|null);
+        buttonTitle?: (string | null);
     }
 
     /** Represents an ActionLink. */
@@ -604,7 +604,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ActionLink;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ActionLink;
 
         /**
          * Decodes an ActionLink message from the specified reader or buffer, length delimited.
@@ -613,14 +613,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ActionLink;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ActionLink;
 
         /**
          * Verifies an ActionLink message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates an ActionLink message from a plain object. Also converts values to their respective internal types.
@@ -648,16 +648,16 @@ export namespace proto {
     interface IAutoDownloadSettings {
 
         /** AutoDownloadSettings downloadImages */
-        downloadImages?: (boolean|null);
+        downloadImages?: (boolean | null);
 
         /** AutoDownloadSettings downloadAudio */
-        downloadAudio?: (boolean|null);
+        downloadAudio?: (boolean | null);
 
         /** AutoDownloadSettings downloadVideo */
-        downloadVideo?: (boolean|null);
+        downloadVideo?: (boolean | null);
 
         /** AutoDownloadSettings downloadDocuments */
-        downloadDocuments?: (boolean|null);
+        downloadDocuments?: (boolean | null);
     }
 
     /** Represents an AutoDownloadSettings. */
@@ -712,7 +712,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.AutoDownloadSettings;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.AutoDownloadSettings;
 
         /**
          * Decodes an AutoDownloadSettings message from the specified reader or buffer, length delimited.
@@ -721,14 +721,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.AutoDownloadSettings;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.AutoDownloadSettings;
 
         /**
          * Verifies an AutoDownloadSettings message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates an AutoDownloadSettings message from a plain object. Also converts values to their respective internal types.
@@ -756,10 +756,10 @@ export namespace proto {
     interface IAvatarUserSettings {
 
         /** AvatarUserSettings fbid */
-        fbid?: (string|null);
+        fbid?: (string | null);
 
         /** AvatarUserSettings password */
-        password?: (string|null);
+        password?: (string | null);
     }
 
     /** Represents an AvatarUserSettings. */
@@ -808,7 +808,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.AvatarUserSettings;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.AvatarUserSettings;
 
         /**
          * Decodes an AvatarUserSettings message from the specified reader or buffer, length delimited.
@@ -817,14 +817,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.AvatarUserSettings;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.AvatarUserSettings;
 
         /**
          * Verifies an AvatarUserSettings message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates an AvatarUserSettings message from a plain object. Also converts values to their respective internal types.
@@ -852,19 +852,19 @@ export namespace proto {
     interface IBizAccountLinkInfo {
 
         /** BizAccountLinkInfo whatsappBizAcctFbid */
-        whatsappBizAcctFbid?: (number|Long|null);
+        whatsappBizAcctFbid?: (number | Long | null);
 
         /** BizAccountLinkInfo whatsappAcctNumber */
-        whatsappAcctNumber?: (string|null);
+        whatsappAcctNumber?: (string | null);
 
         /** BizAccountLinkInfo issueTime */
-        issueTime?: (number|Long|null);
+        issueTime?: (number | Long | null);
 
         /** BizAccountLinkInfo hostStorage */
-        hostStorage?: (proto.BizAccountLinkInfo.HostStorageType|null);
+        hostStorage?: (proto.BizAccountLinkInfo.HostStorageType | null);
 
         /** BizAccountLinkInfo accountType */
-        accountType?: (proto.BizAccountLinkInfo.AccountType|null);
+        accountType?: (proto.BizAccountLinkInfo.AccountType | null);
     }
 
     /** Represents a BizAccountLinkInfo. */
@@ -877,13 +877,13 @@ export namespace proto {
         constructor(properties?: proto.IBizAccountLinkInfo);
 
         /** BizAccountLinkInfo whatsappBizAcctFbid. */
-        public whatsappBizAcctFbid: (number|Long);
+        public whatsappBizAcctFbid: (number | Long);
 
         /** BizAccountLinkInfo whatsappAcctNumber. */
         public whatsappAcctNumber: string;
 
         /** BizAccountLinkInfo issueTime. */
-        public issueTime: (number|Long);
+        public issueTime: (number | Long);
 
         /** BizAccountLinkInfo hostStorage. */
         public hostStorage: proto.BizAccountLinkInfo.HostStorageType;
@@ -922,7 +922,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BizAccountLinkInfo;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.BizAccountLinkInfo;
 
         /**
          * Decodes a BizAccountLinkInfo message from the specified reader or buffer, length delimited.
@@ -931,14 +931,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BizAccountLinkInfo;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.BizAccountLinkInfo;
 
         /**
          * Verifies a BizAccountLinkInfo message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a BizAccountLinkInfo message from a plain object. Also converts values to their respective internal types.
@@ -980,10 +980,10 @@ export namespace proto {
     interface IBizAccountPayload {
 
         /** BizAccountPayload vnameCert */
-        vnameCert?: (proto.IVerifiedNameCertificate|null);
+        vnameCert?: (proto.IVerifiedNameCertificate | null);
 
         /** BizAccountPayload bizAcctLinkInfo */
-        bizAcctLinkInfo?: (Uint8Array|null);
+        bizAcctLinkInfo?: (Uint8Array | null);
     }
 
     /** Represents a BizAccountPayload. */
@@ -996,7 +996,7 @@ export namespace proto {
         constructor(properties?: proto.IBizAccountPayload);
 
         /** BizAccountPayload vnameCert. */
-        public vnameCert?: (proto.IVerifiedNameCertificate|null);
+        public vnameCert?: (proto.IVerifiedNameCertificate | null);
 
         /** BizAccountPayload bizAcctLinkInfo. */
         public bizAcctLinkInfo: Uint8Array;
@@ -1032,7 +1032,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BizAccountPayload;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.BizAccountPayload;
 
         /**
          * Decodes a BizAccountPayload message from the specified reader or buffer, length delimited.
@@ -1041,14 +1041,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BizAccountPayload;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.BizAccountPayload;
 
         /**
          * Verifies a BizAccountPayload message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a BizAccountPayload message from a plain object. Also converts values to their respective internal types.
@@ -1076,28 +1076,28 @@ export namespace proto {
     interface IBizIdentityInfo {
 
         /** BizIdentityInfo vlevel */
-        vlevel?: (proto.BizIdentityInfo.VerifiedLevelValue|null);
+        vlevel?: (proto.BizIdentityInfo.VerifiedLevelValue | null);
 
         /** BizIdentityInfo vnameCert */
-        vnameCert?: (proto.IVerifiedNameCertificate|null);
+        vnameCert?: (proto.IVerifiedNameCertificate | null);
 
         /** BizIdentityInfo signed */
-        signed?: (boolean|null);
+        signed?: (boolean | null);
 
         /** BizIdentityInfo revoked */
-        revoked?: (boolean|null);
+        revoked?: (boolean | null);
 
         /** BizIdentityInfo hostStorage */
-        hostStorage?: (proto.BizIdentityInfo.HostStorageType|null);
+        hostStorage?: (proto.BizIdentityInfo.HostStorageType | null);
 
         /** BizIdentityInfo actualActors */
-        actualActors?: (proto.BizIdentityInfo.ActualActorsType|null);
+        actualActors?: (proto.BizIdentityInfo.ActualActorsType | null);
 
         /** BizIdentityInfo privacyModeTs */
-        privacyModeTs?: (number|Long|null);
+        privacyModeTs?: (number | Long | null);
 
         /** BizIdentityInfo featureControls */
-        featureControls?: (number|Long|null);
+        featureControls?: (number | Long | null);
     }
 
     /** Represents a BizIdentityInfo. */
@@ -1113,7 +1113,7 @@ export namespace proto {
         public vlevel: proto.BizIdentityInfo.VerifiedLevelValue;
 
         /** BizIdentityInfo vnameCert. */
-        public vnameCert?: (proto.IVerifiedNameCertificate|null);
+        public vnameCert?: (proto.IVerifiedNameCertificate | null);
 
         /** BizIdentityInfo signed. */
         public signed: boolean;
@@ -1128,10 +1128,10 @@ export namespace proto {
         public actualActors: proto.BizIdentityInfo.ActualActorsType;
 
         /** BizIdentityInfo privacyModeTs. */
-        public privacyModeTs: (number|Long);
+        public privacyModeTs: (number | Long);
 
         /** BizIdentityInfo featureControls. */
-        public featureControls: (number|Long);
+        public featureControls: (number | Long);
 
         /**
          * Creates a new BizIdentityInfo instance using the specified properties.
@@ -1164,7 +1164,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BizIdentityInfo;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.BizIdentityInfo;
 
         /**
          * Decodes a BizIdentityInfo message from the specified reader or buffer, length delimited.
@@ -1173,14 +1173,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BizIdentityInfo;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.BizIdentityInfo;
 
         /**
          * Verifies a BizIdentityInfo message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a BizIdentityInfo message from a plain object. Also converts values to their respective internal types.
@@ -1230,19 +1230,19 @@ export namespace proto {
     interface IBotAvatarMetadata {
 
         /** BotAvatarMetadata sentiment */
-        sentiment?: (number|null);
+        sentiment?: (number | null);
 
         /** BotAvatarMetadata behaviorGraph */
-        behaviorGraph?: (string|null);
+        behaviorGraph?: (string | null);
 
         /** BotAvatarMetadata action */
-        action?: (number|null);
+        action?: (number | null);
 
         /** BotAvatarMetadata intensity */
-        intensity?: (number|null);
+        intensity?: (number | null);
 
         /** BotAvatarMetadata wordCount */
-        wordCount?: (number|null);
+        wordCount?: (number | null);
     }
 
     /** Represents a BotAvatarMetadata. */
@@ -1300,7 +1300,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BotAvatarMetadata;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.BotAvatarMetadata;
 
         /**
          * Decodes a BotAvatarMetadata message from the specified reader or buffer, length delimited.
@@ -1309,14 +1309,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BotAvatarMetadata;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.BotAvatarMetadata;
 
         /**
          * Verifies a BotAvatarMetadata message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a BotAvatarMetadata message from a plain object. Also converts values to their respective internal types.
@@ -1344,19 +1344,19 @@ export namespace proto {
     interface IBotMetadata {
 
         /** BotMetadata avatarMetadata */
-        avatarMetadata?: (proto.IBotAvatarMetadata|null);
+        avatarMetadata?: (proto.IBotAvatarMetadata | null);
 
         /** BotMetadata personaId */
-        personaId?: (string|null);
+        personaId?: (string | null);
 
         /** BotMetadata pluginMetadata */
-        pluginMetadata?: (proto.IBotPluginMetadata|null);
+        pluginMetadata?: (proto.IBotPluginMetadata | null);
 
         /** BotMetadata suggestedPromptMetadata */
-        suggestedPromptMetadata?: (proto.IBotSuggestedPromptMetadata|null);
+        suggestedPromptMetadata?: (proto.IBotSuggestedPromptMetadata | null);
 
         /** BotMetadata invokerJid */
-        invokerJid?: (string|null);
+        invokerJid?: (string | null);
     }
 
     /** Represents a BotMetadata. */
@@ -1369,16 +1369,16 @@ export namespace proto {
         constructor(properties?: proto.IBotMetadata);
 
         /** BotMetadata avatarMetadata. */
-        public avatarMetadata?: (proto.IBotAvatarMetadata|null);
+        public avatarMetadata?: (proto.IBotAvatarMetadata | null);
 
         /** BotMetadata personaId. */
         public personaId: string;
 
         /** BotMetadata pluginMetadata. */
-        public pluginMetadata?: (proto.IBotPluginMetadata|null);
+        public pluginMetadata?: (proto.IBotPluginMetadata | null);
 
         /** BotMetadata suggestedPromptMetadata. */
-        public suggestedPromptMetadata?: (proto.IBotSuggestedPromptMetadata|null);
+        public suggestedPromptMetadata?: (proto.IBotSuggestedPromptMetadata | null);
 
         /** BotMetadata invokerJid. */
         public invokerJid: string;
@@ -1414,7 +1414,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BotMetadata;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.BotMetadata;
 
         /**
          * Decodes a BotMetadata message from the specified reader or buffer, length delimited.
@@ -1423,14 +1423,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BotMetadata;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.BotMetadata;
 
         /**
          * Verifies a BotMetadata message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a BotMetadata message from a plain object. Also converts values to their respective internal types.
@@ -1458,28 +1458,28 @@ export namespace proto {
     interface IBotPluginMetadata {
 
         /** BotPluginMetadata provider */
-        provider?: (proto.BotPluginMetadata.SearchProvider|null);
+        provider?: (proto.BotPluginMetadata.SearchProvider | null);
 
         /** BotPluginMetadata pluginType */
-        pluginType?: (proto.BotPluginMetadata.PluginType|null);
+        pluginType?: (proto.BotPluginMetadata.PluginType | null);
 
         /** BotPluginMetadata thumbnailCdnUrl */
-        thumbnailCdnUrl?: (string|null);
+        thumbnailCdnUrl?: (string | null);
 
         /** BotPluginMetadata profilePhotoCdnUrl */
-        profilePhotoCdnUrl?: (string|null);
+        profilePhotoCdnUrl?: (string | null);
 
         /** BotPluginMetadata searchProviderUrl */
-        searchProviderUrl?: (string|null);
+        searchProviderUrl?: (string | null);
 
         /** BotPluginMetadata referenceIndex */
-        referenceIndex?: (number|null);
+        referenceIndex?: (number | null);
 
         /** BotPluginMetadata expectedLinksCount */
-        expectedLinksCount?: (number|null);
+        expectedLinksCount?: (number | null);
 
         /** BotPluginMetadata pluginVersion */
-        pluginVersion?: (number|null);
+        pluginVersion?: (number | null);
     }
 
     /** Represents a BotPluginMetadata. */
@@ -1546,7 +1546,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BotPluginMetadata;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.BotPluginMetadata;
 
         /**
          * Decodes a BotPluginMetadata message from the specified reader or buffer, length delimited.
@@ -1555,14 +1555,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BotPluginMetadata;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.BotPluginMetadata;
 
         /**
          * Verifies a BotPluginMetadata message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a BotPluginMetadata message from a plain object. Also converts values to their respective internal types.
@@ -1605,10 +1605,10 @@ export namespace proto {
     interface IBotSuggestedPromptMetadata {
 
         /** BotSuggestedPromptMetadata suggestedPrompts */
-        suggestedPrompts?: (string[]|null);
+        suggestedPrompts?: (string[] | null);
 
         /** BotSuggestedPromptMetadata selectedPromptIndex */
-        selectedPromptIndex?: (number|null);
+        selectedPromptIndex?: (number | null);
     }
 
     /** Represents a BotSuggestedPromptMetadata. */
@@ -1657,7 +1657,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BotSuggestedPromptMetadata;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.BotSuggestedPromptMetadata;
 
         /**
          * Decodes a BotSuggestedPromptMetadata message from the specified reader or buffer, length delimited.
@@ -1666,14 +1666,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BotSuggestedPromptMetadata;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.BotSuggestedPromptMetadata;
 
         /**
          * Verifies a BotSuggestedPromptMetadata message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a BotSuggestedPromptMetadata message from a plain object. Also converts values to their respective internal types.
@@ -1701,49 +1701,49 @@ export namespace proto {
     interface ICallLogRecord {
 
         /** CallLogRecord callResult */
-        callResult?: (proto.CallLogRecord.CallResult|null);
+        callResult?: (proto.CallLogRecord.CallResult | null);
 
         /** CallLogRecord isDndMode */
-        isDndMode?: (boolean|null);
+        isDndMode?: (boolean | null);
 
         /** CallLogRecord silenceReason */
-        silenceReason?: (proto.CallLogRecord.SilenceReason|null);
+        silenceReason?: (proto.CallLogRecord.SilenceReason | null);
 
         /** CallLogRecord duration */
-        duration?: (number|Long|null);
+        duration?: (number | Long | null);
 
         /** CallLogRecord startTime */
-        startTime?: (number|Long|null);
+        startTime?: (number | Long | null);
 
         /** CallLogRecord isIncoming */
-        isIncoming?: (boolean|null);
+        isIncoming?: (boolean | null);
 
         /** CallLogRecord isVideo */
-        isVideo?: (boolean|null);
+        isVideo?: (boolean | null);
 
         /** CallLogRecord isCallLink */
-        isCallLink?: (boolean|null);
+        isCallLink?: (boolean | null);
 
         /** CallLogRecord callLinkToken */
-        callLinkToken?: (string|null);
+        callLinkToken?: (string | null);
 
         /** CallLogRecord scheduledCallId */
-        scheduledCallId?: (string|null);
+        scheduledCallId?: (string | null);
 
         /** CallLogRecord callId */
-        callId?: (string|null);
+        callId?: (string | null);
 
         /** CallLogRecord callCreatorJid */
-        callCreatorJid?: (string|null);
+        callCreatorJid?: (string | null);
 
         /** CallLogRecord groupJid */
-        groupJid?: (string|null);
+        groupJid?: (string | null);
 
         /** CallLogRecord participants */
-        participants?: (proto.CallLogRecord.IParticipantInfo[]|null);
+        participants?: (proto.CallLogRecord.IParticipantInfo[] | null);
 
         /** CallLogRecord callType */
-        callType?: (proto.CallLogRecord.CallType|null);
+        callType?: (proto.CallLogRecord.CallType | null);
     }
 
     /** Represents a CallLogRecord. */
@@ -1765,10 +1765,10 @@ export namespace proto {
         public silenceReason: proto.CallLogRecord.SilenceReason;
 
         /** CallLogRecord duration. */
-        public duration: (number|Long);
+        public duration: (number | Long);
 
         /** CallLogRecord startTime. */
-        public startTime: (number|Long);
+        public startTime: (number | Long);
 
         /** CallLogRecord isIncoming. */
         public isIncoming: boolean;
@@ -1831,7 +1831,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.CallLogRecord;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.CallLogRecord;
 
         /**
          * Decodes a CallLogRecord message from the specified reader or buffer, length delimited.
@@ -1840,14 +1840,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.CallLogRecord;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.CallLogRecord;
 
         /**
          * Verifies a CallLogRecord message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a CallLogRecord message from a plain object. Also converts values to their respective internal types.
@@ -1899,10 +1899,10 @@ export namespace proto {
         interface IParticipantInfo {
 
             /** ParticipantInfo userJid */
-            userJid?: (string|null);
+            userJid?: (string | null);
 
             /** ParticipantInfo callResult */
-            callResult?: (proto.CallLogRecord.CallResult|null);
+            callResult?: (proto.CallLogRecord.CallResult | null);
         }
 
         /** Represents a ParticipantInfo. */
@@ -1951,7 +1951,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.CallLogRecord.ParticipantInfo;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.CallLogRecord.ParticipantInfo;
 
             /**
              * Decodes a ParticipantInfo message from the specified reader or buffer, length delimited.
@@ -1960,14 +1960,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.CallLogRecord.ParticipantInfo;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.CallLogRecord.ParticipantInfo;
 
             /**
              * Verifies a ParticipantInfo message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ParticipantInfo message from a plain object. Also converts values to their respective internal types.
@@ -2004,10 +2004,10 @@ export namespace proto {
     interface ICertChain {
 
         /** CertChain leaf */
-        leaf?: (proto.CertChain.INoiseCertificate|null);
+        leaf?: (proto.CertChain.INoiseCertificate | null);
 
         /** CertChain intermediate */
-        intermediate?: (proto.CertChain.INoiseCertificate|null);
+        intermediate?: (proto.CertChain.INoiseCertificate | null);
     }
 
     /** Represents a CertChain. */
@@ -2020,10 +2020,10 @@ export namespace proto {
         constructor(properties?: proto.ICertChain);
 
         /** CertChain leaf. */
-        public leaf?: (proto.CertChain.INoiseCertificate|null);
+        public leaf?: (proto.CertChain.INoiseCertificate | null);
 
         /** CertChain intermediate. */
-        public intermediate?: (proto.CertChain.INoiseCertificate|null);
+        public intermediate?: (proto.CertChain.INoiseCertificate | null);
 
         /**
          * Creates a new CertChain instance using the specified properties.
@@ -2056,7 +2056,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.CertChain;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.CertChain;
 
         /**
          * Decodes a CertChain message from the specified reader or buffer, length delimited.
@@ -2065,14 +2065,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.CertChain;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.CertChain;
 
         /**
          * Verifies a CertChain message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a CertChain message from a plain object. Also converts values to their respective internal types.
@@ -2102,10 +2102,10 @@ export namespace proto {
         interface INoiseCertificate {
 
             /** NoiseCertificate details */
-            details?: (Uint8Array|null);
+            details?: (Uint8Array | null);
 
             /** NoiseCertificate signature */
-            signature?: (Uint8Array|null);
+            signature?: (Uint8Array | null);
         }
 
         /** Represents a NoiseCertificate. */
@@ -2154,7 +2154,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.CertChain.NoiseCertificate;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.CertChain.NoiseCertificate;
 
             /**
              * Decodes a NoiseCertificate message from the specified reader or buffer, length delimited.
@@ -2163,14 +2163,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.CertChain.NoiseCertificate;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.CertChain.NoiseCertificate;
 
             /**
              * Verifies a NoiseCertificate message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a NoiseCertificate message from a plain object. Also converts values to their respective internal types.
@@ -2200,19 +2200,19 @@ export namespace proto {
             interface IDetails {
 
                 /** Details serial */
-                serial?: (number|null);
+                serial?: (number | null);
 
                 /** Details issuerSerial */
-                issuerSerial?: (number|null);
+                issuerSerial?: (number | null);
 
                 /** Details key */
-                key?: (Uint8Array|null);
+                key?: (Uint8Array | null);
 
                 /** Details notBefore */
-                notBefore?: (number|Long|null);
+                notBefore?: (number | Long | null);
 
                 /** Details notAfter */
-                notAfter?: (number|Long|null);
+                notAfter?: (number | Long | null);
             }
 
             /** Represents a Details. */
@@ -2234,10 +2234,10 @@ export namespace proto {
                 public key: Uint8Array;
 
                 /** Details notBefore. */
-                public notBefore: (number|Long);
+                public notBefore: (number | Long);
 
                 /** Details notAfter. */
-                public notAfter: (number|Long);
+                public notAfter: (number | Long);
 
                 /**
                  * Creates a new Details instance using the specified properties.
@@ -2270,7 +2270,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.CertChain.NoiseCertificate.Details;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.CertChain.NoiseCertificate.Details;
 
                 /**
                  * Decodes a Details message from the specified reader or buffer, length delimited.
@@ -2279,14 +2279,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.CertChain.NoiseCertificate.Details;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.CertChain.NoiseCertificate.Details;
 
                 /**
                  * Verifies a Details message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a Details message from a plain object. Also converts values to their respective internal types.
@@ -2316,7 +2316,7 @@ export namespace proto {
     interface IChatRowOpaqueData {
 
         /** ChatRowOpaqueData draftMessage */
-        draftMessage?: (proto.ChatRowOpaqueData.IDraftMessage|null);
+        draftMessage?: (proto.ChatRowOpaqueData.IDraftMessage | null);
     }
 
     /** Represents a ChatRowOpaqueData. */
@@ -2329,7 +2329,7 @@ export namespace proto {
         constructor(properties?: proto.IChatRowOpaqueData);
 
         /** ChatRowOpaqueData draftMessage. */
-        public draftMessage?: (proto.ChatRowOpaqueData.IDraftMessage|null);
+        public draftMessage?: (proto.ChatRowOpaqueData.IDraftMessage | null);
 
         /**
          * Creates a new ChatRowOpaqueData instance using the specified properties.
@@ -2362,7 +2362,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ChatRowOpaqueData;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ChatRowOpaqueData;
 
         /**
          * Decodes a ChatRowOpaqueData message from the specified reader or buffer, length delimited.
@@ -2371,14 +2371,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ChatRowOpaqueData;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ChatRowOpaqueData;
 
         /**
          * Verifies a ChatRowOpaqueData message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a ChatRowOpaqueData message from a plain object. Also converts values to their respective internal types.
@@ -2408,19 +2408,19 @@ export namespace proto {
         interface IDraftMessage {
 
             /** DraftMessage text */
-            text?: (string|null);
+            text?: (string | null);
 
             /** DraftMessage omittedUrl */
-            omittedUrl?: (string|null);
+            omittedUrl?: (string | null);
 
             /** DraftMessage ctwaContextLinkData */
-            ctwaContextLinkData?: (proto.ChatRowOpaqueData.DraftMessage.ICtwaContextLinkData|null);
+            ctwaContextLinkData?: (proto.ChatRowOpaqueData.DraftMessage.ICtwaContextLinkData | null);
 
             /** DraftMessage ctwaContext */
-            ctwaContext?: (proto.ChatRowOpaqueData.DraftMessage.ICtwaContextData|null);
+            ctwaContext?: (proto.ChatRowOpaqueData.DraftMessage.ICtwaContextData | null);
 
             /** DraftMessage timestamp */
-            timestamp?: (number|Long|null);
+            timestamp?: (number | Long | null);
         }
 
         /** Represents a DraftMessage. */
@@ -2439,13 +2439,13 @@ export namespace proto {
             public omittedUrl: string;
 
             /** DraftMessage ctwaContextLinkData. */
-            public ctwaContextLinkData?: (proto.ChatRowOpaqueData.DraftMessage.ICtwaContextLinkData|null);
+            public ctwaContextLinkData?: (proto.ChatRowOpaqueData.DraftMessage.ICtwaContextLinkData | null);
 
             /** DraftMessage ctwaContext. */
-            public ctwaContext?: (proto.ChatRowOpaqueData.DraftMessage.ICtwaContextData|null);
+            public ctwaContext?: (proto.ChatRowOpaqueData.DraftMessage.ICtwaContextData | null);
 
             /** DraftMessage timestamp. */
-            public timestamp: (number|Long);
+            public timestamp: (number | Long);
 
             /**
              * Creates a new DraftMessage instance using the specified properties.
@@ -2478,7 +2478,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ChatRowOpaqueData.DraftMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ChatRowOpaqueData.DraftMessage;
 
             /**
              * Decodes a DraftMessage message from the specified reader or buffer, length delimited.
@@ -2487,14 +2487,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ChatRowOpaqueData.DraftMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ChatRowOpaqueData.DraftMessage;
 
             /**
              * Verifies a DraftMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a DraftMessage message from a plain object. Also converts values to their respective internal types.
@@ -2524,40 +2524,40 @@ export namespace proto {
             interface ICtwaContextData {
 
                 /** CtwaContextData conversionSource */
-                conversionSource?: (string|null);
+                conversionSource?: (string | null);
 
                 /** CtwaContextData conversionData */
-                conversionData?: (Uint8Array|null);
+                conversionData?: (Uint8Array | null);
 
                 /** CtwaContextData sourceUrl */
-                sourceUrl?: (string|null);
+                sourceUrl?: (string | null);
 
                 /** CtwaContextData sourceId */
-                sourceId?: (string|null);
+                sourceId?: (string | null);
 
                 /** CtwaContextData sourceType */
-                sourceType?: (string|null);
+                sourceType?: (string | null);
 
                 /** CtwaContextData title */
-                title?: (string|null);
+                title?: (string | null);
 
                 /** CtwaContextData description */
-                description?: (string|null);
+                description?: (string | null);
 
                 /** CtwaContextData thumbnail */
-                thumbnail?: (string|null);
+                thumbnail?: (string | null);
 
                 /** CtwaContextData thumbnailUrl */
-                thumbnailUrl?: (string|null);
+                thumbnailUrl?: (string | null);
 
                 /** CtwaContextData mediaType */
-                mediaType?: (proto.ChatRowOpaqueData.DraftMessage.CtwaContextData.ContextInfoExternalAdReplyInfoMediaType|null);
+                mediaType?: (proto.ChatRowOpaqueData.DraftMessage.CtwaContextData.ContextInfoExternalAdReplyInfoMediaType | null);
 
                 /** CtwaContextData mediaUrl */
-                mediaUrl?: (string|null);
+                mediaUrl?: (string | null);
 
                 /** CtwaContextData isSuspiciousLink */
-                isSuspiciousLink?: (boolean|null);
+                isSuspiciousLink?: (boolean | null);
             }
 
             /** Represents a CtwaContextData. */
@@ -2636,7 +2636,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ChatRowOpaqueData.DraftMessage.CtwaContextData;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ChatRowOpaqueData.DraftMessage.CtwaContextData;
 
                 /**
                  * Decodes a CtwaContextData message from the specified reader or buffer, length delimited.
@@ -2645,14 +2645,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ChatRowOpaqueData.DraftMessage.CtwaContextData;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ChatRowOpaqueData.DraftMessage.CtwaContextData;
 
                 /**
                  * Verifies a CtwaContextData message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a CtwaContextData message from a plain object. Also converts values to their respective internal types.
@@ -2690,16 +2690,16 @@ export namespace proto {
             interface ICtwaContextLinkData {
 
                 /** CtwaContextLinkData context */
-                context?: (string|null);
+                context?: (string | null);
 
                 /** CtwaContextLinkData sourceUrl */
-                sourceUrl?: (string|null);
+                sourceUrl?: (string | null);
 
                 /** CtwaContextLinkData icebreaker */
-                icebreaker?: (string|null);
+                icebreaker?: (string | null);
 
                 /** CtwaContextLinkData phone */
-                phone?: (string|null);
+                phone?: (string | null);
             }
 
             /** Represents a CtwaContextLinkData. */
@@ -2754,7 +2754,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ChatRowOpaqueData.DraftMessage.CtwaContextLinkData;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ChatRowOpaqueData.DraftMessage.CtwaContextLinkData;
 
                 /**
                  * Decodes a CtwaContextLinkData message from the specified reader or buffer, length delimited.
@@ -2763,14 +2763,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ChatRowOpaqueData.DraftMessage.CtwaContextLinkData;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ChatRowOpaqueData.DraftMessage.CtwaContextLinkData;
 
                 /**
                  * Verifies a CtwaContextLinkData message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a CtwaContextLinkData message from a plain object. Also converts values to their respective internal types.
@@ -2800,85 +2800,85 @@ export namespace proto {
     interface IClientPayload {
 
         /** ClientPayload username */
-        username?: (number|Long|null);
+        username?: (number | Long | null);
 
         /** ClientPayload passive */
-        passive?: (boolean|null);
+        passive?: (boolean | null);
 
         /** ClientPayload userAgent */
-        userAgent?: (proto.ClientPayload.IUserAgent|null);
+        userAgent?: (proto.ClientPayload.IUserAgent | null);
 
         /** ClientPayload webInfo */
-        webInfo?: (proto.ClientPayload.IWebInfo|null);
+        webInfo?: (proto.ClientPayload.IWebInfo | null);
 
         /** ClientPayload pushName */
-        pushName?: (string|null);
+        pushName?: (string | null);
 
         /** ClientPayload sessionId */
-        sessionId?: (number|null);
+        sessionId?: (number | null);
 
         /** ClientPayload shortConnect */
-        shortConnect?: (boolean|null);
+        shortConnect?: (boolean | null);
 
         /** ClientPayload connectType */
-        connectType?: (proto.ClientPayload.ConnectType|null);
+        connectType?: (proto.ClientPayload.ConnectType | null);
 
         /** ClientPayload connectReason */
-        connectReason?: (proto.ClientPayload.ConnectReason|null);
+        connectReason?: (proto.ClientPayload.ConnectReason | null);
 
         /** ClientPayload shards */
-        shards?: (number[]|null);
+        shards?: (number[] | null);
 
         /** ClientPayload dnsSource */
-        dnsSource?: (proto.ClientPayload.IDNSSource|null);
+        dnsSource?: (proto.ClientPayload.IDNSSource | null);
 
         /** ClientPayload connectAttemptCount */
-        connectAttemptCount?: (number|null);
+        connectAttemptCount?: (number | null);
 
         /** ClientPayload device */
-        device?: (number|null);
+        device?: (number | null);
 
         /** ClientPayload devicePairingData */
-        devicePairingData?: (proto.ClientPayload.IDevicePairingRegistrationData|null);
+        devicePairingData?: (proto.ClientPayload.IDevicePairingRegistrationData | null);
 
         /** ClientPayload product */
-        product?: (proto.ClientPayload.Product|null);
+        product?: (proto.ClientPayload.Product | null);
 
         /** ClientPayload fbCat */
-        fbCat?: (Uint8Array|null);
+        fbCat?: (Uint8Array | null);
 
         /** ClientPayload fbUserAgent */
-        fbUserAgent?: (Uint8Array|null);
+        fbUserAgent?: (Uint8Array | null);
 
         /** ClientPayload oc */
-        oc?: (boolean|null);
+        oc?: (boolean | null);
 
         /** ClientPayload lc */
-        lc?: (number|null);
+        lc?: (number | null);
 
         /** ClientPayload iosAppExtension */
-        iosAppExtension?: (proto.ClientPayload.IOSAppExtension|null);
+        iosAppExtension?: (proto.ClientPayload.IOSAppExtension | null);
 
         /** ClientPayload fbAppId */
-        fbAppId?: (number|Long|null);
+        fbAppId?: (number | Long | null);
 
         /** ClientPayload fbDeviceId */
-        fbDeviceId?: (Uint8Array|null);
+        fbDeviceId?: (Uint8Array | null);
 
         /** ClientPayload pull */
-        pull?: (boolean|null);
+        pull?: (boolean | null);
 
         /** ClientPayload paddingBytes */
-        paddingBytes?: (Uint8Array|null);
+        paddingBytes?: (Uint8Array | null);
 
         /** ClientPayload yearClass */
-        yearClass?: (number|null);
+        yearClass?: (number | null);
 
         /** ClientPayload memClass */
-        memClass?: (number|null);
+        memClass?: (number | null);
 
         /** ClientPayload interopData */
-        interopData?: (proto.ClientPayload.IInteropData|null);
+        interopData?: (proto.ClientPayload.IInteropData | null);
     }
 
     /** Represents a ClientPayload. */
@@ -2891,16 +2891,16 @@ export namespace proto {
         constructor(properties?: proto.IClientPayload);
 
         /** ClientPayload username. */
-        public username: (number|Long);
+        public username: (number | Long);
 
         /** ClientPayload passive. */
         public passive: boolean;
 
         /** ClientPayload userAgent. */
-        public userAgent?: (proto.ClientPayload.IUserAgent|null);
+        public userAgent?: (proto.ClientPayload.IUserAgent | null);
 
         /** ClientPayload webInfo. */
-        public webInfo?: (proto.ClientPayload.IWebInfo|null);
+        public webInfo?: (proto.ClientPayload.IWebInfo | null);
 
         /** ClientPayload pushName. */
         public pushName: string;
@@ -2921,7 +2921,7 @@ export namespace proto {
         public shards: number[];
 
         /** ClientPayload dnsSource. */
-        public dnsSource?: (proto.ClientPayload.IDNSSource|null);
+        public dnsSource?: (proto.ClientPayload.IDNSSource | null);
 
         /** ClientPayload connectAttemptCount. */
         public connectAttemptCount: number;
@@ -2930,7 +2930,7 @@ export namespace proto {
         public device: number;
 
         /** ClientPayload devicePairingData. */
-        public devicePairingData?: (proto.ClientPayload.IDevicePairingRegistrationData|null);
+        public devicePairingData?: (proto.ClientPayload.IDevicePairingRegistrationData | null);
 
         /** ClientPayload product. */
         public product: proto.ClientPayload.Product;
@@ -2951,7 +2951,7 @@ export namespace proto {
         public iosAppExtension: proto.ClientPayload.IOSAppExtension;
 
         /** ClientPayload fbAppId. */
-        public fbAppId: (number|Long);
+        public fbAppId: (number | Long);
 
         /** ClientPayload fbDeviceId. */
         public fbDeviceId: Uint8Array;
@@ -2969,7 +2969,7 @@ export namespace proto {
         public memClass: number;
 
         /** ClientPayload interopData. */
-        public interopData?: (proto.ClientPayload.IInteropData|null);
+        public interopData?: (proto.ClientPayload.IInteropData | null);
 
         /**
          * Creates a new ClientPayload instance using the specified properties.
@@ -3002,7 +3002,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ClientPayload;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ClientPayload;
 
         /**
          * Decodes a ClientPayload message from the specified reader or buffer, length delimited.
@@ -3011,14 +3011,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ClientPayload;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ClientPayload;
 
         /**
          * Verifies a ClientPayload message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a ClientPayload message from a plain object. Also converts values to their respective internal types.
@@ -3078,10 +3078,10 @@ export namespace proto {
         interface IDNSSource {
 
             /** DNSSource dnsMethod */
-            dnsMethod?: (proto.ClientPayload.DNSSource.DNSResolutionMethod|null);
+            dnsMethod?: (proto.ClientPayload.DNSSource.DNSResolutionMethod | null);
 
             /** DNSSource appCached */
-            appCached?: (boolean|null);
+            appCached?: (boolean | null);
         }
 
         /** Represents a DNSSource. */
@@ -3130,7 +3130,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ClientPayload.DNSSource;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ClientPayload.DNSSource;
 
             /**
              * Decodes a DNSSource message from the specified reader or buffer, length delimited.
@@ -3139,14 +3139,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ClientPayload.DNSSource;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ClientPayload.DNSSource;
 
             /**
              * Verifies a DNSSource message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a DNSSource message from a plain object. Also converts values to their respective internal types.
@@ -3186,28 +3186,28 @@ export namespace proto {
         interface IDevicePairingRegistrationData {
 
             /** DevicePairingRegistrationData eRegid */
-            eRegid?: (Uint8Array|null);
+            eRegid?: (Uint8Array | null);
 
             /** DevicePairingRegistrationData eKeytype */
-            eKeytype?: (Uint8Array|null);
+            eKeytype?: (Uint8Array | null);
 
             /** DevicePairingRegistrationData eIdent */
-            eIdent?: (Uint8Array|null);
+            eIdent?: (Uint8Array | null);
 
             /** DevicePairingRegistrationData eSkeyId */
-            eSkeyId?: (Uint8Array|null);
+            eSkeyId?: (Uint8Array | null);
 
             /** DevicePairingRegistrationData eSkeyVal */
-            eSkeyVal?: (Uint8Array|null);
+            eSkeyVal?: (Uint8Array | null);
 
             /** DevicePairingRegistrationData eSkeySig */
-            eSkeySig?: (Uint8Array|null);
+            eSkeySig?: (Uint8Array | null);
 
             /** DevicePairingRegistrationData buildHash */
-            buildHash?: (Uint8Array|null);
+            buildHash?: (Uint8Array | null);
 
             /** DevicePairingRegistrationData deviceProps */
-            deviceProps?: (Uint8Array|null);
+            deviceProps?: (Uint8Array | null);
         }
 
         /** Represents a DevicePairingRegistrationData. */
@@ -3274,7 +3274,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ClientPayload.DevicePairingRegistrationData;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ClientPayload.DevicePairingRegistrationData;
 
             /**
              * Decodes a DevicePairingRegistrationData message from the specified reader or buffer, length delimited.
@@ -3283,14 +3283,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ClientPayload.DevicePairingRegistrationData;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ClientPayload.DevicePairingRegistrationData;
 
             /**
              * Verifies a DevicePairingRegistrationData message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a DevicePairingRegistrationData message from a plain object. Also converts values to their respective internal types.
@@ -3325,10 +3325,10 @@ export namespace proto {
         interface IInteropData {
 
             /** InteropData accountId */
-            accountId?: (number|Long|null);
+            accountId?: (number | Long | null);
 
             /** InteropData token */
-            token?: (Uint8Array|null);
+            token?: (Uint8Array | null);
         }
 
         /** Represents an InteropData. */
@@ -3341,7 +3341,7 @@ export namespace proto {
             constructor(properties?: proto.ClientPayload.IInteropData);
 
             /** InteropData accountId. */
-            public accountId: (number|Long);
+            public accountId: (number | Long);
 
             /** InteropData token. */
             public token: Uint8Array;
@@ -3377,7 +3377,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ClientPayload.InteropData;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ClientPayload.InteropData;
 
             /**
              * Decodes an InteropData message from the specified reader or buffer, length delimited.
@@ -3386,14 +3386,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ClientPayload.InteropData;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ClientPayload.InteropData;
 
             /**
              * Verifies an InteropData message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an InteropData message from a plain object. Also converts values to their respective internal types.
@@ -3429,49 +3429,49 @@ export namespace proto {
         interface IUserAgent {
 
             /** UserAgent platform */
-            platform?: (proto.ClientPayload.UserAgent.Platform|null);
+            platform?: (proto.ClientPayload.UserAgent.Platform | null);
 
             /** UserAgent appVersion */
-            appVersion?: (proto.ClientPayload.UserAgent.IAppVersion|null);
+            appVersion?: (proto.ClientPayload.UserAgent.IAppVersion | null);
 
             /** UserAgent mcc */
-            mcc?: (string|null);
+            mcc?: (string | null);
 
             /** UserAgent mnc */
-            mnc?: (string|null);
+            mnc?: (string | null);
 
             /** UserAgent osVersion */
-            osVersion?: (string|null);
+            osVersion?: (string | null);
 
             /** UserAgent manufacturer */
-            manufacturer?: (string|null);
+            manufacturer?: (string | null);
 
             /** UserAgent device */
-            device?: (string|null);
+            device?: (string | null);
 
             /** UserAgent osBuildNumber */
-            osBuildNumber?: (string|null);
+            osBuildNumber?: (string | null);
 
             /** UserAgent phoneId */
-            phoneId?: (string|null);
+            phoneId?: (string | null);
 
             /** UserAgent releaseChannel */
-            releaseChannel?: (proto.ClientPayload.UserAgent.ReleaseChannel|null);
+            releaseChannel?: (proto.ClientPayload.UserAgent.ReleaseChannel | null);
 
             /** UserAgent localeLanguageIso6391 */
-            localeLanguageIso6391?: (string|null);
+            localeLanguageIso6391?: (string | null);
 
             /** UserAgent localeCountryIso31661Alpha2 */
-            localeCountryIso31661Alpha2?: (string|null);
+            localeCountryIso31661Alpha2?: (string | null);
 
             /** UserAgent deviceBoard */
-            deviceBoard?: (string|null);
+            deviceBoard?: (string | null);
 
             /** UserAgent deviceExpId */
-            deviceExpId?: (string|null);
+            deviceExpId?: (string | null);
 
             /** UserAgent deviceType */
-            deviceType?: (proto.ClientPayload.UserAgent.DeviceType|null);
+            deviceType?: (proto.ClientPayload.UserAgent.DeviceType | null);
         }
 
         /** Represents a UserAgent. */
@@ -3487,7 +3487,7 @@ export namespace proto {
             public platform: proto.ClientPayload.UserAgent.Platform;
 
             /** UserAgent appVersion. */
-            public appVersion?: (proto.ClientPayload.UserAgent.IAppVersion|null);
+            public appVersion?: (proto.ClientPayload.UserAgent.IAppVersion | null);
 
             /** UserAgent mcc. */
             public mcc: string;
@@ -3559,7 +3559,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ClientPayload.UserAgent;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ClientPayload.UserAgent;
 
             /**
              * Decodes a UserAgent message from the specified reader or buffer, length delimited.
@@ -3568,14 +3568,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ClientPayload.UserAgent;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ClientPayload.UserAgent;
 
             /**
              * Verifies a UserAgent message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a UserAgent message from a plain object. Also converts values to their respective internal types.
@@ -3605,19 +3605,19 @@ export namespace proto {
             interface IAppVersion {
 
                 /** AppVersion primary */
-                primary?: (number|null);
+                primary?: (number | null);
 
                 /** AppVersion secondary */
-                secondary?: (number|null);
+                secondary?: (number | null);
 
                 /** AppVersion tertiary */
-                tertiary?: (number|null);
+                tertiary?: (number | null);
 
                 /** AppVersion quaternary */
-                quaternary?: (number|null);
+                quaternary?: (number | null);
 
                 /** AppVersion quinary */
-                quinary?: (number|null);
+                quinary?: (number | null);
             }
 
             /** Represents an AppVersion. */
@@ -3675,7 +3675,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ClientPayload.UserAgent.AppVersion;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ClientPayload.UserAgent.AppVersion;
 
                 /**
                  * Decodes an AppVersion message from the specified reader or buffer, length delimited.
@@ -3684,14 +3684,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ClientPayload.UserAgent.AppVersion;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ClientPayload.UserAgent.AppVersion;
 
                 /**
                  * Verifies an AppVersion message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates an AppVersion message from a plain object. Also converts values to their respective internal types.
@@ -3777,16 +3777,16 @@ export namespace proto {
         interface IWebInfo {
 
             /** WebInfo refToken */
-            refToken?: (string|null);
+            refToken?: (string | null);
 
             /** WebInfo version */
-            version?: (string|null);
+            version?: (string | null);
 
             /** WebInfo webdPayload */
-            webdPayload?: (proto.ClientPayload.WebInfo.IWebdPayload|null);
+            webdPayload?: (proto.ClientPayload.WebInfo.IWebdPayload | null);
 
             /** WebInfo webSubPlatform */
-            webSubPlatform?: (proto.ClientPayload.WebInfo.WebSubPlatform|null);
+            webSubPlatform?: (proto.ClientPayload.WebInfo.WebSubPlatform | null);
         }
 
         /** Represents a WebInfo. */
@@ -3805,7 +3805,7 @@ export namespace proto {
             public version: string;
 
             /** WebInfo webdPayload. */
-            public webdPayload?: (proto.ClientPayload.WebInfo.IWebdPayload|null);
+            public webdPayload?: (proto.ClientPayload.WebInfo.IWebdPayload | null);
 
             /** WebInfo webSubPlatform. */
             public webSubPlatform: proto.ClientPayload.WebInfo.WebSubPlatform;
@@ -3841,7 +3841,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ClientPayload.WebInfo;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ClientPayload.WebInfo;
 
             /**
              * Decodes a WebInfo message from the specified reader or buffer, length delimited.
@@ -3850,14 +3850,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ClientPayload.WebInfo;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ClientPayload.WebInfo;
 
             /**
              * Verifies a WebInfo message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a WebInfo message from a plain object. Also converts values to their respective internal types.
@@ -3896,37 +3896,37 @@ export namespace proto {
             interface IWebdPayload {
 
                 /** WebdPayload usesParticipantInKey */
-                usesParticipantInKey?: (boolean|null);
+                usesParticipantInKey?: (boolean | null);
 
                 /** WebdPayload supportsStarredMessages */
-                supportsStarredMessages?: (boolean|null);
+                supportsStarredMessages?: (boolean | null);
 
                 /** WebdPayload supportsDocumentMessages */
-                supportsDocumentMessages?: (boolean|null);
+                supportsDocumentMessages?: (boolean | null);
 
                 /** WebdPayload supportsUrlMessages */
-                supportsUrlMessages?: (boolean|null);
+                supportsUrlMessages?: (boolean | null);
 
                 /** WebdPayload supportsMediaRetry */
-                supportsMediaRetry?: (boolean|null);
+                supportsMediaRetry?: (boolean | null);
 
                 /** WebdPayload supportsE2EImage */
-                supportsE2EImage?: (boolean|null);
+                supportsE2EImage?: (boolean | null);
 
                 /** WebdPayload supportsE2EVideo */
-                supportsE2EVideo?: (boolean|null);
+                supportsE2EVideo?: (boolean | null);
 
                 /** WebdPayload supportsE2EAudio */
-                supportsE2EAudio?: (boolean|null);
+                supportsE2EAudio?: (boolean | null);
 
                 /** WebdPayload supportsE2EDocument */
-                supportsE2EDocument?: (boolean|null);
+                supportsE2EDocument?: (boolean | null);
 
                 /** WebdPayload documentTypes */
-                documentTypes?: (string|null);
+                documentTypes?: (string | null);
 
                 /** WebdPayload features */
-                features?: (Uint8Array|null);
+                features?: (Uint8Array | null);
             }
 
             /** Represents a WebdPayload. */
@@ -4002,7 +4002,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ClientPayload.WebInfo.WebdPayload;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ClientPayload.WebInfo.WebdPayload;
 
                 /**
                  * Decodes a WebdPayload message from the specified reader or buffer, length delimited.
@@ -4011,14 +4011,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ClientPayload.WebInfo.WebdPayload;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ClientPayload.WebInfo.WebdPayload;
 
                 /**
                  * Verifies a WebdPayload message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a WebdPayload message from a plain object. Also converts values to their respective internal types.
@@ -4048,10 +4048,10 @@ export namespace proto {
     interface ICommentMetadata {
 
         /** CommentMetadata commentParentKey */
-        commentParentKey?: (proto.IMessageKey|null);
+        commentParentKey?: (proto.IMessageKey | null);
 
         /** CommentMetadata replyCount */
-        replyCount?: (number|null);
+        replyCount?: (number | null);
     }
 
     /** Represents a CommentMetadata. */
@@ -4064,7 +4064,7 @@ export namespace proto {
         constructor(properties?: proto.ICommentMetadata);
 
         /** CommentMetadata commentParentKey. */
-        public commentParentKey?: (proto.IMessageKey|null);
+        public commentParentKey?: (proto.IMessageKey | null);
 
         /** CommentMetadata replyCount. */
         public replyCount: number;
@@ -4100,7 +4100,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.CommentMetadata;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.CommentMetadata;
 
         /**
          * Decodes a CommentMetadata message from the specified reader or buffer, length delimited.
@@ -4109,14 +4109,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.CommentMetadata;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.CommentMetadata;
 
         /**
          * Verifies a CommentMetadata message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a CommentMetadata message from a plain object. Also converts values to their respective internal types.
@@ -4144,103 +4144,103 @@ export namespace proto {
     interface IContextInfo {
 
         /** ContextInfo stanzaId */
-        stanzaId?: (string|null);
+        stanzaId?: (string | null);
 
         /** ContextInfo participant */
-        participant?: (string|null);
+        participant?: (string | null);
 
         /** ContextInfo quotedMessage */
-        quotedMessage?: (proto.IMessage|null);
+        quotedMessage?: (proto.IMessage | null);
 
         /** ContextInfo remoteJid */
-        remoteJid?: (string|null);
+        remoteJid?: (string | null);
 
         /** ContextInfo mentionedJid */
-        mentionedJid?: (string[]|null);
+        mentionedJid?: (string[] | null);
 
         /** ContextInfo conversionSource */
-        conversionSource?: (string|null);
+        conversionSource?: (string | null);
 
         /** ContextInfo conversionData */
-        conversionData?: (Uint8Array|null);
+        conversionData?: (Uint8Array | null);
 
         /** ContextInfo conversionDelaySeconds */
-        conversionDelaySeconds?: (number|null);
+        conversionDelaySeconds?: (number | null);
 
         /** ContextInfo forwardingScore */
-        forwardingScore?: (number|null);
+        forwardingScore?: (number | null);
 
         /** ContextInfo isForwarded */
-        isForwarded?: (boolean|null);
+        isForwarded?: (boolean | null);
 
         /** ContextInfo quotedAd */
-        quotedAd?: (proto.ContextInfo.IAdReplyInfo|null);
+        quotedAd?: (proto.ContextInfo.IAdReplyInfo | null);
 
         /** ContextInfo placeholderKey */
-        placeholderKey?: (proto.IMessageKey|null);
+        placeholderKey?: (proto.IMessageKey | null);
 
         /** ContextInfo expiration */
-        expiration?: (number|null);
+        expiration?: (number | null);
 
         /** ContextInfo ephemeralSettingTimestamp */
-        ephemeralSettingTimestamp?: (number|Long|null);
+        ephemeralSettingTimestamp?: (number | Long | null);
 
         /** ContextInfo ephemeralSharedSecret */
-        ephemeralSharedSecret?: (Uint8Array|null);
+        ephemeralSharedSecret?: (Uint8Array | null);
 
         /** ContextInfo externalAdReply */
-        externalAdReply?: (proto.ContextInfo.IExternalAdReplyInfo|null);
+        externalAdReply?: (proto.ContextInfo.IExternalAdReplyInfo | null);
 
         /** ContextInfo entryPointConversionSource */
-        entryPointConversionSource?: (string|null);
+        entryPointConversionSource?: (string | null);
 
         /** ContextInfo entryPointConversionApp */
-        entryPointConversionApp?: (string|null);
+        entryPointConversionApp?: (string | null);
 
         /** ContextInfo entryPointConversionDelaySeconds */
-        entryPointConversionDelaySeconds?: (number|null);
+        entryPointConversionDelaySeconds?: (number | null);
 
         /** ContextInfo disappearingMode */
-        disappearingMode?: (proto.IDisappearingMode|null);
+        disappearingMode?: (proto.IDisappearingMode | null);
 
         /** ContextInfo actionLink */
-        actionLink?: (proto.IActionLink|null);
+        actionLink?: (proto.IActionLink | null);
 
         /** ContextInfo groupSubject */
-        groupSubject?: (string|null);
+        groupSubject?: (string | null);
 
         /** ContextInfo parentGroupJid */
-        parentGroupJid?: (string|null);
+        parentGroupJid?: (string | null);
 
         /** ContextInfo trustBannerType */
-        trustBannerType?: (string|null);
+        trustBannerType?: (string | null);
 
         /** ContextInfo trustBannerAction */
-        trustBannerAction?: (number|null);
+        trustBannerAction?: (number | null);
 
         /** ContextInfo isSampled */
-        isSampled?: (boolean|null);
+        isSampled?: (boolean | null);
 
         /** ContextInfo groupMentions */
-        groupMentions?: (proto.IGroupMention[]|null);
+        groupMentions?: (proto.IGroupMention[] | null);
 
         /** ContextInfo utm */
-        utm?: (proto.ContextInfo.IUTMInfo|null);
+        utm?: (proto.ContextInfo.IUTMInfo | null);
 
         /** ContextInfo forwardedNewsletterMessageInfo */
-        forwardedNewsletterMessageInfo?: (proto.ContextInfo.IForwardedNewsletterMessageInfo|null);
+        forwardedNewsletterMessageInfo?: (proto.ContextInfo.IForwardedNewsletterMessageInfo | null);
 
         /** ContextInfo businessMessageForwardInfo */
-        businessMessageForwardInfo?: (proto.ContextInfo.IBusinessMessageForwardInfo|null);
+        businessMessageForwardInfo?: (proto.ContextInfo.IBusinessMessageForwardInfo | null);
 
         /** ContextInfo smbClientCampaignId */
-        smbClientCampaignId?: (string|null);
+        smbClientCampaignId?: (string | null);
 
         /** ContextInfo smbServerCampaignId */
-        smbServerCampaignId?: (string|null);
+        smbServerCampaignId?: (string | null);
 
         /** ContextInfo dataSharingContext */
-        dataSharingContext?: (proto.ContextInfo.IDataSharingContext|null);
+        dataSharingContext?: (proto.ContextInfo.IDataSharingContext | null);
     }
 
     /** Represents a ContextInfo. */
@@ -4259,7 +4259,7 @@ export namespace proto {
         public participant: string;
 
         /** ContextInfo quotedMessage. */
-        public quotedMessage?: (proto.IMessage|null);
+        public quotedMessage?: (proto.IMessage | null);
 
         /** ContextInfo remoteJid. */
         public remoteJid: string;
@@ -4283,22 +4283,22 @@ export namespace proto {
         public isForwarded: boolean;
 
         /** ContextInfo quotedAd. */
-        public quotedAd?: (proto.ContextInfo.IAdReplyInfo|null);
+        public quotedAd?: (proto.ContextInfo.IAdReplyInfo | null);
 
         /** ContextInfo placeholderKey. */
-        public placeholderKey?: (proto.IMessageKey|null);
+        public placeholderKey?: (proto.IMessageKey | null);
 
         /** ContextInfo expiration. */
         public expiration: number;
 
         /** ContextInfo ephemeralSettingTimestamp. */
-        public ephemeralSettingTimestamp: (number|Long);
+        public ephemeralSettingTimestamp: (number | Long);
 
         /** ContextInfo ephemeralSharedSecret. */
         public ephemeralSharedSecret: Uint8Array;
 
         /** ContextInfo externalAdReply. */
-        public externalAdReply?: (proto.ContextInfo.IExternalAdReplyInfo|null);
+        public externalAdReply?: (proto.ContextInfo.IExternalAdReplyInfo | null);
 
         /** ContextInfo entryPointConversionSource. */
         public entryPointConversionSource: string;
@@ -4310,10 +4310,10 @@ export namespace proto {
         public entryPointConversionDelaySeconds: number;
 
         /** ContextInfo disappearingMode. */
-        public disappearingMode?: (proto.IDisappearingMode|null);
+        public disappearingMode?: (proto.IDisappearingMode | null);
 
         /** ContextInfo actionLink. */
-        public actionLink?: (proto.IActionLink|null);
+        public actionLink?: (proto.IActionLink | null);
 
         /** ContextInfo groupSubject. */
         public groupSubject: string;
@@ -4334,13 +4334,13 @@ export namespace proto {
         public groupMentions: proto.IGroupMention[];
 
         /** ContextInfo utm. */
-        public utm?: (proto.ContextInfo.IUTMInfo|null);
+        public utm?: (proto.ContextInfo.IUTMInfo | null);
 
         /** ContextInfo forwardedNewsletterMessageInfo. */
-        public forwardedNewsletterMessageInfo?: (proto.ContextInfo.IForwardedNewsletterMessageInfo|null);
+        public forwardedNewsletterMessageInfo?: (proto.ContextInfo.IForwardedNewsletterMessageInfo | null);
 
         /** ContextInfo businessMessageForwardInfo. */
-        public businessMessageForwardInfo?: (proto.ContextInfo.IBusinessMessageForwardInfo|null);
+        public businessMessageForwardInfo?: (proto.ContextInfo.IBusinessMessageForwardInfo | null);
 
         /** ContextInfo smbClientCampaignId. */
         public smbClientCampaignId: string;
@@ -4349,7 +4349,7 @@ export namespace proto {
         public smbServerCampaignId: string;
 
         /** ContextInfo dataSharingContext. */
-        public dataSharingContext?: (proto.ContextInfo.IDataSharingContext|null);
+        public dataSharingContext?: (proto.ContextInfo.IDataSharingContext | null);
 
         /**
          * Creates a new ContextInfo instance using the specified properties.
@@ -4382,7 +4382,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ContextInfo;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ContextInfo;
 
         /**
          * Decodes a ContextInfo message from the specified reader or buffer, length delimited.
@@ -4391,14 +4391,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ContextInfo;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ContextInfo;
 
         /**
          * Verifies a ContextInfo message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a ContextInfo message from a plain object. Also converts values to their respective internal types.
@@ -4428,16 +4428,16 @@ export namespace proto {
         interface IAdReplyInfo {
 
             /** AdReplyInfo advertiserName */
-            advertiserName?: (string|null);
+            advertiserName?: (string | null);
 
             /** AdReplyInfo mediaType */
-            mediaType?: (proto.ContextInfo.AdReplyInfo.MediaType|null);
+            mediaType?: (proto.ContextInfo.AdReplyInfo.MediaType | null);
 
             /** AdReplyInfo jpegThumbnail */
-            jpegThumbnail?: (Uint8Array|null);
+            jpegThumbnail?: (Uint8Array | null);
 
             /** AdReplyInfo caption */
-            caption?: (string|null);
+            caption?: (string | null);
         }
 
         /** Represents an AdReplyInfo. */
@@ -4492,7 +4492,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ContextInfo.AdReplyInfo;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ContextInfo.AdReplyInfo;
 
             /**
              * Decodes an AdReplyInfo message from the specified reader or buffer, length delimited.
@@ -4501,14 +4501,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ContextInfo.AdReplyInfo;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ContextInfo.AdReplyInfo;
 
             /**
              * Verifies an AdReplyInfo message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an AdReplyInfo message from a plain object. Also converts values to their respective internal types.
@@ -4546,7 +4546,7 @@ export namespace proto {
         interface IBusinessMessageForwardInfo {
 
             /** BusinessMessageForwardInfo businessOwnerJid */
-            businessOwnerJid?: (string|null);
+            businessOwnerJid?: (string | null);
         }
 
         /** Represents a BusinessMessageForwardInfo. */
@@ -4592,7 +4592,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ContextInfo.BusinessMessageForwardInfo;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ContextInfo.BusinessMessageForwardInfo;
 
             /**
              * Decodes a BusinessMessageForwardInfo message from the specified reader or buffer, length delimited.
@@ -4601,14 +4601,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ContextInfo.BusinessMessageForwardInfo;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ContextInfo.BusinessMessageForwardInfo;
 
             /**
              * Verifies a BusinessMessageForwardInfo message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a BusinessMessageForwardInfo message from a plain object. Also converts values to their respective internal types.
@@ -4636,7 +4636,7 @@ export namespace proto {
         interface IDataSharingContext {
 
             /** DataSharingContext showMmDisclosure */
-            showMmDisclosure?: (boolean|null);
+            showMmDisclosure?: (boolean | null);
         }
 
         /** Represents a DataSharingContext. */
@@ -4682,7 +4682,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ContextInfo.DataSharingContext;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ContextInfo.DataSharingContext;
 
             /**
              * Decodes a DataSharingContext message from the specified reader or buffer, length delimited.
@@ -4691,14 +4691,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ContextInfo.DataSharingContext;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ContextInfo.DataSharingContext;
 
             /**
              * Verifies a DataSharingContext message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a DataSharingContext message from a plain object. Also converts values to their respective internal types.
@@ -4726,46 +4726,46 @@ export namespace proto {
         interface IExternalAdReplyInfo {
 
             /** ExternalAdReplyInfo title */
-            title?: (string|null);
+            title?: (string | null);
 
             /** ExternalAdReplyInfo body */
-            body?: (string|null);
+            body?: (string | null);
 
             /** ExternalAdReplyInfo mediaType */
-            mediaType?: (proto.ContextInfo.ExternalAdReplyInfo.MediaType|null);
+            mediaType?: (proto.ContextInfo.ExternalAdReplyInfo.MediaType | null);
 
             /** ExternalAdReplyInfo thumbnailUrl */
-            thumbnailUrl?: (string|null);
+            thumbnailUrl?: (string | null);
 
             /** ExternalAdReplyInfo mediaUrl */
-            mediaUrl?: (string|null);
+            mediaUrl?: (string | null);
 
             /** ExternalAdReplyInfo thumbnail */
-            thumbnail?: (Uint8Array|null);
+            thumbnail?: (Uint8Array | null);
 
             /** ExternalAdReplyInfo sourceType */
-            sourceType?: (string|null);
+            sourceType?: (string | null);
 
             /** ExternalAdReplyInfo sourceId */
-            sourceId?: (string|null);
+            sourceId?: (string | null);
 
             /** ExternalAdReplyInfo sourceUrl */
-            sourceUrl?: (string|null);
+            sourceUrl?: (string | null);
 
             /** ExternalAdReplyInfo containsAutoReply */
-            containsAutoReply?: (boolean|null);
+            containsAutoReply?: (boolean | null);
 
             /** ExternalAdReplyInfo renderLargerThumbnail */
-            renderLargerThumbnail?: (boolean|null);
+            renderLargerThumbnail?: (boolean | null);
 
             /** ExternalAdReplyInfo showAdAttribution */
-            showAdAttribution?: (boolean|null);
+            showAdAttribution?: (boolean | null);
 
             /** ExternalAdReplyInfo ctwaClid */
-            ctwaClid?: (string|null);
+            ctwaClid?: (string | null);
 
             /** ExternalAdReplyInfo ref */
-            ref?: (string|null);
+            ref?: (string | null);
         }
 
         /** Represents an ExternalAdReplyInfo. */
@@ -4850,7 +4850,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ContextInfo.ExternalAdReplyInfo;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ContextInfo.ExternalAdReplyInfo;
 
             /**
              * Decodes an ExternalAdReplyInfo message from the specified reader or buffer, length delimited.
@@ -4859,14 +4859,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ContextInfo.ExternalAdReplyInfo;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ContextInfo.ExternalAdReplyInfo;
 
             /**
              * Verifies an ExternalAdReplyInfo message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an ExternalAdReplyInfo message from a plain object. Also converts values to their respective internal types.
@@ -4904,19 +4904,19 @@ export namespace proto {
         interface IForwardedNewsletterMessageInfo {
 
             /** ForwardedNewsletterMessageInfo newsletterJid */
-            newsletterJid?: (string|null);
+            newsletterJid?: (string | null);
 
             /** ForwardedNewsletterMessageInfo serverMessageId */
-            serverMessageId?: (number|null);
+            serverMessageId?: (number | null);
 
             /** ForwardedNewsletterMessageInfo newsletterName */
-            newsletterName?: (string|null);
+            newsletterName?: (string | null);
 
             /** ForwardedNewsletterMessageInfo contentType */
-            contentType?: (proto.ContextInfo.ForwardedNewsletterMessageInfo.ContentType|null);
+            contentType?: (proto.ContextInfo.ForwardedNewsletterMessageInfo.ContentType | null);
 
             /** ForwardedNewsletterMessageInfo accessibilityText */
-            accessibilityText?: (string|null);
+            accessibilityText?: (string | null);
         }
 
         /** Represents a ForwardedNewsletterMessageInfo. */
@@ -4974,7 +4974,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ContextInfo.ForwardedNewsletterMessageInfo;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ContextInfo.ForwardedNewsletterMessageInfo;
 
             /**
              * Decodes a ForwardedNewsletterMessageInfo message from the specified reader or buffer, length delimited.
@@ -4983,14 +4983,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ContextInfo.ForwardedNewsletterMessageInfo;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ContextInfo.ForwardedNewsletterMessageInfo;
 
             /**
              * Verifies a ForwardedNewsletterMessageInfo message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ForwardedNewsletterMessageInfo message from a plain object. Also converts values to their respective internal types.
@@ -5028,10 +5028,10 @@ export namespace proto {
         interface IUTMInfo {
 
             /** UTMInfo utmSource */
-            utmSource?: (string|null);
+            utmSource?: (string | null);
 
             /** UTMInfo utmCampaign */
-            utmCampaign?: (string|null);
+            utmCampaign?: (string | null);
         }
 
         /** Represents a UTMInfo. */
@@ -5080,7 +5080,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ContextInfo.UTMInfo;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ContextInfo.UTMInfo;
 
             /**
              * Decodes a UTMInfo message from the specified reader or buffer, length delimited.
@@ -5089,14 +5089,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ContextInfo.UTMInfo;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ContextInfo.UTMInfo;
 
             /**
              * Verifies a UTMInfo message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a UTMInfo message from a plain object. Also converts values to their respective internal types.
@@ -5128,136 +5128,136 @@ export namespace proto {
         id: string;
 
         /** Conversation messages */
-        messages?: (proto.IHistorySyncMsg[]|null);
+        messages?: (proto.IHistorySyncMsg[] | null);
 
         /** Conversation newJid */
-        newJid?: (string|null);
+        newJid?: (string | null);
 
         /** Conversation oldJid */
-        oldJid?: (string|null);
+        oldJid?: (string | null);
 
         /** Conversation lastMsgTimestamp */
-        lastMsgTimestamp?: (number|Long|null);
+        lastMsgTimestamp?: (number | Long | null);
 
         /** Conversation unreadCount */
-        unreadCount?: (number|null);
+        unreadCount?: (number | null);
 
         /** Conversation readOnly */
-        readOnly?: (boolean|null);
+        readOnly?: (boolean | null);
 
         /** Conversation endOfHistoryTransfer */
-        endOfHistoryTransfer?: (boolean|null);
+        endOfHistoryTransfer?: (boolean | null);
 
         /** Conversation ephemeralExpiration */
-        ephemeralExpiration?: (number|null);
+        ephemeralExpiration?: (number | null);
 
         /** Conversation ephemeralSettingTimestamp */
-        ephemeralSettingTimestamp?: (number|Long|null);
+        ephemeralSettingTimestamp?: (number | Long | null);
 
         /** Conversation endOfHistoryTransferType */
-        endOfHistoryTransferType?: (proto.Conversation.EndOfHistoryTransferType|null);
+        endOfHistoryTransferType?: (proto.Conversation.EndOfHistoryTransferType | null);
 
         /** Conversation conversationTimestamp */
-        conversationTimestamp?: (number|Long|null);
+        conversationTimestamp?: (number | Long | null);
 
         /** Conversation name */
-        name?: (string|null);
+        name?: (string | null);
 
         /** Conversation pHash */
-        pHash?: (string|null);
+        pHash?: (string | null);
 
         /** Conversation notSpam */
-        notSpam?: (boolean|null);
+        notSpam?: (boolean | null);
 
         /** Conversation archived */
-        archived?: (boolean|null);
+        archived?: (boolean | null);
 
         /** Conversation disappearingMode */
-        disappearingMode?: (proto.IDisappearingMode|null);
+        disappearingMode?: (proto.IDisappearingMode | null);
 
         /** Conversation unreadMentionCount */
-        unreadMentionCount?: (number|null);
+        unreadMentionCount?: (number | null);
 
         /** Conversation markedAsUnread */
-        markedAsUnread?: (boolean|null);
+        markedAsUnread?: (boolean | null);
 
         /** Conversation participant */
-        participant?: (proto.IGroupParticipant[]|null);
+        participant?: (proto.IGroupParticipant[] | null);
 
         /** Conversation tcToken */
-        tcToken?: (Uint8Array|null);
+        tcToken?: (Uint8Array | null);
 
         /** Conversation tcTokenTimestamp */
-        tcTokenTimestamp?: (number|Long|null);
+        tcTokenTimestamp?: (number | Long | null);
 
         /** Conversation contactPrimaryIdentityKey */
-        contactPrimaryIdentityKey?: (Uint8Array|null);
+        contactPrimaryIdentityKey?: (Uint8Array | null);
 
         /** Conversation pinned */
-        pinned?: (number|null);
+        pinned?: (number | null);
 
         /** Conversation muteEndTime */
-        muteEndTime?: (number|Long|null);
+        muteEndTime?: (number | Long | null);
 
         /** Conversation wallpaper */
-        wallpaper?: (proto.IWallpaperSettings|null);
+        wallpaper?: (proto.IWallpaperSettings | null);
 
         /** Conversation mediaVisibility */
-        mediaVisibility?: (proto.MediaVisibility|null);
+        mediaVisibility?: (proto.MediaVisibility | null);
 
         /** Conversation tcTokenSenderTimestamp */
-        tcTokenSenderTimestamp?: (number|Long|null);
+        tcTokenSenderTimestamp?: (number | Long | null);
 
         /** Conversation suspended */
-        suspended?: (boolean|null);
+        suspended?: (boolean | null);
 
         /** Conversation terminated */
-        terminated?: (boolean|null);
+        terminated?: (boolean | null);
 
         /** Conversation createdAt */
-        createdAt?: (number|Long|null);
+        createdAt?: (number | Long | null);
 
         /** Conversation createdBy */
-        createdBy?: (string|null);
+        createdBy?: (string | null);
 
         /** Conversation description */
-        description?: (string|null);
+        description?: (string | null);
 
         /** Conversation support */
-        support?: (boolean|null);
+        support?: (boolean | null);
 
         /** Conversation isParentGroup */
-        isParentGroup?: (boolean|null);
+        isParentGroup?: (boolean | null);
 
         /** Conversation parentGroupId */
-        parentGroupId?: (string|null);
+        parentGroupId?: (string | null);
 
         /** Conversation isDefaultSubgroup */
-        isDefaultSubgroup?: (boolean|null);
+        isDefaultSubgroup?: (boolean | null);
 
         /** Conversation displayName */
-        displayName?: (string|null);
+        displayName?: (string | null);
 
         /** Conversation pnJid */
-        pnJid?: (string|null);
+        pnJid?: (string | null);
 
         /** Conversation shareOwnPn */
-        shareOwnPn?: (boolean|null);
+        shareOwnPn?: (boolean | null);
 
         /** Conversation pnhDuplicateLidThread */
-        pnhDuplicateLidThread?: (boolean|null);
+        pnhDuplicateLidThread?: (boolean | null);
 
         /** Conversation lidJid */
-        lidJid?: (string|null);
+        lidJid?: (string | null);
 
         /** Conversation username */
-        username?: (string|null);
+        username?: (string | null);
 
         /** Conversation lidOriginType */
-        lidOriginType?: (string|null);
+        lidOriginType?: (string | null);
 
         /** Conversation commentsCount */
-        commentsCount?: (number|null);
+        commentsCount?: (number | null);
     }
 
     /** Represents a Conversation. */
@@ -5282,7 +5282,7 @@ export namespace proto {
         public oldJid: string;
 
         /** Conversation lastMsgTimestamp. */
-        public lastMsgTimestamp: (number|Long);
+        public lastMsgTimestamp: (number | Long);
 
         /** Conversation unreadCount. */
         public unreadCount: number;
@@ -5297,13 +5297,13 @@ export namespace proto {
         public ephemeralExpiration: number;
 
         /** Conversation ephemeralSettingTimestamp. */
-        public ephemeralSettingTimestamp: (number|Long);
+        public ephemeralSettingTimestamp: (number | Long);
 
         /** Conversation endOfHistoryTransferType. */
         public endOfHistoryTransferType: proto.Conversation.EndOfHistoryTransferType;
 
         /** Conversation conversationTimestamp. */
-        public conversationTimestamp: (number|Long);
+        public conversationTimestamp: (number | Long);
 
         /** Conversation name. */
         public name: string;
@@ -5318,7 +5318,7 @@ export namespace proto {
         public archived: boolean;
 
         /** Conversation disappearingMode. */
-        public disappearingMode?: (proto.IDisappearingMode|null);
+        public disappearingMode?: (proto.IDisappearingMode | null);
 
         /** Conversation unreadMentionCount. */
         public unreadMentionCount: number;
@@ -5333,7 +5333,7 @@ export namespace proto {
         public tcToken: Uint8Array;
 
         /** Conversation tcTokenTimestamp. */
-        public tcTokenTimestamp: (number|Long);
+        public tcTokenTimestamp: (number | Long);
 
         /** Conversation contactPrimaryIdentityKey. */
         public contactPrimaryIdentityKey: Uint8Array;
@@ -5342,16 +5342,16 @@ export namespace proto {
         public pinned: number;
 
         /** Conversation muteEndTime. */
-        public muteEndTime: (number|Long);
+        public muteEndTime: (number | Long);
 
         /** Conversation wallpaper. */
-        public wallpaper?: (proto.IWallpaperSettings|null);
+        public wallpaper?: (proto.IWallpaperSettings | null);
 
         /** Conversation mediaVisibility. */
         public mediaVisibility: proto.MediaVisibility;
 
         /** Conversation tcTokenSenderTimestamp. */
-        public tcTokenSenderTimestamp: (number|Long);
+        public tcTokenSenderTimestamp: (number | Long);
 
         /** Conversation suspended. */
         public suspended: boolean;
@@ -5360,7 +5360,7 @@ export namespace proto {
         public terminated: boolean;
 
         /** Conversation createdAt. */
-        public createdAt: (number|Long);
+        public createdAt: (number | Long);
 
         /** Conversation createdBy. */
         public createdBy: string;
@@ -5435,7 +5435,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Conversation;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Conversation;
 
         /**
          * Decodes a Conversation message from the specified reader or buffer, length delimited.
@@ -5444,14 +5444,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Conversation;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Conversation;
 
         /**
          * Verifies a Conversation message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a Conversation message from a plain object. Also converts values to their respective internal types.
@@ -5489,10 +5489,10 @@ export namespace proto {
     interface IDeviceConsistencyCodeMessage {
 
         /** DeviceConsistencyCodeMessage generation */
-        generation?: (number|null);
+        generation?: (number | null);
 
         /** DeviceConsistencyCodeMessage signature */
-        signature?: (Uint8Array|null);
+        signature?: (Uint8Array | null);
     }
 
     /** Represents a DeviceConsistencyCodeMessage. */
@@ -5541,7 +5541,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.DeviceConsistencyCodeMessage;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.DeviceConsistencyCodeMessage;
 
         /**
          * Decodes a DeviceConsistencyCodeMessage message from the specified reader or buffer, length delimited.
@@ -5550,14 +5550,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.DeviceConsistencyCodeMessage;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.DeviceConsistencyCodeMessage;
 
         /**
          * Verifies a DeviceConsistencyCodeMessage message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a DeviceConsistencyCodeMessage message from a plain object. Also converts values to their respective internal types.
@@ -5585,28 +5585,28 @@ export namespace proto {
     interface IDeviceListMetadata {
 
         /** DeviceListMetadata senderKeyHash */
-        senderKeyHash?: (Uint8Array|null);
+        senderKeyHash?: (Uint8Array | null);
 
         /** DeviceListMetadata senderTimestamp */
-        senderTimestamp?: (number|Long|null);
+        senderTimestamp?: (number | Long | null);
 
         /** DeviceListMetadata senderKeyIndexes */
-        senderKeyIndexes?: (number[]|null);
+        senderKeyIndexes?: (number[] | null);
 
         /** DeviceListMetadata senderAccountType */
-        senderAccountType?: (proto.ADVEncryptionType|null);
+        senderAccountType?: (proto.ADVEncryptionType | null);
 
         /** DeviceListMetadata receiverAccountType */
-        receiverAccountType?: (proto.ADVEncryptionType|null);
+        receiverAccountType?: (proto.ADVEncryptionType | null);
 
         /** DeviceListMetadata recipientKeyHash */
-        recipientKeyHash?: (Uint8Array|null);
+        recipientKeyHash?: (Uint8Array | null);
 
         /** DeviceListMetadata recipientTimestamp */
-        recipientTimestamp?: (number|Long|null);
+        recipientTimestamp?: (number | Long | null);
 
         /** DeviceListMetadata recipientKeyIndexes */
-        recipientKeyIndexes?: (number[]|null);
+        recipientKeyIndexes?: (number[] | null);
     }
 
     /** Represents a DeviceListMetadata. */
@@ -5622,7 +5622,7 @@ export namespace proto {
         public senderKeyHash: Uint8Array;
 
         /** DeviceListMetadata senderTimestamp. */
-        public senderTimestamp: (number|Long);
+        public senderTimestamp: (number | Long);
 
         /** DeviceListMetadata senderKeyIndexes. */
         public senderKeyIndexes: number[];
@@ -5637,7 +5637,7 @@ export namespace proto {
         public recipientKeyHash: Uint8Array;
 
         /** DeviceListMetadata recipientTimestamp. */
-        public recipientTimestamp: (number|Long);
+        public recipientTimestamp: (number | Long);
 
         /** DeviceListMetadata recipientKeyIndexes. */
         public recipientKeyIndexes: number[];
@@ -5673,7 +5673,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.DeviceListMetadata;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.DeviceListMetadata;
 
         /**
          * Decodes a DeviceListMetadata message from the specified reader or buffer, length delimited.
@@ -5682,14 +5682,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.DeviceListMetadata;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.DeviceListMetadata;
 
         /**
          * Verifies a DeviceListMetadata message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a DeviceListMetadata message from a plain object. Also converts values to their respective internal types.
@@ -5717,19 +5717,19 @@ export namespace proto {
     interface IDeviceProps {
 
         /** DeviceProps os */
-        os?: (string|null);
+        os?: (string | null);
 
         /** DeviceProps version */
-        version?: (proto.DeviceProps.IAppVersion|null);
+        version?: (proto.DeviceProps.IAppVersion | null);
 
         /** DeviceProps platformType */
-        platformType?: (proto.DeviceProps.PlatformType|null);
+        platformType?: (proto.DeviceProps.PlatformType | null);
 
         /** DeviceProps requireFullSync */
-        requireFullSync?: (boolean|null);
+        requireFullSync?: (boolean | null);
 
         /** DeviceProps historySyncConfig */
-        historySyncConfig?: (proto.DeviceProps.IHistorySyncConfig|null);
+        historySyncConfig?: (proto.DeviceProps.IHistorySyncConfig | null);
     }
 
     /** Represents a DeviceProps. */
@@ -5745,7 +5745,7 @@ export namespace proto {
         public os: string;
 
         /** DeviceProps version. */
-        public version?: (proto.DeviceProps.IAppVersion|null);
+        public version?: (proto.DeviceProps.IAppVersion | null);
 
         /** DeviceProps platformType. */
         public platformType: proto.DeviceProps.PlatformType;
@@ -5754,7 +5754,7 @@ export namespace proto {
         public requireFullSync: boolean;
 
         /** DeviceProps historySyncConfig. */
-        public historySyncConfig?: (proto.DeviceProps.IHistorySyncConfig|null);
+        public historySyncConfig?: (proto.DeviceProps.IHistorySyncConfig | null);
 
         /**
          * Creates a new DeviceProps instance using the specified properties.
@@ -5787,7 +5787,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.DeviceProps;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.DeviceProps;
 
         /**
          * Decodes a DeviceProps message from the specified reader or buffer, length delimited.
@@ -5796,14 +5796,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.DeviceProps;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.DeviceProps;
 
         /**
          * Verifies a DeviceProps message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a DeviceProps message from a plain object. Also converts values to their respective internal types.
@@ -5833,19 +5833,19 @@ export namespace proto {
         interface IAppVersion {
 
             /** AppVersion primary */
-            primary?: (number|null);
+            primary?: (number | null);
 
             /** AppVersion secondary */
-            secondary?: (number|null);
+            secondary?: (number | null);
 
             /** AppVersion tertiary */
-            tertiary?: (number|null);
+            tertiary?: (number | null);
 
             /** AppVersion quaternary */
-            quaternary?: (number|null);
+            quaternary?: (number | null);
 
             /** AppVersion quinary */
-            quinary?: (number|null);
+            quinary?: (number | null);
         }
 
         /** Represents an AppVersion. */
@@ -5903,7 +5903,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.DeviceProps.AppVersion;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.DeviceProps.AppVersion;
 
             /**
              * Decodes an AppVersion message from the specified reader or buffer, length delimited.
@@ -5912,14 +5912,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.DeviceProps.AppVersion;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.DeviceProps.AppVersion;
 
             /**
              * Verifies an AppVersion message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an AppVersion message from a plain object. Also converts values to their respective internal types.
@@ -5947,28 +5947,28 @@ export namespace proto {
         interface IHistorySyncConfig {
 
             /** HistorySyncConfig fullSyncDaysLimit */
-            fullSyncDaysLimit?: (number|null);
+            fullSyncDaysLimit?: (number | null);
 
             /** HistorySyncConfig fullSyncSizeMbLimit */
-            fullSyncSizeMbLimit?: (number|null);
+            fullSyncSizeMbLimit?: (number | null);
 
             /** HistorySyncConfig storageQuotaMb */
-            storageQuotaMb?: (number|null);
+            storageQuotaMb?: (number | null);
 
             /** HistorySyncConfig inlineInitialPayloadInE2EeMsg */
-            inlineInitialPayloadInE2EeMsg?: (boolean|null);
+            inlineInitialPayloadInE2EeMsg?: (boolean | null);
 
             /** HistorySyncConfig recentSyncDaysLimit */
-            recentSyncDaysLimit?: (number|null);
+            recentSyncDaysLimit?: (number | null);
 
             /** HistorySyncConfig supportCallLogHistory */
-            supportCallLogHistory?: (boolean|null);
+            supportCallLogHistory?: (boolean | null);
 
             /** HistorySyncConfig supportBotUserAgentChatHistory */
-            supportBotUserAgentChatHistory?: (boolean|null);
+            supportBotUserAgentChatHistory?: (boolean | null);
 
             /** HistorySyncConfig supportCagReactionsAndPolls */
-            supportCagReactionsAndPolls?: (boolean|null);
+            supportCagReactionsAndPolls?: (boolean | null);
         }
 
         /** Represents a HistorySyncConfig. */
@@ -6035,7 +6035,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.DeviceProps.HistorySyncConfig;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.DeviceProps.HistorySyncConfig;
 
             /**
              * Decodes a HistorySyncConfig message from the specified reader or buffer, length delimited.
@@ -6044,14 +6044,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.DeviceProps.HistorySyncConfig;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.DeviceProps.HistorySyncConfig;
 
             /**
              * Verifies a HistorySyncConfig message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a HistorySyncConfig message from a plain object. Also converts values to their respective internal types.
@@ -6107,16 +6107,16 @@ export namespace proto {
     interface IDisappearingMode {
 
         /** DisappearingMode initiator */
-        initiator?: (proto.DisappearingMode.Initiator|null);
+        initiator?: (proto.DisappearingMode.Initiator | null);
 
         /** DisappearingMode trigger */
-        trigger?: (proto.DisappearingMode.Trigger|null);
+        trigger?: (proto.DisappearingMode.Trigger | null);
 
         /** DisappearingMode initiatorDeviceJid */
-        initiatorDeviceJid?: (string|null);
+        initiatorDeviceJid?: (string | null);
 
         /** DisappearingMode initiatedByMe */
-        initiatedByMe?: (boolean|null);
+        initiatedByMe?: (boolean | null);
     }
 
     /** Represents a DisappearingMode. */
@@ -6171,7 +6171,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.DisappearingMode;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.DisappearingMode;
 
         /**
          * Decodes a DisappearingMode message from the specified reader or buffer, length delimited.
@@ -6180,14 +6180,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.DisappearingMode;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.DisappearingMode;
 
         /**
          * Verifies a DisappearingMode message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a DisappearingMode message from a plain object. Also converts values to their respective internal types.
@@ -6235,10 +6235,10 @@ export namespace proto {
     interface IEphemeralSetting {
 
         /** EphemeralSetting duration */
-        duration?: (number|null);
+        duration?: (number | null);
 
         /** EphemeralSetting timestamp */
-        timestamp?: (number|Long|null);
+        timestamp?: (number | Long | null);
     }
 
     /** Represents an EphemeralSetting. */
@@ -6254,7 +6254,7 @@ export namespace proto {
         public duration: number;
 
         /** EphemeralSetting timestamp. */
-        public timestamp: (number|Long);
+        public timestamp: (number | Long);
 
         /**
          * Creates a new EphemeralSetting instance using the specified properties.
@@ -6287,7 +6287,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.EphemeralSetting;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.EphemeralSetting;
 
         /**
          * Decodes an EphemeralSetting message from the specified reader or buffer, length delimited.
@@ -6296,14 +6296,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.EphemeralSetting;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.EphemeralSetting;
 
         /**
          * Verifies an EphemeralSetting message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates an EphemeralSetting message from a plain object. Also converts values to their respective internal types.
@@ -6331,16 +6331,16 @@ export namespace proto {
     interface IEventResponse {
 
         /** EventResponse eventResponseMessageKey */
-        eventResponseMessageKey?: (proto.IMessageKey|null);
+        eventResponseMessageKey?: (proto.IMessageKey | null);
 
         /** EventResponse timestampMs */
-        timestampMs?: (number|Long|null);
+        timestampMs?: (number | Long | null);
 
         /** EventResponse eventResponseMessage */
-        eventResponseMessage?: (proto.Message.IEventResponseMessage|null);
+        eventResponseMessage?: (proto.Message.IEventResponseMessage | null);
 
         /** EventResponse unread */
-        unread?: (boolean|null);
+        unread?: (boolean | null);
     }
 
     /** Represents an EventResponse. */
@@ -6353,13 +6353,13 @@ export namespace proto {
         constructor(properties?: proto.IEventResponse);
 
         /** EventResponse eventResponseMessageKey. */
-        public eventResponseMessageKey?: (proto.IMessageKey|null);
+        public eventResponseMessageKey?: (proto.IMessageKey | null);
 
         /** EventResponse timestampMs. */
-        public timestampMs: (number|Long);
+        public timestampMs: (number | Long);
 
         /** EventResponse eventResponseMessage. */
-        public eventResponseMessage?: (proto.Message.IEventResponseMessage|null);
+        public eventResponseMessage?: (proto.Message.IEventResponseMessage | null);
 
         /** EventResponse unread. */
         public unread: boolean;
@@ -6395,7 +6395,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.EventResponse;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.EventResponse;
 
         /**
          * Decodes an EventResponse message from the specified reader or buffer, length delimited.
@@ -6404,14 +6404,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.EventResponse;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.EventResponse;
 
         /**
          * Verifies an EventResponse message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates an EventResponse message from a plain object. Also converts values to their respective internal types.
@@ -6439,10 +6439,10 @@ export namespace proto {
     interface IExitCode {
 
         /** ExitCode code */
-        code?: (number|Long|null);
+        code?: (number | Long | null);
 
         /** ExitCode text */
-        text?: (string|null);
+        text?: (string | null);
     }
 
     /** Represents an ExitCode. */
@@ -6455,7 +6455,7 @@ export namespace proto {
         constructor(properties?: proto.IExitCode);
 
         /** ExitCode code. */
-        public code: (number|Long);
+        public code: (number | Long);
 
         /** ExitCode text. */
         public text: string;
@@ -6491,7 +6491,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ExitCode;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ExitCode;
 
         /**
          * Decodes an ExitCode message from the specified reader or buffer, length delimited.
@@ -6500,14 +6500,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ExitCode;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ExitCode;
 
         /**
          * Verifies an ExitCode message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates an ExitCode message from a plain object. Also converts values to their respective internal types.
@@ -6535,22 +6535,22 @@ export namespace proto {
     interface IExternalBlobReference {
 
         /** ExternalBlobReference mediaKey */
-        mediaKey?: (Uint8Array|null);
+        mediaKey?: (Uint8Array | null);
 
         /** ExternalBlobReference directPath */
-        directPath?: (string|null);
+        directPath?: (string | null);
 
         /** ExternalBlobReference handle */
-        handle?: (string|null);
+        handle?: (string | null);
 
         /** ExternalBlobReference fileSizeBytes */
-        fileSizeBytes?: (number|Long|null);
+        fileSizeBytes?: (number | Long | null);
 
         /** ExternalBlobReference fileSha256 */
-        fileSha256?: (Uint8Array|null);
+        fileSha256?: (Uint8Array | null);
 
         /** ExternalBlobReference fileEncSha256 */
-        fileEncSha256?: (Uint8Array|null);
+        fileEncSha256?: (Uint8Array | null);
     }
 
     /** Represents an ExternalBlobReference. */
@@ -6572,7 +6572,7 @@ export namespace proto {
         public handle: string;
 
         /** ExternalBlobReference fileSizeBytes. */
-        public fileSizeBytes: (number|Long);
+        public fileSizeBytes: (number | Long);
 
         /** ExternalBlobReference fileSha256. */
         public fileSha256: Uint8Array;
@@ -6611,7 +6611,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ExternalBlobReference;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ExternalBlobReference;
 
         /**
          * Decodes an ExternalBlobReference message from the specified reader or buffer, length delimited.
@@ -6620,14 +6620,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ExternalBlobReference;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ExternalBlobReference;
 
         /**
          * Verifies an ExternalBlobReference message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates an ExternalBlobReference message from a plain object. Also converts values to their respective internal types.
@@ -6655,58 +6655,58 @@ export namespace proto {
     interface IGlobalSettings {
 
         /** GlobalSettings lightThemeWallpaper */
-        lightThemeWallpaper?: (proto.IWallpaperSettings|null);
+        lightThemeWallpaper?: (proto.IWallpaperSettings | null);
 
         /** GlobalSettings mediaVisibility */
-        mediaVisibility?: (proto.MediaVisibility|null);
+        mediaVisibility?: (proto.MediaVisibility | null);
 
         /** GlobalSettings darkThemeWallpaper */
-        darkThemeWallpaper?: (proto.IWallpaperSettings|null);
+        darkThemeWallpaper?: (proto.IWallpaperSettings | null);
 
         /** GlobalSettings autoDownloadWiFi */
-        autoDownloadWiFi?: (proto.IAutoDownloadSettings|null);
+        autoDownloadWiFi?: (proto.IAutoDownloadSettings | null);
 
         /** GlobalSettings autoDownloadCellular */
-        autoDownloadCellular?: (proto.IAutoDownloadSettings|null);
+        autoDownloadCellular?: (proto.IAutoDownloadSettings | null);
 
         /** GlobalSettings autoDownloadRoaming */
-        autoDownloadRoaming?: (proto.IAutoDownloadSettings|null);
+        autoDownloadRoaming?: (proto.IAutoDownloadSettings | null);
 
         /** GlobalSettings showIndividualNotificationsPreview */
-        showIndividualNotificationsPreview?: (boolean|null);
+        showIndividualNotificationsPreview?: (boolean | null);
 
         /** GlobalSettings showGroupNotificationsPreview */
-        showGroupNotificationsPreview?: (boolean|null);
+        showGroupNotificationsPreview?: (boolean | null);
 
         /** GlobalSettings disappearingModeDuration */
-        disappearingModeDuration?: (number|null);
+        disappearingModeDuration?: (number | null);
 
         /** GlobalSettings disappearingModeTimestamp */
-        disappearingModeTimestamp?: (number|Long|null);
+        disappearingModeTimestamp?: (number | Long | null);
 
         /** GlobalSettings avatarUserSettings */
-        avatarUserSettings?: (proto.IAvatarUserSettings|null);
+        avatarUserSettings?: (proto.IAvatarUserSettings | null);
 
         /** GlobalSettings fontSize */
-        fontSize?: (number|null);
+        fontSize?: (number | null);
 
         /** GlobalSettings securityNotifications */
-        securityNotifications?: (boolean|null);
+        securityNotifications?: (boolean | null);
 
         /** GlobalSettings autoUnarchiveChats */
-        autoUnarchiveChats?: (boolean|null);
+        autoUnarchiveChats?: (boolean | null);
 
         /** GlobalSettings videoQualityMode */
-        videoQualityMode?: (number|null);
+        videoQualityMode?: (number | null);
 
         /** GlobalSettings photoQualityMode */
-        photoQualityMode?: (number|null);
+        photoQualityMode?: (number | null);
 
         /** GlobalSettings individualNotificationSettings */
-        individualNotificationSettings?: (proto.INotificationSettings|null);
+        individualNotificationSettings?: (proto.INotificationSettings | null);
 
         /** GlobalSettings groupNotificationSettings */
-        groupNotificationSettings?: (proto.INotificationSettings|null);
+        groupNotificationSettings?: (proto.INotificationSettings | null);
     }
 
     /** Represents a GlobalSettings. */
@@ -6719,22 +6719,22 @@ export namespace proto {
         constructor(properties?: proto.IGlobalSettings);
 
         /** GlobalSettings lightThemeWallpaper. */
-        public lightThemeWallpaper?: (proto.IWallpaperSettings|null);
+        public lightThemeWallpaper?: (proto.IWallpaperSettings | null);
 
         /** GlobalSettings mediaVisibility. */
         public mediaVisibility: proto.MediaVisibility;
 
         /** GlobalSettings darkThemeWallpaper. */
-        public darkThemeWallpaper?: (proto.IWallpaperSettings|null);
+        public darkThemeWallpaper?: (proto.IWallpaperSettings | null);
 
         /** GlobalSettings autoDownloadWiFi. */
-        public autoDownloadWiFi?: (proto.IAutoDownloadSettings|null);
+        public autoDownloadWiFi?: (proto.IAutoDownloadSettings | null);
 
         /** GlobalSettings autoDownloadCellular. */
-        public autoDownloadCellular?: (proto.IAutoDownloadSettings|null);
+        public autoDownloadCellular?: (proto.IAutoDownloadSettings | null);
 
         /** GlobalSettings autoDownloadRoaming. */
-        public autoDownloadRoaming?: (proto.IAutoDownloadSettings|null);
+        public autoDownloadRoaming?: (proto.IAutoDownloadSettings | null);
 
         /** GlobalSettings showIndividualNotificationsPreview. */
         public showIndividualNotificationsPreview: boolean;
@@ -6746,10 +6746,10 @@ export namespace proto {
         public disappearingModeDuration: number;
 
         /** GlobalSettings disappearingModeTimestamp. */
-        public disappearingModeTimestamp: (number|Long);
+        public disappearingModeTimestamp: (number | Long);
 
         /** GlobalSettings avatarUserSettings. */
-        public avatarUserSettings?: (proto.IAvatarUserSettings|null);
+        public avatarUserSettings?: (proto.IAvatarUserSettings | null);
 
         /** GlobalSettings fontSize. */
         public fontSize: number;
@@ -6767,10 +6767,10 @@ export namespace proto {
         public photoQualityMode: number;
 
         /** GlobalSettings individualNotificationSettings. */
-        public individualNotificationSettings?: (proto.INotificationSettings|null);
+        public individualNotificationSettings?: (proto.INotificationSettings | null);
 
         /** GlobalSettings groupNotificationSettings. */
-        public groupNotificationSettings?: (proto.INotificationSettings|null);
+        public groupNotificationSettings?: (proto.INotificationSettings | null);
 
         /**
          * Creates a new GlobalSettings instance using the specified properties.
@@ -6803,7 +6803,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.GlobalSettings;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.GlobalSettings;
 
         /**
          * Decodes a GlobalSettings message from the specified reader or buffer, length delimited.
@@ -6812,14 +6812,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.GlobalSettings;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.GlobalSettings;
 
         /**
          * Verifies a GlobalSettings message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a GlobalSettings message from a plain object. Also converts values to their respective internal types.
@@ -6847,10 +6847,10 @@ export namespace proto {
     interface IGroupMention {
 
         /** GroupMention groupJid */
-        groupJid?: (string|null);
+        groupJid?: (string | null);
 
         /** GroupMention groupSubject */
-        groupSubject?: (string|null);
+        groupSubject?: (string | null);
     }
 
     /** Represents a GroupMention. */
@@ -6899,7 +6899,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.GroupMention;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.GroupMention;
 
         /**
          * Decodes a GroupMention message from the specified reader or buffer, length delimited.
@@ -6908,14 +6908,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.GroupMention;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.GroupMention;
 
         /**
          * Verifies a GroupMention message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a GroupMention message from a plain object. Also converts values to their respective internal types.
@@ -6946,7 +6946,7 @@ export namespace proto {
         userJid: string;
 
         /** GroupParticipant rank */
-        rank?: (proto.GroupParticipant.Rank|null);
+        rank?: (proto.GroupParticipant.Rank | null);
     }
 
     /** Represents a GroupParticipant. */
@@ -6995,7 +6995,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.GroupParticipant;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.GroupParticipant;
 
         /**
          * Decodes a GroupParticipant message from the specified reader or buffer, length delimited.
@@ -7004,14 +7004,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.GroupParticipant;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.GroupParticipant;
 
         /**
          * Verifies a GroupParticipant message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a GroupParticipant message from a plain object. Also converts values to their respective internal types.
@@ -7049,13 +7049,13 @@ export namespace proto {
     interface IHandshakeMessage {
 
         /** HandshakeMessage clientHello */
-        clientHello?: (proto.HandshakeMessage.IClientHello|null);
+        clientHello?: (proto.HandshakeMessage.IClientHello | null);
 
         /** HandshakeMessage serverHello */
-        serverHello?: (proto.HandshakeMessage.IServerHello|null);
+        serverHello?: (proto.HandshakeMessage.IServerHello | null);
 
         /** HandshakeMessage clientFinish */
-        clientFinish?: (proto.HandshakeMessage.IClientFinish|null);
+        clientFinish?: (proto.HandshakeMessage.IClientFinish | null);
     }
 
     /** Represents a HandshakeMessage. */
@@ -7068,13 +7068,13 @@ export namespace proto {
         constructor(properties?: proto.IHandshakeMessage);
 
         /** HandshakeMessage clientHello. */
-        public clientHello?: (proto.HandshakeMessage.IClientHello|null);
+        public clientHello?: (proto.HandshakeMessage.IClientHello | null);
 
         /** HandshakeMessage serverHello. */
-        public serverHello?: (proto.HandshakeMessage.IServerHello|null);
+        public serverHello?: (proto.HandshakeMessage.IServerHello | null);
 
         /** HandshakeMessage clientFinish. */
-        public clientFinish?: (proto.HandshakeMessage.IClientFinish|null);
+        public clientFinish?: (proto.HandshakeMessage.IClientFinish | null);
 
         /**
          * Creates a new HandshakeMessage instance using the specified properties.
@@ -7107,7 +7107,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.HandshakeMessage;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.HandshakeMessage;
 
         /**
          * Decodes a HandshakeMessage message from the specified reader or buffer, length delimited.
@@ -7116,14 +7116,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.HandshakeMessage;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.HandshakeMessage;
 
         /**
          * Verifies a HandshakeMessage message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a HandshakeMessage message from a plain object. Also converts values to their respective internal types.
@@ -7153,10 +7153,10 @@ export namespace proto {
         interface IClientFinish {
 
             /** ClientFinish static */
-            "static"?: (Uint8Array|null);
+            "static"?: (Uint8Array | null);
 
             /** ClientFinish payload */
-            payload?: (Uint8Array|null);
+            payload?: (Uint8Array | null);
         }
 
         /** Represents a ClientFinish. */
@@ -7205,7 +7205,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.HandshakeMessage.ClientFinish;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.HandshakeMessage.ClientFinish;
 
             /**
              * Decodes a ClientFinish message from the specified reader or buffer, length delimited.
@@ -7214,14 +7214,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.HandshakeMessage.ClientFinish;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.HandshakeMessage.ClientFinish;
 
             /**
              * Verifies a ClientFinish message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ClientFinish message from a plain object. Also converts values to their respective internal types.
@@ -7249,13 +7249,13 @@ export namespace proto {
         interface IClientHello {
 
             /** ClientHello ephemeral */
-            ephemeral?: (Uint8Array|null);
+            ephemeral?: (Uint8Array | null);
 
             /** ClientHello static */
-            "static"?: (Uint8Array|null);
+            "static"?: (Uint8Array | null);
 
             /** ClientHello payload */
-            payload?: (Uint8Array|null);
+            payload?: (Uint8Array | null);
         }
 
         /** Represents a ClientHello. */
@@ -7307,7 +7307,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.HandshakeMessage.ClientHello;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.HandshakeMessage.ClientHello;
 
             /**
              * Decodes a ClientHello message from the specified reader or buffer, length delimited.
@@ -7316,14 +7316,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.HandshakeMessage.ClientHello;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.HandshakeMessage.ClientHello;
 
             /**
              * Verifies a ClientHello message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ClientHello message from a plain object. Also converts values to their respective internal types.
@@ -7351,13 +7351,13 @@ export namespace proto {
         interface IServerHello {
 
             /** ServerHello ephemeral */
-            ephemeral?: (Uint8Array|null);
+            ephemeral?: (Uint8Array | null);
 
             /** ServerHello static */
-            "static"?: (Uint8Array|null);
+            "static"?: (Uint8Array | null);
 
             /** ServerHello payload */
-            payload?: (Uint8Array|null);
+            payload?: (Uint8Array | null);
         }
 
         /** Represents a ServerHello. */
@@ -7409,7 +7409,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.HandshakeMessage.ServerHello;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.HandshakeMessage.ServerHello;
 
             /**
              * Decodes a ServerHello message from the specified reader or buffer, length delimited.
@@ -7418,14 +7418,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.HandshakeMessage.ServerHello;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.HandshakeMessage.ServerHello;
 
             /**
              * Verifies a ServerHello message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ServerHello message from a plain object. Also converts values to their respective internal types.
@@ -7457,43 +7457,43 @@ export namespace proto {
         syncType: proto.HistorySync.HistorySyncType;
 
         /** HistorySync conversations */
-        conversations?: (proto.IConversation[]|null);
+        conversations?: (proto.IConversation[] | null);
 
         /** HistorySync statusV3Messages */
-        statusV3Messages?: (proto.IWebMessageInfo[]|null);
+        statusV3Messages?: (proto.IWebMessageInfo[] | null);
 
         /** HistorySync chunkOrder */
-        chunkOrder?: (number|null);
+        chunkOrder?: (number | null);
 
         /** HistorySync progress */
-        progress?: (number|null);
+        progress?: (number | null);
 
         /** HistorySync pushnames */
-        pushnames?: (proto.IPushname[]|null);
+        pushnames?: (proto.IPushname[] | null);
 
         /** HistorySync globalSettings */
-        globalSettings?: (proto.IGlobalSettings|null);
+        globalSettings?: (proto.IGlobalSettings | null);
 
         /** HistorySync threadIdUserSecret */
-        threadIdUserSecret?: (Uint8Array|null);
+        threadIdUserSecret?: (Uint8Array | null);
 
         /** HistorySync threadDsTimeframeOffset */
-        threadDsTimeframeOffset?: (number|null);
+        threadDsTimeframeOffset?: (number | null);
 
         /** HistorySync recentStickers */
-        recentStickers?: (proto.IStickerMetadata[]|null);
+        recentStickers?: (proto.IStickerMetadata[] | null);
 
         /** HistorySync pastParticipants */
-        pastParticipants?: (proto.IPastParticipants[]|null);
+        pastParticipants?: (proto.IPastParticipants[] | null);
 
         /** HistorySync callLogRecords */
-        callLogRecords?: (proto.ICallLogRecord[]|null);
+        callLogRecords?: (proto.ICallLogRecord[] | null);
 
         /** HistorySync aiWaitListState */
-        aiWaitListState?: (proto.HistorySync.BotAIWaitListState|null);
+        aiWaitListState?: (proto.HistorySync.BotAIWaitListState | null);
 
         /** HistorySync phoneNumberToLidMappings */
-        phoneNumberToLidMappings?: (proto.IPhoneNumberToLIDMapping[]|null);
+        phoneNumberToLidMappings?: (proto.IPhoneNumberToLIDMapping[] | null);
     }
 
     /** Represents a HistorySync. */
@@ -7524,7 +7524,7 @@ export namespace proto {
         public pushnames: proto.IPushname[];
 
         /** HistorySync globalSettings. */
-        public globalSettings?: (proto.IGlobalSettings|null);
+        public globalSettings?: (proto.IGlobalSettings | null);
 
         /** HistorySync threadIdUserSecret. */
         public threadIdUserSecret: Uint8Array;
@@ -7578,7 +7578,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.HistorySync;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.HistorySync;
 
         /**
          * Decodes a HistorySync message from the specified reader or buffer, length delimited.
@@ -7587,14 +7587,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.HistorySync;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.HistorySync;
 
         /**
          * Verifies a HistorySync message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a HistorySync message from a plain object. Also converts values to their respective internal types.
@@ -7642,10 +7642,10 @@ export namespace proto {
     interface IHistorySyncMsg {
 
         /** HistorySyncMsg message */
-        message?: (proto.IWebMessageInfo|null);
+        message?: (proto.IWebMessageInfo | null);
 
         /** HistorySyncMsg msgOrderId */
-        msgOrderId?: (number|Long|null);
+        msgOrderId?: (number | Long | null);
     }
 
     /** Represents a HistorySyncMsg. */
@@ -7658,10 +7658,10 @@ export namespace proto {
         constructor(properties?: proto.IHistorySyncMsg);
 
         /** HistorySyncMsg message. */
-        public message?: (proto.IWebMessageInfo|null);
+        public message?: (proto.IWebMessageInfo | null);
 
         /** HistorySyncMsg msgOrderId. */
-        public msgOrderId: (number|Long);
+        public msgOrderId: (number | Long);
 
         /**
          * Creates a new HistorySyncMsg instance using the specified properties.
@@ -7694,7 +7694,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.HistorySyncMsg;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.HistorySyncMsg;
 
         /**
          * Decodes a HistorySyncMsg message from the specified reader or buffer, length delimited.
@@ -7703,14 +7703,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.HistorySyncMsg;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.HistorySyncMsg;
 
         /**
          * Verifies a HistorySyncMsg message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a HistorySyncMsg message from a plain object. Also converts values to their respective internal types.
@@ -7738,16 +7738,16 @@ export namespace proto {
     interface IHydratedTemplateButton {
 
         /** HydratedTemplateButton index */
-        index?: (number|null);
+        index?: (number | null);
 
         /** HydratedTemplateButton quickReplyButton */
-        quickReplyButton?: (proto.HydratedTemplateButton.IHydratedQuickReplyButton|null);
+        quickReplyButton?: (proto.HydratedTemplateButton.IHydratedQuickReplyButton | null);
 
         /** HydratedTemplateButton urlButton */
-        urlButton?: (proto.HydratedTemplateButton.IHydratedURLButton|null);
+        urlButton?: (proto.HydratedTemplateButton.IHydratedURLButton | null);
 
         /** HydratedTemplateButton callButton */
-        callButton?: (proto.HydratedTemplateButton.IHydratedCallButton|null);
+        callButton?: (proto.HydratedTemplateButton.IHydratedCallButton | null);
     }
 
     /** Represents a HydratedTemplateButton. */
@@ -7763,16 +7763,16 @@ export namespace proto {
         public index: number;
 
         /** HydratedTemplateButton quickReplyButton. */
-        public quickReplyButton?: (proto.HydratedTemplateButton.IHydratedQuickReplyButton|null);
+        public quickReplyButton?: (proto.HydratedTemplateButton.IHydratedQuickReplyButton | null);
 
         /** HydratedTemplateButton urlButton. */
-        public urlButton?: (proto.HydratedTemplateButton.IHydratedURLButton|null);
+        public urlButton?: (proto.HydratedTemplateButton.IHydratedURLButton | null);
 
         /** HydratedTemplateButton callButton. */
-        public callButton?: (proto.HydratedTemplateButton.IHydratedCallButton|null);
+        public callButton?: (proto.HydratedTemplateButton.IHydratedCallButton | null);
 
         /** HydratedTemplateButton hydratedButton. */
-        public hydratedButton?: ("quickReplyButton"|"urlButton"|"callButton");
+        public hydratedButton?: ("quickReplyButton" | "urlButton" | "callButton");
 
         /**
          * Creates a new HydratedTemplateButton instance using the specified properties.
@@ -7805,7 +7805,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.HydratedTemplateButton;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.HydratedTemplateButton;
 
         /**
          * Decodes a HydratedTemplateButton message from the specified reader or buffer, length delimited.
@@ -7814,14 +7814,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.HydratedTemplateButton;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.HydratedTemplateButton;
 
         /**
          * Verifies a HydratedTemplateButton message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a HydratedTemplateButton message from a plain object. Also converts values to their respective internal types.
@@ -7851,10 +7851,10 @@ export namespace proto {
         interface IHydratedCallButton {
 
             /** HydratedCallButton displayText */
-            displayText?: (string|null);
+            displayText?: (string | null);
 
             /** HydratedCallButton phoneNumber */
-            phoneNumber?: (string|null);
+            phoneNumber?: (string | null);
         }
 
         /** Represents a HydratedCallButton. */
@@ -7903,7 +7903,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.HydratedTemplateButton.HydratedCallButton;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.HydratedTemplateButton.HydratedCallButton;
 
             /**
              * Decodes a HydratedCallButton message from the specified reader or buffer, length delimited.
@@ -7912,14 +7912,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.HydratedTemplateButton.HydratedCallButton;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.HydratedTemplateButton.HydratedCallButton;
 
             /**
              * Verifies a HydratedCallButton message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a HydratedCallButton message from a plain object. Also converts values to their respective internal types.
@@ -7947,10 +7947,10 @@ export namespace proto {
         interface IHydratedQuickReplyButton {
 
             /** HydratedQuickReplyButton displayText */
-            displayText?: (string|null);
+            displayText?: (string | null);
 
             /** HydratedQuickReplyButton id */
-            id?: (string|null);
+            id?: (string | null);
         }
 
         /** Represents a HydratedQuickReplyButton. */
@@ -7999,7 +7999,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.HydratedTemplateButton.HydratedQuickReplyButton;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.HydratedTemplateButton.HydratedQuickReplyButton;
 
             /**
              * Decodes a HydratedQuickReplyButton message from the specified reader or buffer, length delimited.
@@ -8008,14 +8008,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.HydratedTemplateButton.HydratedQuickReplyButton;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.HydratedTemplateButton.HydratedQuickReplyButton;
 
             /**
              * Verifies a HydratedQuickReplyButton message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a HydratedQuickReplyButton message from a plain object. Also converts values to their respective internal types.
@@ -8043,16 +8043,16 @@ export namespace proto {
         interface IHydratedURLButton {
 
             /** HydratedURLButton displayText */
-            displayText?: (string|null);
+            displayText?: (string | null);
 
             /** HydratedURLButton url */
-            url?: (string|null);
+            url?: (string | null);
 
             /** HydratedURLButton consentedUsersUrl */
-            consentedUsersUrl?: (string|null);
+            consentedUsersUrl?: (string | null);
 
             /** HydratedURLButton webviewPresentation */
-            webviewPresentation?: (proto.HydratedTemplateButton.HydratedURLButton.WebviewPresentationType|null);
+            webviewPresentation?: (proto.HydratedTemplateButton.HydratedURLButton.WebviewPresentationType | null);
         }
 
         /** Represents a HydratedURLButton. */
@@ -8107,7 +8107,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.HydratedTemplateButton.HydratedURLButton;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.HydratedTemplateButton.HydratedURLButton;
 
             /**
              * Decodes a HydratedURLButton message from the specified reader or buffer, length delimited.
@@ -8116,14 +8116,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.HydratedTemplateButton.HydratedURLButton;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.HydratedTemplateButton.HydratedURLButton;
 
             /**
              * Verifies a HydratedURLButton message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a HydratedURLButton message from a plain object. Also converts values to their respective internal types.
@@ -8162,10 +8162,10 @@ export namespace proto {
     interface IIdentityKeyPairStructure {
 
         /** IdentityKeyPairStructure publicKey */
-        publicKey?: (Uint8Array|null);
+        publicKey?: (Uint8Array | null);
 
         /** IdentityKeyPairStructure privateKey */
-        privateKey?: (Uint8Array|null);
+        privateKey?: (Uint8Array | null);
     }
 
     /** Represents an IdentityKeyPairStructure. */
@@ -8214,7 +8214,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.IdentityKeyPairStructure;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.IdentityKeyPairStructure;
 
         /**
          * Decodes an IdentityKeyPairStructure message from the specified reader or buffer, length delimited.
@@ -8223,14 +8223,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.IdentityKeyPairStructure;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.IdentityKeyPairStructure;
 
         /**
          * Verifies an IdentityKeyPairStructure message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates an IdentityKeyPairStructure message from a plain object. Also converts values to their respective internal types.
@@ -8258,16 +8258,16 @@ export namespace proto {
     interface IInteractiveAnnotation {
 
         /** InteractiveAnnotation polygonVertices */
-        polygonVertices?: (proto.IPoint[]|null);
+        polygonVertices?: (proto.IPoint[] | null);
 
         /** InteractiveAnnotation shouldSkipConfirmation */
-        shouldSkipConfirmation?: (boolean|null);
+        shouldSkipConfirmation?: (boolean | null);
 
         /** InteractiveAnnotation location */
-        location?: (proto.ILocation|null);
+        location?: (proto.ILocation | null);
 
         /** InteractiveAnnotation newsletter */
-        newsletter?: (proto.ContextInfo.IForwardedNewsletterMessageInfo|null);
+        newsletter?: (proto.ContextInfo.IForwardedNewsletterMessageInfo | null);
     }
 
     /** Represents an InteractiveAnnotation. */
@@ -8286,13 +8286,13 @@ export namespace proto {
         public shouldSkipConfirmation: boolean;
 
         /** InteractiveAnnotation location. */
-        public location?: (proto.ILocation|null);
+        public location?: (proto.ILocation | null);
 
         /** InteractiveAnnotation newsletter. */
-        public newsletter?: (proto.ContextInfo.IForwardedNewsletterMessageInfo|null);
+        public newsletter?: (proto.ContextInfo.IForwardedNewsletterMessageInfo | null);
 
         /** InteractiveAnnotation action. */
-        public action?: ("location"|"newsletter");
+        public action?: ("location" | "newsletter");
 
         /**
          * Creates a new InteractiveAnnotation instance using the specified properties.
@@ -8325,7 +8325,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.InteractiveAnnotation;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.InteractiveAnnotation;
 
         /**
          * Decodes an InteractiveAnnotation message from the specified reader or buffer, length delimited.
@@ -8334,14 +8334,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.InteractiveAnnotation;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.InteractiveAnnotation;
 
         /**
          * Verifies an InteractiveAnnotation message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates an InteractiveAnnotation message from a plain object. Also converts values to their respective internal types.
@@ -8369,22 +8369,22 @@ export namespace proto {
     interface IKeepInChat {
 
         /** KeepInChat keepType */
-        keepType?: (proto.KeepType|null);
+        keepType?: (proto.KeepType | null);
 
         /** KeepInChat serverTimestamp */
-        serverTimestamp?: (number|Long|null);
+        serverTimestamp?: (number | Long | null);
 
         /** KeepInChat key */
-        key?: (proto.IMessageKey|null);
+        key?: (proto.IMessageKey | null);
 
         /** KeepInChat deviceJid */
-        deviceJid?: (string|null);
+        deviceJid?: (string | null);
 
         /** KeepInChat clientTimestampMs */
-        clientTimestampMs?: (number|Long|null);
+        clientTimestampMs?: (number | Long | null);
 
         /** KeepInChat serverTimestampMs */
-        serverTimestampMs?: (number|Long|null);
+        serverTimestampMs?: (number | Long | null);
     }
 
     /** Represents a KeepInChat. */
@@ -8400,19 +8400,19 @@ export namespace proto {
         public keepType: proto.KeepType;
 
         /** KeepInChat serverTimestamp. */
-        public serverTimestamp: (number|Long);
+        public serverTimestamp: (number | Long);
 
         /** KeepInChat key. */
-        public key?: (proto.IMessageKey|null);
+        public key?: (proto.IMessageKey | null);
 
         /** KeepInChat deviceJid. */
         public deviceJid: string;
 
         /** KeepInChat clientTimestampMs. */
-        public clientTimestampMs: (number|Long);
+        public clientTimestampMs: (number | Long);
 
         /** KeepInChat serverTimestampMs. */
-        public serverTimestampMs: (number|Long);
+        public serverTimestampMs: (number | Long);
 
         /**
          * Creates a new KeepInChat instance using the specified properties.
@@ -8445,7 +8445,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.KeepInChat;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.KeepInChat;
 
         /**
          * Decodes a KeepInChat message from the specified reader or buffer, length delimited.
@@ -8454,14 +8454,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.KeepInChat;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.KeepInChat;
 
         /**
          * Verifies a KeepInChat message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a KeepInChat message from a plain object. Also converts values to their respective internal types.
@@ -8496,19 +8496,19 @@ export namespace proto {
     interface IKeyExchangeMessage {
 
         /** KeyExchangeMessage id */
-        id?: (number|null);
+        id?: (number | null);
 
         /** KeyExchangeMessage baseKey */
-        baseKey?: (Uint8Array|null);
+        baseKey?: (Uint8Array | null);
 
         /** KeyExchangeMessage ratchetKey */
-        ratchetKey?: (Uint8Array|null);
+        ratchetKey?: (Uint8Array | null);
 
         /** KeyExchangeMessage identityKey */
-        identityKey?: (Uint8Array|null);
+        identityKey?: (Uint8Array | null);
 
         /** KeyExchangeMessage baseKeySignature */
-        baseKeySignature?: (Uint8Array|null);
+        baseKeySignature?: (Uint8Array | null);
     }
 
     /** Represents a KeyExchangeMessage. */
@@ -8566,7 +8566,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.KeyExchangeMessage;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.KeyExchangeMessage;
 
         /**
          * Decodes a KeyExchangeMessage message from the specified reader or buffer, length delimited.
@@ -8575,14 +8575,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.KeyExchangeMessage;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.KeyExchangeMessage;
 
         /**
          * Verifies a KeyExchangeMessage message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a KeyExchangeMessage message from a plain object. Also converts values to their respective internal types.
@@ -8610,7 +8610,7 @@ export namespace proto {
     interface IKeyId {
 
         /** KeyId id */
-        id?: (Uint8Array|null);
+        id?: (Uint8Array | null);
     }
 
     /** Represents a KeyId. */
@@ -8656,7 +8656,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.KeyId;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.KeyId;
 
         /**
          * Decodes a KeyId message from the specified reader or buffer, length delimited.
@@ -8665,14 +8665,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.KeyId;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.KeyId;
 
         /**
          * Verifies a KeyId message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a KeyId message from a plain object. Also converts values to their respective internal types.
@@ -8700,13 +8700,13 @@ export namespace proto {
     interface ILocalizedName {
 
         /** LocalizedName lg */
-        lg?: (string|null);
+        lg?: (string | null);
 
         /** LocalizedName lc */
-        lc?: (string|null);
+        lc?: (string | null);
 
         /** LocalizedName verifiedName */
-        verifiedName?: (string|null);
+        verifiedName?: (string | null);
     }
 
     /** Represents a LocalizedName. */
@@ -8758,7 +8758,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.LocalizedName;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.LocalizedName;
 
         /**
          * Decodes a LocalizedName message from the specified reader or buffer, length delimited.
@@ -8767,14 +8767,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.LocalizedName;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.LocalizedName;
 
         /**
          * Verifies a LocalizedName message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a LocalizedName message from a plain object. Also converts values to their respective internal types.
@@ -8802,13 +8802,13 @@ export namespace proto {
     interface ILocation {
 
         /** Location degreesLatitude */
-        degreesLatitude?: (number|null);
+        degreesLatitude?: (number | null);
 
         /** Location degreesLongitude */
-        degreesLongitude?: (number|null);
+        degreesLongitude?: (number | null);
 
         /** Location name */
-        name?: (string|null);
+        name?: (string | null);
     }
 
     /** Represents a Location. */
@@ -8860,7 +8860,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Location;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Location;
 
         /**
          * Decodes a Location message from the specified reader or buffer, length delimited.
@@ -8869,14 +8869,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Location;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Location;
 
         /**
          * Verifies a Location message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a Location message from a plain object. Also converts values to their respective internal types.
@@ -8904,7 +8904,7 @@ export namespace proto {
     interface IMediaData {
 
         /** MediaData localPath */
-        localPath?: (string|null);
+        localPath?: (string | null);
     }
 
     /** Represents a MediaData. */
@@ -8950,7 +8950,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MediaData;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.MediaData;
 
         /**
          * Decodes a MediaData message from the specified reader or buffer, length delimited.
@@ -8959,14 +8959,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MediaData;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.MediaData;
 
         /**
          * Verifies a MediaData message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a MediaData message from a plain object. Also converts values to their respective internal types.
@@ -8994,49 +8994,49 @@ export namespace proto {
     interface IMediaEntry {
 
         /** MediaEntry fileSha256 */
-        fileSha256?: (Uint8Array|null);
+        fileSha256?: (Uint8Array | null);
 
         /** MediaEntry mediaKey */
-        mediaKey?: (Uint8Array|null);
+        mediaKey?: (Uint8Array | null);
 
         /** MediaEntry fileEncSha256 */
-        fileEncSha256?: (Uint8Array|null);
+        fileEncSha256?: (Uint8Array | null);
 
         /** MediaEntry directPath */
-        directPath?: (string|null);
+        directPath?: (string | null);
 
         /** MediaEntry mediaKeyTimestamp */
-        mediaKeyTimestamp?: (number|Long|null);
+        mediaKeyTimestamp?: (number | Long | null);
 
         /** MediaEntry serverMediaType */
-        serverMediaType?: (string|null);
+        serverMediaType?: (string | null);
 
         /** MediaEntry uploadToken */
-        uploadToken?: (Uint8Array|null);
+        uploadToken?: (Uint8Array | null);
 
         /** MediaEntry validatedTimestamp */
-        validatedTimestamp?: (Uint8Array|null);
+        validatedTimestamp?: (Uint8Array | null);
 
         /** MediaEntry sidecar */
-        sidecar?: (Uint8Array|null);
+        sidecar?: (Uint8Array | null);
 
         /** MediaEntry objectId */
-        objectId?: (string|null);
+        objectId?: (string | null);
 
         /** MediaEntry fbid */
-        fbid?: (string|null);
+        fbid?: (string | null);
 
         /** MediaEntry downloadableThumbnail */
-        downloadableThumbnail?: (proto.MediaEntry.IDownloadableThumbnail|null);
+        downloadableThumbnail?: (proto.MediaEntry.IDownloadableThumbnail | null);
 
         /** MediaEntry handle */
-        handle?: (string|null);
+        handle?: (string | null);
 
         /** MediaEntry filename */
-        filename?: (string|null);
+        filename?: (string | null);
 
         /** MediaEntry progressiveJpegDetails */
-        progressiveJpegDetails?: (proto.MediaEntry.IProgressiveJpegDetails|null);
+        progressiveJpegDetails?: (proto.MediaEntry.IProgressiveJpegDetails | null);
     }
 
     /** Represents a MediaEntry. */
@@ -9061,7 +9061,7 @@ export namespace proto {
         public directPath: string;
 
         /** MediaEntry mediaKeyTimestamp. */
-        public mediaKeyTimestamp: (number|Long);
+        public mediaKeyTimestamp: (number | Long);
 
         /** MediaEntry serverMediaType. */
         public serverMediaType: string;
@@ -9082,7 +9082,7 @@ export namespace proto {
         public fbid: string;
 
         /** MediaEntry downloadableThumbnail. */
-        public downloadableThumbnail?: (proto.MediaEntry.IDownloadableThumbnail|null);
+        public downloadableThumbnail?: (proto.MediaEntry.IDownloadableThumbnail | null);
 
         /** MediaEntry handle. */
         public handle: string;
@@ -9091,7 +9091,7 @@ export namespace proto {
         public filename: string;
 
         /** MediaEntry progressiveJpegDetails. */
-        public progressiveJpegDetails?: (proto.MediaEntry.IProgressiveJpegDetails|null);
+        public progressiveJpegDetails?: (proto.MediaEntry.IProgressiveJpegDetails | null);
 
         /**
          * Creates a new MediaEntry instance using the specified properties.
@@ -9124,7 +9124,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MediaEntry;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.MediaEntry;
 
         /**
          * Decodes a MediaEntry message from the specified reader or buffer, length delimited.
@@ -9133,14 +9133,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MediaEntry;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.MediaEntry;
 
         /**
          * Verifies a MediaEntry message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a MediaEntry message from a plain object. Also converts values to their respective internal types.
@@ -9170,22 +9170,22 @@ export namespace proto {
         interface IDownloadableThumbnail {
 
             /** DownloadableThumbnail fileSha256 */
-            fileSha256?: (Uint8Array|null);
+            fileSha256?: (Uint8Array | null);
 
             /** DownloadableThumbnail fileEncSha256 */
-            fileEncSha256?: (Uint8Array|null);
+            fileEncSha256?: (Uint8Array | null);
 
             /** DownloadableThumbnail directPath */
-            directPath?: (string|null);
+            directPath?: (string | null);
 
             /** DownloadableThumbnail mediaKey */
-            mediaKey?: (Uint8Array|null);
+            mediaKey?: (Uint8Array | null);
 
             /** DownloadableThumbnail mediaKeyTimestamp */
-            mediaKeyTimestamp?: (number|Long|null);
+            mediaKeyTimestamp?: (number | Long | null);
 
             /** DownloadableThumbnail objectId */
-            objectId?: (string|null);
+            objectId?: (string | null);
         }
 
         /** Represents a DownloadableThumbnail. */
@@ -9210,7 +9210,7 @@ export namespace proto {
             public mediaKey: Uint8Array;
 
             /** DownloadableThumbnail mediaKeyTimestamp. */
-            public mediaKeyTimestamp: (number|Long);
+            public mediaKeyTimestamp: (number | Long);
 
             /** DownloadableThumbnail objectId. */
             public objectId: string;
@@ -9246,7 +9246,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MediaEntry.DownloadableThumbnail;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.MediaEntry.DownloadableThumbnail;
 
             /**
              * Decodes a DownloadableThumbnail message from the specified reader or buffer, length delimited.
@@ -9255,14 +9255,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MediaEntry.DownloadableThumbnail;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.MediaEntry.DownloadableThumbnail;
 
             /**
              * Verifies a DownloadableThumbnail message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a DownloadableThumbnail message from a plain object. Also converts values to their respective internal types.
@@ -9290,10 +9290,10 @@ export namespace proto {
         interface IProgressiveJpegDetails {
 
             /** ProgressiveJpegDetails scanLengths */
-            scanLengths?: ((number|Long)[]|null);
+            scanLengths?: ((number | Long)[] | null);
 
             /** ProgressiveJpegDetails sidecar */
-            sidecar?: (Uint8Array|null);
+            sidecar?: (Uint8Array | null);
         }
 
         /** Represents a ProgressiveJpegDetails. */
@@ -9306,7 +9306,7 @@ export namespace proto {
             constructor(properties?: proto.MediaEntry.IProgressiveJpegDetails);
 
             /** ProgressiveJpegDetails scanLengths. */
-            public scanLengths: (number|Long)[];
+            public scanLengths: (number | Long)[];
 
             /** ProgressiveJpegDetails sidecar. */
             public sidecar: Uint8Array;
@@ -9342,7 +9342,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MediaEntry.ProgressiveJpegDetails;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.MediaEntry.ProgressiveJpegDetails;
 
             /**
              * Decodes a ProgressiveJpegDetails message from the specified reader or buffer, length delimited.
@@ -9351,14 +9351,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MediaEntry.ProgressiveJpegDetails;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.MediaEntry.ProgressiveJpegDetails;
 
             /**
              * Verifies a ProgressiveJpegDetails message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ProgressiveJpegDetails message from a plain object. Also converts values to their respective internal types.
@@ -9387,13 +9387,13 @@ export namespace proto {
     interface IMediaNotifyMessage {
 
         /** MediaNotifyMessage expressPathUrl */
-        expressPathUrl?: (string|null);
+        expressPathUrl?: (string | null);
 
         /** MediaNotifyMessage fileEncSha256 */
-        fileEncSha256?: (Uint8Array|null);
+        fileEncSha256?: (Uint8Array | null);
 
         /** MediaNotifyMessage fileLength */
-        fileLength?: (number|Long|null);
+        fileLength?: (number | Long | null);
     }
 
     /** Represents a MediaNotifyMessage. */
@@ -9412,7 +9412,7 @@ export namespace proto {
         public fileEncSha256: Uint8Array;
 
         /** MediaNotifyMessage fileLength. */
-        public fileLength: (number|Long);
+        public fileLength: (number | Long);
 
         /**
          * Creates a new MediaNotifyMessage instance using the specified properties.
@@ -9445,7 +9445,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MediaNotifyMessage;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.MediaNotifyMessage;
 
         /**
          * Decodes a MediaNotifyMessage message from the specified reader or buffer, length delimited.
@@ -9454,14 +9454,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MediaNotifyMessage;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.MediaNotifyMessage;
 
         /**
          * Verifies a MediaNotifyMessage message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a MediaNotifyMessage message from a plain object. Also converts values to their respective internal types.
@@ -9489,13 +9489,13 @@ export namespace proto {
     interface IMediaRetryNotification {
 
         /** MediaRetryNotification stanzaId */
-        stanzaId?: (string|null);
+        stanzaId?: (string | null);
 
         /** MediaRetryNotification directPath */
-        directPath?: (string|null);
+        directPath?: (string | null);
 
         /** MediaRetryNotification result */
-        result?: (proto.MediaRetryNotification.ResultType|null);
+        result?: (proto.MediaRetryNotification.ResultType | null);
     }
 
     /** Represents a MediaRetryNotification. */
@@ -9547,7 +9547,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MediaRetryNotification;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.MediaRetryNotification;
 
         /**
          * Decodes a MediaRetryNotification message from the specified reader or buffer, length delimited.
@@ -9556,14 +9556,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MediaRetryNotification;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.MediaRetryNotification;
 
         /**
          * Verifies a MediaRetryNotification message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a MediaRetryNotification message from a plain object. Also converts values to their respective internal types.
@@ -9606,24 +9606,24 @@ export namespace proto {
     }
 
     //adicionado
-     /** Properties of a ViewOnceMessageV2. */
-     interface IViewOnceMessageV2 {
+    /** Properties of a ViewOnceMessageV2. */
+    interface IViewOnceMessageV2 {
 
         /** ViewOnceMessageV2 messageContextInfo */
-        messageContextInfo?: IMessageContextInfo|null;
+        messageContextInfo?: IMessageContextInfo | null;
 
         /** ViewOnceMessageV2 message */
-        message?: IMessage|null;
+        message?: IMessage | null;
     }
 
-     /** Properties of a ViewOnceMessageV2. */
-     interface IViewOnceMessageV2Extesion {
+    /** Properties of a ViewOnceMessageV2. */
+    interface IViewOnceMessageV2Extesion {
 
         /** ViewOnceMessageV2 messageContextInfo */
-        messageContextInfo?: IMessageContextInfo|null;
+        messageContextInfo?: IMessageContextInfo | null;
 
         /** ViewOnceMessageV2 message */
-        message?: IMessage|null;
+        message?: IMessage | null;
     }
     //adicionado
 
@@ -9631,208 +9631,208 @@ export namespace proto {
     interface IMessage {
 
         /** Message conversation */
-        conversation?: (string|null);
+        conversation?: (string | null);
 
         /** Message senderKeyDistributionMessage */
-        senderKeyDistributionMessage?: (proto.Message.ISenderKeyDistributionMessage|null);
+        senderKeyDistributionMessage?: (proto.Message.ISenderKeyDistributionMessage | null);
 
         /** Message imageMessage */
-        imageMessage?: (proto.Message.IImageMessage|null);
+        imageMessage?: (proto.Message.IImageMessage | null);
 
         /** Message contactMessage */
-        contactMessage?: (proto.Message.IContactMessage|null);
+        contactMessage?: (proto.Message.IContactMessage | null);
 
         /** Message locationMessage */
-        locationMessage?: (proto.Message.ILocationMessage|null);
+        locationMessage?: (proto.Message.ILocationMessage | null);
 
         /** Message extendedTextMessage */
-        extendedTextMessage?: (proto.Message.IExtendedTextMessage|null);
+        extendedTextMessage?: (proto.Message.IExtendedTextMessage | null);
 
         /** Message documentMessage */
-        documentMessage?: (proto.Message.IDocumentMessage|null);
+        documentMessage?: (proto.Message.IDocumentMessage | null);
 
         /** Message audioMessage */
-        audioMessage?: (proto.Message.IAudioMessage|null);
+        audioMessage?: (proto.Message.IAudioMessage | null);
 
         /** Message videoMessage */
-        videoMessage?: (proto.Message.IVideoMessage|null);
+        videoMessage?: (proto.Message.IVideoMessage | null);
 
         /** Message call */
-        call?: (proto.Message.ICall|null);
+        call?: (proto.Message.ICall | null);
 
         /** Message chat */
-        chat?: (proto.Message.IChat|null);
+        chat?: (proto.Message.IChat | null);
 
         /** Message protocolMessage */
-        protocolMessage?: (proto.Message.IProtocolMessage|null);
+        protocolMessage?: (proto.Message.IProtocolMessage | null);
 
         /** Message contactsArrayMessage */
-        contactsArrayMessage?: (proto.Message.IContactsArrayMessage|null);
+        contactsArrayMessage?: (proto.Message.IContactsArrayMessage | null);
 
         /** Message highlyStructuredMessage */
-        highlyStructuredMessage?: (proto.Message.IHighlyStructuredMessage|null);
+        highlyStructuredMessage?: (proto.Message.IHighlyStructuredMessage | null);
 
         /** Message fastRatchetKeySenderKeyDistributionMessage */
-        fastRatchetKeySenderKeyDistributionMessage?: (proto.Message.ISenderKeyDistributionMessage|null);
+        fastRatchetKeySenderKeyDistributionMessage?: (proto.Message.ISenderKeyDistributionMessage | null);
 
         /** Message sendPaymentMessage */
-        sendPaymentMessage?: (proto.Message.ISendPaymentMessage|null);
+        sendPaymentMessage?: (proto.Message.ISendPaymentMessage | null);
 
         /** Message liveLocationMessage */
-        liveLocationMessage?: (proto.Message.ILiveLocationMessage|null);
+        liveLocationMessage?: (proto.Message.ILiveLocationMessage | null);
 
         /** Message requestPaymentMessage */
-        requestPaymentMessage?: (proto.Message.IRequestPaymentMessage|null);
+        requestPaymentMessage?: (proto.Message.IRequestPaymentMessage | null);
 
         /** Message declinePaymentRequestMessage */
-        declinePaymentRequestMessage?: (proto.Message.IDeclinePaymentRequestMessage|null);
+        declinePaymentRequestMessage?: (proto.Message.IDeclinePaymentRequestMessage | null);
 
         /** Message cancelPaymentRequestMessage */
-        cancelPaymentRequestMessage?: (proto.Message.ICancelPaymentRequestMessage|null);
+        cancelPaymentRequestMessage?: (proto.Message.ICancelPaymentRequestMessage | null);
 
         /** Message templateMessage */
-        templateMessage?: (proto.Message.ITemplateMessage|null);
+        templateMessage?: (proto.Message.ITemplateMessage | null);
 
         /** Message stickerMessage */
-        stickerMessage?: (proto.Message.IStickerMessage|null);
+        stickerMessage?: (proto.Message.IStickerMessage | null);
 
         /** Message groupInviteMessage */
-        groupInviteMessage?: (proto.Message.IGroupInviteMessage|null);
+        groupInviteMessage?: (proto.Message.IGroupInviteMessage | null);
 
         /** Message templateButtonReplyMessage */
-        templateButtonReplyMessage?: (proto.Message.ITemplateButtonReplyMessage|null);
+        templateButtonReplyMessage?: (proto.Message.ITemplateButtonReplyMessage | null);
 
         /** Message productMessage */
-        productMessage?: (proto.Message.IProductMessage|null);
+        productMessage?: (proto.Message.IProductMessage | null);
 
         /** Message deviceSentMessage */
-        deviceSentMessage?: (proto.Message.IDeviceSentMessage|null);
+        deviceSentMessage?: (proto.Message.IDeviceSentMessage | null);
 
         /** Message messageContextInfo */
-        messageContextInfo?: (proto.IMessageContextInfo|null);
+        messageContextInfo?: (proto.IMessageContextInfo | null);
 
         /** Message listMessage */
-        listMessage?: (proto.Message.IListMessage|null);
+        listMessage?: (proto.Message.IListMessage | null);
 
         /** Message viewOnceMessage */
-        viewOnceMessage?: (proto.Message.IFutureProofMessage|null);
+        viewOnceMessage?: (proto.Message.IFutureProofMessage | null);
 
         /** Message orderMessage */
-        orderMessage?: (proto.Message.IOrderMessage|null);
+        orderMessage?: (proto.Message.IOrderMessage | null);
 
         /** Message listResponseMessage */
-        listResponseMessage?: (proto.Message.IListResponseMessage|null);
+        listResponseMessage?: (proto.Message.IListResponseMessage | null);
 
         /** Message ephemeralMessage */
-        ephemeralMessage?: (proto.Message.IFutureProofMessage|null);
+        ephemeralMessage?: (proto.Message.IFutureProofMessage | null);
 
         /** Message invoiceMessage */
-        invoiceMessage?: (proto.Message.IInvoiceMessage|null);
+        invoiceMessage?: (proto.Message.IInvoiceMessage | null);
 
         /** Message buttonsMessage */
-        buttonsMessage?: (proto.Message.IButtonsMessage|null);
+        buttonsMessage?: (proto.Message.IButtonsMessage | null);
 
         /** Message buttonsResponseMessage */
-        buttonsResponseMessage?: (proto.Message.IButtonsResponseMessage|null);
+        buttonsResponseMessage?: (proto.Message.IButtonsResponseMessage | null);
 
         /** Message paymentInviteMessage */
-        paymentInviteMessage?: (proto.Message.IPaymentInviteMessage|null);
+        paymentInviteMessage?: (proto.Message.IPaymentInviteMessage | null);
 
         /** Message interactiveMessage */
-        interactiveMessage?: (proto.Message.IInteractiveMessage|null);
+        interactiveMessage?: (proto.Message.IInteractiveMessage | null);
 
         /** Message reactionMessage */
-        reactionMessage?: (proto.Message.IReactionMessage|null);
+        reactionMessage?: (proto.Message.IReactionMessage | null);
 
         /** Message stickerSyncRmrMessage */
-        stickerSyncRmrMessage?: (proto.Message.IStickerSyncRMRMessage|null);
+        stickerSyncRmrMessage?: (proto.Message.IStickerSyncRMRMessage | null);
 
         /** Message interactiveResponseMessage */
-        interactiveResponseMessage?: (proto.Message.IInteractiveResponseMessage|null);
+        interactiveResponseMessage?: (proto.Message.IInteractiveResponseMessage | null);
 
         /** Message pollCreationMessage */
-        pollCreationMessage?: (proto.Message.IPollCreationMessage|null);
+        pollCreationMessage?: (proto.Message.IPollCreationMessage | null);
 
         /** Message pollUpdateMessage */
-        pollUpdateMessage?: (proto.Message.IPollUpdateMessage|null);
+        pollUpdateMessage?: (proto.Message.IPollUpdateMessage | null);
 
         /** Message keepInChatMessage */
-        keepInChatMessage?: (proto.Message.IKeepInChatMessage|null);
+        keepInChatMessage?: (proto.Message.IKeepInChatMessage | null);
 
         /** Message documentWithCaptionMessage */
-        documentWithCaptionMessage?: (proto.Message.IFutureProofMessage|null);
+        documentWithCaptionMessage?: (proto.Message.IFutureProofMessage | null);
 
         /** Message requestPhoneNumberMessage */
-        requestPhoneNumberMessage?: (proto.Message.IRequestPhoneNumberMessage|null);
+        requestPhoneNumberMessage?: (proto.Message.IRequestPhoneNumberMessage | null);
 
         /** Message viewOnceMessageV2 */
-        viewOnceMessageV2?: (proto.Message.IFutureProofMessage|null);
+        viewOnceMessageV2?: (proto.Message.IFutureProofMessage | null);
 
         /** Message encReactionMessage */
-        encReactionMessage?: (proto.Message.IEncReactionMessage|null);
+        encReactionMessage?: (proto.Message.IEncReactionMessage | null);
 
         /** Message editedMessage */
-        editedMessage?: (proto.Message.IFutureProofMessage|null);
+        editedMessage?: (proto.Message.IFutureProofMessage | null);
 
         /** Message viewOnceMessageV2Extension */
-        viewOnceMessageV2Extension?: (proto.Message.IFutureProofMessage|null);
+        viewOnceMessageV2Extension?: (proto.Message.IFutureProofMessage | null);
 
         /** Message pollCreationMessageV2 */
-        pollCreationMessageV2?: (proto.Message.IPollCreationMessage|null);
+        pollCreationMessageV2?: (proto.Message.IPollCreationMessage | null);
 
         /** Message scheduledCallCreationMessage */
-        scheduledCallCreationMessage?: (proto.Message.IScheduledCallCreationMessage|null);
+        scheduledCallCreationMessage?: (proto.Message.IScheduledCallCreationMessage | null);
 
         /** Message groupMentionedMessage */
-        groupMentionedMessage?: (proto.Message.IFutureProofMessage|null);
+        groupMentionedMessage?: (proto.Message.IFutureProofMessage | null);
 
         /** Message pinInChatMessage */
-        pinInChatMessage?: (proto.Message.IPinInChatMessage|null);
+        pinInChatMessage?: (proto.Message.IPinInChatMessage | null);
 
         /** Message pollCreationMessageV3 */
-        pollCreationMessageV3?: (proto.Message.IPollCreationMessage|null);
+        pollCreationMessageV3?: (proto.Message.IPollCreationMessage | null);
 
         /** Message scheduledCallEditMessage */
-        scheduledCallEditMessage?: (proto.Message.IScheduledCallEditMessage|null);
+        scheduledCallEditMessage?: (proto.Message.IScheduledCallEditMessage | null);
 
         /** Message ptvMessage */
-        ptvMessage?: (proto.Message.IVideoMessage|null);
+        ptvMessage?: (proto.Message.IVideoMessage | null);
 
         /** Message botInvokeMessage */
-        botInvokeMessage?: (proto.Message.IFutureProofMessage|null);
+        botInvokeMessage?: (proto.Message.IFutureProofMessage | null);
 
         /** Message callLogMesssage */
-        callLogMesssage?: (proto.Message.ICallLogMessage|null);
+        callLogMesssage?: (proto.Message.ICallLogMessage | null);
 
         /** Message messageHistoryBundle */
-        messageHistoryBundle?: (proto.Message.IMessageHistoryBundle|null);
+        messageHistoryBundle?: (proto.Message.IMessageHistoryBundle | null);
 
         /** Message encCommentMessage */
-        encCommentMessage?: (proto.Message.IEncCommentMessage|null);
+        encCommentMessage?: (proto.Message.IEncCommentMessage | null);
 
         /** Message bcallMessage */
-        bcallMessage?: (proto.Message.IBCallMessage|null);
+        bcallMessage?: (proto.Message.IBCallMessage | null);
 
         /** Message lottieStickerMessage */
-        lottieStickerMessage?: (proto.Message.IFutureProofMessage|null);
+        lottieStickerMessage?: (proto.Message.IFutureProofMessage | null);
 
         /** Message eventMessage */
-        eventMessage?: (proto.Message.IEventMessage|null);
+        eventMessage?: (proto.Message.IEventMessage | null);
 
         /** Message commentMessage */
-        commentMessage?: (proto.Message.ICommentMessage|null);
+        commentMessage?: (proto.Message.ICommentMessage | null);
 
         /** Message newsletterAdminInviteMessage */
-        newsletterAdminInviteMessage?: (proto.Message.INewsletterAdminInviteMessage|null);
+        newsletterAdminInviteMessage?: (proto.Message.INewsletterAdminInviteMessage | null);
 
         /** Message extendedTextMessageWithParentKey */
-        extendedTextMessageWithParentKey?: (proto.Message.IExtendedTextMessageWithParentKey|null);
+        extendedTextMessageWithParentKey?: (proto.Message.IExtendedTextMessageWithParentKey | null);
 
         /** Message placeholderMessage */
-        placeholderMessage?: (proto.Message.IPlaceholderMessage|null);
+        placeholderMessage?: (proto.Message.IPlaceholderMessage | null);
 
         /** Message encEventUpdateMessage */
-        encEventUpdateMessage?: (proto.Message.IEncEventUpdateMessage|null);
+        encEventUpdateMessage?: (proto.Message.IEncEventUpdateMessage | null);
     }
 
     /** Represents a Message. */
@@ -9848,205 +9848,205 @@ export namespace proto {
         public conversation: string;
 
         /** Message senderKeyDistributionMessage. */
-        public senderKeyDistributionMessage?: (proto.Message.ISenderKeyDistributionMessage|null);
+        public senderKeyDistributionMessage?: (proto.Message.ISenderKeyDistributionMessage | null);
 
         /** Message imageMessage. */
-        public imageMessage?: (proto.Message.IImageMessage|null);
+        public imageMessage?: (proto.Message.IImageMessage | null);
 
         /** Message contactMessage. */
-        public contactMessage?: (proto.Message.IContactMessage|null);
+        public contactMessage?: (proto.Message.IContactMessage | null);
 
         /** Message locationMessage. */
-        public locationMessage?: (proto.Message.ILocationMessage|null);
+        public locationMessage?: (proto.Message.ILocationMessage | null);
 
         /** Message extendedTextMessage. */
-        public extendedTextMessage?: (proto.Message.IExtendedTextMessage|null);
+        public extendedTextMessage?: (proto.Message.IExtendedTextMessage | null);
 
         /** Message documentMessage. */
-        public documentMessage?: (proto.Message.IDocumentMessage|null);
+        public documentMessage?: (proto.Message.IDocumentMessage | null);
 
         /** Message audioMessage. */
-        public audioMessage?: (proto.Message.IAudioMessage|null);
+        public audioMessage?: (proto.Message.IAudioMessage | null);
 
         /** Message videoMessage. */
-        public videoMessage?: (proto.Message.IVideoMessage|null);
+        public videoMessage?: (proto.Message.IVideoMessage | null);
 
         /** Message call. */
-        public call?: (proto.Message.ICall|null);
+        public call?: (proto.Message.ICall | null);
 
         /** Message chat. */
-        public chat?: (proto.Message.IChat|null);
+        public chat?: (proto.Message.IChat | null);
 
         /** Message protocolMessage. */
-        public protocolMessage?: (proto.Message.IProtocolMessage|null);
+        public protocolMessage?: (proto.Message.IProtocolMessage | null);
 
         /** Message contactsArrayMessage. */
-        public contactsArrayMessage?: (proto.Message.IContactsArrayMessage|null);
+        public contactsArrayMessage?: (proto.Message.IContactsArrayMessage | null);
 
         /** Message highlyStructuredMessage. */
-        public highlyStructuredMessage?: (proto.Message.IHighlyStructuredMessage|null);
+        public highlyStructuredMessage?: (proto.Message.IHighlyStructuredMessage | null);
 
         /** Message fastRatchetKeySenderKeyDistributionMessage. */
-        public fastRatchetKeySenderKeyDistributionMessage?: (proto.Message.ISenderKeyDistributionMessage|null);
+        public fastRatchetKeySenderKeyDistributionMessage?: (proto.Message.ISenderKeyDistributionMessage | null);
 
         /** Message sendPaymentMessage. */
-        public sendPaymentMessage?: (proto.Message.ISendPaymentMessage|null);
+        public sendPaymentMessage?: (proto.Message.ISendPaymentMessage | null);
 
         /** Message liveLocationMessage. */
-        public liveLocationMessage?: (proto.Message.ILiveLocationMessage|null);
+        public liveLocationMessage?: (proto.Message.ILiveLocationMessage | null);
 
         /** Message requestPaymentMessage. */
-        public requestPaymentMessage?: (proto.Message.IRequestPaymentMessage|null);
+        public requestPaymentMessage?: (proto.Message.IRequestPaymentMessage | null);
 
         /** Message declinePaymentRequestMessage. */
-        public declinePaymentRequestMessage?: (proto.Message.IDeclinePaymentRequestMessage|null);
+        public declinePaymentRequestMessage?: (proto.Message.IDeclinePaymentRequestMessage | null);
 
         /** Message cancelPaymentRequestMessage. */
-        public cancelPaymentRequestMessage?: (proto.Message.ICancelPaymentRequestMessage|null);
+        public cancelPaymentRequestMessage?: (proto.Message.ICancelPaymentRequestMessage | null);
 
         /** Message templateMessage. */
-        public templateMessage?: (proto.Message.ITemplateMessage|null);
+        public templateMessage?: (proto.Message.ITemplateMessage | null);
 
         /** Message stickerMessage. */
-        public stickerMessage?: (proto.Message.IStickerMessage|null);
+        public stickerMessage?: (proto.Message.IStickerMessage | null);
 
         /** Message groupInviteMessage. */
-        public groupInviteMessage?: (proto.Message.IGroupInviteMessage|null);
+        public groupInviteMessage?: (proto.Message.IGroupInviteMessage | null);
 
         /** Message templateButtonReplyMessage. */
-        public templateButtonReplyMessage?: (proto.Message.ITemplateButtonReplyMessage|null);
+        public templateButtonReplyMessage?: (proto.Message.ITemplateButtonReplyMessage | null);
 
         /** Message productMessage. */
-        public productMessage?: (proto.Message.IProductMessage|null);
+        public productMessage?: (proto.Message.IProductMessage | null);
 
         /** Message deviceSentMessage. */
-        public deviceSentMessage?: (proto.Message.IDeviceSentMessage|null);
+        public deviceSentMessage?: (proto.Message.IDeviceSentMessage | null);
 
         /** Message messageContextInfo. */
-        public messageContextInfo?: (proto.IMessageContextInfo|null);
+        public messageContextInfo?: (proto.IMessageContextInfo | null);
 
         /** Message listMessage. */
-        public listMessage?: (proto.Message.IListMessage|null);
+        public listMessage?: (proto.Message.IListMessage | null);
 
         /** Message viewOnceMessage. */
-        public viewOnceMessage?: (proto.Message.IFutureProofMessage|null);
+        public viewOnceMessage?: (proto.Message.IFutureProofMessage | null);
 
         /** Message orderMessage. */
-        public orderMessage?: (proto.Message.IOrderMessage|null);
+        public orderMessage?: (proto.Message.IOrderMessage | null);
 
         /** Message listResponseMessage. */
-        public listResponseMessage?: (proto.Message.IListResponseMessage|null);
+        public listResponseMessage?: (proto.Message.IListResponseMessage | null);
 
         /** Message ephemeralMessage. */
-        public ephemeralMessage?: (proto.Message.IFutureProofMessage|null);
+        public ephemeralMessage?: (proto.Message.IFutureProofMessage | null);
 
         /** Message invoiceMessage. */
-        public invoiceMessage?: (proto.Message.IInvoiceMessage|null);
+        public invoiceMessage?: (proto.Message.IInvoiceMessage | null);
 
         /** Message buttonsMessage. */
-        public buttonsMessage?: (proto.Message.IButtonsMessage|null);
+        public buttonsMessage?: (proto.Message.IButtonsMessage | null);
 
         /** Message buttonsResponseMessage. */
-        public buttonsResponseMessage?: (proto.Message.IButtonsResponseMessage|null);
+        public buttonsResponseMessage?: (proto.Message.IButtonsResponseMessage | null);
 
         /** Message paymentInviteMessage. */
-        public paymentInviteMessage?: (proto.Message.IPaymentInviteMessage|null);
+        public paymentInviteMessage?: (proto.Message.IPaymentInviteMessage | null);
 
         /** Message interactiveMessage. */
-        public interactiveMessage?: (proto.Message.IInteractiveMessage|null);
+        public interactiveMessage?: (proto.Message.IInteractiveMessage | null);
 
         /** Message reactionMessage. */
-        public reactionMessage?: (proto.Message.IReactionMessage|null);
+        public reactionMessage?: (proto.Message.IReactionMessage | null);
 
         /** Message stickerSyncRmrMessage. */
-        public stickerSyncRmrMessage?: (proto.Message.IStickerSyncRMRMessage|null);
+        public stickerSyncRmrMessage?: (proto.Message.IStickerSyncRMRMessage | null);
 
         /** Message interactiveResponseMessage. */
-        public interactiveResponseMessage?: (proto.Message.IInteractiveResponseMessage|null);
+        public interactiveResponseMessage?: (proto.Message.IInteractiveResponseMessage | null);
 
         /** Message pollCreationMessage. */
-        public pollCreationMessage?: (proto.Message.IPollCreationMessage|null);
+        public pollCreationMessage?: (proto.Message.IPollCreationMessage | null);
 
         /** Message pollUpdateMessage. */
-        public pollUpdateMessage?: (proto.Message.IPollUpdateMessage|null);
+        public pollUpdateMessage?: (proto.Message.IPollUpdateMessage | null);
 
         /** Message keepInChatMessage. */
-        public keepInChatMessage?: (proto.Message.IKeepInChatMessage|null);
+        public keepInChatMessage?: (proto.Message.IKeepInChatMessage | null);
 
         /** Message documentWithCaptionMessage. */
-        public documentWithCaptionMessage?: (proto.Message.IFutureProofMessage|null);
+        public documentWithCaptionMessage?: (proto.Message.IFutureProofMessage | null);
 
         /** Message requestPhoneNumberMessage. */
-        public requestPhoneNumberMessage?: (proto.Message.IRequestPhoneNumberMessage|null);
+        public requestPhoneNumberMessage?: (proto.Message.IRequestPhoneNumberMessage | null);
 
         /** Message viewOnceMessageV2. */
-        public viewOnceMessageV2?: (proto.Message.IFutureProofMessage|null);
+        public viewOnceMessageV2?: (proto.Message.IFutureProofMessage | null);
 
         /** Message encReactionMessage. */
-        public encReactionMessage?: (proto.Message.IEncReactionMessage|null);
+        public encReactionMessage?: (proto.Message.IEncReactionMessage | null);
 
         /** Message editedMessage. */
-        public editedMessage?: (proto.Message.IFutureProofMessage|null);
+        public editedMessage?: (proto.Message.IFutureProofMessage | null);
 
         /** Message viewOnceMessageV2Extension. */
-        public viewOnceMessageV2Extension?: (proto.Message.IFutureProofMessage|null);
+        public viewOnceMessageV2Extension?: (proto.Message.IFutureProofMessage | null);
 
         /** Message pollCreationMessageV2. */
-        public pollCreationMessageV2?: (proto.Message.IPollCreationMessage|null);
+        public pollCreationMessageV2?: (proto.Message.IPollCreationMessage | null);
 
         /** Message scheduledCallCreationMessage. */
-        public scheduledCallCreationMessage?: (proto.Message.IScheduledCallCreationMessage|null);
+        public scheduledCallCreationMessage?: (proto.Message.IScheduledCallCreationMessage | null);
 
         /** Message groupMentionedMessage. */
-        public groupMentionedMessage?: (proto.Message.IFutureProofMessage|null);
+        public groupMentionedMessage?: (proto.Message.IFutureProofMessage | null);
 
         /** Message pinInChatMessage. */
-        public pinInChatMessage?: (proto.Message.IPinInChatMessage|null);
+        public pinInChatMessage?: (proto.Message.IPinInChatMessage | null);
 
         /** Message pollCreationMessageV3. */
-        public pollCreationMessageV3?: (proto.Message.IPollCreationMessage|null);
+        public pollCreationMessageV3?: (proto.Message.IPollCreationMessage | null);
 
         /** Message scheduledCallEditMessage. */
-        public scheduledCallEditMessage?: (proto.Message.IScheduledCallEditMessage|null);
+        public scheduledCallEditMessage?: (proto.Message.IScheduledCallEditMessage | null);
 
         /** Message ptvMessage. */
-        public ptvMessage?: (proto.Message.IVideoMessage|null);
+        public ptvMessage?: (proto.Message.IVideoMessage | null);
 
         /** Message botInvokeMessage. */
-        public botInvokeMessage?: (proto.Message.IFutureProofMessage|null);
+        public botInvokeMessage?: (proto.Message.IFutureProofMessage | null);
 
         /** Message callLogMesssage. */
-        public callLogMesssage?: (proto.Message.ICallLogMessage|null);
+        public callLogMesssage?: (proto.Message.ICallLogMessage | null);
 
         /** Message messageHistoryBundle. */
-        public messageHistoryBundle?: (proto.Message.IMessageHistoryBundle|null);
+        public messageHistoryBundle?: (proto.Message.IMessageHistoryBundle | null);
 
         /** Message encCommentMessage. */
-        public encCommentMessage?: (proto.Message.IEncCommentMessage|null);
+        public encCommentMessage?: (proto.Message.IEncCommentMessage | null);
 
         /** Message bcallMessage. */
-        public bcallMessage?: (proto.Message.IBCallMessage|null);
+        public bcallMessage?: (proto.Message.IBCallMessage | null);
 
         /** Message lottieStickerMessage. */
-        public lottieStickerMessage?: (proto.Message.IFutureProofMessage|null);
+        public lottieStickerMessage?: (proto.Message.IFutureProofMessage | null);
 
         /** Message eventMessage. */
-        public eventMessage?: (proto.Message.IEventMessage|null);
+        public eventMessage?: (proto.Message.IEventMessage | null);
 
         /** Message commentMessage. */
-        public commentMessage?: (proto.Message.ICommentMessage|null);
+        public commentMessage?: (proto.Message.ICommentMessage | null);
 
         /** Message newsletterAdminInviteMessage. */
-        public newsletterAdminInviteMessage?: (proto.Message.INewsletterAdminInviteMessage|null);
+        public newsletterAdminInviteMessage?: (proto.Message.INewsletterAdminInviteMessage | null);
 
         /** Message extendedTextMessageWithParentKey. */
-        public extendedTextMessageWithParentKey?: (proto.Message.IExtendedTextMessageWithParentKey|null);
+        public extendedTextMessageWithParentKey?: (proto.Message.IExtendedTextMessageWithParentKey | null);
 
         /** Message placeholderMessage. */
-        public placeholderMessage?: (proto.Message.IPlaceholderMessage|null);
+        public placeholderMessage?: (proto.Message.IPlaceholderMessage | null);
 
         /** Message encEventUpdateMessage. */
-        public encEventUpdateMessage?: (proto.Message.IEncEventUpdateMessage|null);
+        public encEventUpdateMessage?: (proto.Message.IEncEventUpdateMessage | null);
 
         /**
          * Creates a new Message instance using the specified properties.
@@ -10079,7 +10079,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message;
 
         /**
          * Decodes a Message message from the specified reader or buffer, length delimited.
@@ -10088,14 +10088,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message;
 
         /**
          * Verifies a Message message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a Message message from a plain object. Also converts values to their respective internal types.
@@ -10125,10 +10125,10 @@ export namespace proto {
         interface IAppStateFatalExceptionNotification {
 
             /** AppStateFatalExceptionNotification collectionNames */
-            collectionNames?: (string[]|null);
+            collectionNames?: (string[] | null);
 
             /** AppStateFatalExceptionNotification timestamp */
-            timestamp?: (number|Long|null);
+            timestamp?: (number | Long | null);
         }
 
         /** Represents an AppStateFatalExceptionNotification. */
@@ -10144,7 +10144,7 @@ export namespace proto {
             public collectionNames: string[];
 
             /** AppStateFatalExceptionNotification timestamp. */
-            public timestamp: (number|Long);
+            public timestamp: (number | Long);
 
             /**
              * Creates a new AppStateFatalExceptionNotification instance using the specified properties.
@@ -10177,7 +10177,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.AppStateFatalExceptionNotification;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.AppStateFatalExceptionNotification;
 
             /**
              * Decodes an AppStateFatalExceptionNotification message from the specified reader or buffer, length delimited.
@@ -10186,14 +10186,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.AppStateFatalExceptionNotification;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.AppStateFatalExceptionNotification;
 
             /**
              * Verifies an AppStateFatalExceptionNotification message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an AppStateFatalExceptionNotification message from a plain object. Also converts values to their respective internal types.
@@ -10221,10 +10221,10 @@ export namespace proto {
         interface IAppStateSyncKey {
 
             /** AppStateSyncKey keyId */
-            keyId?: (proto.Message.IAppStateSyncKeyId|null);
+            keyId?: (proto.Message.IAppStateSyncKeyId | null);
 
             /** AppStateSyncKey keyData */
-            keyData?: (proto.Message.IAppStateSyncKeyData|null);
+            keyData?: (proto.Message.IAppStateSyncKeyData | null);
         }
 
         /** Represents an AppStateSyncKey. */
@@ -10237,10 +10237,10 @@ export namespace proto {
             constructor(properties?: proto.Message.IAppStateSyncKey);
 
             /** AppStateSyncKey keyId. */
-            public keyId?: (proto.Message.IAppStateSyncKeyId|null);
+            public keyId?: (proto.Message.IAppStateSyncKeyId | null);
 
             /** AppStateSyncKey keyData. */
-            public keyData?: (proto.Message.IAppStateSyncKeyData|null);
+            public keyData?: (proto.Message.IAppStateSyncKeyData | null);
 
             /**
              * Creates a new AppStateSyncKey instance using the specified properties.
@@ -10273,7 +10273,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.AppStateSyncKey;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.AppStateSyncKey;
 
             /**
              * Decodes an AppStateSyncKey message from the specified reader or buffer, length delimited.
@@ -10282,14 +10282,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.AppStateSyncKey;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.AppStateSyncKey;
 
             /**
              * Verifies an AppStateSyncKey message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an AppStateSyncKey message from a plain object. Also converts values to their respective internal types.
@@ -10317,13 +10317,13 @@ export namespace proto {
         interface IAppStateSyncKeyData {
 
             /** AppStateSyncKeyData keyData */
-            keyData?: (Uint8Array|null);
+            keyData?: (Uint8Array | null);
 
             /** AppStateSyncKeyData fingerprint */
-            fingerprint?: (proto.Message.IAppStateSyncKeyFingerprint|null);
+            fingerprint?: (proto.Message.IAppStateSyncKeyFingerprint | null);
 
             /** AppStateSyncKeyData timestamp */
-            timestamp?: (number|Long|null);
+            timestamp?: (number | Long | null);
         }
 
         /** Represents an AppStateSyncKeyData. */
@@ -10339,10 +10339,10 @@ export namespace proto {
             public keyData: Uint8Array;
 
             /** AppStateSyncKeyData fingerprint. */
-            public fingerprint?: (proto.Message.IAppStateSyncKeyFingerprint|null);
+            public fingerprint?: (proto.Message.IAppStateSyncKeyFingerprint | null);
 
             /** AppStateSyncKeyData timestamp. */
-            public timestamp: (number|Long);
+            public timestamp: (number | Long);
 
             /**
              * Creates a new AppStateSyncKeyData instance using the specified properties.
@@ -10375,7 +10375,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.AppStateSyncKeyData;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.AppStateSyncKeyData;
 
             /**
              * Decodes an AppStateSyncKeyData message from the specified reader or buffer, length delimited.
@@ -10384,14 +10384,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.AppStateSyncKeyData;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.AppStateSyncKeyData;
 
             /**
              * Verifies an AppStateSyncKeyData message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an AppStateSyncKeyData message from a plain object. Also converts values to their respective internal types.
@@ -10419,13 +10419,13 @@ export namespace proto {
         interface IAppStateSyncKeyFingerprint {
 
             /** AppStateSyncKeyFingerprint rawId */
-            rawId?: (number|null);
+            rawId?: (number | null);
 
             /** AppStateSyncKeyFingerprint currentIndex */
-            currentIndex?: (number|null);
+            currentIndex?: (number | null);
 
             /** AppStateSyncKeyFingerprint deviceIndexes */
-            deviceIndexes?: (number[]|null);
+            deviceIndexes?: (number[] | null);
         }
 
         /** Represents an AppStateSyncKeyFingerprint. */
@@ -10477,7 +10477,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.AppStateSyncKeyFingerprint;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.AppStateSyncKeyFingerprint;
 
             /**
              * Decodes an AppStateSyncKeyFingerprint message from the specified reader or buffer, length delimited.
@@ -10486,14 +10486,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.AppStateSyncKeyFingerprint;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.AppStateSyncKeyFingerprint;
 
             /**
              * Verifies an AppStateSyncKeyFingerprint message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an AppStateSyncKeyFingerprint message from a plain object. Also converts values to their respective internal types.
@@ -10521,7 +10521,7 @@ export namespace proto {
         interface IAppStateSyncKeyId {
 
             /** AppStateSyncKeyId keyId */
-            keyId?: (Uint8Array|null);
+            keyId?: (Uint8Array | null);
         }
 
         /** Represents an AppStateSyncKeyId. */
@@ -10567,7 +10567,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.AppStateSyncKeyId;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.AppStateSyncKeyId;
 
             /**
              * Decodes an AppStateSyncKeyId message from the specified reader or buffer, length delimited.
@@ -10576,14 +10576,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.AppStateSyncKeyId;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.AppStateSyncKeyId;
 
             /**
              * Verifies an AppStateSyncKeyId message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an AppStateSyncKeyId message from a plain object. Also converts values to their respective internal types.
@@ -10611,7 +10611,7 @@ export namespace proto {
         interface IAppStateSyncKeyRequest {
 
             /** AppStateSyncKeyRequest keyIds */
-            keyIds?: (proto.Message.IAppStateSyncKeyId[]|null);
+            keyIds?: (proto.Message.IAppStateSyncKeyId[] | null);
         }
 
         /** Represents an AppStateSyncKeyRequest. */
@@ -10657,7 +10657,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.AppStateSyncKeyRequest;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.AppStateSyncKeyRequest;
 
             /**
              * Decodes an AppStateSyncKeyRequest message from the specified reader or buffer, length delimited.
@@ -10666,14 +10666,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.AppStateSyncKeyRequest;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.AppStateSyncKeyRequest;
 
             /**
              * Verifies an AppStateSyncKeyRequest message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an AppStateSyncKeyRequest message from a plain object. Also converts values to their respective internal types.
@@ -10701,7 +10701,7 @@ export namespace proto {
         interface IAppStateSyncKeyShare {
 
             /** AppStateSyncKeyShare keys */
-            keys?: (proto.Message.IAppStateSyncKey[]|null);
+            keys?: (proto.Message.IAppStateSyncKey[] | null);
         }
 
         /** Represents an AppStateSyncKeyShare. */
@@ -10747,7 +10747,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.AppStateSyncKeyShare;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.AppStateSyncKeyShare;
 
             /**
              * Decodes an AppStateSyncKeyShare message from the specified reader or buffer, length delimited.
@@ -10756,14 +10756,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.AppStateSyncKeyShare;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.AppStateSyncKeyShare;
 
             /**
              * Verifies an AppStateSyncKeyShare message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an AppStateSyncKeyShare message from a plain object. Also converts values to their respective internal types.
@@ -10791,49 +10791,49 @@ export namespace proto {
         interface IAudioMessage {
 
             /** AudioMessage url */
-            url?: (string|null);
+            url?: (string | null);
 
             /** AudioMessage mimetype */
-            mimetype?: (string|null);
+            mimetype?: (string | null);
 
             /** AudioMessage fileSha256 */
-            fileSha256?: (Uint8Array|null);
+            fileSha256?: (Uint8Array | null);
 
             /** AudioMessage fileLength */
-            fileLength?: (number|Long|null);
+            fileLength?: (number | Long | null);
 
             /** AudioMessage seconds */
-            seconds?: (number|null);
+            seconds?: (number | null);
 
             /** AudioMessage ptt */
-            ptt?: (boolean|null);
+            ptt?: (boolean | null);
 
             /** AudioMessage mediaKey */
-            mediaKey?: (Uint8Array|null);
+            mediaKey?: (Uint8Array | null);
 
             /** AudioMessage fileEncSha256 */
-            fileEncSha256?: (Uint8Array|null);
+            fileEncSha256?: (Uint8Array | null);
 
             /** AudioMessage directPath */
-            directPath?: (string|null);
+            directPath?: (string | null);
 
             /** AudioMessage mediaKeyTimestamp */
-            mediaKeyTimestamp?: (number|Long|null);
+            mediaKeyTimestamp?: (number | Long | null);
 
             /** AudioMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
 
             /** AudioMessage streamingSidecar */
-            streamingSidecar?: (Uint8Array|null);
+            streamingSidecar?: (Uint8Array | null);
 
             /** AudioMessage waveform */
-            waveform?: (Uint8Array|null);
+            waveform?: (Uint8Array | null);
 
             /** AudioMessage backgroundArgb */
-            backgroundArgb?: (number|null);
+            backgroundArgb?: (number | null);
 
             /** AudioMessage viewOnce */
-            viewOnce?: (boolean|null);
+            viewOnce?: (boolean | null);
         }
 
         /** Represents an AudioMessage. */
@@ -10855,7 +10855,7 @@ export namespace proto {
             public fileSha256: Uint8Array;
 
             /** AudioMessage fileLength. */
-            public fileLength: (number|Long);
+            public fileLength: (number | Long);
 
             /** AudioMessage seconds. */
             public seconds: number;
@@ -10873,10 +10873,10 @@ export namespace proto {
             public directPath: string;
 
             /** AudioMessage mediaKeyTimestamp. */
-            public mediaKeyTimestamp: (number|Long);
+            public mediaKeyTimestamp: (number | Long);
 
             /** AudioMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /** AudioMessage streamingSidecar. */
             public streamingSidecar: Uint8Array;
@@ -10921,7 +10921,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.AudioMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.AudioMessage;
 
             /**
              * Decodes an AudioMessage message from the specified reader or buffer, length delimited.
@@ -10930,14 +10930,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.AudioMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.AudioMessage;
 
             /**
              * Verifies an AudioMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an AudioMessage message from a plain object. Also converts values to their respective internal types.
@@ -10965,16 +10965,16 @@ export namespace proto {
         interface IBCallMessage {
 
             /** BCallMessage sessionId */
-            sessionId?: (string|null);
+            sessionId?: (string | null);
 
             /** BCallMessage mediaType */
-            mediaType?: (proto.Message.BCallMessage.MediaType|null);
+            mediaType?: (proto.Message.BCallMessage.MediaType | null);
 
             /** BCallMessage masterKey */
-            masterKey?: (Uint8Array|null);
+            masterKey?: (Uint8Array | null);
 
             /** BCallMessage caption */
-            caption?: (string|null);
+            caption?: (string | null);
         }
 
         /** Represents a BCallMessage. */
@@ -11029,7 +11029,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.BCallMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.BCallMessage;
 
             /**
              * Decodes a BCallMessage message from the specified reader or buffer, length delimited.
@@ -11038,14 +11038,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.BCallMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.BCallMessage;
 
             /**
              * Verifies a BCallMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a BCallMessage message from a plain object. Also converts values to their respective internal types.
@@ -11083,19 +11083,19 @@ export namespace proto {
         interface IBotFeedbackMessage {
 
             /** BotFeedbackMessage messageKey */
-            messageKey?: (proto.IMessageKey|null);
+            messageKey?: (proto.IMessageKey | null);
 
             /** BotFeedbackMessage kind */
-            kind?: (proto.Message.BotFeedbackMessage.BotFeedbackKind|null);
+            kind?: (proto.Message.BotFeedbackMessage.BotFeedbackKind | null);
 
             /** BotFeedbackMessage text */
-            text?: (string|null);
+            text?: (string | null);
 
             /** BotFeedbackMessage kindNegative */
-            kindNegative?: (number|Long|null);
+            kindNegative?: (number | Long | null);
 
             /** BotFeedbackMessage kindPositive */
-            kindPositive?: (number|Long|null);
+            kindPositive?: (number | Long | null);
         }
 
         /** Represents a BotFeedbackMessage. */
@@ -11108,7 +11108,7 @@ export namespace proto {
             constructor(properties?: proto.Message.IBotFeedbackMessage);
 
             /** BotFeedbackMessage messageKey. */
-            public messageKey?: (proto.IMessageKey|null);
+            public messageKey?: (proto.IMessageKey | null);
 
             /** BotFeedbackMessage kind. */
             public kind: proto.Message.BotFeedbackMessage.BotFeedbackKind;
@@ -11117,10 +11117,10 @@ export namespace proto {
             public text: string;
 
             /** BotFeedbackMessage kindNegative. */
-            public kindNegative: (number|Long);
+            public kindNegative: (number | Long);
 
             /** BotFeedbackMessage kindPositive. */
-            public kindPositive: (number|Long);
+            public kindPositive: (number | Long);
 
             /**
              * Creates a new BotFeedbackMessage instance using the specified properties.
@@ -11153,7 +11153,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.BotFeedbackMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.BotFeedbackMessage;
 
             /**
              * Decodes a BotFeedbackMessage message from the specified reader or buffer, length delimited.
@@ -11162,14 +11162,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.BotFeedbackMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.BotFeedbackMessage;
 
             /**
              * Verifies a BotFeedbackMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a BotFeedbackMessage message from a plain object. Also converts values to their respective internal types.
@@ -11232,34 +11232,34 @@ export namespace proto {
         interface IButtonsMessage {
 
             /** ButtonsMessage contentText */
-            contentText?: (string|null);
+            contentText?: (string | null);
 
             /** ButtonsMessage footerText */
-            footerText?: (string|null);
+            footerText?: (string | null);
 
             /** ButtonsMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
 
             /** ButtonsMessage buttons */
-            buttons?: (proto.Message.ButtonsMessage.IButton[]|null);
+            buttons?: (proto.Message.ButtonsMessage.IButton[] | null);
 
             /** ButtonsMessage headerType */
-            headerType?: (proto.Message.ButtonsMessage.HeaderType|null);
+            headerType?: (proto.Message.ButtonsMessage.HeaderType | null);
 
             /** ButtonsMessage text */
-            text?: (string|null);
+            text?: (string | null);
 
             /** ButtonsMessage documentMessage */
-            documentMessage?: (proto.Message.IDocumentMessage|null);
+            documentMessage?: (proto.Message.IDocumentMessage | null);
 
             /** ButtonsMessage imageMessage */
-            imageMessage?: (proto.Message.IImageMessage|null);
+            imageMessage?: (proto.Message.IImageMessage | null);
 
             /** ButtonsMessage videoMessage */
-            videoMessage?: (proto.Message.IVideoMessage|null);
+            videoMessage?: (proto.Message.IVideoMessage | null);
 
             /** ButtonsMessage locationMessage */
-            locationMessage?: (proto.Message.ILocationMessage|null);
+            locationMessage?: (proto.Message.ILocationMessage | null);
         }
 
         /** Represents a ButtonsMessage. */
@@ -11278,7 +11278,7 @@ export namespace proto {
             public footerText: string;
 
             /** ButtonsMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /** ButtonsMessage buttons. */
             public buttons: proto.Message.ButtonsMessage.IButton[];
@@ -11287,22 +11287,22 @@ export namespace proto {
             public headerType: proto.Message.ButtonsMessage.HeaderType;
 
             /** ButtonsMessage text. */
-            public text?: (string|null);
+            public text?: (string | null);
 
             /** ButtonsMessage documentMessage. */
-            public documentMessage?: (proto.Message.IDocumentMessage|null);
+            public documentMessage?: (proto.Message.IDocumentMessage | null);
 
             /** ButtonsMessage imageMessage. */
-            public imageMessage?: (proto.Message.IImageMessage|null);
+            public imageMessage?: (proto.Message.IImageMessage | null);
 
             /** ButtonsMessage videoMessage. */
-            public videoMessage?: (proto.Message.IVideoMessage|null);
+            public videoMessage?: (proto.Message.IVideoMessage | null);
 
             /** ButtonsMessage locationMessage. */
-            public locationMessage?: (proto.Message.ILocationMessage|null);
+            public locationMessage?: (proto.Message.ILocationMessage | null);
 
             /** ButtonsMessage header. */
-            public header?: ("text"|"documentMessage"|"imageMessage"|"videoMessage"|"locationMessage");
+            public header?: ("text" | "documentMessage" | "imageMessage" | "videoMessage" | "locationMessage");
 
             /**
              * Creates a new ButtonsMessage instance using the specified properties.
@@ -11335,7 +11335,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ButtonsMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ButtonsMessage;
 
             /**
              * Decodes a ButtonsMessage message from the specified reader or buffer, length delimited.
@@ -11344,14 +11344,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ButtonsMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ButtonsMessage;
 
             /**
              * Verifies a ButtonsMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ButtonsMessage message from a plain object. Also converts values to their respective internal types.
@@ -11381,16 +11381,16 @@ export namespace proto {
             interface IButton {
 
                 /** Button buttonId */
-                buttonId?: (string|null);
+                buttonId?: (string | null);
 
                 /** Button buttonText */
-                buttonText?: (proto.Message.ButtonsMessage.Button.IButtonText|null);
+                buttonText?: (proto.Message.ButtonsMessage.Button.IButtonText | null);
 
                 /** Button type */
-                type?: (proto.Message.ButtonsMessage.Button.Type|null);
+                type?: (proto.Message.ButtonsMessage.Button.Type | null);
 
                 /** Button nativeFlowInfo */
-                nativeFlowInfo?: (proto.Message.ButtonsMessage.Button.INativeFlowInfo|null);
+                nativeFlowInfo?: (proto.Message.ButtonsMessage.Button.INativeFlowInfo | null);
             }
 
             /** Represents a Button. */
@@ -11406,13 +11406,13 @@ export namespace proto {
                 public buttonId: string;
 
                 /** Button buttonText. */
-                public buttonText?: (proto.Message.ButtonsMessage.Button.IButtonText|null);
+                public buttonText?: (proto.Message.ButtonsMessage.Button.IButtonText | null);
 
                 /** Button type. */
                 public type: proto.Message.ButtonsMessage.Button.Type;
 
                 /** Button nativeFlowInfo. */
-                public nativeFlowInfo?: (proto.Message.ButtonsMessage.Button.INativeFlowInfo|null);
+                public nativeFlowInfo?: (proto.Message.ButtonsMessage.Button.INativeFlowInfo | null);
 
                 /**
                  * Creates a new Button instance using the specified properties.
@@ -11445,7 +11445,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ButtonsMessage.Button;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ButtonsMessage.Button;
 
                 /**
                  * Decodes a Button message from the specified reader or buffer, length delimited.
@@ -11454,14 +11454,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ButtonsMessage.Button;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ButtonsMessage.Button;
 
                 /**
                  * Verifies a Button message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a Button message from a plain object. Also converts values to their respective internal types.
@@ -11491,7 +11491,7 @@ export namespace proto {
                 interface IButtonText {
 
                     /** ButtonText displayText */
-                    displayText?: (string|null);
+                    displayText?: (string | null);
                 }
 
                 /** Represents a ButtonText. */
@@ -11537,7 +11537,7 @@ export namespace proto {
                      * @throws {Error} If the payload is not a reader or valid buffer
                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                      */
-                    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ButtonsMessage.Button.ButtonText;
+                    public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ButtonsMessage.Button.ButtonText;
 
                     /**
                      * Decodes a ButtonText message from the specified reader or buffer, length delimited.
@@ -11546,14 +11546,14 @@ export namespace proto {
                      * @throws {Error} If the payload is not a reader or valid buffer
                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                      */
-                    public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ButtonsMessage.Button.ButtonText;
+                    public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ButtonsMessage.Button.ButtonText;
 
                     /**
                      * Verifies a ButtonText message.
                      * @param message Plain object to verify
                      * @returns `null` if valid, otherwise the reason why it is not
                      */
-                    public static verify(message: { [k: string]: any }): (string|null);
+                    public static verify(message: { [k: string]: any }): (string | null);
 
                     /**
                      * Creates a ButtonText message from a plain object. Also converts values to their respective internal types.
@@ -11581,10 +11581,10 @@ export namespace proto {
                 interface INativeFlowInfo {
 
                     /** NativeFlowInfo name */
-                    name?: (string|null);
+                    name?: (string | null);
 
                     /** NativeFlowInfo paramsJson */
-                    paramsJson?: (string|null);
+                    paramsJson?: (string | null);
                 }
 
                 /** Represents a NativeFlowInfo. */
@@ -11633,7 +11633,7 @@ export namespace proto {
                      * @throws {Error} If the payload is not a reader or valid buffer
                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                      */
-                    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ButtonsMessage.Button.NativeFlowInfo;
+                    public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ButtonsMessage.Button.NativeFlowInfo;
 
                     /**
                      * Decodes a NativeFlowInfo message from the specified reader or buffer, length delimited.
@@ -11642,14 +11642,14 @@ export namespace proto {
                      * @throws {Error} If the payload is not a reader or valid buffer
                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                      */
-                    public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ButtonsMessage.Button.NativeFlowInfo;
+                    public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ButtonsMessage.Button.NativeFlowInfo;
 
                     /**
                      * Verifies a NativeFlowInfo message.
                      * @param message Plain object to verify
                      * @returns `null` if valid, otherwise the reason why it is not
                      */
-                    public static verify(message: { [k: string]: any }): (string|null);
+                    public static verify(message: { [k: string]: any }): (string | null);
 
                     /**
                      * Creates a NativeFlowInfo message from a plain object. Also converts values to their respective internal types.
@@ -11697,16 +11697,16 @@ export namespace proto {
         interface IButtonsResponseMessage {
 
             /** ButtonsResponseMessage selectedButtonId */
-            selectedButtonId?: (string|null);
+            selectedButtonId?: (string | null);
 
             /** ButtonsResponseMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
 
             /** ButtonsResponseMessage type */
-            type?: (proto.Message.ButtonsResponseMessage.Type|null);
+            type?: (proto.Message.ButtonsResponseMessage.Type | null);
 
             /** ButtonsResponseMessage selectedDisplayText */
-            selectedDisplayText?: (string|null);
+            selectedDisplayText?: (string | null);
         }
 
         /** Represents a ButtonsResponseMessage. */
@@ -11722,13 +11722,13 @@ export namespace proto {
             public selectedButtonId: string;
 
             /** ButtonsResponseMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /** ButtonsResponseMessage type. */
             public type: proto.Message.ButtonsResponseMessage.Type;
 
             /** ButtonsResponseMessage selectedDisplayText. */
-            public selectedDisplayText?: (string|null);
+            public selectedDisplayText?: (string | null);
 
             /** ButtonsResponseMessage response. */
             public response?: "selectedDisplayText";
@@ -11764,7 +11764,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ButtonsResponseMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ButtonsResponseMessage;
 
             /**
              * Decodes a ButtonsResponseMessage message from the specified reader or buffer, length delimited.
@@ -11773,14 +11773,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ButtonsResponseMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ButtonsResponseMessage;
 
             /**
              * Verifies a ButtonsResponseMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ButtonsResponseMessage message from a plain object. Also converts values to their respective internal types.
@@ -11817,16 +11817,16 @@ export namespace proto {
         interface ICall {
 
             /** Call callKey */
-            callKey?: (Uint8Array|null);
+            callKey?: (Uint8Array | null);
 
             /** Call conversionSource */
-            conversionSource?: (string|null);
+            conversionSource?: (string | null);
 
             /** Call conversionData */
-            conversionData?: (Uint8Array|null);
+            conversionData?: (Uint8Array | null);
 
             /** Call conversionDelaySeconds */
-            conversionDelaySeconds?: (number|null);
+            conversionDelaySeconds?: (number | null);
         }
 
         /** Represents a Call. */
@@ -11881,7 +11881,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.Call;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.Call;
 
             /**
              * Decodes a Call message from the specified reader or buffer, length delimited.
@@ -11890,14 +11890,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.Call;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.Call;
 
             /**
              * Verifies a Call message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a Call message from a plain object. Also converts values to their respective internal types.
@@ -11925,19 +11925,19 @@ export namespace proto {
         interface ICallLogMessage {
 
             /** CallLogMessage isVideo */
-            isVideo?: (boolean|null);
+            isVideo?: (boolean | null);
 
             /** CallLogMessage callOutcome */
-            callOutcome?: (proto.Message.CallLogMessage.CallOutcome|null);
+            callOutcome?: (proto.Message.CallLogMessage.CallOutcome | null);
 
             /** CallLogMessage durationSecs */
-            durationSecs?: (number|Long|null);
+            durationSecs?: (number | Long | null);
 
             /** CallLogMessage callType */
-            callType?: (proto.Message.CallLogMessage.CallType|null);
+            callType?: (proto.Message.CallLogMessage.CallType | null);
 
             /** CallLogMessage participants */
-            participants?: (proto.Message.CallLogMessage.ICallParticipant[]|null);
+            participants?: (proto.Message.CallLogMessage.ICallParticipant[] | null);
         }
 
         /** Represents a CallLogMessage. */
@@ -11956,7 +11956,7 @@ export namespace proto {
             public callOutcome: proto.Message.CallLogMessage.CallOutcome;
 
             /** CallLogMessage durationSecs. */
-            public durationSecs: (number|Long);
+            public durationSecs: (number | Long);
 
             /** CallLogMessage callType. */
             public callType: proto.Message.CallLogMessage.CallType;
@@ -11995,7 +11995,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.CallLogMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.CallLogMessage;
 
             /**
              * Decodes a CallLogMessage message from the specified reader or buffer, length delimited.
@@ -12004,14 +12004,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.CallLogMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.CallLogMessage;
 
             /**
              * Verifies a CallLogMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a CallLogMessage message from a plain object. Also converts values to their respective internal types.
@@ -12053,10 +12053,10 @@ export namespace proto {
             interface ICallParticipant {
 
                 /** CallParticipant jid */
-                jid?: (string|null);
+                jid?: (string | null);
 
                 /** CallParticipant callOutcome */
-                callOutcome?: (proto.Message.CallLogMessage.CallOutcome|null);
+                callOutcome?: (proto.Message.CallLogMessage.CallOutcome | null);
             }
 
             /** Represents a CallParticipant. */
@@ -12105,7 +12105,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.CallLogMessage.CallParticipant;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.CallLogMessage.CallParticipant;
 
                 /**
                  * Decodes a CallParticipant message from the specified reader or buffer, length delimited.
@@ -12114,14 +12114,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.CallLogMessage.CallParticipant;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.CallLogMessage.CallParticipant;
 
                 /**
                  * Verifies a CallParticipant message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a CallParticipant message from a plain object. Also converts values to their respective internal types.
@@ -12157,7 +12157,7 @@ export namespace proto {
         interface ICancelPaymentRequestMessage {
 
             /** CancelPaymentRequestMessage key */
-            key?: (proto.IMessageKey|null);
+            key?: (proto.IMessageKey | null);
         }
 
         /** Represents a CancelPaymentRequestMessage. */
@@ -12170,7 +12170,7 @@ export namespace proto {
             constructor(properties?: proto.Message.ICancelPaymentRequestMessage);
 
             /** CancelPaymentRequestMessage key. */
-            public key?: (proto.IMessageKey|null);
+            public key?: (proto.IMessageKey | null);
 
             /**
              * Creates a new CancelPaymentRequestMessage instance using the specified properties.
@@ -12203,7 +12203,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.CancelPaymentRequestMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.CancelPaymentRequestMessage;
 
             /**
              * Decodes a CancelPaymentRequestMessage message from the specified reader or buffer, length delimited.
@@ -12212,14 +12212,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.CancelPaymentRequestMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.CancelPaymentRequestMessage;
 
             /**
              * Verifies a CancelPaymentRequestMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a CancelPaymentRequestMessage message from a plain object. Also converts values to their respective internal types.
@@ -12247,10 +12247,10 @@ export namespace proto {
         interface IChat {
 
             /** Chat displayName */
-            displayName?: (string|null);
+            displayName?: (string | null);
 
             /** Chat id */
-            id?: (string|null);
+            id?: (string | null);
         }
 
         /** Represents a Chat. */
@@ -12299,7 +12299,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.Chat;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.Chat;
 
             /**
              * Decodes a Chat message from the specified reader or buffer, length delimited.
@@ -12308,14 +12308,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.Chat;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.Chat;
 
             /**
              * Verifies a Chat message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a Chat message from a plain object. Also converts values to their respective internal types.
@@ -12343,10 +12343,10 @@ export namespace proto {
         interface ICommentMessage {
 
             /** CommentMessage message */
-            message?: (proto.IMessage|null);
+            message?: (proto.IMessage | null);
 
             /** CommentMessage targetMessageKey */
-            targetMessageKey?: (proto.IMessageKey|null);
+            targetMessageKey?: (proto.IMessageKey | null);
         }
 
         /** Represents a CommentMessage. */
@@ -12359,10 +12359,10 @@ export namespace proto {
             constructor(properties?: proto.Message.ICommentMessage);
 
             /** CommentMessage message. */
-            public message?: (proto.IMessage|null);
+            public message?: (proto.IMessage | null);
 
             /** CommentMessage targetMessageKey. */
-            public targetMessageKey?: (proto.IMessageKey|null);
+            public targetMessageKey?: (proto.IMessageKey | null);
 
             /**
              * Creates a new CommentMessage instance using the specified properties.
@@ -12395,7 +12395,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.CommentMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.CommentMessage;
 
             /**
              * Decodes a CommentMessage message from the specified reader or buffer, length delimited.
@@ -12404,14 +12404,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.CommentMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.CommentMessage;
 
             /**
              * Verifies a CommentMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a CommentMessage message from a plain object. Also converts values to their respective internal types.
@@ -12439,13 +12439,13 @@ export namespace proto {
         interface IContactMessage {
 
             /** ContactMessage displayName */
-            displayName?: (string|null);
+            displayName?: (string | null);
 
             /** ContactMessage vcard */
-            vcard?: (string|null);
+            vcard?: (string | null);
 
             /** ContactMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
         }
 
         /** Represents a ContactMessage. */
@@ -12464,7 +12464,7 @@ export namespace proto {
             public vcard: string;
 
             /** ContactMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /**
              * Creates a new ContactMessage instance using the specified properties.
@@ -12497,7 +12497,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ContactMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ContactMessage;
 
             /**
              * Decodes a ContactMessage message from the specified reader or buffer, length delimited.
@@ -12506,14 +12506,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ContactMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ContactMessage;
 
             /**
              * Verifies a ContactMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ContactMessage message from a plain object. Also converts values to their respective internal types.
@@ -12541,13 +12541,13 @@ export namespace proto {
         interface IContactsArrayMessage {
 
             /** ContactsArrayMessage displayName */
-            displayName?: (string|null);
+            displayName?: (string | null);
 
             /** ContactsArrayMessage contacts */
-            contacts?: (proto.Message.IContactMessage[]|null);
+            contacts?: (proto.Message.IContactMessage[] | null);
 
             /** ContactsArrayMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
         }
 
         /** Represents a ContactsArrayMessage. */
@@ -12566,7 +12566,7 @@ export namespace proto {
             public contacts: proto.Message.IContactMessage[];
 
             /** ContactsArrayMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /**
              * Creates a new ContactsArrayMessage instance using the specified properties.
@@ -12599,7 +12599,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ContactsArrayMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ContactsArrayMessage;
 
             /**
              * Decodes a ContactsArrayMessage message from the specified reader or buffer, length delimited.
@@ -12608,14 +12608,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ContactsArrayMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ContactsArrayMessage;
 
             /**
              * Verifies a ContactsArrayMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ContactsArrayMessage message from a plain object. Also converts values to their respective internal types.
@@ -12643,7 +12643,7 @@ export namespace proto {
         interface IDeclinePaymentRequestMessage {
 
             /** DeclinePaymentRequestMessage key */
-            key?: (proto.IMessageKey|null);
+            key?: (proto.IMessageKey | null);
         }
 
         /** Represents a DeclinePaymentRequestMessage. */
@@ -12656,7 +12656,7 @@ export namespace proto {
             constructor(properties?: proto.Message.IDeclinePaymentRequestMessage);
 
             /** DeclinePaymentRequestMessage key. */
-            public key?: (proto.IMessageKey|null);
+            public key?: (proto.IMessageKey | null);
 
             /**
              * Creates a new DeclinePaymentRequestMessage instance using the specified properties.
@@ -12689,7 +12689,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.DeclinePaymentRequestMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.DeclinePaymentRequestMessage;
 
             /**
              * Decodes a DeclinePaymentRequestMessage message from the specified reader or buffer, length delimited.
@@ -12698,14 +12698,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.DeclinePaymentRequestMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.DeclinePaymentRequestMessage;
 
             /**
              * Verifies a DeclinePaymentRequestMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a DeclinePaymentRequestMessage message from a plain object. Also converts values to their respective internal types.
@@ -12733,13 +12733,13 @@ export namespace proto {
         interface IDeviceSentMessage {
 
             /** DeviceSentMessage destinationJid */
-            destinationJid?: (string|null);
+            destinationJid?: (string | null);
 
             /** DeviceSentMessage message */
-            message?: (proto.IMessage|null);
+            message?: (proto.IMessage | null);
 
             /** DeviceSentMessage phash */
-            phash?: (string|null);
+            phash?: (string | null);
         }
 
         /** Represents a DeviceSentMessage. */
@@ -12755,7 +12755,7 @@ export namespace proto {
             public destinationJid: string;
 
             /** DeviceSentMessage message. */
-            public message?: (proto.IMessage|null);
+            public message?: (proto.IMessage | null);
 
             /** DeviceSentMessage phash. */
             public phash: string;
@@ -12791,7 +12791,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.DeviceSentMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.DeviceSentMessage;
 
             /**
              * Decodes a DeviceSentMessage message from the specified reader or buffer, length delimited.
@@ -12800,14 +12800,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.DeviceSentMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.DeviceSentMessage;
 
             /**
              * Verifies a DeviceSentMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a DeviceSentMessage message from a plain object. Also converts values to their respective internal types.
@@ -12835,64 +12835,64 @@ export namespace proto {
         interface IDocumentMessage {
 
             /** DocumentMessage url */
-            url?: (string|null);
+            url?: (string | null);
 
             /** DocumentMessage mimetype */
-            mimetype?: (string|null);
+            mimetype?: (string | null);
 
             /** DocumentMessage title */
-            title?: (string|null);
+            title?: (string | null);
 
             /** DocumentMessage fileSha256 */
-            fileSha256?: (Uint8Array|null);
+            fileSha256?: (Uint8Array | null);
 
             /** DocumentMessage fileLength */
-            fileLength?: (number|Long|null);
+            fileLength?: (number | Long | null);
 
             /** DocumentMessage pageCount */
-            pageCount?: (number|null);
+            pageCount?: (number | null);
 
             /** DocumentMessage mediaKey */
-            mediaKey?: (Uint8Array|null);
+            mediaKey?: (Uint8Array | null);
 
             /** DocumentMessage fileName */
-            fileName?: (string|null);
+            fileName?: (string | null);
 
             /** DocumentMessage fileEncSha256 */
-            fileEncSha256?: (Uint8Array|null);
+            fileEncSha256?: (Uint8Array | null);
 
             /** DocumentMessage directPath */
-            directPath?: (string|null);
+            directPath?: (string | null);
 
             /** DocumentMessage mediaKeyTimestamp */
-            mediaKeyTimestamp?: (number|Long|null);
+            mediaKeyTimestamp?: (number | Long | null);
 
             /** DocumentMessage contactVcard */
-            contactVcard?: (boolean|null);
+            contactVcard?: (boolean | null);
 
             /** DocumentMessage thumbnailDirectPath */
-            thumbnailDirectPath?: (string|null);
+            thumbnailDirectPath?: (string | null);
 
             /** DocumentMessage thumbnailSha256 */
-            thumbnailSha256?: (Uint8Array|null);
+            thumbnailSha256?: (Uint8Array | null);
 
             /** DocumentMessage thumbnailEncSha256 */
-            thumbnailEncSha256?: (Uint8Array|null);
+            thumbnailEncSha256?: (Uint8Array | null);
 
             /** DocumentMessage jpegThumbnail */
-            jpegThumbnail?: (Uint8Array|null);
+            jpegThumbnail?: (Uint8Array | null);
 
             /** DocumentMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
 
             /** DocumentMessage thumbnailHeight */
-            thumbnailHeight?: (number|null);
+            thumbnailHeight?: (number | null);
 
             /** DocumentMessage thumbnailWidth */
-            thumbnailWidth?: (number|null);
+            thumbnailWidth?: (number | null);
 
             /** DocumentMessage caption */
-            caption?: (string|null);
+            caption?: (string | null);
         }
 
         /** Represents a DocumentMessage. */
@@ -12917,7 +12917,7 @@ export namespace proto {
             public fileSha256: Uint8Array;
 
             /** DocumentMessage fileLength. */
-            public fileLength: (number|Long);
+            public fileLength: (number | Long);
 
             /** DocumentMessage pageCount. */
             public pageCount: number;
@@ -12935,7 +12935,7 @@ export namespace proto {
             public directPath: string;
 
             /** DocumentMessage mediaKeyTimestamp. */
-            public mediaKeyTimestamp: (number|Long);
+            public mediaKeyTimestamp: (number | Long);
 
             /** DocumentMessage contactVcard. */
             public contactVcard: boolean;
@@ -12953,7 +12953,7 @@ export namespace proto {
             public jpegThumbnail: Uint8Array;
 
             /** DocumentMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /** DocumentMessage thumbnailHeight. */
             public thumbnailHeight: number;
@@ -12995,7 +12995,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.DocumentMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.DocumentMessage;
 
             /**
              * Decodes a DocumentMessage message from the specified reader or buffer, length delimited.
@@ -13004,14 +13004,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.DocumentMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.DocumentMessage;
 
             /**
              * Verifies a DocumentMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a DocumentMessage message from a plain object. Also converts values to their respective internal types.
@@ -13039,13 +13039,13 @@ export namespace proto {
         interface IEncCommentMessage {
 
             /** EncCommentMessage targetMessageKey */
-            targetMessageKey?: (proto.IMessageKey|null);
+            targetMessageKey?: (proto.IMessageKey | null);
 
             /** EncCommentMessage encPayload */
-            encPayload?: (Uint8Array|null);
+            encPayload?: (Uint8Array | null);
 
             /** EncCommentMessage encIv */
-            encIv?: (Uint8Array|null);
+            encIv?: (Uint8Array | null);
         }
 
         /** Represents an EncCommentMessage. */
@@ -13058,7 +13058,7 @@ export namespace proto {
             constructor(properties?: proto.Message.IEncCommentMessage);
 
             /** EncCommentMessage targetMessageKey. */
-            public targetMessageKey?: (proto.IMessageKey|null);
+            public targetMessageKey?: (proto.IMessageKey | null);
 
             /** EncCommentMessage encPayload. */
             public encPayload: Uint8Array;
@@ -13097,7 +13097,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.EncCommentMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.EncCommentMessage;
 
             /**
              * Decodes an EncCommentMessage message from the specified reader or buffer, length delimited.
@@ -13106,14 +13106,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.EncCommentMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.EncCommentMessage;
 
             /**
              * Verifies an EncCommentMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an EncCommentMessage message from a plain object. Also converts values to their respective internal types.
@@ -13141,13 +13141,13 @@ export namespace proto {
         interface IEncEventUpdateMessage {
 
             /** EncEventUpdateMessage eventCreationMessageKey */
-            eventCreationMessageKey?: (proto.IMessageKey|null);
+            eventCreationMessageKey?: (proto.IMessageKey | null);
 
             /** EncEventUpdateMessage encPayload */
-            encPayload?: (Uint8Array|null);
+            encPayload?: (Uint8Array | null);
 
             /** EncEventUpdateMessage encIv */
-            encIv?: (Uint8Array|null);
+            encIv?: (Uint8Array | null);
         }
 
         /** Represents an EncEventUpdateMessage. */
@@ -13160,7 +13160,7 @@ export namespace proto {
             constructor(properties?: proto.Message.IEncEventUpdateMessage);
 
             /** EncEventUpdateMessage eventCreationMessageKey. */
-            public eventCreationMessageKey?: (proto.IMessageKey|null);
+            public eventCreationMessageKey?: (proto.IMessageKey | null);
 
             /** EncEventUpdateMessage encPayload. */
             public encPayload: Uint8Array;
@@ -13199,7 +13199,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.EncEventUpdateMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.EncEventUpdateMessage;
 
             /**
              * Decodes an EncEventUpdateMessage message from the specified reader or buffer, length delimited.
@@ -13208,14 +13208,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.EncEventUpdateMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.EncEventUpdateMessage;
 
             /**
              * Verifies an EncEventUpdateMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an EncEventUpdateMessage message from a plain object. Also converts values to their respective internal types.
@@ -13243,13 +13243,13 @@ export namespace proto {
         interface IEncReactionMessage {
 
             /** EncReactionMessage targetMessageKey */
-            targetMessageKey?: (proto.IMessageKey|null);
+            targetMessageKey?: (proto.IMessageKey | null);
 
             /** EncReactionMessage encPayload */
-            encPayload?: (Uint8Array|null);
+            encPayload?: (Uint8Array | null);
 
             /** EncReactionMessage encIv */
-            encIv?: (Uint8Array|null);
+            encIv?: (Uint8Array | null);
         }
 
         /** Represents an EncReactionMessage. */
@@ -13262,7 +13262,7 @@ export namespace proto {
             constructor(properties?: proto.Message.IEncReactionMessage);
 
             /** EncReactionMessage targetMessageKey. */
-            public targetMessageKey?: (proto.IMessageKey|null);
+            public targetMessageKey?: (proto.IMessageKey | null);
 
             /** EncReactionMessage encPayload. */
             public encPayload: Uint8Array;
@@ -13301,7 +13301,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.EncReactionMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.EncReactionMessage;
 
             /**
              * Decodes an EncReactionMessage message from the specified reader or buffer, length delimited.
@@ -13310,14 +13310,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.EncReactionMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.EncReactionMessage;
 
             /**
              * Verifies an EncReactionMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an EncReactionMessage message from a plain object. Also converts values to their respective internal types.
@@ -13345,10 +13345,10 @@ export namespace proto {
         interface IEventEditMessage {
 
             /** EventEditMessage eventEditMessage */
-            eventEditMessage?: (proto.Message.IEventMessage|null);
+            eventEditMessage?: (proto.Message.IEventMessage | null);
 
             /** EventEditMessage editTimestampMs */
-            editTimestampMs?: (number|Long|null);
+            editTimestampMs?: (number | Long | null);
         }
 
         /** Represents an EventEditMessage. */
@@ -13361,10 +13361,10 @@ export namespace proto {
             constructor(properties?: proto.Message.IEventEditMessage);
 
             /** EventEditMessage eventEditMessage. */
-            public eventEditMessage?: (proto.Message.IEventMessage|null);
+            public eventEditMessage?: (proto.Message.IEventMessage | null);
 
             /** EventEditMessage editTimestampMs. */
-            public editTimestampMs: (number|Long);
+            public editTimestampMs: (number | Long);
 
             /**
              * Creates a new EventEditMessage instance using the specified properties.
@@ -13397,7 +13397,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.EventEditMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.EventEditMessage;
 
             /**
              * Decodes an EventEditMessage message from the specified reader or buffer, length delimited.
@@ -13406,14 +13406,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.EventEditMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.EventEditMessage;
 
             /**
              * Verifies an EventEditMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an EventEditMessage message from a plain object. Also converts values to their respective internal types.
@@ -13441,25 +13441,25 @@ export namespace proto {
         interface IEventMessage {
 
             /** EventMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
 
             /** EventMessage isCanceled */
-            isCanceled?: (boolean|null);
+            isCanceled?: (boolean | null);
 
             /** EventMessage name */
-            name?: (string|null);
+            name?: (string | null);
 
             /** EventMessage description */
-            description?: (string|null);
+            description?: (string | null);
 
             /** EventMessage location */
-            location?: (proto.Message.ILocationMessage|null);
+            location?: (proto.Message.ILocationMessage | null);
 
             /** EventMessage joinLink */
-            joinLink?: (string|null);
+            joinLink?: (string | null);
 
             /** EventMessage startTime */
-            startTime?: (number|Long|null);
+            startTime?: (number | Long | null);
         }
 
         /** Represents an EventMessage. */
@@ -13472,7 +13472,7 @@ export namespace proto {
             constructor(properties?: proto.Message.IEventMessage);
 
             /** EventMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /** EventMessage isCanceled. */
             public isCanceled: boolean;
@@ -13484,13 +13484,13 @@ export namespace proto {
             public description: string;
 
             /** EventMessage location. */
-            public location?: (proto.Message.ILocationMessage|null);
+            public location?: (proto.Message.ILocationMessage | null);
 
             /** EventMessage joinLink. */
             public joinLink: string;
 
             /** EventMessage startTime. */
-            public startTime: (number|Long);
+            public startTime: (number | Long);
 
             /**
              * Creates a new EventMessage instance using the specified properties.
@@ -13523,7 +13523,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.EventMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.EventMessage;
 
             /**
              * Decodes an EventMessage message from the specified reader or buffer, length delimited.
@@ -13532,14 +13532,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.EventMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.EventMessage;
 
             /**
              * Verifies an EventMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an EventMessage message from a plain object. Also converts values to their respective internal types.
@@ -13567,10 +13567,10 @@ export namespace proto {
         interface IEventResponseMessage {
 
             /** EventResponseMessage response */
-            response?: (proto.Message.EventResponseMessage.EventResponseType|null);
+            response?: (proto.Message.EventResponseMessage.EventResponseType | null);
 
             /** EventResponseMessage timestampMs */
-            timestampMs?: (number|Long|null);
+            timestampMs?: (number | Long | null);
         }
 
         /** Represents an EventResponseMessage. */
@@ -13586,7 +13586,7 @@ export namespace proto {
             public response: proto.Message.EventResponseMessage.EventResponseType;
 
             /** EventResponseMessage timestampMs. */
-            public timestampMs: (number|Long);
+            public timestampMs: (number | Long);
 
             /**
              * Creates a new EventResponseMessage instance using the specified properties.
@@ -13619,7 +13619,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.EventResponseMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.EventResponseMessage;
 
             /**
              * Decodes an EventResponseMessage message from the specified reader or buffer, length delimited.
@@ -13628,14 +13628,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.EventResponseMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.EventResponseMessage;
 
             /**
              * Verifies an EventResponseMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an EventResponseMessage message from a plain object. Also converts values to their respective internal types.
@@ -13673,10 +13673,10 @@ export namespace proto {
         interface IEventUpdateMessage {
 
             /** EventUpdateMessage response */
-            response?: (proto.Message.IEventResponseMessage|null);
+            response?: (proto.Message.IEventResponseMessage | null);
 
             /** EventUpdateMessage edit */
-            edit?: (proto.Message.IEventEditMessage|null);
+            edit?: (proto.Message.IEventEditMessage | null);
         }
 
         /** Represents an EventUpdateMessage. */
@@ -13689,10 +13689,10 @@ export namespace proto {
             constructor(properties?: proto.Message.IEventUpdateMessage);
 
             /** EventUpdateMessage response. */
-            public response?: (proto.Message.IEventResponseMessage|null);
+            public response?: (proto.Message.IEventResponseMessage | null);
 
             /** EventUpdateMessage edit. */
-            public edit?: (proto.Message.IEventEditMessage|null);
+            public edit?: (proto.Message.IEventEditMessage | null);
 
             /**
              * Creates a new EventUpdateMessage instance using the specified properties.
@@ -13725,7 +13725,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.EventUpdateMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.EventUpdateMessage;
 
             /**
              * Decodes an EventUpdateMessage message from the specified reader or buffer, length delimited.
@@ -13734,14 +13734,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.EventUpdateMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.EventUpdateMessage;
 
             /**
              * Verifies an EventUpdateMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an EventUpdateMessage message from a plain object. Also converts values to their respective internal types.
@@ -13769,76 +13769,76 @@ export namespace proto {
         interface IExtendedTextMessage {
 
             /** ExtendedTextMessage text */
-            text?: (string|null);
+            text?: (string | null);
 
             /** ExtendedTextMessage matchedText */
-            matchedText?: (string|null);
+            matchedText?: (string | null);
 
             /** ExtendedTextMessage canonicalUrl */
-            canonicalUrl?: (string|null);
+            canonicalUrl?: (string | null);
 
             /** ExtendedTextMessage description */
-            description?: (string|null);
+            description?: (string | null);
 
             /** ExtendedTextMessage title */
-            title?: (string|null);
+            title?: (string | null);
 
             /** ExtendedTextMessage textArgb */
-            textArgb?: (number|null);
+            textArgb?: (number | null);
 
             /** ExtendedTextMessage backgroundArgb */
-            backgroundArgb?: (number|null);
+            backgroundArgb?: (number | null);
 
             /** ExtendedTextMessage font */
-            font?: (proto.Message.ExtendedTextMessage.FontType|null);
+            font?: (proto.Message.ExtendedTextMessage.FontType | null);
 
             /** ExtendedTextMessage previewType */
-            previewType?: (proto.Message.ExtendedTextMessage.PreviewType|null);
+            previewType?: (proto.Message.ExtendedTextMessage.PreviewType | null);
 
             /** ExtendedTextMessage jpegThumbnail */
-            jpegThumbnail?: (Uint8Array|null);
+            jpegThumbnail?: (Uint8Array | null);
 
             /** ExtendedTextMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
 
             /** ExtendedTextMessage doNotPlayInline */
-            doNotPlayInline?: (boolean|null);
+            doNotPlayInline?: (boolean | null);
 
             /** ExtendedTextMessage thumbnailDirectPath */
-            thumbnailDirectPath?: (string|null);
+            thumbnailDirectPath?: (string | null);
 
             /** ExtendedTextMessage thumbnailSha256 */
-            thumbnailSha256?: (Uint8Array|null);
+            thumbnailSha256?: (Uint8Array | null);
 
             /** ExtendedTextMessage thumbnailEncSha256 */
-            thumbnailEncSha256?: (Uint8Array|null);
+            thumbnailEncSha256?: (Uint8Array | null);
 
             /** ExtendedTextMessage mediaKey */
-            mediaKey?: (Uint8Array|null);
+            mediaKey?: (Uint8Array | null);
 
             /** ExtendedTextMessage mediaKeyTimestamp */
-            mediaKeyTimestamp?: (number|Long|null);
+            mediaKeyTimestamp?: (number | Long | null);
 
             /** ExtendedTextMessage thumbnailHeight */
-            thumbnailHeight?: (number|null);
+            thumbnailHeight?: (number | null);
 
             /** ExtendedTextMessage thumbnailWidth */
-            thumbnailWidth?: (number|null);
+            thumbnailWidth?: (number | null);
 
             /** ExtendedTextMessage inviteLinkGroupType */
-            inviteLinkGroupType?: (proto.Message.ExtendedTextMessage.InviteLinkGroupType|null);
+            inviteLinkGroupType?: (proto.Message.ExtendedTextMessage.InviteLinkGroupType | null);
 
             /** ExtendedTextMessage inviteLinkParentGroupSubjectV2 */
-            inviteLinkParentGroupSubjectV2?: (string|null);
+            inviteLinkParentGroupSubjectV2?: (string | null);
 
             /** ExtendedTextMessage inviteLinkParentGroupThumbnailV2 */
-            inviteLinkParentGroupThumbnailV2?: (Uint8Array|null);
+            inviteLinkParentGroupThumbnailV2?: (Uint8Array | null);
 
             /** ExtendedTextMessage inviteLinkGroupTypeV2 */
-            inviteLinkGroupTypeV2?: (proto.Message.ExtendedTextMessage.InviteLinkGroupType|null);
+            inviteLinkGroupTypeV2?: (proto.Message.ExtendedTextMessage.InviteLinkGroupType | null);
 
             /** ExtendedTextMessage viewOnce */
-            viewOnce?: (boolean|null);
+            viewOnce?: (boolean | null);
         }
 
         /** Represents an ExtendedTextMessage. */
@@ -13881,7 +13881,7 @@ export namespace proto {
             public jpegThumbnail: Uint8Array;
 
             /** ExtendedTextMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /** ExtendedTextMessage doNotPlayInline. */
             public doNotPlayInline: boolean;
@@ -13899,7 +13899,7 @@ export namespace proto {
             public mediaKey: Uint8Array;
 
             /** ExtendedTextMessage mediaKeyTimestamp. */
-            public mediaKeyTimestamp: (number|Long);
+            public mediaKeyTimestamp: (number | Long);
 
             /** ExtendedTextMessage thumbnailHeight. */
             public thumbnailHeight: number;
@@ -13953,7 +13953,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ExtendedTextMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ExtendedTextMessage;
 
             /**
              * Decodes an ExtendedTextMessage message from the specified reader or buffer, length delimited.
@@ -13962,14 +13962,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ExtendedTextMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ExtendedTextMessage;
 
             /**
              * Verifies an ExtendedTextMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an ExtendedTextMessage message from a plain object. Also converts values to their respective internal types.
@@ -14028,10 +14028,10 @@ export namespace proto {
         interface IExtendedTextMessageWithParentKey {
 
             /** ExtendedTextMessageWithParentKey key */
-            key?: (proto.IMessageKey|null);
+            key?: (proto.IMessageKey | null);
 
             /** ExtendedTextMessageWithParentKey extendedTextMessage */
-            extendedTextMessage?: (proto.Message.IExtendedTextMessage|null);
+            extendedTextMessage?: (proto.Message.IExtendedTextMessage | null);
         }
 
         /** Represents an ExtendedTextMessageWithParentKey. */
@@ -14044,10 +14044,10 @@ export namespace proto {
             constructor(properties?: proto.Message.IExtendedTextMessageWithParentKey);
 
             /** ExtendedTextMessageWithParentKey key. */
-            public key?: (proto.IMessageKey|null);
+            public key?: (proto.IMessageKey | null);
 
             /** ExtendedTextMessageWithParentKey extendedTextMessage. */
-            public extendedTextMessage?: (proto.Message.IExtendedTextMessage|null);
+            public extendedTextMessage?: (proto.Message.IExtendedTextMessage | null);
 
             /**
              * Creates a new ExtendedTextMessageWithParentKey instance using the specified properties.
@@ -14080,7 +14080,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ExtendedTextMessageWithParentKey;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ExtendedTextMessageWithParentKey;
 
             /**
              * Decodes an ExtendedTextMessageWithParentKey message from the specified reader or buffer, length delimited.
@@ -14089,14 +14089,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ExtendedTextMessageWithParentKey;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ExtendedTextMessageWithParentKey;
 
             /**
              * Verifies an ExtendedTextMessageWithParentKey message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an ExtendedTextMessageWithParentKey message from a plain object. Also converts values to their respective internal types.
@@ -14124,7 +14124,7 @@ export namespace proto {
         interface IFutureProofMessage {
 
             /** FutureProofMessage message */
-            message?: (proto.IMessage|null);
+            message?: (proto.IMessage | null);
         }
 
         /** Represents a FutureProofMessage. */
@@ -14137,7 +14137,7 @@ export namespace proto {
             constructor(properties?: proto.Message.IFutureProofMessage);
 
             /** FutureProofMessage message. */
-            public message?: (proto.IMessage|null);
+            public message?: (proto.IMessage | null);
 
             /**
              * Creates a new FutureProofMessage instance using the specified properties.
@@ -14170,7 +14170,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.FutureProofMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.FutureProofMessage;
 
             /**
              * Decodes a FutureProofMessage message from the specified reader or buffer, length delimited.
@@ -14179,14 +14179,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.FutureProofMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.FutureProofMessage;
 
             /**
              * Verifies a FutureProofMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a FutureProofMessage message from a plain object. Also converts values to their respective internal types.
@@ -14214,28 +14214,28 @@ export namespace proto {
         interface IGroupInviteMessage {
 
             /** GroupInviteMessage groupJid */
-            groupJid?: (string|null);
+            groupJid?: (string | null);
 
             /** GroupInviteMessage inviteCode */
-            inviteCode?: (string|null);
+            inviteCode?: (string | null);
 
             /** GroupInviteMessage inviteExpiration */
-            inviteExpiration?: (number|Long|null);
+            inviteExpiration?: (number | Long | null);
 
             /** GroupInviteMessage groupName */
-            groupName?: (string|null);
+            groupName?: (string | null);
 
             /** GroupInviteMessage jpegThumbnail */
-            jpegThumbnail?: (Uint8Array|null);
+            jpegThumbnail?: (Uint8Array | null);
 
             /** GroupInviteMessage caption */
-            caption?: (string|null);
+            caption?: (string | null);
 
             /** GroupInviteMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
 
             /** GroupInviteMessage groupType */
-            groupType?: (proto.Message.GroupInviteMessage.GroupType|null);
+            groupType?: (proto.Message.GroupInviteMessage.GroupType | null);
         }
 
         /** Represents a GroupInviteMessage. */
@@ -14254,7 +14254,7 @@ export namespace proto {
             public inviteCode: string;
 
             /** GroupInviteMessage inviteExpiration. */
-            public inviteExpiration: (number|Long);
+            public inviteExpiration: (number | Long);
 
             /** GroupInviteMessage groupName. */
             public groupName: string;
@@ -14266,7 +14266,7 @@ export namespace proto {
             public caption: string;
 
             /** GroupInviteMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /** GroupInviteMessage groupType. */
             public groupType: proto.Message.GroupInviteMessage.GroupType;
@@ -14302,7 +14302,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.GroupInviteMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.GroupInviteMessage;
 
             /**
              * Decodes a GroupInviteMessage message from the specified reader or buffer, length delimited.
@@ -14311,14 +14311,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.GroupInviteMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.GroupInviteMessage;
 
             /**
              * Verifies a GroupInviteMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a GroupInviteMessage message from a plain object. Also converts values to their respective internal types.
@@ -14355,31 +14355,31 @@ export namespace proto {
         interface IHighlyStructuredMessage {
 
             /** HighlyStructuredMessage namespace */
-            namespace?: (string|null);
+            namespace?: (string | null);
 
             /** HighlyStructuredMessage elementName */
-            elementName?: (string|null);
+            elementName?: (string | null);
 
             /** HighlyStructuredMessage params */
-            params?: (string[]|null);
+            params?: (string[] | null);
 
             /** HighlyStructuredMessage fallbackLg */
-            fallbackLg?: (string|null);
+            fallbackLg?: (string | null);
 
             /** HighlyStructuredMessage fallbackLc */
-            fallbackLc?: (string|null);
+            fallbackLc?: (string | null);
 
             /** HighlyStructuredMessage localizableParams */
-            localizableParams?: (proto.Message.HighlyStructuredMessage.IHSMLocalizableParameter[]|null);
+            localizableParams?: (proto.Message.HighlyStructuredMessage.IHSMLocalizableParameter[] | null);
 
             /** HighlyStructuredMessage deterministicLg */
-            deterministicLg?: (string|null);
+            deterministicLg?: (string | null);
 
             /** HighlyStructuredMessage deterministicLc */
-            deterministicLc?: (string|null);
+            deterministicLc?: (string | null);
 
             /** HighlyStructuredMessage hydratedHsm */
-            hydratedHsm?: (proto.Message.ITemplateMessage|null);
+            hydratedHsm?: (proto.Message.ITemplateMessage | null);
         }
 
         /** Represents a HighlyStructuredMessage. */
@@ -14416,7 +14416,7 @@ export namespace proto {
             public deterministicLc: string;
 
             /** HighlyStructuredMessage hydratedHsm. */
-            public hydratedHsm?: (proto.Message.ITemplateMessage|null);
+            public hydratedHsm?: (proto.Message.ITemplateMessage | null);
 
             /**
              * Creates a new HighlyStructuredMessage instance using the specified properties.
@@ -14449,7 +14449,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.HighlyStructuredMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.HighlyStructuredMessage;
 
             /**
              * Decodes a HighlyStructuredMessage message from the specified reader or buffer, length delimited.
@@ -14458,14 +14458,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.HighlyStructuredMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.HighlyStructuredMessage;
 
             /**
              * Verifies a HighlyStructuredMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a HighlyStructuredMessage message from a plain object. Also converts values to their respective internal types.
@@ -14495,13 +14495,13 @@ export namespace proto {
             interface IHSMLocalizableParameter {
 
                 /** HSMLocalizableParameter default */
-                "default"?: (string|null);
+                "default"?: (string | null);
 
                 /** HSMLocalizableParameter currency */
-                currency?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.IHSMCurrency|null);
+                currency?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.IHSMCurrency | null);
 
                 /** HSMLocalizableParameter dateTime */
-                dateTime?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.IHSMDateTime|null);
+                dateTime?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.IHSMDateTime | null);
             }
 
             /** Represents a HSMLocalizableParameter. */
@@ -14517,13 +14517,13 @@ export namespace proto {
                 public default: string;
 
                 /** HSMLocalizableParameter currency. */
-                public currency?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.IHSMCurrency|null);
+                public currency?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.IHSMCurrency | null);
 
                 /** HSMLocalizableParameter dateTime. */
-                public dateTime?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.IHSMDateTime|null);
+                public dateTime?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.IHSMDateTime | null);
 
                 /** HSMLocalizableParameter paramOneof. */
-                public paramOneof?: ("currency"|"dateTime");
+                public paramOneof?: ("currency" | "dateTime");
 
                 /**
                  * Creates a new HSMLocalizableParameter instance using the specified properties.
@@ -14556,7 +14556,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter;
 
                 /**
                  * Decodes a HSMLocalizableParameter message from the specified reader or buffer, length delimited.
@@ -14565,14 +14565,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter;
 
                 /**
                  * Verifies a HSMLocalizableParameter message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a HSMLocalizableParameter message from a plain object. Also converts values to their respective internal types.
@@ -14602,10 +14602,10 @@ export namespace proto {
                 interface IHSMCurrency {
 
                     /** HSMCurrency currencyCode */
-                    currencyCode?: (string|null);
+                    currencyCode?: (string | null);
 
                     /** HSMCurrency amount1000 */
-                    amount1000?: (number|Long|null);
+                    amount1000?: (number | Long | null);
                 }
 
                 /** Represents a HSMCurrency. */
@@ -14621,7 +14621,7 @@ export namespace proto {
                     public currencyCode: string;
 
                     /** HSMCurrency amount1000. */
-                    public amount1000: (number|Long);
+                    public amount1000: (number | Long);
 
                     /**
                      * Creates a new HSMCurrency instance using the specified properties.
@@ -14654,7 +14654,7 @@ export namespace proto {
                      * @throws {Error} If the payload is not a reader or valid buffer
                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                      */
-                    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMCurrency;
+                    public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMCurrency;
 
                     /**
                      * Decodes a HSMCurrency message from the specified reader or buffer, length delimited.
@@ -14663,14 +14663,14 @@ export namespace proto {
                      * @throws {Error} If the payload is not a reader or valid buffer
                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                      */
-                    public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMCurrency;
+                    public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMCurrency;
 
                     /**
                      * Verifies a HSMCurrency message.
                      * @param message Plain object to verify
                      * @returns `null` if valid, otherwise the reason why it is not
                      */
-                    public static verify(message: { [k: string]: any }): (string|null);
+                    public static verify(message: { [k: string]: any }): (string | null);
 
                     /**
                      * Creates a HSMCurrency message from a plain object. Also converts values to their respective internal types.
@@ -14698,10 +14698,10 @@ export namespace proto {
                 interface IHSMDateTime {
 
                     /** HSMDateTime component */
-                    component?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.IHSMDateTimeComponent|null);
+                    component?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.IHSMDateTimeComponent | null);
 
                     /** HSMDateTime unixEpoch */
-                    unixEpoch?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.IHSMDateTimeUnixEpoch|null);
+                    unixEpoch?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.IHSMDateTimeUnixEpoch | null);
                 }
 
                 /** Represents a HSMDateTime. */
@@ -14714,13 +14714,13 @@ export namespace proto {
                     constructor(properties?: proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.IHSMDateTime);
 
                     /** HSMDateTime component. */
-                    public component?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.IHSMDateTimeComponent|null);
+                    public component?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.IHSMDateTimeComponent | null);
 
                     /** HSMDateTime unixEpoch. */
-                    public unixEpoch?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.IHSMDateTimeUnixEpoch|null);
+                    public unixEpoch?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.IHSMDateTimeUnixEpoch | null);
 
                     /** HSMDateTime datetimeOneof. */
-                    public datetimeOneof?: ("component"|"unixEpoch");
+                    public datetimeOneof?: ("component" | "unixEpoch");
 
                     /**
                      * Creates a new HSMDateTime instance using the specified properties.
@@ -14753,7 +14753,7 @@ export namespace proto {
                      * @throws {Error} If the payload is not a reader or valid buffer
                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                      */
-                    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime;
+                    public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime;
 
                     /**
                      * Decodes a HSMDateTime message from the specified reader or buffer, length delimited.
@@ -14762,14 +14762,14 @@ export namespace proto {
                      * @throws {Error} If the payload is not a reader or valid buffer
                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                      */
-                    public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime;
+                    public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime;
 
                     /**
                      * Verifies a HSMDateTime message.
                      * @param message Plain object to verify
                      * @returns `null` if valid, otherwise the reason why it is not
                      */
-                    public static verify(message: { [k: string]: any }): (string|null);
+                    public static verify(message: { [k: string]: any }): (string | null);
 
                     /**
                      * Creates a HSMDateTime message from a plain object. Also converts values to their respective internal types.
@@ -14799,25 +14799,25 @@ export namespace proto {
                     interface IHSMDateTimeComponent {
 
                         /** HSMDateTimeComponent dayOfWeek */
-                        dayOfWeek?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.HSMDateTimeComponent.DayOfWeekType|null);
+                        dayOfWeek?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.HSMDateTimeComponent.DayOfWeekType | null);
 
                         /** HSMDateTimeComponent year */
-                        year?: (number|null);
+                        year?: (number | null);
 
                         /** HSMDateTimeComponent month */
-                        month?: (number|null);
+                        month?: (number | null);
 
                         /** HSMDateTimeComponent dayOfMonth */
-                        dayOfMonth?: (number|null);
+                        dayOfMonth?: (number | null);
 
                         /** HSMDateTimeComponent hour */
-                        hour?: (number|null);
+                        hour?: (number | null);
 
                         /** HSMDateTimeComponent minute */
-                        minute?: (number|null);
+                        minute?: (number | null);
 
                         /** HSMDateTimeComponent calendar */
-                        calendar?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.HSMDateTimeComponent.CalendarType|null);
+                        calendar?: (proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.HSMDateTimeComponent.CalendarType | null);
                     }
 
                     /** Represents a HSMDateTimeComponent. */
@@ -14881,7 +14881,7 @@ export namespace proto {
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
-                        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.HSMDateTimeComponent;
+                        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.HSMDateTimeComponent;
 
                         /**
                          * Decodes a HSMDateTimeComponent message from the specified reader or buffer, length delimited.
@@ -14890,14 +14890,14 @@ export namespace proto {
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
-                        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.HSMDateTimeComponent;
+                        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.HSMDateTimeComponent;
 
                         /**
                          * Verifies a HSMDateTimeComponent message.
                          * @param message Plain object to verify
                          * @returns `null` if valid, otherwise the reason why it is not
                          */
-                        public static verify(message: { [k: string]: any }): (string|null);
+                        public static verify(message: { [k: string]: any }): (string | null);
 
                         /**
                          * Creates a HSMDateTimeComponent message from a plain object. Also converts values to their respective internal types.
@@ -14945,7 +14945,7 @@ export namespace proto {
                     interface IHSMDateTimeUnixEpoch {
 
                         /** HSMDateTimeUnixEpoch timestamp */
-                        timestamp?: (number|Long|null);
+                        timestamp?: (number | Long | null);
                     }
 
                     /** Represents a HSMDateTimeUnixEpoch. */
@@ -14958,7 +14958,7 @@ export namespace proto {
                         constructor(properties?: proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.IHSMDateTimeUnixEpoch);
 
                         /** HSMDateTimeUnixEpoch timestamp. */
-                        public timestamp: (number|Long);
+                        public timestamp: (number | Long);
 
                         /**
                          * Creates a new HSMDateTimeUnixEpoch instance using the specified properties.
@@ -14991,7 +14991,7 @@ export namespace proto {
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
-                        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.HSMDateTimeUnixEpoch;
+                        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.HSMDateTimeUnixEpoch;
 
                         /**
                          * Decodes a HSMDateTimeUnixEpoch message from the specified reader or buffer, length delimited.
@@ -15000,14 +15000,14 @@ export namespace proto {
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
-                        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.HSMDateTimeUnixEpoch;
+                        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.HighlyStructuredMessage.HSMLocalizableParameter.HSMDateTime.HSMDateTimeUnixEpoch;
 
                         /**
                          * Verifies a HSMDateTimeUnixEpoch message.
                          * @param message Plain object to verify
                          * @returns `null` if valid, otherwise the reason why it is not
                          */
-                        public static verify(message: { [k: string]: any }): (string|null);
+                        public static verify(message: { [k: string]: any }): (string | null);
 
                         /**
                          * Creates a HSMDateTimeUnixEpoch message from a plain object. Also converts values to their respective internal types.
@@ -15038,40 +15038,40 @@ export namespace proto {
         interface IHistorySyncNotification {
 
             /** HistorySyncNotification fileSha256 */
-            fileSha256?: (Uint8Array|null);
+            fileSha256?: (Uint8Array | null);
 
             /** HistorySyncNotification fileLength */
-            fileLength?: (number|Long|null);
+            fileLength?: (number | Long | null);
 
             /** HistorySyncNotification mediaKey */
-            mediaKey?: (Uint8Array|null);
+            mediaKey?: (Uint8Array | null);
 
             /** HistorySyncNotification fileEncSha256 */
-            fileEncSha256?: (Uint8Array|null);
+            fileEncSha256?: (Uint8Array | null);
 
             /** HistorySyncNotification directPath */
-            directPath?: (string|null);
+            directPath?: (string | null);
 
             /** HistorySyncNotification syncType */
-            syncType?: (proto.Message.HistorySyncNotification.HistorySyncType|null);
+            syncType?: (proto.Message.HistorySyncNotification.HistorySyncType | null);
 
             /** HistorySyncNotification chunkOrder */
-            chunkOrder?: (number|null);
+            chunkOrder?: (number | null);
 
             /** HistorySyncNotification originalMessageId */
-            originalMessageId?: (string|null);
+            originalMessageId?: (string | null);
 
             /** HistorySyncNotification progress */
-            progress?: (number|null);
+            progress?: (number | null);
 
             /** HistorySyncNotification oldestMsgInChunkTimestampSec */
-            oldestMsgInChunkTimestampSec?: (number|Long|null);
+            oldestMsgInChunkTimestampSec?: (number | Long | null);
 
             /** HistorySyncNotification initialHistBootstrapInlinePayload */
-            initialHistBootstrapInlinePayload?: (Uint8Array|null);
+            initialHistBootstrapInlinePayload?: (Uint8Array | null);
 
             /** HistorySyncNotification peerDataRequestSessionId */
-            peerDataRequestSessionId?: (string|null);
+            peerDataRequestSessionId?: (string | null);
         }
 
         /** Represents a HistorySyncNotification. */
@@ -15087,7 +15087,7 @@ export namespace proto {
             public fileSha256: Uint8Array;
 
             /** HistorySyncNotification fileLength. */
-            public fileLength: (number|Long);
+            public fileLength: (number | Long);
 
             /** HistorySyncNotification mediaKey. */
             public mediaKey: Uint8Array;
@@ -15111,7 +15111,7 @@ export namespace proto {
             public progress: number;
 
             /** HistorySyncNotification oldestMsgInChunkTimestampSec. */
-            public oldestMsgInChunkTimestampSec: (number|Long);
+            public oldestMsgInChunkTimestampSec: (number | Long);
 
             /** HistorySyncNotification initialHistBootstrapInlinePayload. */
             public initialHistBootstrapInlinePayload: Uint8Array;
@@ -15150,7 +15150,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.HistorySyncNotification;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.HistorySyncNotification;
 
             /**
              * Decodes a HistorySyncNotification message from the specified reader or buffer, length delimited.
@@ -15159,14 +15159,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.HistorySyncNotification;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.HistorySyncNotification;
 
             /**
              * Verifies a HistorySyncNotification message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a HistorySyncNotification message from a plain object. Also converts values to their respective internal types.
@@ -15208,85 +15208,85 @@ export namespace proto {
         interface IImageMessage {
 
             /** ImageMessage url */
-            url?: (string|null);
+            url?: (string | null);
 
             /** ImageMessage mimetype */
-            mimetype?: (string|null);
+            mimetype?: (string | null);
 
             /** ImageMessage caption */
-            caption?: (string|null);
+            caption?: (string | null);
 
             /** ImageMessage fileSha256 */
-            fileSha256?: (Uint8Array|null);
+            fileSha256?: (Uint8Array | null);
 
             /** ImageMessage fileLength */
-            fileLength?: (number|Long|null);
+            fileLength?: (number | Long | null);
 
             /** ImageMessage height */
-            height?: (number|null);
+            height?: (number | null);
 
             /** ImageMessage width */
-            width?: (number|null);
+            width?: (number | null);
 
             /** ImageMessage mediaKey */
-            mediaKey?: (Uint8Array|null);
+            mediaKey?: (Uint8Array | null);
 
             /** ImageMessage fileEncSha256 */
-            fileEncSha256?: (Uint8Array|null);
+            fileEncSha256?: (Uint8Array | null);
 
             /** ImageMessage interactiveAnnotations */
-            interactiveAnnotations?: (proto.IInteractiveAnnotation[]|null);
+            interactiveAnnotations?: (proto.IInteractiveAnnotation[] | null);
 
             /** ImageMessage directPath */
-            directPath?: (string|null);
+            directPath?: (string | null);
 
             /** ImageMessage mediaKeyTimestamp */
-            mediaKeyTimestamp?: (number|Long|null);
+            mediaKeyTimestamp?: (number | Long | null);
 
             /** ImageMessage jpegThumbnail */
-            jpegThumbnail?: (Uint8Array|null);
+            jpegThumbnail?: (Uint8Array | null);
 
             /** ImageMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
 
             /** ImageMessage firstScanSidecar */
-            firstScanSidecar?: (Uint8Array|null);
+            firstScanSidecar?: (Uint8Array | null);
 
             /** ImageMessage firstScanLength */
-            firstScanLength?: (number|null);
+            firstScanLength?: (number | null);
 
             /** ImageMessage experimentGroupId */
-            experimentGroupId?: (number|null);
+            experimentGroupId?: (number | null);
 
             /** ImageMessage scansSidecar */
-            scansSidecar?: (Uint8Array|null);
+            scansSidecar?: (Uint8Array | null);
 
             /** ImageMessage scanLengths */
-            scanLengths?: (number[]|null);
+            scanLengths?: (number[] | null);
 
             /** ImageMessage midQualityFileSha256 */
-            midQualityFileSha256?: (Uint8Array|null);
+            midQualityFileSha256?: (Uint8Array | null);
 
             /** ImageMessage midQualityFileEncSha256 */
-            midQualityFileEncSha256?: (Uint8Array|null);
+            midQualityFileEncSha256?: (Uint8Array | null);
 
             /** ImageMessage viewOnce */
-            viewOnce?: (boolean|null);
+            viewOnce?: (boolean | null);
 
             /** ImageMessage thumbnailDirectPath */
-            thumbnailDirectPath?: (string|null);
+            thumbnailDirectPath?: (string | null);
 
             /** ImageMessage thumbnailSha256 */
-            thumbnailSha256?: (Uint8Array|null);
+            thumbnailSha256?: (Uint8Array | null);
 
             /** ImageMessage thumbnailEncSha256 */
-            thumbnailEncSha256?: (Uint8Array|null);
+            thumbnailEncSha256?: (Uint8Array | null);
 
             /** ImageMessage staticUrl */
-            staticUrl?: (string|null);
+            staticUrl?: (string | null);
 
             /** ImageMessage annotations */
-            annotations?: (proto.IInteractiveAnnotation[]|null);
+            annotations?: (proto.IInteractiveAnnotation[] | null);
         }
 
         /** Represents an ImageMessage. */
@@ -15311,7 +15311,7 @@ export namespace proto {
             public fileSha256: Uint8Array;
 
             /** ImageMessage fileLength. */
-            public fileLength: (number|Long);
+            public fileLength: (number | Long);
 
             /** ImageMessage height. */
             public height: number;
@@ -15332,13 +15332,13 @@ export namespace proto {
             public directPath: string;
 
             /** ImageMessage mediaKeyTimestamp. */
-            public mediaKeyTimestamp: (number|Long);
+            public mediaKeyTimestamp: (number | Long);
 
             /** ImageMessage jpegThumbnail. */
             public jpegThumbnail: Uint8Array;
 
             /** ImageMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /** ImageMessage firstScanSidecar. */
             public firstScanSidecar: Uint8Array;
@@ -15410,7 +15410,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ImageMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ImageMessage;
 
             /**
              * Decodes an ImageMessage message from the specified reader or buffer, length delimited.
@@ -15419,14 +15419,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ImageMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ImageMessage;
 
             /**
              * Verifies an ImageMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an ImageMessage message from a plain object. Also converts values to their respective internal types.
@@ -15454,7 +15454,7 @@ export namespace proto {
         interface IInitialSecurityNotificationSettingSync {
 
             /** InitialSecurityNotificationSettingSync securityNotificationEnabled */
-            securityNotificationEnabled?: (boolean|null);
+            securityNotificationEnabled?: (boolean | null);
         }
 
         /** Represents an InitialSecurityNotificationSettingSync. */
@@ -15500,7 +15500,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.InitialSecurityNotificationSettingSync;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.InitialSecurityNotificationSettingSync;
 
             /**
              * Decodes an InitialSecurityNotificationSettingSync message from the specified reader or buffer, length delimited.
@@ -15509,14 +15509,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.InitialSecurityNotificationSettingSync;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.InitialSecurityNotificationSettingSync;
 
             /**
              * Verifies an InitialSecurityNotificationSettingSync message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an InitialSecurityNotificationSettingSync message from a plain object. Also converts values to their respective internal types.
@@ -15544,28 +15544,28 @@ export namespace proto {
         interface IInteractiveMessage {
 
             /** InteractiveMessage header */
-            header?: (proto.Message.InteractiveMessage.IHeader|null);
+            header?: (proto.Message.InteractiveMessage.IHeader | null);
 
             /** InteractiveMessage body */
-            body?: (proto.Message.InteractiveMessage.IBody|null);
+            body?: (proto.Message.InteractiveMessage.IBody | null);
 
             /** InteractiveMessage footer */
-            footer?: (proto.Message.InteractiveMessage.IFooter|null);
+            footer?: (proto.Message.InteractiveMessage.IFooter | null);
 
             /** InteractiveMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
 
             /** InteractiveMessage shopStorefrontMessage */
-            shopStorefrontMessage?: (proto.Message.InteractiveMessage.IShopMessage|null);
+            shopStorefrontMessage?: (proto.Message.InteractiveMessage.IShopMessage | null);
 
             /** InteractiveMessage collectionMessage */
-            collectionMessage?: (proto.Message.InteractiveMessage.ICollectionMessage|null);
+            collectionMessage?: (proto.Message.InteractiveMessage.ICollectionMessage | null);
 
             /** InteractiveMessage nativeFlowMessage */
-            nativeFlowMessage?: (proto.Message.InteractiveMessage.INativeFlowMessage|null);
+            nativeFlowMessage?: (proto.Message.InteractiveMessage.INativeFlowMessage | null);
 
             /** InteractiveMessage carouselMessage */
-            carouselMessage?: (proto.Message.InteractiveMessage.ICarouselMessage|null);
+            carouselMessage?: (proto.Message.InteractiveMessage.ICarouselMessage | null);
         }
 
         /** Represents an InteractiveMessage. */
@@ -15578,31 +15578,31 @@ export namespace proto {
             constructor(properties?: proto.Message.IInteractiveMessage);
 
             /** InteractiveMessage header. */
-            public header?: (proto.Message.InteractiveMessage.IHeader|null);
+            public header?: (proto.Message.InteractiveMessage.IHeader | null);
 
             /** InteractiveMessage body. */
-            public body?: (proto.Message.InteractiveMessage.IBody|null);
+            public body?: (proto.Message.InteractiveMessage.IBody | null);
 
             /** InteractiveMessage footer. */
-            public footer?: (proto.Message.InteractiveMessage.IFooter|null);
+            public footer?: (proto.Message.InteractiveMessage.IFooter | null);
 
             /** InteractiveMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /** InteractiveMessage shopStorefrontMessage. */
-            public shopStorefrontMessage?: (proto.Message.InteractiveMessage.IShopMessage|null);
+            public shopStorefrontMessage?: (proto.Message.InteractiveMessage.IShopMessage | null);
 
             /** InteractiveMessage collectionMessage. */
-            public collectionMessage?: (proto.Message.InteractiveMessage.ICollectionMessage|null);
+            public collectionMessage?: (proto.Message.InteractiveMessage.ICollectionMessage | null);
 
             /** InteractiveMessage nativeFlowMessage. */
-            public nativeFlowMessage?: (proto.Message.InteractiveMessage.INativeFlowMessage|null);
+            public nativeFlowMessage?: (proto.Message.InteractiveMessage.INativeFlowMessage | null);
 
             /** InteractiveMessage carouselMessage. */
-            public carouselMessage?: (proto.Message.InteractiveMessage.ICarouselMessage|null);
+            public carouselMessage?: (proto.Message.InteractiveMessage.ICarouselMessage | null);
 
             /** InteractiveMessage interactiveMessage. */
-            public interactiveMessage?: ("shopStorefrontMessage"|"collectionMessage"|"nativeFlowMessage"|"carouselMessage");
+            public interactiveMessage?: ("shopStorefrontMessage" | "collectionMessage" | "nativeFlowMessage" | "carouselMessage");
 
             /**
              * Creates a new InteractiveMessage instance using the specified properties.
@@ -15635,7 +15635,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.InteractiveMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.InteractiveMessage;
 
             /**
              * Decodes an InteractiveMessage message from the specified reader or buffer, length delimited.
@@ -15644,14 +15644,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.InteractiveMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.InteractiveMessage;
 
             /**
              * Verifies an InteractiveMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an InteractiveMessage message from a plain object. Also converts values to their respective internal types.
@@ -15681,7 +15681,7 @@ export namespace proto {
             interface IBody {
 
                 /** Body text */
-                text?: (string|null);
+                text?: (string | null);
             }
 
             /** Represents a Body. */
@@ -15727,7 +15727,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.InteractiveMessage.Body;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.InteractiveMessage.Body;
 
                 /**
                  * Decodes a Body message from the specified reader or buffer, length delimited.
@@ -15736,14 +15736,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.InteractiveMessage.Body;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.InteractiveMessage.Body;
 
                 /**
                  * Verifies a Body message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a Body message from a plain object. Also converts values to their respective internal types.
@@ -15771,10 +15771,10 @@ export namespace proto {
             interface ICarouselMessage {
 
                 /** CarouselMessage cards */
-                cards?: (proto.Message.IInteractiveMessage[]|null);
+                cards?: (proto.Message.IInteractiveMessage[] | null);
 
                 /** CarouselMessage messageVersion */
-                messageVersion?: (number|null);
+                messageVersion?: (number | null);
             }
 
             /** Represents a CarouselMessage. */
@@ -15823,7 +15823,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.InteractiveMessage.CarouselMessage;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.InteractiveMessage.CarouselMessage;
 
                 /**
                  * Decodes a CarouselMessage message from the specified reader or buffer, length delimited.
@@ -15832,14 +15832,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.InteractiveMessage.CarouselMessage;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.InteractiveMessage.CarouselMessage;
 
                 /**
                  * Verifies a CarouselMessage message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a CarouselMessage message from a plain object. Also converts values to their respective internal types.
@@ -15867,13 +15867,13 @@ export namespace proto {
             interface ICollectionMessage {
 
                 /** CollectionMessage bizJid */
-                bizJid?: (string|null);
+                bizJid?: (string | null);
 
                 /** CollectionMessage id */
-                id?: (string|null);
+                id?: (string | null);
 
                 /** CollectionMessage messageVersion */
-                messageVersion?: (number|null);
+                messageVersion?: (number | null);
             }
 
             /** Represents a CollectionMessage. */
@@ -15925,7 +15925,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.InteractiveMessage.CollectionMessage;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.InteractiveMessage.CollectionMessage;
 
                 /**
                  * Decodes a CollectionMessage message from the specified reader or buffer, length delimited.
@@ -15934,14 +15934,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.InteractiveMessage.CollectionMessage;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.InteractiveMessage.CollectionMessage;
 
                 /**
                  * Verifies a CollectionMessage message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a CollectionMessage message from a plain object. Also converts values to their respective internal types.
@@ -15969,7 +15969,7 @@ export namespace proto {
             interface IFooter {
 
                 /** Footer text */
-                text?: (string|null);
+                text?: (string | null);
             }
 
             /** Represents a Footer. */
@@ -16015,7 +16015,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.InteractiveMessage.Footer;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.InteractiveMessage.Footer;
 
                 /**
                  * Decodes a Footer message from the specified reader or buffer, length delimited.
@@ -16024,14 +16024,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.InteractiveMessage.Footer;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.InteractiveMessage.Footer;
 
                 /**
                  * Verifies a Footer message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a Footer message from a plain object. Also converts values to their respective internal types.
@@ -16059,28 +16059,28 @@ export namespace proto {
             interface IHeader {
 
                 /** Header title */
-                title?: (string|null);
+                title?: (string | null);
 
                 /** Header subtitle */
-                subtitle?: (string|null);
+                subtitle?: (string | null);
 
                 /** Header hasMediaAttachment */
-                hasMediaAttachment?: (boolean|null);
+                hasMediaAttachment?: (boolean | null);
 
                 /** Header documentMessage */
-                documentMessage?: (proto.Message.IDocumentMessage|null);
+                documentMessage?: (proto.Message.IDocumentMessage | null);
 
                 /** Header imageMessage */
-                imageMessage?: (proto.Message.IImageMessage|null);
+                imageMessage?: (proto.Message.IImageMessage | null);
 
                 /** Header jpegThumbnail */
-                jpegThumbnail?: (Uint8Array|null);
+                jpegThumbnail?: (Uint8Array | null);
 
                 /** Header videoMessage */
-                videoMessage?: (proto.Message.IVideoMessage|null);
+                videoMessage?: (proto.Message.IVideoMessage | null);
 
                 /** Header locationMessage */
-                locationMessage?: (proto.Message.ILocationMessage|null);
+                locationMessage?: (proto.Message.ILocationMessage | null);
             }
 
             /** Represents a Header. */
@@ -16102,22 +16102,22 @@ export namespace proto {
                 public hasMediaAttachment: boolean;
 
                 /** Header documentMessage. */
-                public documentMessage?: (proto.Message.IDocumentMessage|null);
+                public documentMessage?: (proto.Message.IDocumentMessage | null);
 
                 /** Header imageMessage. */
-                public imageMessage?: (proto.Message.IImageMessage|null);
+                public imageMessage?: (proto.Message.IImageMessage | null);
 
                 /** Header jpegThumbnail. */
-                public jpegThumbnail?: (Uint8Array|null);
+                public jpegThumbnail?: (Uint8Array | null);
 
                 /** Header videoMessage. */
-                public videoMessage?: (proto.Message.IVideoMessage|null);
+                public videoMessage?: (proto.Message.IVideoMessage | null);
 
                 /** Header locationMessage. */
-                public locationMessage?: (proto.Message.ILocationMessage|null);
+                public locationMessage?: (proto.Message.ILocationMessage | null);
 
                 /** Header media. */
-                public media?: ("documentMessage"|"imageMessage"|"jpegThumbnail"|"videoMessage"|"locationMessage");
+                public media?: ("documentMessage" | "imageMessage" | "jpegThumbnail" | "videoMessage" | "locationMessage");
 
                 /**
                  * Creates a new Header instance using the specified properties.
@@ -16150,7 +16150,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.InteractiveMessage.Header;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.InteractiveMessage.Header;
 
                 /**
                  * Decodes a Header message from the specified reader or buffer, length delimited.
@@ -16159,14 +16159,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.InteractiveMessage.Header;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.InteractiveMessage.Header;
 
                 /**
                  * Verifies a Header message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a Header message from a plain object. Also converts values to their respective internal types.
@@ -16194,13 +16194,13 @@ export namespace proto {
             interface INativeFlowMessage {
 
                 /** NativeFlowMessage buttons */
-                buttons?: (proto.Message.InteractiveMessage.NativeFlowMessage.INativeFlowButton[]|null);
+                buttons?: (proto.Message.InteractiveMessage.NativeFlowMessage.INativeFlowButton[] | null);
 
                 /** NativeFlowMessage messageParamsJson */
-                messageParamsJson?: (string|null);
+                messageParamsJson?: (string | null);
 
                 /** NativeFlowMessage messageVersion */
-                messageVersion?: (number|null);
+                messageVersion?: (number | null);
             }
 
             /** Represents a NativeFlowMessage. */
@@ -16252,7 +16252,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.InteractiveMessage.NativeFlowMessage;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.InteractiveMessage.NativeFlowMessage;
 
                 /**
                  * Decodes a NativeFlowMessage message from the specified reader or buffer, length delimited.
@@ -16261,14 +16261,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.InteractiveMessage.NativeFlowMessage;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.InteractiveMessage.NativeFlowMessage;
 
                 /**
                  * Verifies a NativeFlowMessage message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a NativeFlowMessage message from a plain object. Also converts values to their respective internal types.
@@ -16298,10 +16298,10 @@ export namespace proto {
                 interface INativeFlowButton {
 
                     /** NativeFlowButton name */
-                    name?: (string|null);
+                    name?: (string | null);
 
                     /** NativeFlowButton buttonParamsJson */
-                    buttonParamsJson?: (string|null);
+                    buttonParamsJson?: (string | null);
                 }
 
                 /** Represents a NativeFlowButton. */
@@ -16350,7 +16350,7 @@ export namespace proto {
                      * @throws {Error} If the payload is not a reader or valid buffer
                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                      */
-                    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.InteractiveMessage.NativeFlowMessage.NativeFlowButton;
+                    public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.InteractiveMessage.NativeFlowMessage.NativeFlowButton;
 
                     /**
                      * Decodes a NativeFlowButton message from the specified reader or buffer, length delimited.
@@ -16359,14 +16359,14 @@ export namespace proto {
                      * @throws {Error} If the payload is not a reader or valid buffer
                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                      */
-                    public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.InteractiveMessage.NativeFlowMessage.NativeFlowButton;
+                    public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.InteractiveMessage.NativeFlowMessage.NativeFlowButton;
 
                     /**
                      * Verifies a NativeFlowButton message.
                      * @param message Plain object to verify
                      * @returns `null` if valid, otherwise the reason why it is not
                      */
-                    public static verify(message: { [k: string]: any }): (string|null);
+                    public static verify(message: { [k: string]: any }): (string | null);
 
                     /**
                      * Creates a NativeFlowButton message from a plain object. Also converts values to their respective internal types.
@@ -16395,13 +16395,13 @@ export namespace proto {
             interface IShopMessage {
 
                 /** ShopMessage id */
-                id?: (string|null);
+                id?: (string | null);
 
                 /** ShopMessage surface */
-                surface?: (proto.Message.InteractiveMessage.ShopMessage.Surface|null);
+                surface?: (proto.Message.InteractiveMessage.ShopMessage.Surface | null);
 
                 /** ShopMessage messageVersion */
-                messageVersion?: (number|null);
+                messageVersion?: (number | null);
             }
 
             /** Represents a ShopMessage. */
@@ -16453,7 +16453,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.InteractiveMessage.ShopMessage;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.InteractiveMessage.ShopMessage;
 
                 /**
                  * Decodes a ShopMessage message from the specified reader or buffer, length delimited.
@@ -16462,14 +16462,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.InteractiveMessage.ShopMessage;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.InteractiveMessage.ShopMessage;
 
                 /**
                  * Verifies a ShopMessage message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a ShopMessage message from a plain object. Also converts values to their respective internal types.
@@ -16509,13 +16509,13 @@ export namespace proto {
         interface IInteractiveResponseMessage {
 
             /** InteractiveResponseMessage body */
-            body?: (proto.Message.InteractiveResponseMessage.IBody|null);
+            body?: (proto.Message.InteractiveResponseMessage.IBody | null);
 
             /** InteractiveResponseMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
 
             /** InteractiveResponseMessage nativeFlowResponseMessage */
-            nativeFlowResponseMessage?: (proto.Message.InteractiveResponseMessage.INativeFlowResponseMessage|null);
+            nativeFlowResponseMessage?: (proto.Message.InteractiveResponseMessage.INativeFlowResponseMessage | null);
         }
 
         /** Represents an InteractiveResponseMessage. */
@@ -16528,13 +16528,13 @@ export namespace proto {
             constructor(properties?: proto.Message.IInteractiveResponseMessage);
 
             /** InteractiveResponseMessage body. */
-            public body?: (proto.Message.InteractiveResponseMessage.IBody|null);
+            public body?: (proto.Message.InteractiveResponseMessage.IBody | null);
 
             /** InteractiveResponseMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /** InteractiveResponseMessage nativeFlowResponseMessage. */
-            public nativeFlowResponseMessage?: (proto.Message.InteractiveResponseMessage.INativeFlowResponseMessage|null);
+            public nativeFlowResponseMessage?: (proto.Message.InteractiveResponseMessage.INativeFlowResponseMessage | null);
 
             /** InteractiveResponseMessage interactiveResponseMessage. */
             public interactiveResponseMessage?: "nativeFlowResponseMessage";
@@ -16570,7 +16570,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.InteractiveResponseMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.InteractiveResponseMessage;
 
             /**
              * Decodes an InteractiveResponseMessage message from the specified reader or buffer, length delimited.
@@ -16579,14 +16579,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.InteractiveResponseMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.InteractiveResponseMessage;
 
             /**
              * Verifies an InteractiveResponseMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an InteractiveResponseMessage message from a plain object. Also converts values to their respective internal types.
@@ -16616,10 +16616,10 @@ export namespace proto {
             interface IBody {
 
                 /** Body text */
-                text?: (string|null);
+                text?: (string | null);
 
                 /** Body format */
-                format?: (proto.Message.InteractiveResponseMessage.Body.Format|null);
+                format?: (proto.Message.InteractiveResponseMessage.Body.Format | null);
             }
 
             /** Represents a Body. */
@@ -16668,7 +16668,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.InteractiveResponseMessage.Body;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.InteractiveResponseMessage.Body;
 
                 /**
                  * Decodes a Body message from the specified reader or buffer, length delimited.
@@ -16677,14 +16677,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.InteractiveResponseMessage.Body;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.InteractiveResponseMessage.Body;
 
                 /**
                  * Verifies a Body message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a Body message from a plain object. Also converts values to their respective internal types.
@@ -16721,13 +16721,13 @@ export namespace proto {
             interface INativeFlowResponseMessage {
 
                 /** NativeFlowResponseMessage name */
-                name?: (string|null);
+                name?: (string | null);
 
                 /** NativeFlowResponseMessage paramsJson */
-                paramsJson?: (string|null);
+                paramsJson?: (string | null);
 
                 /** NativeFlowResponseMessage version */
-                version?: (number|null);
+                version?: (number | null);
             }
 
             /** Represents a NativeFlowResponseMessage. */
@@ -16779,7 +16779,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.InteractiveResponseMessage.NativeFlowResponseMessage;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.InteractiveResponseMessage.NativeFlowResponseMessage;
 
                 /**
                  * Decodes a NativeFlowResponseMessage message from the specified reader or buffer, length delimited.
@@ -16788,14 +16788,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.InteractiveResponseMessage.NativeFlowResponseMessage;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.InteractiveResponseMessage.NativeFlowResponseMessage;
 
                 /**
                  * Verifies a NativeFlowResponseMessage message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a NativeFlowResponseMessage message from a plain object. Also converts values to their respective internal types.
@@ -16824,34 +16824,34 @@ export namespace proto {
         interface IInvoiceMessage {
 
             /** InvoiceMessage note */
-            note?: (string|null);
+            note?: (string | null);
 
             /** InvoiceMessage token */
-            token?: (string|null);
+            token?: (string | null);
 
             /** InvoiceMessage attachmentType */
-            attachmentType?: (proto.Message.InvoiceMessage.AttachmentType|null);
+            attachmentType?: (proto.Message.InvoiceMessage.AttachmentType | null);
 
             /** InvoiceMessage attachmentMimetype */
-            attachmentMimetype?: (string|null);
+            attachmentMimetype?: (string | null);
 
             /** InvoiceMessage attachmentMediaKey */
-            attachmentMediaKey?: (Uint8Array|null);
+            attachmentMediaKey?: (Uint8Array | null);
 
             /** InvoiceMessage attachmentMediaKeyTimestamp */
-            attachmentMediaKeyTimestamp?: (number|Long|null);
+            attachmentMediaKeyTimestamp?: (number | Long | null);
 
             /** InvoiceMessage attachmentFileSha256 */
-            attachmentFileSha256?: (Uint8Array|null);
+            attachmentFileSha256?: (Uint8Array | null);
 
             /** InvoiceMessage attachmentFileEncSha256 */
-            attachmentFileEncSha256?: (Uint8Array|null);
+            attachmentFileEncSha256?: (Uint8Array | null);
 
             /** InvoiceMessage attachmentDirectPath */
-            attachmentDirectPath?: (string|null);
+            attachmentDirectPath?: (string | null);
 
             /** InvoiceMessage attachmentJpegThumbnail */
-            attachmentJpegThumbnail?: (Uint8Array|null);
+            attachmentJpegThumbnail?: (Uint8Array | null);
         }
 
         /** Represents an InvoiceMessage. */
@@ -16879,7 +16879,7 @@ export namespace proto {
             public attachmentMediaKey: Uint8Array;
 
             /** InvoiceMessage attachmentMediaKeyTimestamp. */
-            public attachmentMediaKeyTimestamp: (number|Long);
+            public attachmentMediaKeyTimestamp: (number | Long);
 
             /** InvoiceMessage attachmentFileSha256. */
             public attachmentFileSha256: Uint8Array;
@@ -16924,7 +16924,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.InvoiceMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.InvoiceMessage;
 
             /**
              * Decodes an InvoiceMessage message from the specified reader or buffer, length delimited.
@@ -16933,14 +16933,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.InvoiceMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.InvoiceMessage;
 
             /**
              * Verifies an InvoiceMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an InvoiceMessage message from a plain object. Also converts values to their respective internal types.
@@ -16977,13 +16977,13 @@ export namespace proto {
         interface IKeepInChatMessage {
 
             /** KeepInChatMessage key */
-            key?: (proto.IMessageKey|null);
+            key?: (proto.IMessageKey | null);
 
             /** KeepInChatMessage keepType */
-            keepType?: (proto.KeepType|null);
+            keepType?: (proto.KeepType | null);
 
             /** KeepInChatMessage timestampMs */
-            timestampMs?: (number|Long|null);
+            timestampMs?: (number | Long | null);
         }
 
         /** Represents a KeepInChatMessage. */
@@ -16996,13 +16996,13 @@ export namespace proto {
             constructor(properties?: proto.Message.IKeepInChatMessage);
 
             /** KeepInChatMessage key. */
-            public key?: (proto.IMessageKey|null);
+            public key?: (proto.IMessageKey | null);
 
             /** KeepInChatMessage keepType. */
             public keepType: proto.KeepType;
 
             /** KeepInChatMessage timestampMs. */
-            public timestampMs: (number|Long);
+            public timestampMs: (number | Long);
 
             /**
              * Creates a new KeepInChatMessage instance using the specified properties.
@@ -17035,7 +17035,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.KeepInChatMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.KeepInChatMessage;
 
             /**
              * Decodes a KeepInChatMessage message from the specified reader or buffer, length delimited.
@@ -17044,14 +17044,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.KeepInChatMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.KeepInChatMessage;
 
             /**
              * Verifies a KeepInChatMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a KeepInChatMessage message from a plain object. Also converts values to their respective internal types.
@@ -17079,28 +17079,28 @@ export namespace proto {
         interface IListMessage {
 
             /** ListMessage title */
-            title?: (string|null);
+            title?: (string | null);
 
             /** ListMessage description */
-            description?: (string|null);
+            description?: (string | null);
 
             /** ListMessage buttonText */
-            buttonText?: (string|null);
+            buttonText?: (string | null);
 
             /** ListMessage listType */
-            listType?: (proto.Message.ListMessage.ListType|null);
+            listType?: (proto.Message.ListMessage.ListType | null);
 
             /** ListMessage sections */
-            sections?: (proto.Message.ListMessage.ISection[]|null);
+            sections?: (proto.Message.ListMessage.ISection[] | null);
 
             /** ListMessage productListInfo */
-            productListInfo?: (proto.Message.ListMessage.IProductListInfo|null);
+            productListInfo?: (proto.Message.ListMessage.IProductListInfo | null);
 
             /** ListMessage footerText */
-            footerText?: (string|null);
+            footerText?: (string | null);
 
             /** ListMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
         }
 
         /** Represents a ListMessage. */
@@ -17128,13 +17128,13 @@ export namespace proto {
             public sections: proto.Message.ListMessage.ISection[];
 
             /** ListMessage productListInfo. */
-            public productListInfo?: (proto.Message.ListMessage.IProductListInfo|null);
+            public productListInfo?: (proto.Message.ListMessage.IProductListInfo | null);
 
             /** ListMessage footerText. */
             public footerText: string;
 
             /** ListMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /**
              * Creates a new ListMessage instance using the specified properties.
@@ -17167,7 +17167,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ListMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ListMessage;
 
             /**
              * Decodes a ListMessage message from the specified reader or buffer, length delimited.
@@ -17176,14 +17176,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ListMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ListMessage;
 
             /**
              * Verifies a ListMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ListMessage message from a plain object. Also converts values to their respective internal types.
@@ -17220,7 +17220,7 @@ export namespace proto {
             interface IProduct {
 
                 /** Product productId */
-                productId?: (string|null);
+                productId?: (string | null);
             }
 
             /** Represents a Product. */
@@ -17266,7 +17266,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ListMessage.Product;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ListMessage.Product;
 
                 /**
                  * Decodes a Product message from the specified reader or buffer, length delimited.
@@ -17275,14 +17275,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ListMessage.Product;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ListMessage.Product;
 
                 /**
                  * Verifies a Product message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a Product message from a plain object. Also converts values to their respective internal types.
@@ -17310,10 +17310,10 @@ export namespace proto {
             interface IProductListHeaderImage {
 
                 /** ProductListHeaderImage productId */
-                productId?: (string|null);
+                productId?: (string | null);
 
                 /** ProductListHeaderImage jpegThumbnail */
-                jpegThumbnail?: (Uint8Array|null);
+                jpegThumbnail?: (Uint8Array | null);
             }
 
             /** Represents a ProductListHeaderImage. */
@@ -17362,7 +17362,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ListMessage.ProductListHeaderImage;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ListMessage.ProductListHeaderImage;
 
                 /**
                  * Decodes a ProductListHeaderImage message from the specified reader or buffer, length delimited.
@@ -17371,14 +17371,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ListMessage.ProductListHeaderImage;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ListMessage.ProductListHeaderImage;
 
                 /**
                  * Verifies a ProductListHeaderImage message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a ProductListHeaderImage message from a plain object. Also converts values to their respective internal types.
@@ -17406,13 +17406,13 @@ export namespace proto {
             interface IProductListInfo {
 
                 /** ProductListInfo productSections */
-                productSections?: (proto.Message.ListMessage.IProductSection[]|null);
+                productSections?: (proto.Message.ListMessage.IProductSection[] | null);
 
                 /** ProductListInfo headerImage */
-                headerImage?: (proto.Message.ListMessage.IProductListHeaderImage|null);
+                headerImage?: (proto.Message.ListMessage.IProductListHeaderImage | null);
 
                 /** ProductListInfo businessOwnerJid */
-                businessOwnerJid?: (string|null);
+                businessOwnerJid?: (string | null);
             }
 
             /** Represents a ProductListInfo. */
@@ -17428,7 +17428,7 @@ export namespace proto {
                 public productSections: proto.Message.ListMessage.IProductSection[];
 
                 /** ProductListInfo headerImage. */
-                public headerImage?: (proto.Message.ListMessage.IProductListHeaderImage|null);
+                public headerImage?: (proto.Message.ListMessage.IProductListHeaderImage | null);
 
                 /** ProductListInfo businessOwnerJid. */
                 public businessOwnerJid: string;
@@ -17464,7 +17464,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ListMessage.ProductListInfo;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ListMessage.ProductListInfo;
 
                 /**
                  * Decodes a ProductListInfo message from the specified reader or buffer, length delimited.
@@ -17473,14 +17473,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ListMessage.ProductListInfo;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ListMessage.ProductListInfo;
 
                 /**
                  * Verifies a ProductListInfo message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a ProductListInfo message from a plain object. Also converts values to their respective internal types.
@@ -17508,10 +17508,10 @@ export namespace proto {
             interface IProductSection {
 
                 /** ProductSection title */
-                title?: (string|null);
+                title?: (string | null);
 
                 /** ProductSection products */
-                products?: (proto.Message.ListMessage.IProduct[]|null);
+                products?: (proto.Message.ListMessage.IProduct[] | null);
             }
 
             /** Represents a ProductSection. */
@@ -17560,7 +17560,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ListMessage.ProductSection;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ListMessage.ProductSection;
 
                 /**
                  * Decodes a ProductSection message from the specified reader or buffer, length delimited.
@@ -17569,14 +17569,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ListMessage.ProductSection;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ListMessage.ProductSection;
 
                 /**
                  * Verifies a ProductSection message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a ProductSection message from a plain object. Also converts values to their respective internal types.
@@ -17604,13 +17604,13 @@ export namespace proto {
             interface IRow {
 
                 /** Row title */
-                title?: (string|null);
+                title?: (string | null);
 
                 /** Row description */
-                description?: (string|null);
+                description?: (string | null);
 
                 /** Row rowId */
-                rowId?: (string|null);
+                rowId?: (string | null);
             }
 
             /** Represents a Row. */
@@ -17662,7 +17662,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ListMessage.Row;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ListMessage.Row;
 
                 /**
                  * Decodes a Row message from the specified reader or buffer, length delimited.
@@ -17671,14 +17671,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ListMessage.Row;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ListMessage.Row;
 
                 /**
                  * Verifies a Row message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a Row message from a plain object. Also converts values to their respective internal types.
@@ -17706,10 +17706,10 @@ export namespace proto {
             interface ISection {
 
                 /** Section title */
-                title?: (string|null);
+                title?: (string | null);
 
                 /** Section rows */
-                rows?: (proto.Message.ListMessage.IRow[]|null);
+                rows?: (proto.Message.ListMessage.IRow[] | null);
             }
 
             /** Represents a Section. */
@@ -17758,7 +17758,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ListMessage.Section;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ListMessage.Section;
 
                 /**
                  * Decodes a Section message from the specified reader or buffer, length delimited.
@@ -17767,14 +17767,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ListMessage.Section;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ListMessage.Section;
 
                 /**
                  * Verifies a Section message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a Section message from a plain object. Also converts values to their respective internal types.
@@ -17803,19 +17803,19 @@ export namespace proto {
         interface IListResponseMessage {
 
             /** ListResponseMessage title */
-            title?: (string|null);
+            title?: (string | null);
 
             /** ListResponseMessage listType */
-            listType?: (proto.Message.ListResponseMessage.ListType|null);
+            listType?: (proto.Message.ListResponseMessage.ListType | null);
 
             /** ListResponseMessage singleSelectReply */
-            singleSelectReply?: (proto.Message.ListResponseMessage.ISingleSelectReply|null);
+            singleSelectReply?: (proto.Message.ListResponseMessage.ISingleSelectReply | null);
 
             /** ListResponseMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
 
             /** ListResponseMessage description */
-            description?: (string|null);
+            description?: (string | null);
         }
 
         /** Represents a ListResponseMessage. */
@@ -17834,10 +17834,10 @@ export namespace proto {
             public listType: proto.Message.ListResponseMessage.ListType;
 
             /** ListResponseMessage singleSelectReply. */
-            public singleSelectReply?: (proto.Message.ListResponseMessage.ISingleSelectReply|null);
+            public singleSelectReply?: (proto.Message.ListResponseMessage.ISingleSelectReply | null);
 
             /** ListResponseMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /** ListResponseMessage description. */
             public description: string;
@@ -17873,7 +17873,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ListResponseMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ListResponseMessage;
 
             /**
              * Decodes a ListResponseMessage message from the specified reader or buffer, length delimited.
@@ -17882,14 +17882,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ListResponseMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ListResponseMessage;
 
             /**
              * Verifies a ListResponseMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ListResponseMessage message from a plain object. Also converts values to their respective internal types.
@@ -17925,7 +17925,7 @@ export namespace proto {
             interface ISingleSelectReply {
 
                 /** SingleSelectReply selectedRowId */
-                selectedRowId?: (string|null);
+                selectedRowId?: (string | null);
             }
 
             /** Represents a SingleSelectReply. */
@@ -17971,7 +17971,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ListResponseMessage.SingleSelectReply;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ListResponseMessage.SingleSelectReply;
 
                 /**
                  * Decodes a SingleSelectReply message from the specified reader or buffer, length delimited.
@@ -17980,14 +17980,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ListResponseMessage.SingleSelectReply;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ListResponseMessage.SingleSelectReply;
 
                 /**
                  * Verifies a SingleSelectReply message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a SingleSelectReply message from a plain object. Also converts values to their respective internal types.
@@ -18016,34 +18016,34 @@ export namespace proto {
         interface ILiveLocationMessage {
 
             /** LiveLocationMessage degreesLatitude */
-            degreesLatitude?: (number|null);
+            degreesLatitude?: (number | null);
 
             /** LiveLocationMessage degreesLongitude */
-            degreesLongitude?: (number|null);
+            degreesLongitude?: (number | null);
 
             /** LiveLocationMessage accuracyInMeters */
-            accuracyInMeters?: (number|null);
+            accuracyInMeters?: (number | null);
 
             /** LiveLocationMessage speedInMps */
-            speedInMps?: (number|null);
+            speedInMps?: (number | null);
 
             /** LiveLocationMessage degreesClockwiseFromMagneticNorth */
-            degreesClockwiseFromMagneticNorth?: (number|null);
+            degreesClockwiseFromMagneticNorth?: (number | null);
 
             /** LiveLocationMessage caption */
-            caption?: (string|null);
+            caption?: (string | null);
 
             /** LiveLocationMessage sequenceNumber */
-            sequenceNumber?: (number|Long|null);
+            sequenceNumber?: (number | Long | null);
 
             /** LiveLocationMessage timeOffset */
-            timeOffset?: (number|null);
+            timeOffset?: (number | null);
 
             /** LiveLocationMessage jpegThumbnail */
-            jpegThumbnail?: (Uint8Array|null);
+            jpegThumbnail?: (Uint8Array | null);
 
             /** LiveLocationMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
         }
 
         /** Represents a LiveLocationMessage. */
@@ -18074,7 +18074,7 @@ export namespace proto {
             public caption: string;
 
             /** LiveLocationMessage sequenceNumber. */
-            public sequenceNumber: (number|Long);
+            public sequenceNumber: (number | Long);
 
             /** LiveLocationMessage timeOffset. */
             public timeOffset: number;
@@ -18083,7 +18083,7 @@ export namespace proto {
             public jpegThumbnail: Uint8Array;
 
             /** LiveLocationMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /**
              * Creates a new LiveLocationMessage instance using the specified properties.
@@ -18116,7 +18116,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.LiveLocationMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.LiveLocationMessage;
 
             /**
              * Decodes a LiveLocationMessage message from the specified reader or buffer, length delimited.
@@ -18125,14 +18125,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.LiveLocationMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.LiveLocationMessage;
 
             /**
              * Verifies a LiveLocationMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a LiveLocationMessage message from a plain object. Also converts values to their respective internal types.
@@ -18160,40 +18160,40 @@ export namespace proto {
         interface ILocationMessage {
 
             /** LocationMessage degreesLatitude */
-            degreesLatitude?: (number|null);
+            degreesLatitude?: (number | null);
 
             /** LocationMessage degreesLongitude */
-            degreesLongitude?: (number|null);
+            degreesLongitude?: (number | null);
 
             /** LocationMessage name */
-            name?: (string|null);
+            name?: (string | null);
 
             /** LocationMessage address */
-            address?: (string|null);
+            address?: (string | null);
 
             /** LocationMessage url */
-            url?: (string|null);
+            url?: (string | null);
 
             /** LocationMessage isLive */
-            isLive?: (boolean|null);
+            isLive?: (boolean | null);
 
             /** LocationMessage accuracyInMeters */
-            accuracyInMeters?: (number|null);
+            accuracyInMeters?: (number | null);
 
             /** LocationMessage speedInMps */
-            speedInMps?: (number|null);
+            speedInMps?: (number | null);
 
             /** LocationMessage degreesClockwiseFromMagneticNorth */
-            degreesClockwiseFromMagneticNorth?: (number|null);
+            degreesClockwiseFromMagneticNorth?: (number | null);
 
             /** LocationMessage comment */
-            comment?: (string|null);
+            comment?: (string | null);
 
             /** LocationMessage jpegThumbnail */
-            jpegThumbnail?: (Uint8Array|null);
+            jpegThumbnail?: (Uint8Array | null);
 
             /** LocationMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
         }
 
         /** Represents a LocationMessage. */
@@ -18239,7 +18239,7 @@ export namespace proto {
             public jpegThumbnail: Uint8Array;
 
             /** LocationMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /**
              * Creates a new LocationMessage instance using the specified properties.
@@ -18272,7 +18272,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.LocationMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.LocationMessage;
 
             /**
              * Decodes a LocationMessage message from the specified reader or buffer, length delimited.
@@ -18281,14 +18281,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.LocationMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.LocationMessage;
 
             /**
              * Verifies a LocationMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a LocationMessage message from a plain object. Also converts values to their respective internal types.
@@ -18316,28 +18316,28 @@ export namespace proto {
         interface IMessageHistoryBundle {
 
             /** MessageHistoryBundle mimetype */
-            mimetype?: (string|null);
+            mimetype?: (string | null);
 
             /** MessageHistoryBundle fileSha256 */
-            fileSha256?: (Uint8Array|null);
+            fileSha256?: (Uint8Array | null);
 
             /** MessageHistoryBundle mediaKey */
-            mediaKey?: (Uint8Array|null);
+            mediaKey?: (Uint8Array | null);
 
             /** MessageHistoryBundle fileEncSha256 */
-            fileEncSha256?: (Uint8Array|null);
+            fileEncSha256?: (Uint8Array | null);
 
             /** MessageHistoryBundle directPath */
-            directPath?: (string|null);
+            directPath?: (string | null);
 
             /** MessageHistoryBundle mediaKeyTimestamp */
-            mediaKeyTimestamp?: (number|Long|null);
+            mediaKeyTimestamp?: (number | Long | null);
 
             /** MessageHistoryBundle contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
 
             /** MessageHistoryBundle participants */
-            participants?: (string[]|null);
+            participants?: (string[] | null);
         }
 
         /** Represents a MessageHistoryBundle. */
@@ -18365,10 +18365,10 @@ export namespace proto {
             public directPath: string;
 
             /** MessageHistoryBundle mediaKeyTimestamp. */
-            public mediaKeyTimestamp: (number|Long);
+            public mediaKeyTimestamp: (number | Long);
 
             /** MessageHistoryBundle contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /** MessageHistoryBundle participants. */
             public participants: string[];
@@ -18404,7 +18404,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.MessageHistoryBundle;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.MessageHistoryBundle;
 
             /**
              * Decodes a MessageHistoryBundle message from the specified reader or buffer, length delimited.
@@ -18413,14 +18413,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.MessageHistoryBundle;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.MessageHistoryBundle;
 
             /**
              * Verifies a MessageHistoryBundle message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a MessageHistoryBundle message from a plain object. Also converts values to their respective internal types.
@@ -18448,19 +18448,19 @@ export namespace proto {
         interface INewsletterAdminInviteMessage {
 
             /** NewsletterAdminInviteMessage newsletterJid */
-            newsletterJid?: (string|null);
+            newsletterJid?: (string | null);
 
             /** NewsletterAdminInviteMessage newsletterName */
-            newsletterName?: (string|null);
+            newsletterName?: (string | null);
 
             /** NewsletterAdminInviteMessage jpegThumbnail */
-            jpegThumbnail?: (Uint8Array|null);
+            jpegThumbnail?: (Uint8Array | null);
 
             /** NewsletterAdminInviteMessage caption */
-            caption?: (string|null);
+            caption?: (string | null);
 
             /** NewsletterAdminInviteMessage inviteExpiration */
-            inviteExpiration?: (number|Long|null);
+            inviteExpiration?: (number | Long | null);
         }
 
         /** Represents a NewsletterAdminInviteMessage. */
@@ -18485,7 +18485,7 @@ export namespace proto {
             public caption: string;
 
             /** NewsletterAdminInviteMessage inviteExpiration. */
-            public inviteExpiration: (number|Long);
+            public inviteExpiration: (number | Long);
 
             /**
              * Creates a new NewsletterAdminInviteMessage instance using the specified properties.
@@ -18518,7 +18518,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.NewsletterAdminInviteMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.NewsletterAdminInviteMessage;
 
             /**
              * Decodes a NewsletterAdminInviteMessage message from the specified reader or buffer, length delimited.
@@ -18527,14 +18527,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.NewsletterAdminInviteMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.NewsletterAdminInviteMessage;
 
             /**
              * Verifies a NewsletterAdminInviteMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a NewsletterAdminInviteMessage message from a plain object. Also converts values to their respective internal types.
@@ -18562,46 +18562,46 @@ export namespace proto {
         interface IOrderMessage {
 
             /** OrderMessage orderId */
-            orderId?: (string|null);
+            orderId?: (string | null);
 
             /** OrderMessage thumbnail */
-            thumbnail?: (Uint8Array|null);
+            thumbnail?: (Uint8Array | null);
 
             /** OrderMessage itemCount */
-            itemCount?: (number|null);
+            itemCount?: (number | null);
 
             /** OrderMessage status */
-            status?: (proto.Message.OrderMessage.OrderStatus|null);
+            status?: (proto.Message.OrderMessage.OrderStatus | null);
 
             /** OrderMessage surface */
-            surface?: (proto.Message.OrderMessage.OrderSurface|null);
+            surface?: (proto.Message.OrderMessage.OrderSurface | null);
 
             /** OrderMessage message */
-            message?: (string|null);
+            message?: (string | null);
 
             /** OrderMessage orderTitle */
-            orderTitle?: (string|null);
+            orderTitle?: (string | null);
 
             /** OrderMessage sellerJid */
-            sellerJid?: (string|null);
+            sellerJid?: (string | null);
 
             /** OrderMessage token */
-            token?: (string|null);
+            token?: (string | null);
 
             /** OrderMessage totalAmount1000 */
-            totalAmount1000?: (number|Long|null);
+            totalAmount1000?: (number | Long | null);
 
             /** OrderMessage totalCurrencyCode */
-            totalCurrencyCode?: (string|null);
+            totalCurrencyCode?: (string | null);
 
             /** OrderMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
 
             /** OrderMessage messageVersion */
-            messageVersion?: (number|null);
+            messageVersion?: (number | null);
 
             /** OrderMessage orderRequestMessageId */
-            orderRequestMessageId?: (proto.IMessageKey|null);
+            orderRequestMessageId?: (proto.IMessageKey | null);
         }
 
         /** Represents an OrderMessage. */
@@ -18641,19 +18641,19 @@ export namespace proto {
             public token: string;
 
             /** OrderMessage totalAmount1000. */
-            public totalAmount1000: (number|Long);
+            public totalAmount1000: (number | Long);
 
             /** OrderMessage totalCurrencyCode. */
             public totalCurrencyCode: string;
 
             /** OrderMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /** OrderMessage messageVersion. */
             public messageVersion: number;
 
             /** OrderMessage orderRequestMessageId. */
-            public orderRequestMessageId?: (proto.IMessageKey|null);
+            public orderRequestMessageId?: (proto.IMessageKey | null);
 
             /**
              * Creates a new OrderMessage instance using the specified properties.
@@ -18686,7 +18686,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.OrderMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.OrderMessage;
 
             /**
              * Decodes an OrderMessage message from the specified reader or buffer, length delimited.
@@ -18695,14 +18695,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.OrderMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.OrderMessage;
 
             /**
              * Verifies an OrderMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an OrderMessage message from a plain object. Also converts values to their respective internal types.
@@ -18745,10 +18745,10 @@ export namespace proto {
         interface IPaymentInviteMessage {
 
             /** PaymentInviteMessage serviceType */
-            serviceType?: (proto.Message.PaymentInviteMessage.ServiceType|null);
+            serviceType?: (proto.Message.PaymentInviteMessage.ServiceType | null);
 
             /** PaymentInviteMessage expiryTimestamp */
-            expiryTimestamp?: (number|Long|null);
+            expiryTimestamp?: (number | Long | null);
         }
 
         /** Represents a PaymentInviteMessage. */
@@ -18764,7 +18764,7 @@ export namespace proto {
             public serviceType: proto.Message.PaymentInviteMessage.ServiceType;
 
             /** PaymentInviteMessage expiryTimestamp. */
-            public expiryTimestamp: (number|Long);
+            public expiryTimestamp: (number | Long);
 
             /**
              * Creates a new PaymentInviteMessage instance using the specified properties.
@@ -18797,7 +18797,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PaymentInviteMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.PaymentInviteMessage;
 
             /**
              * Decodes a PaymentInviteMessage message from the specified reader or buffer, length delimited.
@@ -18806,14 +18806,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PaymentInviteMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.PaymentInviteMessage;
 
             /**
              * Verifies a PaymentInviteMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PaymentInviteMessage message from a plain object. Also converts values to their respective internal types.
@@ -18852,19 +18852,19 @@ export namespace proto {
         interface IPeerDataOperationRequestMessage {
 
             /** PeerDataOperationRequestMessage peerDataOperationRequestType */
-            peerDataOperationRequestType?: (proto.Message.PeerDataOperationRequestType|null);
+            peerDataOperationRequestType?: (proto.Message.PeerDataOperationRequestType | null);
 
             /** PeerDataOperationRequestMessage requestStickerReupload */
-            requestStickerReupload?: (proto.Message.PeerDataOperationRequestMessage.IRequestStickerReupload[]|null);
+            requestStickerReupload?: (proto.Message.PeerDataOperationRequestMessage.IRequestStickerReupload[] | null);
 
             /** PeerDataOperationRequestMessage requestUrlPreview */
-            requestUrlPreview?: (proto.Message.PeerDataOperationRequestMessage.IRequestUrlPreview[]|null);
+            requestUrlPreview?: (proto.Message.PeerDataOperationRequestMessage.IRequestUrlPreview[] | null);
 
             /** PeerDataOperationRequestMessage historySyncOnDemandRequest */
-            historySyncOnDemandRequest?: (proto.Message.PeerDataOperationRequestMessage.IHistorySyncOnDemandRequest|null);
+            historySyncOnDemandRequest?: (proto.Message.PeerDataOperationRequestMessage.IHistorySyncOnDemandRequest | null);
 
             /** PeerDataOperationRequestMessage placeholderMessageResendRequest */
-            placeholderMessageResendRequest?: (proto.Message.PeerDataOperationRequestMessage.IPlaceholderMessageResendRequest[]|null);
+            placeholderMessageResendRequest?: (proto.Message.PeerDataOperationRequestMessage.IPlaceholderMessageResendRequest[] | null);
         }
 
         /** Represents a PeerDataOperationRequestMessage. */
@@ -18886,7 +18886,7 @@ export namespace proto {
             public requestUrlPreview: proto.Message.PeerDataOperationRequestMessage.IRequestUrlPreview[];
 
             /** PeerDataOperationRequestMessage historySyncOnDemandRequest. */
-            public historySyncOnDemandRequest?: (proto.Message.PeerDataOperationRequestMessage.IHistorySyncOnDemandRequest|null);
+            public historySyncOnDemandRequest?: (proto.Message.PeerDataOperationRequestMessage.IHistorySyncOnDemandRequest | null);
 
             /** PeerDataOperationRequestMessage placeholderMessageResendRequest. */
             public placeholderMessageResendRequest: proto.Message.PeerDataOperationRequestMessage.IPlaceholderMessageResendRequest[];
@@ -18922,7 +18922,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PeerDataOperationRequestMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.PeerDataOperationRequestMessage;
 
             /**
              * Decodes a PeerDataOperationRequestMessage message from the specified reader or buffer, length delimited.
@@ -18931,14 +18931,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PeerDataOperationRequestMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.PeerDataOperationRequestMessage;
 
             /**
              * Verifies a PeerDataOperationRequestMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PeerDataOperationRequestMessage message from a plain object. Also converts values to their respective internal types.
@@ -18968,19 +18968,19 @@ export namespace proto {
             interface IHistorySyncOnDemandRequest {
 
                 /** HistorySyncOnDemandRequest chatJid */
-                chatJid?: (string|null);
+                chatJid?: (string | null);
 
                 /** HistorySyncOnDemandRequest oldestMsgId */
-                oldestMsgId?: (string|null);
+                oldestMsgId?: (string | null);
 
                 /** HistorySyncOnDemandRequest oldestMsgFromMe */
-                oldestMsgFromMe?: (boolean|null);
+                oldestMsgFromMe?: (boolean | null);
 
                 /** HistorySyncOnDemandRequest onDemandMsgCount */
-                onDemandMsgCount?: (number|null);
+                onDemandMsgCount?: (number | null);
 
                 /** HistorySyncOnDemandRequest oldestMsgTimestampMs */
-                oldestMsgTimestampMs?: (number|Long|null);
+                oldestMsgTimestampMs?: (number | Long | null);
             }
 
             /** Represents a HistorySyncOnDemandRequest. */
@@ -19005,7 +19005,7 @@ export namespace proto {
                 public onDemandMsgCount: number;
 
                 /** HistorySyncOnDemandRequest oldestMsgTimestampMs. */
-                public oldestMsgTimestampMs: (number|Long);
+                public oldestMsgTimestampMs: (number | Long);
 
                 /**
                  * Creates a new HistorySyncOnDemandRequest instance using the specified properties.
@@ -19038,7 +19038,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PeerDataOperationRequestMessage.HistorySyncOnDemandRequest;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.PeerDataOperationRequestMessage.HistorySyncOnDemandRequest;
 
                 /**
                  * Decodes a HistorySyncOnDemandRequest message from the specified reader or buffer, length delimited.
@@ -19047,14 +19047,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PeerDataOperationRequestMessage.HistorySyncOnDemandRequest;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.PeerDataOperationRequestMessage.HistorySyncOnDemandRequest;
 
                 /**
                  * Verifies a HistorySyncOnDemandRequest message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a HistorySyncOnDemandRequest message from a plain object. Also converts values to their respective internal types.
@@ -19082,7 +19082,7 @@ export namespace proto {
             interface IPlaceholderMessageResendRequest {
 
                 /** PlaceholderMessageResendRequest messageKey */
-                messageKey?: (proto.IMessageKey|null);
+                messageKey?: (proto.IMessageKey | null);
             }
 
             /** Represents a PlaceholderMessageResendRequest. */
@@ -19095,7 +19095,7 @@ export namespace proto {
                 constructor(properties?: proto.Message.PeerDataOperationRequestMessage.IPlaceholderMessageResendRequest);
 
                 /** PlaceholderMessageResendRequest messageKey. */
-                public messageKey?: (proto.IMessageKey|null);
+                public messageKey?: (proto.IMessageKey | null);
 
                 /**
                  * Creates a new PlaceholderMessageResendRequest instance using the specified properties.
@@ -19128,7 +19128,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PeerDataOperationRequestMessage.PlaceholderMessageResendRequest;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.PeerDataOperationRequestMessage.PlaceholderMessageResendRequest;
 
                 /**
                  * Decodes a PlaceholderMessageResendRequest message from the specified reader or buffer, length delimited.
@@ -19137,14 +19137,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PeerDataOperationRequestMessage.PlaceholderMessageResendRequest;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.PeerDataOperationRequestMessage.PlaceholderMessageResendRequest;
 
                 /**
                  * Verifies a PlaceholderMessageResendRequest message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a PlaceholderMessageResendRequest message from a plain object. Also converts values to their respective internal types.
@@ -19172,7 +19172,7 @@ export namespace proto {
             interface IRequestStickerReupload {
 
                 /** RequestStickerReupload fileSha256 */
-                fileSha256?: (string|null);
+                fileSha256?: (string | null);
             }
 
             /** Represents a RequestStickerReupload. */
@@ -19218,7 +19218,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PeerDataOperationRequestMessage.RequestStickerReupload;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.PeerDataOperationRequestMessage.RequestStickerReupload;
 
                 /**
                  * Decodes a RequestStickerReupload message from the specified reader or buffer, length delimited.
@@ -19227,14 +19227,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PeerDataOperationRequestMessage.RequestStickerReupload;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.PeerDataOperationRequestMessage.RequestStickerReupload;
 
                 /**
                  * Verifies a RequestStickerReupload message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a RequestStickerReupload message from a plain object. Also converts values to their respective internal types.
@@ -19262,10 +19262,10 @@ export namespace proto {
             interface IRequestUrlPreview {
 
                 /** RequestUrlPreview url */
-                url?: (string|null);
+                url?: (string | null);
 
                 /** RequestUrlPreview includeHqThumbnail */
-                includeHqThumbnail?: (boolean|null);
+                includeHqThumbnail?: (boolean | null);
             }
 
             /** Represents a RequestUrlPreview. */
@@ -19314,7 +19314,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PeerDataOperationRequestMessage.RequestUrlPreview;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.PeerDataOperationRequestMessage.RequestUrlPreview;
 
                 /**
                  * Decodes a RequestUrlPreview message from the specified reader or buffer, length delimited.
@@ -19323,14 +19323,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PeerDataOperationRequestMessage.RequestUrlPreview;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.PeerDataOperationRequestMessage.RequestUrlPreview;
 
                 /**
                  * Verifies a RequestUrlPreview message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a RequestUrlPreview message from a plain object. Also converts values to their respective internal types.
@@ -19359,13 +19359,13 @@ export namespace proto {
         interface IPeerDataOperationRequestResponseMessage {
 
             /** PeerDataOperationRequestResponseMessage peerDataOperationRequestType */
-            peerDataOperationRequestType?: (proto.Message.PeerDataOperationRequestType|null);
+            peerDataOperationRequestType?: (proto.Message.PeerDataOperationRequestType | null);
 
             /** PeerDataOperationRequestResponseMessage stanzaId */
-            stanzaId?: (string|null);
+            stanzaId?: (string | null);
 
             /** PeerDataOperationRequestResponseMessage peerDataOperationResult */
-            peerDataOperationResult?: (proto.Message.PeerDataOperationRequestResponseMessage.IPeerDataOperationResult[]|null);
+            peerDataOperationResult?: (proto.Message.PeerDataOperationRequestResponseMessage.IPeerDataOperationResult[] | null);
         }
 
         /** Represents a PeerDataOperationRequestResponseMessage. */
@@ -19417,7 +19417,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PeerDataOperationRequestResponseMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.PeerDataOperationRequestResponseMessage;
 
             /**
              * Decodes a PeerDataOperationRequestResponseMessage message from the specified reader or buffer, length delimited.
@@ -19426,14 +19426,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PeerDataOperationRequestResponseMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.PeerDataOperationRequestResponseMessage;
 
             /**
              * Verifies a PeerDataOperationRequestResponseMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PeerDataOperationRequestResponseMessage message from a plain object. Also converts values to their respective internal types.
@@ -19463,16 +19463,16 @@ export namespace proto {
             interface IPeerDataOperationResult {
 
                 /** PeerDataOperationResult mediaUploadResult */
-                mediaUploadResult?: (proto.MediaRetryNotification.ResultType|null);
+                mediaUploadResult?: (proto.MediaRetryNotification.ResultType | null);
 
                 /** PeerDataOperationResult stickerMessage */
-                stickerMessage?: (proto.Message.IStickerMessage|null);
+                stickerMessage?: (proto.Message.IStickerMessage | null);
 
                 /** PeerDataOperationResult linkPreviewResponse */
-                linkPreviewResponse?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.ILinkPreviewResponse|null);
+                linkPreviewResponse?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.ILinkPreviewResponse | null);
 
                 /** PeerDataOperationResult placeholderMessageResendResponse */
-                placeholderMessageResendResponse?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.IPlaceholderMessageResendResponse|null);
+                placeholderMessageResendResponse?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.IPlaceholderMessageResendResponse | null);
             }
 
             /** Represents a PeerDataOperationResult. */
@@ -19488,13 +19488,13 @@ export namespace proto {
                 public mediaUploadResult: proto.MediaRetryNotification.ResultType;
 
                 /** PeerDataOperationResult stickerMessage. */
-                public stickerMessage?: (proto.Message.IStickerMessage|null);
+                public stickerMessage?: (proto.Message.IStickerMessage | null);
 
                 /** PeerDataOperationResult linkPreviewResponse. */
-                public linkPreviewResponse?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.ILinkPreviewResponse|null);
+                public linkPreviewResponse?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.ILinkPreviewResponse | null);
 
                 /** PeerDataOperationResult placeholderMessageResendResponse. */
-                public placeholderMessageResendResponse?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.IPlaceholderMessageResendResponse|null);
+                public placeholderMessageResendResponse?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.IPlaceholderMessageResendResponse | null);
 
                 /**
                  * Creates a new PeerDataOperationResult instance using the specified properties.
@@ -19527,7 +19527,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult;
 
                 /**
                  * Decodes a PeerDataOperationResult message from the specified reader or buffer, length delimited.
@@ -19536,14 +19536,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult;
 
                 /**
                  * Verifies a PeerDataOperationResult message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a PeerDataOperationResult message from a plain object. Also converts values to their respective internal types.
@@ -19573,28 +19573,28 @@ export namespace proto {
                 interface ILinkPreviewResponse {
 
                     /** LinkPreviewResponse url */
-                    url?: (string|null);
+                    url?: (string | null);
 
                     /** LinkPreviewResponse title */
-                    title?: (string|null);
+                    title?: (string | null);
 
                     /** LinkPreviewResponse description */
-                    description?: (string|null);
+                    description?: (string | null);
 
                     /** LinkPreviewResponse thumbData */
-                    thumbData?: (Uint8Array|null);
+                    thumbData?: (Uint8Array | null);
 
                     /** LinkPreviewResponse canonicalUrl */
-                    canonicalUrl?: (string|null);
+                    canonicalUrl?: (string | null);
 
                     /** LinkPreviewResponse matchText */
-                    matchText?: (string|null);
+                    matchText?: (string | null);
 
                     /** LinkPreviewResponse previewType */
-                    previewType?: (string|null);
+                    previewType?: (string | null);
 
                     /** LinkPreviewResponse hqThumbnail */
-                    hqThumbnail?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.LinkPreviewResponse.ILinkPreviewHighQualityThumbnail|null);
+                    hqThumbnail?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.LinkPreviewResponse.ILinkPreviewHighQualityThumbnail | null);
                 }
 
                 /** Represents a LinkPreviewResponse. */
@@ -19628,7 +19628,7 @@ export namespace proto {
                     public previewType: string;
 
                     /** LinkPreviewResponse hqThumbnail. */
-                    public hqThumbnail?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.LinkPreviewResponse.ILinkPreviewHighQualityThumbnail|null);
+                    public hqThumbnail?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.LinkPreviewResponse.ILinkPreviewHighQualityThumbnail | null);
 
                     /**
                      * Creates a new LinkPreviewResponse instance using the specified properties.
@@ -19661,7 +19661,7 @@ export namespace proto {
                      * @throws {Error} If the payload is not a reader or valid buffer
                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                      */
-                    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.LinkPreviewResponse;
+                    public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.LinkPreviewResponse;
 
                     /**
                      * Decodes a LinkPreviewResponse message from the specified reader or buffer, length delimited.
@@ -19670,14 +19670,14 @@ export namespace proto {
                      * @throws {Error} If the payload is not a reader or valid buffer
                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                      */
-                    public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.LinkPreviewResponse;
+                    public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.LinkPreviewResponse;
 
                     /**
                      * Verifies a LinkPreviewResponse message.
                      * @param message Plain object to verify
                      * @returns `null` if valid, otherwise the reason why it is not
                      */
-                    public static verify(message: { [k: string]: any }): (string|null);
+                    public static verify(message: { [k: string]: any }): (string | null);
 
                     /**
                      * Creates a LinkPreviewResponse message from a plain object. Also converts values to their respective internal types.
@@ -19707,25 +19707,25 @@ export namespace proto {
                     interface ILinkPreviewHighQualityThumbnail {
 
                         /** LinkPreviewHighQualityThumbnail directPath */
-                        directPath?: (string|null);
+                        directPath?: (string | null);
 
                         /** LinkPreviewHighQualityThumbnail thumbHash */
-                        thumbHash?: (string|null);
+                        thumbHash?: (string | null);
 
                         /** LinkPreviewHighQualityThumbnail encThumbHash */
-                        encThumbHash?: (string|null);
+                        encThumbHash?: (string | null);
 
                         /** LinkPreviewHighQualityThumbnail mediaKey */
-                        mediaKey?: (Uint8Array|null);
+                        mediaKey?: (Uint8Array | null);
 
                         /** LinkPreviewHighQualityThumbnail mediaKeyTimestampMs */
-                        mediaKeyTimestampMs?: (number|Long|null);
+                        mediaKeyTimestampMs?: (number | Long | null);
 
                         /** LinkPreviewHighQualityThumbnail thumbWidth */
-                        thumbWidth?: (number|null);
+                        thumbWidth?: (number | null);
 
                         /** LinkPreviewHighQualityThumbnail thumbHeight */
-                        thumbHeight?: (number|null);
+                        thumbHeight?: (number | null);
                     }
 
                     /** Represents a LinkPreviewHighQualityThumbnail. */
@@ -19750,7 +19750,7 @@ export namespace proto {
                         public mediaKey: Uint8Array;
 
                         /** LinkPreviewHighQualityThumbnail mediaKeyTimestampMs. */
-                        public mediaKeyTimestampMs: (number|Long);
+                        public mediaKeyTimestampMs: (number | Long);
 
                         /** LinkPreviewHighQualityThumbnail thumbWidth. */
                         public thumbWidth: number;
@@ -19789,7 +19789,7 @@ export namespace proto {
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
-                        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.LinkPreviewResponse.LinkPreviewHighQualityThumbnail;
+                        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.LinkPreviewResponse.LinkPreviewHighQualityThumbnail;
 
                         /**
                          * Decodes a LinkPreviewHighQualityThumbnail message from the specified reader or buffer, length delimited.
@@ -19798,14 +19798,14 @@ export namespace proto {
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
-                        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.LinkPreviewResponse.LinkPreviewHighQualityThumbnail;
+                        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.LinkPreviewResponse.LinkPreviewHighQualityThumbnail;
 
                         /**
                          * Verifies a LinkPreviewHighQualityThumbnail message.
                          * @param message Plain object to verify
                          * @returns `null` if valid, otherwise the reason why it is not
                          */
-                        public static verify(message: { [k: string]: any }): (string|null);
+                        public static verify(message: { [k: string]: any }): (string | null);
 
                         /**
                          * Creates a LinkPreviewHighQualityThumbnail message from a plain object. Also converts values to their respective internal types.
@@ -19834,7 +19834,7 @@ export namespace proto {
                 interface IPlaceholderMessageResendResponse {
 
                     /** PlaceholderMessageResendResponse webMessageInfoBytes */
-                    webMessageInfoBytes?: (Uint8Array|null);
+                    webMessageInfoBytes?: (Uint8Array | null);
                 }
 
                 /** Represents a PlaceholderMessageResendResponse. */
@@ -19880,7 +19880,7 @@ export namespace proto {
                      * @throws {Error} If the payload is not a reader or valid buffer
                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                      */
-                    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.PlaceholderMessageResendResponse;
+                    public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.PlaceholderMessageResendResponse;
 
                     /**
                      * Decodes a PlaceholderMessageResendResponse message from the specified reader or buffer, length delimited.
@@ -19889,14 +19889,14 @@ export namespace proto {
                      * @throws {Error} If the payload is not a reader or valid buffer
                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                      */
-                    public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.PlaceholderMessageResendResponse;
+                    public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.PlaceholderMessageResendResponse;
 
                     /**
                      * Verifies a PlaceholderMessageResendResponse message.
                      * @param message Plain object to verify
                      * @returns `null` if valid, otherwise the reason why it is not
                      */
-                    public static verify(message: { [k: string]: any }): (string|null);
+                    public static verify(message: { [k: string]: any }): (string | null);
 
                     /**
                      * Creates a PlaceholderMessageResendResponse message from a plain object. Also converts values to their respective internal types.
@@ -19935,13 +19935,13 @@ export namespace proto {
         interface IPinInChatMessage {
 
             /** PinInChatMessage key */
-            key?: (proto.IMessageKey|null);
+            key?: (proto.IMessageKey | null);
 
             /** PinInChatMessage type */
-            type?: (proto.Message.PinInChatMessage.Type|null);
+            type?: (proto.Message.PinInChatMessage.Type | null);
 
             /** PinInChatMessage senderTimestampMs */
-            senderTimestampMs?: (number|Long|null);
+            senderTimestampMs?: (number | Long | null);
         }
 
         /** Represents a PinInChatMessage. */
@@ -19954,13 +19954,13 @@ export namespace proto {
             constructor(properties?: proto.Message.IPinInChatMessage);
 
             /** PinInChatMessage key. */
-            public key?: (proto.IMessageKey|null);
+            public key?: (proto.IMessageKey | null);
 
             /** PinInChatMessage type. */
             public type: proto.Message.PinInChatMessage.Type;
 
             /** PinInChatMessage senderTimestampMs. */
-            public senderTimestampMs: (number|Long);
+            public senderTimestampMs: (number | Long);
 
             /**
              * Creates a new PinInChatMessage instance using the specified properties.
@@ -19993,7 +19993,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PinInChatMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.PinInChatMessage;
 
             /**
              * Decodes a PinInChatMessage message from the specified reader or buffer, length delimited.
@@ -20002,14 +20002,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PinInChatMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.PinInChatMessage;
 
             /**
              * Verifies a PinInChatMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PinInChatMessage message from a plain object. Also converts values to their respective internal types.
@@ -20047,7 +20047,7 @@ export namespace proto {
         interface IPlaceholderMessage {
 
             /** PlaceholderMessage type */
-            type?: (proto.Message.PlaceholderMessage.PlaceholderType|null);
+            type?: (proto.Message.PlaceholderMessage.PlaceholderType | null);
         }
 
         /** Represents a PlaceholderMessage. */
@@ -20093,7 +20093,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PlaceholderMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.PlaceholderMessage;
 
             /**
              * Decodes a PlaceholderMessage message from the specified reader or buffer, length delimited.
@@ -20102,14 +20102,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PlaceholderMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.PlaceholderMessage;
 
             /**
              * Verifies a PlaceholderMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PlaceholderMessage message from a plain object. Also converts values to their respective internal types.
@@ -20145,19 +20145,19 @@ export namespace proto {
         interface IPollCreationMessage {
 
             /** PollCreationMessage encKey */
-            encKey?: (Uint8Array|null);
+            encKey?: (Uint8Array | null);
 
             /** PollCreationMessage name */
-            name?: (string|null);
+            name?: (string | null);
 
             /** PollCreationMessage options */
-            options?: (proto.Message.PollCreationMessage.IOption[]|null);
+            options?: (proto.Message.PollCreationMessage.IOption[] | null);
 
             /** PollCreationMessage selectableOptionsCount */
-            selectableOptionsCount?: (number|null);
+            selectableOptionsCount?: (number | null);
 
             /** PollCreationMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
         }
 
         /** Represents a PollCreationMessage. */
@@ -20182,7 +20182,7 @@ export namespace proto {
             public selectableOptionsCount: number;
 
             /** PollCreationMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /**
              * Creates a new PollCreationMessage instance using the specified properties.
@@ -20215,7 +20215,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PollCreationMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.PollCreationMessage;
 
             /**
              * Decodes a PollCreationMessage message from the specified reader or buffer, length delimited.
@@ -20224,14 +20224,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PollCreationMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.PollCreationMessage;
 
             /**
              * Verifies a PollCreationMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PollCreationMessage message from a plain object. Also converts values to their respective internal types.
@@ -20261,7 +20261,7 @@ export namespace proto {
             interface IOption {
 
                 /** Option optionName */
-                optionName?: (string|null);
+                optionName?: (string | null);
             }
 
             /** Represents an Option. */
@@ -20307,7 +20307,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PollCreationMessage.Option;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.PollCreationMessage.Option;
 
                 /**
                  * Decodes an Option message from the specified reader or buffer, length delimited.
@@ -20316,14 +20316,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PollCreationMessage.Option;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.PollCreationMessage.Option;
 
                 /**
                  * Verifies an Option message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates an Option message from a plain object. Also converts values to their respective internal types.
@@ -20352,10 +20352,10 @@ export namespace proto {
         interface IPollEncValue {
 
             /** PollEncValue encPayload */
-            encPayload?: (Uint8Array|null);
+            encPayload?: (Uint8Array | null);
 
             /** PollEncValue encIv */
-            encIv?: (Uint8Array|null);
+            encIv?: (Uint8Array | null);
         }
 
         /** Represents a PollEncValue. */
@@ -20404,7 +20404,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PollEncValue;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.PollEncValue;
 
             /**
              * Decodes a PollEncValue message from the specified reader or buffer, length delimited.
@@ -20413,14 +20413,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PollEncValue;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.PollEncValue;
 
             /**
              * Verifies a PollEncValue message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PollEncValue message from a plain object. Also converts values to their respective internal types.
@@ -20448,16 +20448,16 @@ export namespace proto {
         interface IPollUpdateMessage {
 
             /** PollUpdateMessage pollCreationMessageKey */
-            pollCreationMessageKey?: (proto.IMessageKey|null);
+            pollCreationMessageKey?: (proto.IMessageKey | null);
 
             /** PollUpdateMessage vote */
-            vote?: (proto.Message.IPollEncValue|null);
+            vote?: (proto.Message.IPollEncValue | null);
 
             /** PollUpdateMessage metadata */
-            metadata?: (proto.Message.IPollUpdateMessageMetadata|null);
+            metadata?: (proto.Message.IPollUpdateMessageMetadata | null);
 
             /** PollUpdateMessage senderTimestampMs */
-            senderTimestampMs?: (number|Long|null);
+            senderTimestampMs?: (number | Long | null);
         }
 
         /** Represents a PollUpdateMessage. */
@@ -20470,16 +20470,16 @@ export namespace proto {
             constructor(properties?: proto.Message.IPollUpdateMessage);
 
             /** PollUpdateMessage pollCreationMessageKey. */
-            public pollCreationMessageKey?: (proto.IMessageKey|null);
+            public pollCreationMessageKey?: (proto.IMessageKey | null);
 
             /** PollUpdateMessage vote. */
-            public vote?: (proto.Message.IPollEncValue|null);
+            public vote?: (proto.Message.IPollEncValue | null);
 
             /** PollUpdateMessage metadata. */
-            public metadata?: (proto.Message.IPollUpdateMessageMetadata|null);
+            public metadata?: (proto.Message.IPollUpdateMessageMetadata | null);
 
             /** PollUpdateMessage senderTimestampMs. */
-            public senderTimestampMs: (number|Long);
+            public senderTimestampMs: (number | Long);
 
             /**
              * Creates a new PollUpdateMessage instance using the specified properties.
@@ -20512,7 +20512,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PollUpdateMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.PollUpdateMessage;
 
             /**
              * Decodes a PollUpdateMessage message from the specified reader or buffer, length delimited.
@@ -20521,14 +20521,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PollUpdateMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.PollUpdateMessage;
 
             /**
              * Verifies a PollUpdateMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PollUpdateMessage message from a plain object. Also converts values to their respective internal types.
@@ -20596,7 +20596,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PollUpdateMessageMetadata;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.PollUpdateMessageMetadata;
 
             /**
              * Decodes a PollUpdateMessageMetadata message from the specified reader or buffer, length delimited.
@@ -20605,14 +20605,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PollUpdateMessageMetadata;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.PollUpdateMessageMetadata;
 
             /**
              * Verifies a PollUpdateMessageMetadata message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PollUpdateMessageMetadata message from a plain object. Also converts values to their respective internal types.
@@ -20640,7 +20640,7 @@ export namespace proto {
         interface IPollVoteMessage {
 
             /** PollVoteMessage selectedOptions */
-            selectedOptions?: (Uint8Array[]|null);
+            selectedOptions?: (Uint8Array[] | null);
         }
 
         /** Represents a PollVoteMessage. */
@@ -20686,7 +20686,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PollVoteMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.PollVoteMessage;
 
             /**
              * Decodes a PollVoteMessage message from the specified reader or buffer, length delimited.
@@ -20695,14 +20695,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PollVoteMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.PollVoteMessage;
 
             /**
              * Verifies a PollVoteMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PollVoteMessage message from a plain object. Also converts values to their respective internal types.
@@ -20730,22 +20730,22 @@ export namespace proto {
         interface IProductMessage {
 
             /** ProductMessage product */
-            product?: (proto.Message.ProductMessage.IProductSnapshot|null);
+            product?: (proto.Message.ProductMessage.IProductSnapshot | null);
 
             /** ProductMessage businessOwnerJid */
-            businessOwnerJid?: (string|null);
+            businessOwnerJid?: (string | null);
 
             /** ProductMessage catalog */
-            catalog?: (proto.Message.ProductMessage.ICatalogSnapshot|null);
+            catalog?: (proto.Message.ProductMessage.ICatalogSnapshot | null);
 
             /** ProductMessage body */
-            body?: (string|null);
+            body?: (string | null);
 
             /** ProductMessage footer */
-            footer?: (string|null);
+            footer?: (string | null);
 
             /** ProductMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
         }
 
         /** Represents a ProductMessage. */
@@ -20758,13 +20758,13 @@ export namespace proto {
             constructor(properties?: proto.Message.IProductMessage);
 
             /** ProductMessage product. */
-            public product?: (proto.Message.ProductMessage.IProductSnapshot|null);
+            public product?: (proto.Message.ProductMessage.IProductSnapshot | null);
 
             /** ProductMessage businessOwnerJid. */
             public businessOwnerJid: string;
 
             /** ProductMessage catalog. */
-            public catalog?: (proto.Message.ProductMessage.ICatalogSnapshot|null);
+            public catalog?: (proto.Message.ProductMessage.ICatalogSnapshot | null);
 
             /** ProductMessage body. */
             public body: string;
@@ -20773,7 +20773,7 @@ export namespace proto {
             public footer: string;
 
             /** ProductMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /**
              * Creates a new ProductMessage instance using the specified properties.
@@ -20806,7 +20806,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ProductMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ProductMessage;
 
             /**
              * Decodes a ProductMessage message from the specified reader or buffer, length delimited.
@@ -20815,14 +20815,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ProductMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ProductMessage;
 
             /**
              * Verifies a ProductMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ProductMessage message from a plain object. Also converts values to their respective internal types.
@@ -20852,13 +20852,13 @@ export namespace proto {
             interface ICatalogSnapshot {
 
                 /** CatalogSnapshot catalogImage */
-                catalogImage?: (proto.Message.IImageMessage|null);
+                catalogImage?: (proto.Message.IImageMessage | null);
 
                 /** CatalogSnapshot title */
-                title?: (string|null);
+                title?: (string | null);
 
                 /** CatalogSnapshot description */
-                description?: (string|null);
+                description?: (string | null);
             }
 
             /** Represents a CatalogSnapshot. */
@@ -20871,7 +20871,7 @@ export namespace proto {
                 constructor(properties?: proto.Message.ProductMessage.ICatalogSnapshot);
 
                 /** CatalogSnapshot catalogImage. */
-                public catalogImage?: (proto.Message.IImageMessage|null);
+                public catalogImage?: (proto.Message.IImageMessage | null);
 
                 /** CatalogSnapshot title. */
                 public title: string;
@@ -20910,7 +20910,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ProductMessage.CatalogSnapshot;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ProductMessage.CatalogSnapshot;
 
                 /**
                  * Decodes a CatalogSnapshot message from the specified reader or buffer, length delimited.
@@ -20919,14 +20919,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ProductMessage.CatalogSnapshot;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ProductMessage.CatalogSnapshot;
 
                 /**
                  * Verifies a CatalogSnapshot message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a CatalogSnapshot message from a plain object. Also converts values to their respective internal types.
@@ -20954,37 +20954,37 @@ export namespace proto {
             interface IProductSnapshot {
 
                 /** ProductSnapshot productImage */
-                productImage?: (proto.Message.IImageMessage|null);
+                productImage?: (proto.Message.IImageMessage | null);
 
                 /** ProductSnapshot productId */
-                productId?: (string|null);
+                productId?: (string | null);
 
                 /** ProductSnapshot title */
-                title?: (string|null);
+                title?: (string | null);
 
                 /** ProductSnapshot description */
-                description?: (string|null);
+                description?: (string | null);
 
                 /** ProductSnapshot currencyCode */
-                currencyCode?: (string|null);
+                currencyCode?: (string | null);
 
                 /** ProductSnapshot priceAmount1000 */
-                priceAmount1000?: (number|Long|null);
+                priceAmount1000?: (number | Long | null);
 
                 /** ProductSnapshot retailerId */
-                retailerId?: (string|null);
+                retailerId?: (string | null);
 
                 /** ProductSnapshot url */
-                url?: (string|null);
+                url?: (string | null);
 
                 /** ProductSnapshot productImageCount */
-                productImageCount?: (number|null);
+                productImageCount?: (number | null);
 
                 /** ProductSnapshot firstImageId */
-                firstImageId?: (string|null);
+                firstImageId?: (string | null);
 
                 /** ProductSnapshot salePriceAmount1000 */
-                salePriceAmount1000?: (number|Long|null);
+                salePriceAmount1000?: (number | Long | null);
             }
 
             /** Represents a ProductSnapshot. */
@@ -20997,7 +20997,7 @@ export namespace proto {
                 constructor(properties?: proto.Message.ProductMessage.IProductSnapshot);
 
                 /** ProductSnapshot productImage. */
-                public productImage?: (proto.Message.IImageMessage|null);
+                public productImage?: (proto.Message.IImageMessage | null);
 
                 /** ProductSnapshot productId. */
                 public productId: string;
@@ -21012,7 +21012,7 @@ export namespace proto {
                 public currencyCode: string;
 
                 /** ProductSnapshot priceAmount1000. */
-                public priceAmount1000: (number|Long);
+                public priceAmount1000: (number | Long);
 
                 /** ProductSnapshot retailerId. */
                 public retailerId: string;
@@ -21027,7 +21027,7 @@ export namespace proto {
                 public firstImageId: string;
 
                 /** ProductSnapshot salePriceAmount1000. */
-                public salePriceAmount1000: (number|Long);
+                public salePriceAmount1000: (number | Long);
 
                 /**
                  * Creates a new ProductSnapshot instance using the specified properties.
@@ -21060,7 +21060,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ProductMessage.ProductSnapshot;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ProductMessage.ProductSnapshot;
 
                 /**
                  * Decodes a ProductSnapshot message from the specified reader or buffer, length delimited.
@@ -21069,14 +21069,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ProductMessage.ProductSnapshot;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ProductMessage.ProductSnapshot;
 
                 /**
                  * Verifies a ProductSnapshot message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a ProductSnapshot message from a plain object. Also converts values to their respective internal types.
@@ -21105,58 +21105,58 @@ export namespace proto {
         interface IProtocolMessage {
 
             /** ProtocolMessage key */
-            key?: (proto.IMessageKey|null);
+            key?: (proto.IMessageKey | null);
 
             /** ProtocolMessage type */
-            type?: (proto.Message.ProtocolMessage.Type|null);
+            type?: (proto.Message.ProtocolMessage.Type | null);
 
             /** ProtocolMessage ephemeralExpiration */
-            ephemeralExpiration?: (number|null);
+            ephemeralExpiration?: (number | null);
 
             /** ProtocolMessage ephemeralSettingTimestamp */
-            ephemeralSettingTimestamp?: (number|Long|null);
+            ephemeralSettingTimestamp?: (number | Long | null);
 
             /** ProtocolMessage historySyncNotification */
-            historySyncNotification?: (proto.Message.IHistorySyncNotification|null);
+            historySyncNotification?: (proto.Message.IHistorySyncNotification | null);
 
             /** ProtocolMessage appStateSyncKeyShare */
-            appStateSyncKeyShare?: (proto.Message.IAppStateSyncKeyShare|null);
+            appStateSyncKeyShare?: (proto.Message.IAppStateSyncKeyShare | null);
 
             /** ProtocolMessage appStateSyncKeyRequest */
-            appStateSyncKeyRequest?: (proto.Message.IAppStateSyncKeyRequest|null);
+            appStateSyncKeyRequest?: (proto.Message.IAppStateSyncKeyRequest | null);
 
             /** ProtocolMessage initialSecurityNotificationSettingSync */
-            initialSecurityNotificationSettingSync?: (proto.Message.IInitialSecurityNotificationSettingSync|null);
+            initialSecurityNotificationSettingSync?: (proto.Message.IInitialSecurityNotificationSettingSync | null);
 
             /** ProtocolMessage appStateFatalExceptionNotification */
-            appStateFatalExceptionNotification?: (proto.Message.IAppStateFatalExceptionNotification|null);
+            appStateFatalExceptionNotification?: (proto.Message.IAppStateFatalExceptionNotification | null);
 
             /** ProtocolMessage disappearingMode */
-            disappearingMode?: (proto.IDisappearingMode|null);
+            disappearingMode?: (proto.IDisappearingMode | null);
 
             /** ProtocolMessage editedMessage */
-            editedMessage?: (proto.IMessage|null);
+            editedMessage?: (proto.IMessage | null);
 
             /** ProtocolMessage timestampMs */
-            timestampMs?: (number|Long|null);
+            timestampMs?: (number | Long | null);
 
             /** ProtocolMessage peerDataOperationRequestMessage */
-            peerDataOperationRequestMessage?: (proto.Message.IPeerDataOperationRequestMessage|null);
+            peerDataOperationRequestMessage?: (proto.Message.IPeerDataOperationRequestMessage | null);
 
             /** ProtocolMessage peerDataOperationRequestResponseMessage */
-            peerDataOperationRequestResponseMessage?: (proto.Message.IPeerDataOperationRequestResponseMessage|null);
+            peerDataOperationRequestResponseMessage?: (proto.Message.IPeerDataOperationRequestResponseMessage | null);
 
             /** ProtocolMessage botFeedbackMessage */
-            botFeedbackMessage?: (proto.Message.IBotFeedbackMessage|null);
+            botFeedbackMessage?: (proto.Message.IBotFeedbackMessage | null);
 
             /** ProtocolMessage invokerJid */
-            invokerJid?: (string|null);
+            invokerJid?: (string | null);
 
             /** ProtocolMessage requestWelcomeMessageMetadata */
-            requestWelcomeMessageMetadata?: (proto.Message.IRequestWelcomeMessageMetadata|null);
+            requestWelcomeMessageMetadata?: (proto.Message.IRequestWelcomeMessageMetadata | null);
 
             /** ProtocolMessage mediaNotifyMessage */
-            mediaNotifyMessage?: (proto.IMediaNotifyMessage|null);
+            mediaNotifyMessage?: (proto.IMediaNotifyMessage | null);
         }
 
         /** Represents a ProtocolMessage. */
@@ -21169,7 +21169,7 @@ export namespace proto {
             constructor(properties?: proto.Message.IProtocolMessage);
 
             /** ProtocolMessage key. */
-            public key?: (proto.IMessageKey|null);
+            public key?: (proto.IMessageKey | null);
 
             /** ProtocolMessage type. */
             public type: proto.Message.ProtocolMessage.Type;
@@ -21178,49 +21178,49 @@ export namespace proto {
             public ephemeralExpiration: number;
 
             /** ProtocolMessage ephemeralSettingTimestamp. */
-            public ephemeralSettingTimestamp: (number|Long);
+            public ephemeralSettingTimestamp: (number | Long);
 
             /** ProtocolMessage historySyncNotification. */
-            public historySyncNotification?: (proto.Message.IHistorySyncNotification|null);
+            public historySyncNotification?: (proto.Message.IHistorySyncNotification | null);
 
             /** ProtocolMessage appStateSyncKeyShare. */
-            public appStateSyncKeyShare?: (proto.Message.IAppStateSyncKeyShare|null);
+            public appStateSyncKeyShare?: (proto.Message.IAppStateSyncKeyShare | null);
 
             /** ProtocolMessage appStateSyncKeyRequest. */
-            public appStateSyncKeyRequest?: (proto.Message.IAppStateSyncKeyRequest|null);
+            public appStateSyncKeyRequest?: (proto.Message.IAppStateSyncKeyRequest | null);
 
             /** ProtocolMessage initialSecurityNotificationSettingSync. */
-            public initialSecurityNotificationSettingSync?: (proto.Message.IInitialSecurityNotificationSettingSync|null);
+            public initialSecurityNotificationSettingSync?: (proto.Message.IInitialSecurityNotificationSettingSync | null);
 
             /** ProtocolMessage appStateFatalExceptionNotification. */
-            public appStateFatalExceptionNotification?: (proto.Message.IAppStateFatalExceptionNotification|null);
+            public appStateFatalExceptionNotification?: (proto.Message.IAppStateFatalExceptionNotification | null);
 
             /** ProtocolMessage disappearingMode. */
-            public disappearingMode?: (proto.IDisappearingMode|null);
+            public disappearingMode?: (proto.IDisappearingMode | null);
 
             /** ProtocolMessage editedMessage. */
-            public editedMessage?: (proto.IMessage|null);
+            public editedMessage?: (proto.IMessage | null);
 
             /** ProtocolMessage timestampMs. */
-            public timestampMs: (number|Long);
+            public timestampMs: (number | Long);
 
             /** ProtocolMessage peerDataOperationRequestMessage. */
-            public peerDataOperationRequestMessage?: (proto.Message.IPeerDataOperationRequestMessage|null);
+            public peerDataOperationRequestMessage?: (proto.Message.IPeerDataOperationRequestMessage | null);
 
             /** ProtocolMessage peerDataOperationRequestResponseMessage. */
-            public peerDataOperationRequestResponseMessage?: (proto.Message.IPeerDataOperationRequestResponseMessage|null);
+            public peerDataOperationRequestResponseMessage?: (proto.Message.IPeerDataOperationRequestResponseMessage | null);
 
             /** ProtocolMessage botFeedbackMessage. */
-            public botFeedbackMessage?: (proto.Message.IBotFeedbackMessage|null);
+            public botFeedbackMessage?: (proto.Message.IBotFeedbackMessage | null);
 
             /** ProtocolMessage invokerJid. */
             public invokerJid: string;
 
             /** ProtocolMessage requestWelcomeMessageMetadata. */
-            public requestWelcomeMessageMetadata?: (proto.Message.IRequestWelcomeMessageMetadata|null);
+            public requestWelcomeMessageMetadata?: (proto.Message.IRequestWelcomeMessageMetadata | null);
 
             /** ProtocolMessage mediaNotifyMessage. */
-            public mediaNotifyMessage?: (proto.IMediaNotifyMessage|null);
+            public mediaNotifyMessage?: (proto.IMediaNotifyMessage | null);
 
             /**
              * Creates a new ProtocolMessage instance using the specified properties.
@@ -21253,7 +21253,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ProtocolMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ProtocolMessage;
 
             /**
              * Decodes a ProtocolMessage message from the specified reader or buffer, length delimited.
@@ -21262,14 +21262,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ProtocolMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ProtocolMessage;
 
             /**
              * Verifies a ProtocolMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ProtocolMessage message from a plain object. Also converts values to their respective internal types.
@@ -21320,16 +21320,16 @@ export namespace proto {
         interface IReactionMessage {
 
             /** ReactionMessage key */
-            key?: (proto.IMessageKey|null);
+            key?: (proto.IMessageKey | null);
 
             /** ReactionMessage text */
-            text?: (string|null);
+            text?: (string | null);
 
             /** ReactionMessage groupingKey */
-            groupingKey?: (string|null);
+            groupingKey?: (string | null);
 
             /** ReactionMessage senderTimestampMs */
-            senderTimestampMs?: (number|Long|null);
+            senderTimestampMs?: (number | Long | null);
         }
 
         /** Represents a ReactionMessage. */
@@ -21342,7 +21342,7 @@ export namespace proto {
             constructor(properties?: proto.Message.IReactionMessage);
 
             /** ReactionMessage key. */
-            public key?: (proto.IMessageKey|null);
+            public key?: (proto.IMessageKey | null);
 
             /** ReactionMessage text. */
             public text: string;
@@ -21351,7 +21351,7 @@ export namespace proto {
             public groupingKey: string;
 
             /** ReactionMessage senderTimestampMs. */
-            public senderTimestampMs: (number|Long);
+            public senderTimestampMs: (number | Long);
 
             /**
              * Creates a new ReactionMessage instance using the specified properties.
@@ -21384,7 +21384,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ReactionMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ReactionMessage;
 
             /**
              * Decodes a ReactionMessage message from the specified reader or buffer, length delimited.
@@ -21393,14 +21393,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ReactionMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ReactionMessage;
 
             /**
              * Verifies a ReactionMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ReactionMessage message from a plain object. Also converts values to their respective internal types.
@@ -21428,25 +21428,25 @@ export namespace proto {
         interface IRequestPaymentMessage {
 
             /** RequestPaymentMessage noteMessage */
-            noteMessage?: (proto.IMessage|null);
+            noteMessage?: (proto.IMessage | null);
 
             /** RequestPaymentMessage currencyCodeIso4217 */
-            currencyCodeIso4217?: (string|null);
+            currencyCodeIso4217?: (string | null);
 
             /** RequestPaymentMessage amount1000 */
-            amount1000?: (number|Long|null);
+            amount1000?: (number | Long | null);
 
             /** RequestPaymentMessage requestFrom */
-            requestFrom?: (string|null);
+            requestFrom?: (string | null);
 
             /** RequestPaymentMessage expiryTimestamp */
-            expiryTimestamp?: (number|Long|null);
+            expiryTimestamp?: (number | Long | null);
 
             /** RequestPaymentMessage amount */
-            amount?: (proto.IMoney|null);
+            amount?: (proto.IMoney | null);
 
             /** RequestPaymentMessage background */
-            background?: (proto.IPaymentBackground|null);
+            background?: (proto.IPaymentBackground | null);
         }
 
         /** Represents a RequestPaymentMessage. */
@@ -21459,25 +21459,25 @@ export namespace proto {
             constructor(properties?: proto.Message.IRequestPaymentMessage);
 
             /** RequestPaymentMessage noteMessage. */
-            public noteMessage?: (proto.IMessage|null);
+            public noteMessage?: (proto.IMessage | null);
 
             /** RequestPaymentMessage currencyCodeIso4217. */
             public currencyCodeIso4217: string;
 
             /** RequestPaymentMessage amount1000. */
-            public amount1000: (number|Long);
+            public amount1000: (number | Long);
 
             /** RequestPaymentMessage requestFrom. */
             public requestFrom: string;
 
             /** RequestPaymentMessage expiryTimestamp. */
-            public expiryTimestamp: (number|Long);
+            public expiryTimestamp: (number | Long);
 
             /** RequestPaymentMessage amount. */
-            public amount?: (proto.IMoney|null);
+            public amount?: (proto.IMoney | null);
 
             /** RequestPaymentMessage background. */
-            public background?: (proto.IPaymentBackground|null);
+            public background?: (proto.IPaymentBackground | null);
 
             /**
              * Creates a new RequestPaymentMessage instance using the specified properties.
@@ -21510,7 +21510,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.RequestPaymentMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.RequestPaymentMessage;
 
             /**
              * Decodes a RequestPaymentMessage message from the specified reader or buffer, length delimited.
@@ -21519,14 +21519,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.RequestPaymentMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.RequestPaymentMessage;
 
             /**
              * Verifies a RequestPaymentMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a RequestPaymentMessage message from a plain object. Also converts values to their respective internal types.
@@ -21554,7 +21554,7 @@ export namespace proto {
         interface IRequestPhoneNumberMessage {
 
             /** RequestPhoneNumberMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
         }
 
         /** Represents a RequestPhoneNumberMessage. */
@@ -21567,7 +21567,7 @@ export namespace proto {
             constructor(properties?: proto.Message.IRequestPhoneNumberMessage);
 
             /** RequestPhoneNumberMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /**
              * Creates a new RequestPhoneNumberMessage instance using the specified properties.
@@ -21600,7 +21600,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.RequestPhoneNumberMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.RequestPhoneNumberMessage;
 
             /**
              * Decodes a RequestPhoneNumberMessage message from the specified reader or buffer, length delimited.
@@ -21609,14 +21609,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.RequestPhoneNumberMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.RequestPhoneNumberMessage;
 
             /**
              * Verifies a RequestPhoneNumberMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a RequestPhoneNumberMessage message from a plain object. Also converts values to their respective internal types.
@@ -21644,7 +21644,7 @@ export namespace proto {
         interface IRequestWelcomeMessageMetadata {
 
             /** RequestWelcomeMessageMetadata localChatState */
-            localChatState?: (proto.Message.RequestWelcomeMessageMetadata.LocalChatState|null);
+            localChatState?: (proto.Message.RequestWelcomeMessageMetadata.LocalChatState | null);
         }
 
         /** Represents a RequestWelcomeMessageMetadata. */
@@ -21690,7 +21690,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.RequestWelcomeMessageMetadata;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.RequestWelcomeMessageMetadata;
 
             /**
              * Decodes a RequestWelcomeMessageMetadata message from the specified reader or buffer, length delimited.
@@ -21699,14 +21699,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.RequestWelcomeMessageMetadata;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.RequestWelcomeMessageMetadata;
 
             /**
              * Verifies a RequestWelcomeMessageMetadata message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a RequestWelcomeMessageMetadata message from a plain object. Also converts values to their respective internal types.
@@ -21743,13 +21743,13 @@ export namespace proto {
         interface IScheduledCallCreationMessage {
 
             /** ScheduledCallCreationMessage scheduledTimestampMs */
-            scheduledTimestampMs?: (number|Long|null);
+            scheduledTimestampMs?: (number | Long | null);
 
             /** ScheduledCallCreationMessage callType */
-            callType?: (proto.Message.ScheduledCallCreationMessage.CallType|null);
+            callType?: (proto.Message.ScheduledCallCreationMessage.CallType | null);
 
             /** ScheduledCallCreationMessage title */
-            title?: (string|null);
+            title?: (string | null);
         }
 
         /** Represents a ScheduledCallCreationMessage. */
@@ -21762,7 +21762,7 @@ export namespace proto {
             constructor(properties?: proto.Message.IScheduledCallCreationMessage);
 
             /** ScheduledCallCreationMessage scheduledTimestampMs. */
-            public scheduledTimestampMs: (number|Long);
+            public scheduledTimestampMs: (number | Long);
 
             /** ScheduledCallCreationMessage callType. */
             public callType: proto.Message.ScheduledCallCreationMessage.CallType;
@@ -21801,7 +21801,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ScheduledCallCreationMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ScheduledCallCreationMessage;
 
             /**
              * Decodes a ScheduledCallCreationMessage message from the specified reader or buffer, length delimited.
@@ -21810,14 +21810,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ScheduledCallCreationMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ScheduledCallCreationMessage;
 
             /**
              * Verifies a ScheduledCallCreationMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ScheduledCallCreationMessage message from a plain object. Also converts values to their respective internal types.
@@ -21855,10 +21855,10 @@ export namespace proto {
         interface IScheduledCallEditMessage {
 
             /** ScheduledCallEditMessage key */
-            key?: (proto.IMessageKey|null);
+            key?: (proto.IMessageKey | null);
 
             /** ScheduledCallEditMessage editType */
-            editType?: (proto.Message.ScheduledCallEditMessage.EditType|null);
+            editType?: (proto.Message.ScheduledCallEditMessage.EditType | null);
         }
 
         /** Represents a ScheduledCallEditMessage. */
@@ -21871,7 +21871,7 @@ export namespace proto {
             constructor(properties?: proto.Message.IScheduledCallEditMessage);
 
             /** ScheduledCallEditMessage key. */
-            public key?: (proto.IMessageKey|null);
+            public key?: (proto.IMessageKey | null);
 
             /** ScheduledCallEditMessage editType. */
             public editType: proto.Message.ScheduledCallEditMessage.EditType;
@@ -21907,7 +21907,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ScheduledCallEditMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.ScheduledCallEditMessage;
 
             /**
              * Decodes a ScheduledCallEditMessage message from the specified reader or buffer, length delimited.
@@ -21916,14 +21916,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ScheduledCallEditMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.ScheduledCallEditMessage;
 
             /**
              * Verifies a ScheduledCallEditMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ScheduledCallEditMessage message from a plain object. Also converts values to their respective internal types.
@@ -21960,13 +21960,13 @@ export namespace proto {
         interface ISendPaymentMessage {
 
             /** SendPaymentMessage noteMessage */
-            noteMessage?: (proto.IMessage|null);
+            noteMessage?: (proto.IMessage | null);
 
             /** SendPaymentMessage requestMessageKey */
-            requestMessageKey?: (proto.IMessageKey|null);
+            requestMessageKey?: (proto.IMessageKey | null);
 
             /** SendPaymentMessage background */
-            background?: (proto.IPaymentBackground|null);
+            background?: (proto.IPaymentBackground | null);
         }
 
         /** Represents a SendPaymentMessage. */
@@ -21979,13 +21979,13 @@ export namespace proto {
             constructor(properties?: proto.Message.ISendPaymentMessage);
 
             /** SendPaymentMessage noteMessage. */
-            public noteMessage?: (proto.IMessage|null);
+            public noteMessage?: (proto.IMessage | null);
 
             /** SendPaymentMessage requestMessageKey. */
-            public requestMessageKey?: (proto.IMessageKey|null);
+            public requestMessageKey?: (proto.IMessageKey | null);
 
             /** SendPaymentMessage background. */
-            public background?: (proto.IPaymentBackground|null);
+            public background?: (proto.IPaymentBackground | null);
 
             /**
              * Creates a new SendPaymentMessage instance using the specified properties.
@@ -22018,7 +22018,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.SendPaymentMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.SendPaymentMessage;
 
             /**
              * Decodes a SendPaymentMessage message from the specified reader or buffer, length delimited.
@@ -22027,14 +22027,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.SendPaymentMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.SendPaymentMessage;
 
             /**
              * Verifies a SendPaymentMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a SendPaymentMessage message from a plain object. Also converts values to their respective internal types.
@@ -22062,10 +22062,10 @@ export namespace proto {
         interface ISenderKeyDistributionMessage {
 
             /** SenderKeyDistributionMessage groupId */
-            groupId?: (string|null);
+            groupId?: (string | null);
 
             /** SenderKeyDistributionMessage axolotlSenderKeyDistributionMessage */
-            axolotlSenderKeyDistributionMessage?: (Uint8Array|null);
+            axolotlSenderKeyDistributionMessage?: (Uint8Array | null);
         }
 
         /** Represents a SenderKeyDistributionMessage. */
@@ -22114,7 +22114,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.SenderKeyDistributionMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.SenderKeyDistributionMessage;
 
             /**
              * Decodes a SenderKeyDistributionMessage message from the specified reader or buffer, length delimited.
@@ -22123,14 +22123,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.SenderKeyDistributionMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.SenderKeyDistributionMessage;
 
             /**
              * Verifies a SenderKeyDistributionMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a SenderKeyDistributionMessage message from a plain object. Also converts values to their respective internal types.
@@ -22158,61 +22158,61 @@ export namespace proto {
         interface IStickerMessage {
 
             /** StickerMessage url */
-            url?: (string|null);
+            url?: (string | null);
 
             /** StickerMessage fileSha256 */
-            fileSha256?: (Uint8Array|null);
+            fileSha256?: (Uint8Array | null);
 
             /** StickerMessage fileEncSha256 */
-            fileEncSha256?: (Uint8Array|null);
+            fileEncSha256?: (Uint8Array | null);
 
             /** StickerMessage mediaKey */
-            mediaKey?: (Uint8Array|null);
+            mediaKey?: (Uint8Array | null);
 
             /** StickerMessage mimetype */
-            mimetype?: (string|null);
+            mimetype?: (string | null);
 
             /** StickerMessage height */
-            height?: (number|null);
+            height?: (number | null);
 
             /** StickerMessage width */
-            width?: (number|null);
+            width?: (number | null);
 
             /** StickerMessage directPath */
-            directPath?: (string|null);
+            directPath?: (string | null);
 
             /** StickerMessage fileLength */
-            fileLength?: (number|Long|null);
+            fileLength?: (number | Long | null);
 
             /** StickerMessage mediaKeyTimestamp */
-            mediaKeyTimestamp?: (number|Long|null);
+            mediaKeyTimestamp?: (number | Long | null);
 
             /** StickerMessage firstFrameLength */
-            firstFrameLength?: (number|null);
+            firstFrameLength?: (number | null);
 
             /** StickerMessage firstFrameSidecar */
-            firstFrameSidecar?: (Uint8Array|null);
+            firstFrameSidecar?: (Uint8Array | null);
 
             /** StickerMessage isAnimated */
-            isAnimated?: (boolean|null);
+            isAnimated?: (boolean | null);
 
             /** StickerMessage pngThumbnail */
-            pngThumbnail?: (Uint8Array|null);
+            pngThumbnail?: (Uint8Array | null);
 
             /** StickerMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
 
             /** StickerMessage stickerSentTs */
-            stickerSentTs?: (number|Long|null);
+            stickerSentTs?: (number | Long | null);
 
             /** StickerMessage isAvatar */
-            isAvatar?: (boolean|null);
+            isAvatar?: (boolean | null);
 
             /** StickerMessage isAiSticker */
-            isAiSticker?: (boolean|null);
+            isAiSticker?: (boolean | null);
 
             /** StickerMessage isLottie */
-            isLottie?: (boolean|null);
+            isLottie?: (boolean | null);
         }
 
         /** Represents a StickerMessage. */
@@ -22249,10 +22249,10 @@ export namespace proto {
             public directPath: string;
 
             /** StickerMessage fileLength. */
-            public fileLength: (number|Long);
+            public fileLength: (number | Long);
 
             /** StickerMessage mediaKeyTimestamp. */
-            public mediaKeyTimestamp: (number|Long);
+            public mediaKeyTimestamp: (number | Long);
 
             /** StickerMessage firstFrameLength. */
             public firstFrameLength: number;
@@ -22267,10 +22267,10 @@ export namespace proto {
             public pngThumbnail: Uint8Array;
 
             /** StickerMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /** StickerMessage stickerSentTs. */
-            public stickerSentTs: (number|Long);
+            public stickerSentTs: (number | Long);
 
             /** StickerMessage isAvatar. */
             public isAvatar: boolean;
@@ -22312,7 +22312,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.StickerMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.StickerMessage;
 
             /**
              * Decodes a StickerMessage message from the specified reader or buffer, length delimited.
@@ -22321,14 +22321,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.StickerMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.StickerMessage;
 
             /**
              * Verifies a StickerMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a StickerMessage message from a plain object. Also converts values to their respective internal types.
@@ -22356,13 +22356,13 @@ export namespace proto {
         interface IStickerSyncRMRMessage {
 
             /** StickerSyncRMRMessage filehash */
-            filehash?: (string[]|null);
+            filehash?: (string[] | null);
 
             /** StickerSyncRMRMessage rmrSource */
-            rmrSource?: (string|null);
+            rmrSource?: (string | null);
 
             /** StickerSyncRMRMessage requestTimestamp */
-            requestTimestamp?: (number|Long|null);
+            requestTimestamp?: (number | Long | null);
         }
 
         /** Represents a StickerSyncRMRMessage. */
@@ -22381,7 +22381,7 @@ export namespace proto {
             public rmrSource: string;
 
             /** StickerSyncRMRMessage requestTimestamp. */
-            public requestTimestamp: (number|Long);
+            public requestTimestamp: (number | Long);
 
             /**
              * Creates a new StickerSyncRMRMessage instance using the specified properties.
@@ -22414,7 +22414,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.StickerSyncRMRMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.StickerSyncRMRMessage;
 
             /**
              * Decodes a StickerSyncRMRMessage message from the specified reader or buffer, length delimited.
@@ -22423,14 +22423,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.StickerSyncRMRMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.StickerSyncRMRMessage;
 
             /**
              * Verifies a StickerSyncRMRMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a StickerSyncRMRMessage message from a plain object. Also converts values to their respective internal types.
@@ -22458,19 +22458,19 @@ export namespace proto {
         interface ITemplateButtonReplyMessage {
 
             /** TemplateButtonReplyMessage selectedId */
-            selectedId?: (string|null);
+            selectedId?: (string | null);
 
             /** TemplateButtonReplyMessage selectedDisplayText */
-            selectedDisplayText?: (string|null);
+            selectedDisplayText?: (string | null);
 
             /** TemplateButtonReplyMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
 
             /** TemplateButtonReplyMessage selectedIndex */
-            selectedIndex?: (number|null);
+            selectedIndex?: (number | null);
 
             /** TemplateButtonReplyMessage selectedCarouselCardIndex */
-            selectedCarouselCardIndex?: (number|null);
+            selectedCarouselCardIndex?: (number | null);
         }
 
         /** Represents a TemplateButtonReplyMessage. */
@@ -22489,7 +22489,7 @@ export namespace proto {
             public selectedDisplayText: string;
 
             /** TemplateButtonReplyMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /** TemplateButtonReplyMessage selectedIndex. */
             public selectedIndex: number;
@@ -22528,7 +22528,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.TemplateButtonReplyMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.TemplateButtonReplyMessage;
 
             /**
              * Decodes a TemplateButtonReplyMessage message from the specified reader or buffer, length delimited.
@@ -22537,14 +22537,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.TemplateButtonReplyMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.TemplateButtonReplyMessage;
 
             /**
              * Verifies a TemplateButtonReplyMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a TemplateButtonReplyMessage message from a plain object. Also converts values to their respective internal types.
@@ -22572,22 +22572,22 @@ export namespace proto {
         interface ITemplateMessage {
 
             /** TemplateMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
 
             /** TemplateMessage hydratedTemplate */
-            hydratedTemplate?: (proto.Message.TemplateMessage.IHydratedFourRowTemplate|null);
+            hydratedTemplate?: (proto.Message.TemplateMessage.IHydratedFourRowTemplate | null);
 
             /** TemplateMessage templateId */
-            templateId?: (string|null);
+            templateId?: (string | null);
 
             /** TemplateMessage fourRowTemplate */
-            fourRowTemplate?: (proto.Message.TemplateMessage.IFourRowTemplate|null);
+            fourRowTemplate?: (proto.Message.TemplateMessage.IFourRowTemplate | null);
 
             /** TemplateMessage hydratedFourRowTemplate */
-            hydratedFourRowTemplate?: (proto.Message.TemplateMessage.IHydratedFourRowTemplate|null);
+            hydratedFourRowTemplate?: (proto.Message.TemplateMessage.IHydratedFourRowTemplate | null);
 
             /** TemplateMessage interactiveMessageTemplate */
-            interactiveMessageTemplate?: (proto.Message.IInteractiveMessage|null);
+            interactiveMessageTemplate?: (proto.Message.IInteractiveMessage | null);
         }
 
         /** Represents a TemplateMessage. */
@@ -22600,25 +22600,25 @@ export namespace proto {
             constructor(properties?: proto.Message.ITemplateMessage);
 
             /** TemplateMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /** TemplateMessage hydratedTemplate. */
-            public hydratedTemplate?: (proto.Message.TemplateMessage.IHydratedFourRowTemplate|null);
+            public hydratedTemplate?: (proto.Message.TemplateMessage.IHydratedFourRowTemplate | null);
 
             /** TemplateMessage templateId. */
             public templateId: string;
 
             /** TemplateMessage fourRowTemplate. */
-            public fourRowTemplate?: (proto.Message.TemplateMessage.IFourRowTemplate|null);
+            public fourRowTemplate?: (proto.Message.TemplateMessage.IFourRowTemplate | null);
 
             /** TemplateMessage hydratedFourRowTemplate. */
-            public hydratedFourRowTemplate?: (proto.Message.TemplateMessage.IHydratedFourRowTemplate|null);
+            public hydratedFourRowTemplate?: (proto.Message.TemplateMessage.IHydratedFourRowTemplate | null);
 
             /** TemplateMessage interactiveMessageTemplate. */
-            public interactiveMessageTemplate?: (proto.Message.IInteractiveMessage|null);
+            public interactiveMessageTemplate?: (proto.Message.IInteractiveMessage | null);
 
             /** TemplateMessage format. */
-            public format?: ("fourRowTemplate"|"hydratedFourRowTemplate"|"interactiveMessageTemplate");
+            public format?: ("fourRowTemplate" | "hydratedFourRowTemplate" | "interactiveMessageTemplate");
 
             /**
              * Creates a new TemplateMessage instance using the specified properties.
@@ -22651,7 +22651,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.TemplateMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.TemplateMessage;
 
             /**
              * Decodes a TemplateMessage message from the specified reader or buffer, length delimited.
@@ -22660,14 +22660,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.TemplateMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.TemplateMessage;
 
             /**
              * Verifies a TemplateMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a TemplateMessage message from a plain object. Also converts values to their respective internal types.
@@ -22697,28 +22697,28 @@ export namespace proto {
             interface IFourRowTemplate {
 
                 /** FourRowTemplate content */
-                content?: (proto.Message.IHighlyStructuredMessage|null);
+                content?: (proto.Message.IHighlyStructuredMessage | null);
 
                 /** FourRowTemplate footer */
-                footer?: (proto.Message.IHighlyStructuredMessage|null);
+                footer?: (proto.Message.IHighlyStructuredMessage | null);
 
                 /** FourRowTemplate buttons */
-                buttons?: (proto.ITemplateButton[]|null);
+                buttons?: (proto.ITemplateButton[] | null);
 
                 /** FourRowTemplate documentMessage */
-                documentMessage?: (proto.Message.IDocumentMessage|null);
+                documentMessage?: (proto.Message.IDocumentMessage | null);
 
                 /** FourRowTemplate highlyStructuredMessage */
-                highlyStructuredMessage?: (proto.Message.IHighlyStructuredMessage|null);
+                highlyStructuredMessage?: (proto.Message.IHighlyStructuredMessage | null);
 
                 /** FourRowTemplate imageMessage */
-                imageMessage?: (proto.Message.IImageMessage|null);
+                imageMessage?: (proto.Message.IImageMessage | null);
 
                 /** FourRowTemplate videoMessage */
-                videoMessage?: (proto.Message.IVideoMessage|null);
+                videoMessage?: (proto.Message.IVideoMessage | null);
 
                 /** FourRowTemplate locationMessage */
-                locationMessage?: (proto.Message.ILocationMessage|null);
+                locationMessage?: (proto.Message.ILocationMessage | null);
             }
 
             /** Represents a FourRowTemplate. */
@@ -22731,31 +22731,31 @@ export namespace proto {
                 constructor(properties?: proto.Message.TemplateMessage.IFourRowTemplate);
 
                 /** FourRowTemplate content. */
-                public content?: (proto.Message.IHighlyStructuredMessage|null);
+                public content?: (proto.Message.IHighlyStructuredMessage | null);
 
                 /** FourRowTemplate footer. */
-                public footer?: (proto.Message.IHighlyStructuredMessage|null);
+                public footer?: (proto.Message.IHighlyStructuredMessage | null);
 
                 /** FourRowTemplate buttons. */
                 public buttons: proto.ITemplateButton[];
 
                 /** FourRowTemplate documentMessage. */
-                public documentMessage?: (proto.Message.IDocumentMessage|null);
+                public documentMessage?: (proto.Message.IDocumentMessage | null);
 
                 /** FourRowTemplate highlyStructuredMessage. */
-                public highlyStructuredMessage?: (proto.Message.IHighlyStructuredMessage|null);
+                public highlyStructuredMessage?: (proto.Message.IHighlyStructuredMessage | null);
 
                 /** FourRowTemplate imageMessage. */
-                public imageMessage?: (proto.Message.IImageMessage|null);
+                public imageMessage?: (proto.Message.IImageMessage | null);
 
                 /** FourRowTemplate videoMessage. */
-                public videoMessage?: (proto.Message.IVideoMessage|null);
+                public videoMessage?: (proto.Message.IVideoMessage | null);
 
                 /** FourRowTemplate locationMessage. */
-                public locationMessage?: (proto.Message.ILocationMessage|null);
+                public locationMessage?: (proto.Message.ILocationMessage | null);
 
                 /** FourRowTemplate title. */
-                public title?: ("documentMessage"|"highlyStructuredMessage"|"imageMessage"|"videoMessage"|"locationMessage");
+                public title?: ("documentMessage" | "highlyStructuredMessage" | "imageMessage" | "videoMessage" | "locationMessage");
 
                 /**
                  * Creates a new FourRowTemplate instance using the specified properties.
@@ -22788,7 +22788,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.TemplateMessage.FourRowTemplate;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.TemplateMessage.FourRowTemplate;
 
                 /**
                  * Decodes a FourRowTemplate message from the specified reader or buffer, length delimited.
@@ -22797,14 +22797,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.TemplateMessage.FourRowTemplate;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.TemplateMessage.FourRowTemplate;
 
                 /**
                  * Verifies a FourRowTemplate message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a FourRowTemplate message from a plain object. Also converts values to their respective internal types.
@@ -22832,34 +22832,34 @@ export namespace proto {
             interface IHydratedFourRowTemplate {
 
                 /** HydratedFourRowTemplate hydratedContentText */
-                hydratedContentText?: (string|null);
+                hydratedContentText?: (string | null);
 
                 /** HydratedFourRowTemplate hydratedFooterText */
-                hydratedFooterText?: (string|null);
+                hydratedFooterText?: (string | null);
 
                 /** HydratedFourRowTemplate hydratedButtons */
-                hydratedButtons?: (proto.IHydratedTemplateButton[]|null);
+                hydratedButtons?: (proto.IHydratedTemplateButton[] | null);
 
                 /** HydratedFourRowTemplate templateId */
-                templateId?: (string|null);
+                templateId?: (string | null);
 
                 /** HydratedFourRowTemplate maskLinkedDevices */
-                maskLinkedDevices?: (boolean|null);
+                maskLinkedDevices?: (boolean | null);
 
                 /** HydratedFourRowTemplate documentMessage */
-                documentMessage?: (proto.Message.IDocumentMessage|null);
+                documentMessage?: (proto.Message.IDocumentMessage | null);
 
                 /** HydratedFourRowTemplate hydratedTitleText */
-                hydratedTitleText?: (string|null);
+                hydratedTitleText?: (string | null);
 
                 /** HydratedFourRowTemplate imageMessage */
-                imageMessage?: (proto.Message.IImageMessage|null);
+                imageMessage?: (proto.Message.IImageMessage | null);
 
                 /** HydratedFourRowTemplate videoMessage */
-                videoMessage?: (proto.Message.IVideoMessage|null);
+                videoMessage?: (proto.Message.IVideoMessage | null);
 
                 /** HydratedFourRowTemplate locationMessage */
-                locationMessage?: (proto.Message.ILocationMessage|null);
+                locationMessage?: (proto.Message.ILocationMessage | null);
             }
 
             /** Represents a HydratedFourRowTemplate. */
@@ -22887,22 +22887,22 @@ export namespace proto {
                 public maskLinkedDevices: boolean;
 
                 /** HydratedFourRowTemplate documentMessage. */
-                public documentMessage?: (proto.Message.IDocumentMessage|null);
+                public documentMessage?: (proto.Message.IDocumentMessage | null);
 
                 /** HydratedFourRowTemplate hydratedTitleText. */
-                public hydratedTitleText?: (string|null);
+                public hydratedTitleText?: (string | null);
 
                 /** HydratedFourRowTemplate imageMessage. */
-                public imageMessage?: (proto.Message.IImageMessage|null);
+                public imageMessage?: (proto.Message.IImageMessage | null);
 
                 /** HydratedFourRowTemplate videoMessage. */
-                public videoMessage?: (proto.Message.IVideoMessage|null);
+                public videoMessage?: (proto.Message.IVideoMessage | null);
 
                 /** HydratedFourRowTemplate locationMessage. */
-                public locationMessage?: (proto.Message.ILocationMessage|null);
+                public locationMessage?: (proto.Message.ILocationMessage | null);
 
                 /** HydratedFourRowTemplate title. */
-                public title?: ("documentMessage"|"hydratedTitleText"|"imageMessage"|"videoMessage"|"locationMessage");
+                public title?: ("documentMessage" | "hydratedTitleText" | "imageMessage" | "videoMessage" | "locationMessage");
 
                 /**
                  * Creates a new HydratedFourRowTemplate instance using the specified properties.
@@ -22935,7 +22935,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.TemplateMessage.HydratedFourRowTemplate;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.TemplateMessage.HydratedFourRowTemplate;
 
                 /**
                  * Decodes a HydratedFourRowTemplate message from the specified reader or buffer, length delimited.
@@ -22944,14 +22944,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.TemplateMessage.HydratedFourRowTemplate;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.TemplateMessage.HydratedFourRowTemplate;
 
                 /**
                  * Verifies a HydratedFourRowTemplate message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a HydratedFourRowTemplate message from a plain object. Also converts values to their respective internal types.
@@ -22980,76 +22980,76 @@ export namespace proto {
         interface IVideoMessage {
 
             /** VideoMessage url */
-            url?: (string|null);
+            url?: (string | null);
 
             /** VideoMessage mimetype */
-            mimetype?: (string|null);
+            mimetype?: (string | null);
 
             /** VideoMessage fileSha256 */
-            fileSha256?: (Uint8Array|null);
+            fileSha256?: (Uint8Array | null);
 
             /** VideoMessage fileLength */
-            fileLength?: (number|Long|null);
+            fileLength?: (number | Long | null);
 
             /** VideoMessage seconds */
-            seconds?: (number|null);
+            seconds?: (number | null);
 
             /** VideoMessage mediaKey */
-            mediaKey?: (Uint8Array|null);
+            mediaKey?: (Uint8Array | null);
 
             /** VideoMessage caption */
-            caption?: (string|null);
+            caption?: (string | null);
 
             /** VideoMessage gifPlayback */
-            gifPlayback?: (boolean|null);
+            gifPlayback?: (boolean | null);
 
             /** VideoMessage height */
-            height?: (number|null);
+            height?: (number | null);
 
             /** VideoMessage width */
-            width?: (number|null);
+            width?: (number | null);
 
             /** VideoMessage fileEncSha256 */
-            fileEncSha256?: (Uint8Array|null);
+            fileEncSha256?: (Uint8Array | null);
 
             /** VideoMessage interactiveAnnotations */
-            interactiveAnnotations?: (proto.IInteractiveAnnotation[]|null);
+            interactiveAnnotations?: (proto.IInteractiveAnnotation[] | null);
 
             /** VideoMessage directPath */
-            directPath?: (string|null);
+            directPath?: (string | null);
 
             /** VideoMessage mediaKeyTimestamp */
-            mediaKeyTimestamp?: (number|Long|null);
+            mediaKeyTimestamp?: (number | Long | null);
 
             /** VideoMessage jpegThumbnail */
-            jpegThumbnail?: (Uint8Array|null);
+            jpegThumbnail?: (Uint8Array | null);
 
             /** VideoMessage contextInfo */
-            contextInfo?: (proto.IContextInfo|null);
+            contextInfo?: (proto.IContextInfo | null);
 
             /** VideoMessage streamingSidecar */
-            streamingSidecar?: (Uint8Array|null);
+            streamingSidecar?: (Uint8Array | null);
 
             /** VideoMessage gifAttribution */
-            gifAttribution?: (proto.Message.VideoMessage.Attribution|null);
+            gifAttribution?: (proto.Message.VideoMessage.Attribution | null);
 
             /** VideoMessage viewOnce */
-            viewOnce?: (boolean|null);
+            viewOnce?: (boolean | null);
 
             /** VideoMessage thumbnailDirectPath */
-            thumbnailDirectPath?: (string|null);
+            thumbnailDirectPath?: (string | null);
 
             /** VideoMessage thumbnailSha256 */
-            thumbnailSha256?: (Uint8Array|null);
+            thumbnailSha256?: (Uint8Array | null);
 
             /** VideoMessage thumbnailEncSha256 */
-            thumbnailEncSha256?: (Uint8Array|null);
+            thumbnailEncSha256?: (Uint8Array | null);
 
             /** VideoMessage staticUrl */
-            staticUrl?: (string|null);
+            staticUrl?: (string | null);
 
             /** VideoMessage annotations */
-            annotations?: (proto.IInteractiveAnnotation[]|null);
+            annotations?: (proto.IInteractiveAnnotation[] | null);
         }
 
         /** Represents a VideoMessage. */
@@ -23071,7 +23071,7 @@ export namespace proto {
             public fileSha256: Uint8Array;
 
             /** VideoMessage fileLength. */
-            public fileLength: (number|Long);
+            public fileLength: (number | Long);
 
             /** VideoMessage seconds. */
             public seconds: number;
@@ -23101,13 +23101,13 @@ export namespace proto {
             public directPath: string;
 
             /** VideoMessage mediaKeyTimestamp. */
-            public mediaKeyTimestamp: (number|Long);
+            public mediaKeyTimestamp: (number | Long);
 
             /** VideoMessage jpegThumbnail. */
             public jpegThumbnail: Uint8Array;
 
             /** VideoMessage contextInfo. */
-            public contextInfo?: (proto.IContextInfo|null);
+            public contextInfo?: (proto.IContextInfo | null);
 
             /** VideoMessage streamingSidecar. */
             public streamingSidecar: Uint8Array;
@@ -23164,7 +23164,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.VideoMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Message.VideoMessage;
 
             /**
              * Decodes a VideoMessage message from the specified reader or buffer, length delimited.
@@ -23173,14 +23173,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.VideoMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Message.VideoMessage;
 
             /**
              * Verifies a VideoMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a VideoMessage message from a plain object. Also converts values to their respective internal types.
@@ -23219,7 +23219,7 @@ export namespace proto {
     interface IMessageAddOnContextInfo {
 
         /** MessageAddOnContextInfo messageAddOnDurationInSecs */
-        messageAddOnDurationInSecs?: (number|null);
+        messageAddOnDurationInSecs?: (number | null);
     }
 
     /** Represents a MessageAddOnContextInfo. */
@@ -23265,7 +23265,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MessageAddOnContextInfo;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.MessageAddOnContextInfo;
 
         /**
          * Decodes a MessageAddOnContextInfo message from the specified reader or buffer, length delimited.
@@ -23274,14 +23274,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MessageAddOnContextInfo;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.MessageAddOnContextInfo;
 
         /**
          * Verifies a MessageAddOnContextInfo message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a MessageAddOnContextInfo message from a plain object. Also converts values to their respective internal types.
@@ -23309,28 +23309,28 @@ export namespace proto {
     interface IMessageContextInfo {
 
         /** MessageContextInfo deviceListMetadata */
-        deviceListMetadata?: (proto.IDeviceListMetadata|null);
+        deviceListMetadata?: (proto.IDeviceListMetadata | null);
 
         /** MessageContextInfo deviceListMetadataVersion */
-        deviceListMetadataVersion?: (number|null);
+        deviceListMetadataVersion?: (number | null);
 
         /** MessageContextInfo messageSecret */
-        messageSecret?: (Uint8Array|null);
+        messageSecret?: (Uint8Array | null);
 
         /** MessageContextInfo paddingBytes */
-        paddingBytes?: (Uint8Array|null);
+        paddingBytes?: (Uint8Array | null);
 
         /** MessageContextInfo messageAddOnDurationInSecs */
-        messageAddOnDurationInSecs?: (number|null);
+        messageAddOnDurationInSecs?: (number | null);
 
         /** MessageContextInfo botMessageSecret */
-        botMessageSecret?: (Uint8Array|null);
+        botMessageSecret?: (Uint8Array | null);
 
         /** MessageContextInfo botMetadata */
-        botMetadata?: (proto.IBotMetadata|null);
+        botMetadata?: (proto.IBotMetadata | null);
 
         /** MessageContextInfo reportingTokenVersion */
-        reportingTokenVersion?: (number|null);
+        reportingTokenVersion?: (number | null);
     }
 
     /** Represents a MessageContextInfo. */
@@ -23343,7 +23343,7 @@ export namespace proto {
         constructor(properties?: proto.IMessageContextInfo);
 
         /** MessageContextInfo deviceListMetadata. */
-        public deviceListMetadata?: (proto.IDeviceListMetadata|null);
+        public deviceListMetadata?: (proto.IDeviceListMetadata | null);
 
         /** MessageContextInfo deviceListMetadataVersion. */
         public deviceListMetadataVersion: number;
@@ -23361,7 +23361,7 @@ export namespace proto {
         public botMessageSecret: Uint8Array;
 
         /** MessageContextInfo botMetadata. */
-        public botMetadata?: (proto.IBotMetadata|null);
+        public botMetadata?: (proto.IBotMetadata | null);
 
         /** MessageContextInfo reportingTokenVersion. */
         public reportingTokenVersion: number;
@@ -23397,7 +23397,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MessageContextInfo;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.MessageContextInfo;
 
         /**
          * Decodes a MessageContextInfo message from the specified reader or buffer, length delimited.
@@ -23406,14 +23406,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MessageContextInfo;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.MessageContextInfo;
 
         /**
          * Verifies a MessageContextInfo message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a MessageContextInfo message from a plain object. Also converts values to their respective internal types.
@@ -23441,16 +23441,16 @@ export namespace proto {
     interface IMessageKey {
 
         /** MessageKey remoteJid */
-        remoteJid?: (string|null);
+        remoteJid?: (string | null);
 
         /** MessageKey fromMe */
-        fromMe?: (boolean|null);
+        fromMe?: (boolean | null);
 
         /** MessageKey id */
-        id?: (string|null);
+        id?: (string | null);
 
         /** MessageKey participant */
-        participant?: (string|null);
+        participant?: (string | null);
     }
 
     /** Represents a MessageKey. */
@@ -23505,7 +23505,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MessageKey;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.MessageKey;
 
         /**
          * Decodes a MessageKey message from the specified reader or buffer, length delimited.
@@ -23514,14 +23514,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MessageKey;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.MessageKey;
 
         /**
          * Verifies a MessageKey message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a MessageKey message from a plain object. Also converts values to their respective internal types.
@@ -23549,13 +23549,13 @@ export namespace proto {
     interface IMessageSecretMessage {
 
         /** MessageSecretMessage version */
-        version?: (number|null);
+        version?: (number | null);
 
         /** MessageSecretMessage encIv */
-        encIv?: (Uint8Array|null);
+        encIv?: (Uint8Array | null);
 
         /** MessageSecretMessage encPayload */
-        encPayload?: (Uint8Array|null);
+        encPayload?: (Uint8Array | null);
     }
 
     /** Represents a MessageSecretMessage. */
@@ -23607,7 +23607,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MessageSecretMessage;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.MessageSecretMessage;
 
         /**
          * Decodes a MessageSecretMessage message from the specified reader or buffer, length delimited.
@@ -23616,14 +23616,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MessageSecretMessage;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.MessageSecretMessage;
 
         /**
          * Verifies a MessageSecretMessage message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a MessageSecretMessage message from a plain object. Also converts values to their respective internal types.
@@ -23651,13 +23651,13 @@ export namespace proto {
     interface IMoney {
 
         /** Money value */
-        value?: (number|Long|null);
+        value?: (number | Long | null);
 
         /** Money offset */
-        offset?: (number|null);
+        offset?: (number | null);
 
         /** Money currencyCode */
-        currencyCode?: (string|null);
+        currencyCode?: (string | null);
     }
 
     /** Represents a Money. */
@@ -23670,7 +23670,7 @@ export namespace proto {
         constructor(properties?: proto.IMoney);
 
         /** Money value. */
-        public value: (number|Long);
+        public value: (number | Long);
 
         /** Money offset. */
         public offset: number;
@@ -23709,7 +23709,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Money;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Money;
 
         /**
          * Decodes a Money message from the specified reader or buffer, length delimited.
@@ -23718,14 +23718,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Money;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Money;
 
         /**
          * Verifies a Money message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a Money message from a plain object. Also converts values to their respective internal types.
@@ -23753,94 +23753,94 @@ export namespace proto {
     interface IMsgOpaqueData {
 
         /** MsgOpaqueData body */
-        body?: (string|null);
+        body?: (string | null);
 
         /** MsgOpaqueData caption */
-        caption?: (string|null);
+        caption?: (string | null);
 
         /** MsgOpaqueData lng */
-        lng?: (number|null);
+        lng?: (number | null);
 
         /** MsgOpaqueData isLive */
-        isLive?: (boolean|null);
+        isLive?: (boolean | null);
 
         /** MsgOpaqueData lat */
-        lat?: (number|null);
+        lat?: (number | null);
 
         /** MsgOpaqueData paymentAmount1000 */
-        paymentAmount1000?: (number|null);
+        paymentAmount1000?: (number | null);
 
         /** MsgOpaqueData paymentNoteMsgBody */
-        paymentNoteMsgBody?: (string|null);
+        paymentNoteMsgBody?: (string | null);
 
         /** MsgOpaqueData canonicalUrl */
-        canonicalUrl?: (string|null);
+        canonicalUrl?: (string | null);
 
         /** MsgOpaqueData matchedText */
-        matchedText?: (string|null);
+        matchedText?: (string | null);
 
         /** MsgOpaqueData title */
-        title?: (string|null);
+        title?: (string | null);
 
         /** MsgOpaqueData description */
-        description?: (string|null);
+        description?: (string | null);
 
         /** MsgOpaqueData futureproofBuffer */
-        futureproofBuffer?: (Uint8Array|null);
+        futureproofBuffer?: (Uint8Array | null);
 
         /** MsgOpaqueData clientUrl */
-        clientUrl?: (string|null);
+        clientUrl?: (string | null);
 
         /** MsgOpaqueData loc */
-        loc?: (string|null);
+        loc?: (string | null);
 
         /** MsgOpaqueData pollName */
-        pollName?: (string|null);
+        pollName?: (string | null);
 
         /** MsgOpaqueData pollOptions */
-        pollOptions?: (proto.MsgOpaqueData.IPollOption[]|null);
+        pollOptions?: (proto.MsgOpaqueData.IPollOption[] | null);
 
         /** MsgOpaqueData pollSelectableOptionsCount */
-        pollSelectableOptionsCount?: (number|null);
+        pollSelectableOptionsCount?: (number | null);
 
         /** MsgOpaqueData messageSecret */
-        messageSecret?: (Uint8Array|null);
+        messageSecret?: (Uint8Array | null);
 
         /** MsgOpaqueData originalSelfAuthor */
-        originalSelfAuthor?: (string|null);
+        originalSelfAuthor?: (string | null);
 
         /** MsgOpaqueData senderTimestampMs */
-        senderTimestampMs?: (number|Long|null);
+        senderTimestampMs?: (number | Long | null);
 
         /** MsgOpaqueData pollUpdateParentKey */
-        pollUpdateParentKey?: (string|null);
+        pollUpdateParentKey?: (string | null);
 
         /** MsgOpaqueData encPollVote */
-        encPollVote?: (proto.IPollEncValue|null);
+        encPollVote?: (proto.IPollEncValue | null);
 
         /** MsgOpaqueData isSentCagPollCreation */
-        isSentCagPollCreation?: (boolean|null);
+        isSentCagPollCreation?: (boolean | null);
 
         /** MsgOpaqueData encReactionTargetMessageKey */
-        encReactionTargetMessageKey?: (string|null);
+        encReactionTargetMessageKey?: (string | null);
 
         /** MsgOpaqueData encReactionEncPayload */
-        encReactionEncPayload?: (Uint8Array|null);
+        encReactionEncPayload?: (Uint8Array | null);
 
         /** MsgOpaqueData encReactionEncIv */
-        encReactionEncIv?: (Uint8Array|null);
+        encReactionEncIv?: (Uint8Array | null);
 
         /** MsgOpaqueData botMessageSecret */
-        botMessageSecret?: (Uint8Array|null);
+        botMessageSecret?: (Uint8Array | null);
 
         /** MsgOpaqueData targetMessageKey */
-        targetMessageKey?: (string|null);
+        targetMessageKey?: (string | null);
 
         /** MsgOpaqueData encPayload */
-        encPayload?: (Uint8Array|null);
+        encPayload?: (Uint8Array | null);
 
         /** MsgOpaqueData encIv */
-        encIv?: (Uint8Array|null);
+        encIv?: (Uint8Array | null);
     }
 
     /** Represents a MsgOpaqueData. */
@@ -23910,13 +23910,13 @@ export namespace proto {
         public originalSelfAuthor: string;
 
         /** MsgOpaqueData senderTimestampMs. */
-        public senderTimestampMs: (number|Long);
+        public senderTimestampMs: (number | Long);
 
         /** MsgOpaqueData pollUpdateParentKey. */
         public pollUpdateParentKey: string;
 
         /** MsgOpaqueData encPollVote. */
-        public encPollVote?: (proto.IPollEncValue|null);
+        public encPollVote?: (proto.IPollEncValue | null);
 
         /** MsgOpaqueData isSentCagPollCreation. */
         public isSentCagPollCreation: boolean;
@@ -23973,7 +23973,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MsgOpaqueData;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.MsgOpaqueData;
 
         /**
          * Decodes a MsgOpaqueData message from the specified reader or buffer, length delimited.
@@ -23982,14 +23982,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MsgOpaqueData;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.MsgOpaqueData;
 
         /**
          * Verifies a MsgOpaqueData message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a MsgOpaqueData message from a plain object. Also converts values to their respective internal types.
@@ -24019,7 +24019,7 @@ export namespace proto {
         interface IPollOption {
 
             /** PollOption name */
-            name?: (string|null);
+            name?: (string | null);
         }
 
         /** Represents a PollOption. */
@@ -24065,7 +24065,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MsgOpaqueData.PollOption;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.MsgOpaqueData.PollOption;
 
             /**
              * Decodes a PollOption message from the specified reader or buffer, length delimited.
@@ -24074,14 +24074,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MsgOpaqueData.PollOption;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.MsgOpaqueData.PollOption;
 
             /**
              * Verifies a PollOption message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PollOption message from a plain object. Also converts values to their respective internal types.
@@ -24110,10 +24110,10 @@ export namespace proto {
     interface IMsgRowOpaqueData {
 
         /** MsgRowOpaqueData currentMsg */
-        currentMsg?: (proto.IMsgOpaqueData|null);
+        currentMsg?: (proto.IMsgOpaqueData | null);
 
         /** MsgRowOpaqueData quotedMsg */
-        quotedMsg?: (proto.IMsgOpaqueData|null);
+        quotedMsg?: (proto.IMsgOpaqueData | null);
     }
 
     /** Represents a MsgRowOpaqueData. */
@@ -24126,10 +24126,10 @@ export namespace proto {
         constructor(properties?: proto.IMsgRowOpaqueData);
 
         /** MsgRowOpaqueData currentMsg. */
-        public currentMsg?: (proto.IMsgOpaqueData|null);
+        public currentMsg?: (proto.IMsgOpaqueData | null);
 
         /** MsgRowOpaqueData quotedMsg. */
-        public quotedMsg?: (proto.IMsgOpaqueData|null);
+        public quotedMsg?: (proto.IMsgOpaqueData | null);
 
         /**
          * Creates a new MsgRowOpaqueData instance using the specified properties.
@@ -24162,7 +24162,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MsgRowOpaqueData;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.MsgRowOpaqueData;
 
         /**
          * Decodes a MsgRowOpaqueData message from the specified reader or buffer, length delimited.
@@ -24171,14 +24171,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MsgRowOpaqueData;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.MsgRowOpaqueData;
 
         /**
          * Verifies a MsgRowOpaqueData message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a MsgRowOpaqueData message from a plain object. Also converts values to their respective internal types.
@@ -24206,10 +24206,10 @@ export namespace proto {
     interface INoiseCertificate {
 
         /** NoiseCertificate details */
-        details?: (Uint8Array|null);
+        details?: (Uint8Array | null);
 
         /** NoiseCertificate signature */
-        signature?: (Uint8Array|null);
+        signature?: (Uint8Array | null);
     }
 
     /** Represents a NoiseCertificate. */
@@ -24258,7 +24258,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.NoiseCertificate;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.NoiseCertificate;
 
         /**
          * Decodes a NoiseCertificate message from the specified reader or buffer, length delimited.
@@ -24267,14 +24267,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.NoiseCertificate;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.NoiseCertificate;
 
         /**
          * Verifies a NoiseCertificate message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a NoiseCertificate message from a plain object. Also converts values to their respective internal types.
@@ -24304,19 +24304,19 @@ export namespace proto {
         interface IDetails {
 
             /** Details serial */
-            serial?: (number|null);
+            serial?: (number | null);
 
             /** Details issuer */
-            issuer?: (string|null);
+            issuer?: (string | null);
 
             /** Details expires */
-            expires?: (number|Long|null);
+            expires?: (number | Long | null);
 
             /** Details subject */
-            subject?: (string|null);
+            subject?: (string | null);
 
             /** Details key */
-            key?: (Uint8Array|null);
+            key?: (Uint8Array | null);
         }
 
         /** Represents a Details. */
@@ -24335,7 +24335,7 @@ export namespace proto {
             public issuer: string;
 
             /** Details expires. */
-            public expires: (number|Long);
+            public expires: (number | Long);
 
             /** Details subject. */
             public subject: string;
@@ -24374,7 +24374,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.NoiseCertificate.Details;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.NoiseCertificate.Details;
 
             /**
              * Decodes a Details message from the specified reader or buffer, length delimited.
@@ -24383,14 +24383,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.NoiseCertificate.Details;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.NoiseCertificate.Details;
 
             /**
              * Verifies a Details message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a Details message from a plain object. Also converts values to their respective internal types.
@@ -24419,16 +24419,16 @@ export namespace proto {
     interface INotificationMessageInfo {
 
         /** NotificationMessageInfo key */
-        key?: (proto.IMessageKey|null);
+        key?: (proto.IMessageKey | null);
 
         /** NotificationMessageInfo message */
-        message?: (proto.IMessage|null);
+        message?: (proto.IMessage | null);
 
         /** NotificationMessageInfo messageTimestamp */
-        messageTimestamp?: (number|Long|null);
+        messageTimestamp?: (number | Long | null);
 
         /** NotificationMessageInfo participant */
-        participant?: (string|null);
+        participant?: (string | null);
     }
 
     /** Represents a NotificationMessageInfo. */
@@ -24441,13 +24441,13 @@ export namespace proto {
         constructor(properties?: proto.INotificationMessageInfo);
 
         /** NotificationMessageInfo key. */
-        public key?: (proto.IMessageKey|null);
+        public key?: (proto.IMessageKey | null);
 
         /** NotificationMessageInfo message. */
-        public message?: (proto.IMessage|null);
+        public message?: (proto.IMessage | null);
 
         /** NotificationMessageInfo messageTimestamp. */
-        public messageTimestamp: (number|Long);
+        public messageTimestamp: (number | Long);
 
         /** NotificationMessageInfo participant. */
         public participant: string;
@@ -24483,7 +24483,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.NotificationMessageInfo;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.NotificationMessageInfo;
 
         /**
          * Decodes a NotificationMessageInfo message from the specified reader or buffer, length delimited.
@@ -24492,14 +24492,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.NotificationMessageInfo;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.NotificationMessageInfo;
 
         /**
          * Verifies a NotificationMessageInfo message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a NotificationMessageInfo message from a plain object. Also converts values to their respective internal types.
@@ -24527,22 +24527,22 @@ export namespace proto {
     interface INotificationSettings {
 
         /** NotificationSettings messageVibrate */
-        messageVibrate?: (string|null);
+        messageVibrate?: (string | null);
 
         /** NotificationSettings messagePopup */
-        messagePopup?: (string|null);
+        messagePopup?: (string | null);
 
         /** NotificationSettings messageLight */
-        messageLight?: (string|null);
+        messageLight?: (string | null);
 
         /** NotificationSettings lowPriorityNotifications */
-        lowPriorityNotifications?: (boolean|null);
+        lowPriorityNotifications?: (boolean | null);
 
         /** NotificationSettings reactionsMuted */
-        reactionsMuted?: (boolean|null);
+        reactionsMuted?: (boolean | null);
 
         /** NotificationSettings callVibrate */
-        callVibrate?: (string|null);
+        callVibrate?: (string | null);
     }
 
     /** Represents a NotificationSettings. */
@@ -24603,7 +24603,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.NotificationSettings;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.NotificationSettings;
 
         /**
          * Decodes a NotificationSettings message from the specified reader or buffer, length delimited.
@@ -24612,14 +24612,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.NotificationSettings;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.NotificationSettings;
 
         /**
          * Verifies a NotificationSettings message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a NotificationSettings message from a plain object. Also converts values to their respective internal types.
@@ -24647,13 +24647,13 @@ export namespace proto {
     interface IPastParticipant {
 
         /** PastParticipant userJid */
-        userJid?: (string|null);
+        userJid?: (string | null);
 
         /** PastParticipant leaveReason */
-        leaveReason?: (proto.PastParticipant.LeaveReason|null);
+        leaveReason?: (proto.PastParticipant.LeaveReason | null);
 
         /** PastParticipant leaveTs */
-        leaveTs?: (number|Long|null);
+        leaveTs?: (number | Long | null);
     }
 
     /** Represents a PastParticipant. */
@@ -24672,7 +24672,7 @@ export namespace proto {
         public leaveReason: proto.PastParticipant.LeaveReason;
 
         /** PastParticipant leaveTs. */
-        public leaveTs: (number|Long);
+        public leaveTs: (number | Long);
 
         /**
          * Creates a new PastParticipant instance using the specified properties.
@@ -24705,7 +24705,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.PastParticipant;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.PastParticipant;
 
         /**
          * Decodes a PastParticipant message from the specified reader or buffer, length delimited.
@@ -24714,14 +24714,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.PastParticipant;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.PastParticipant;
 
         /**
          * Verifies a PastParticipant message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a PastParticipant message from a plain object. Also converts values to their respective internal types.
@@ -24758,10 +24758,10 @@ export namespace proto {
     interface IPastParticipants {
 
         /** PastParticipants groupJid */
-        groupJid?: (string|null);
+        groupJid?: (string | null);
 
         /** PastParticipants pastParticipants */
-        pastParticipants?: (proto.IPastParticipant[]|null);
+        pastParticipants?: (proto.IPastParticipant[] | null);
     }
 
     /** Represents a PastParticipants. */
@@ -24810,7 +24810,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.PastParticipants;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.PastParticipants;
 
         /**
          * Decodes a PastParticipants message from the specified reader or buffer, length delimited.
@@ -24819,14 +24819,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.PastParticipants;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.PastParticipants;
 
         /**
          * Verifies a PastParticipants message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a PastParticipants message from a plain object. Also converts values to their respective internal types.
@@ -24854,37 +24854,37 @@ export namespace proto {
     interface IPatchDebugData {
 
         /** PatchDebugData currentLthash */
-        currentLthash?: (Uint8Array|null);
+        currentLthash?: (Uint8Array | null);
 
         /** PatchDebugData newLthash */
-        newLthash?: (Uint8Array|null);
+        newLthash?: (Uint8Array | null);
 
         /** PatchDebugData patchVersion */
-        patchVersion?: (Uint8Array|null);
+        patchVersion?: (Uint8Array | null);
 
         /** PatchDebugData collectionName */
-        collectionName?: (Uint8Array|null);
+        collectionName?: (Uint8Array | null);
 
         /** PatchDebugData firstFourBytesFromAHashOfSnapshotMacKey */
-        firstFourBytesFromAHashOfSnapshotMacKey?: (Uint8Array|null);
+        firstFourBytesFromAHashOfSnapshotMacKey?: (Uint8Array | null);
 
         /** PatchDebugData newLthashSubtract */
-        newLthashSubtract?: (Uint8Array|null);
+        newLthashSubtract?: (Uint8Array | null);
 
         /** PatchDebugData numberAdd */
-        numberAdd?: (number|null);
+        numberAdd?: (number | null);
 
         /** PatchDebugData numberRemove */
-        numberRemove?: (number|null);
+        numberRemove?: (number | null);
 
         /** PatchDebugData numberOverride */
-        numberOverride?: (number|null);
+        numberOverride?: (number | null);
 
         /** PatchDebugData senderPlatform */
-        senderPlatform?: (proto.PatchDebugData.Platform|null);
+        senderPlatform?: (proto.PatchDebugData.Platform | null);
 
         /** PatchDebugData isSenderPrimary */
-        isSenderPrimary?: (boolean|null);
+        isSenderPrimary?: (boolean | null);
     }
 
     /** Represents a PatchDebugData. */
@@ -24960,7 +24960,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.PatchDebugData;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.PatchDebugData;
 
         /**
          * Decodes a PatchDebugData message from the specified reader or buffer, length delimited.
@@ -24969,14 +24969,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.PatchDebugData;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.PatchDebugData;
 
         /**
          * Verifies a PatchDebugData message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a PatchDebugData message from a plain object. Also converts values to their respective internal types.
@@ -25018,34 +25018,34 @@ export namespace proto {
     interface IPaymentBackground {
 
         /** PaymentBackground id */
-        id?: (string|null);
+        id?: (string | null);
 
         /** PaymentBackground fileLength */
-        fileLength?: (number|Long|null);
+        fileLength?: (number | Long | null);
 
         /** PaymentBackground width */
-        width?: (number|null);
+        width?: (number | null);
 
         /** PaymentBackground height */
-        height?: (number|null);
+        height?: (number | null);
 
         /** PaymentBackground mimetype */
-        mimetype?: (string|null);
+        mimetype?: (string | null);
 
         /** PaymentBackground placeholderArgb */
-        placeholderArgb?: (number|null);
+        placeholderArgb?: (number | null);
 
         /** PaymentBackground textArgb */
-        textArgb?: (number|null);
+        textArgb?: (number | null);
 
         /** PaymentBackground subtextArgb */
-        subtextArgb?: (number|null);
+        subtextArgb?: (number | null);
 
         /** PaymentBackground mediaData */
-        mediaData?: (proto.PaymentBackground.IMediaData|null);
+        mediaData?: (proto.PaymentBackground.IMediaData | null);
 
         /** PaymentBackground type */
-        type?: (proto.PaymentBackground.Type|null);
+        type?: (proto.PaymentBackground.Type | null);
     }
 
     /** Represents a PaymentBackground. */
@@ -25061,7 +25061,7 @@ export namespace proto {
         public id: string;
 
         /** PaymentBackground fileLength. */
-        public fileLength: (number|Long);
+        public fileLength: (number | Long);
 
         /** PaymentBackground width. */
         public width: number;
@@ -25082,7 +25082,7 @@ export namespace proto {
         public subtextArgb: number;
 
         /** PaymentBackground mediaData. */
-        public mediaData?: (proto.PaymentBackground.IMediaData|null);
+        public mediaData?: (proto.PaymentBackground.IMediaData | null);
 
         /** PaymentBackground type. */
         public type: proto.PaymentBackground.Type;
@@ -25118,7 +25118,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.PaymentBackground;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.PaymentBackground;
 
         /**
          * Decodes a PaymentBackground message from the specified reader or buffer, length delimited.
@@ -25127,14 +25127,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.PaymentBackground;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.PaymentBackground;
 
         /**
          * Verifies a PaymentBackground message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a PaymentBackground message from a plain object. Also converts values to their respective internal types.
@@ -25164,19 +25164,19 @@ export namespace proto {
         interface IMediaData {
 
             /** MediaData mediaKey */
-            mediaKey?: (Uint8Array|null);
+            mediaKey?: (Uint8Array | null);
 
             /** MediaData mediaKeyTimestamp */
-            mediaKeyTimestamp?: (number|Long|null);
+            mediaKeyTimestamp?: (number | Long | null);
 
             /** MediaData fileSha256 */
-            fileSha256?: (Uint8Array|null);
+            fileSha256?: (Uint8Array | null);
 
             /** MediaData fileEncSha256 */
-            fileEncSha256?: (Uint8Array|null);
+            fileEncSha256?: (Uint8Array | null);
 
             /** MediaData directPath */
-            directPath?: (string|null);
+            directPath?: (string | null);
         }
 
         /** Represents a MediaData. */
@@ -25192,7 +25192,7 @@ export namespace proto {
             public mediaKey: Uint8Array;
 
             /** MediaData mediaKeyTimestamp. */
-            public mediaKeyTimestamp: (number|Long);
+            public mediaKeyTimestamp: (number | Long);
 
             /** MediaData fileSha256. */
             public fileSha256: Uint8Array;
@@ -25234,7 +25234,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.PaymentBackground.MediaData;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.PaymentBackground.MediaData;
 
             /**
              * Decodes a MediaData message from the specified reader or buffer, length delimited.
@@ -25243,14 +25243,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.PaymentBackground.MediaData;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.PaymentBackground.MediaData;
 
             /**
              * Verifies a MediaData message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a MediaData message from a plain object. Also converts values to their respective internal types.
@@ -25285,43 +25285,43 @@ export namespace proto {
     interface IPaymentInfo {
 
         /** PaymentInfo currencyDeprecated */
-        currencyDeprecated?: (proto.PaymentInfo.Currency|null);
+        currencyDeprecated?: (proto.PaymentInfo.Currency | null);
 
         /** PaymentInfo amount1000 */
-        amount1000?: (number|Long|null);
+        amount1000?: (number | Long | null);
 
         /** PaymentInfo receiverJid */
-        receiverJid?: (string|null);
+        receiverJid?: (string | null);
 
         /** PaymentInfo status */
-        status?: (proto.PaymentInfo.Status|null);
+        status?: (proto.PaymentInfo.Status | null);
 
         /** PaymentInfo transactionTimestamp */
-        transactionTimestamp?: (number|Long|null);
+        transactionTimestamp?: (number | Long | null);
 
         /** PaymentInfo requestMessageKey */
-        requestMessageKey?: (proto.IMessageKey|null);
+        requestMessageKey?: (proto.IMessageKey | null);
 
         /** PaymentInfo expiryTimestamp */
-        expiryTimestamp?: (number|Long|null);
+        expiryTimestamp?: (number | Long | null);
 
         /** PaymentInfo futureproofed */
-        futureproofed?: (boolean|null);
+        futureproofed?: (boolean | null);
 
         /** PaymentInfo currency */
-        currency?: (string|null);
+        currency?: (string | null);
 
         /** PaymentInfo txnStatus */
-        txnStatus?: (proto.PaymentInfo.TxnStatus|null);
+        txnStatus?: (proto.PaymentInfo.TxnStatus | null);
 
         /** PaymentInfo useNoviFiatFormat */
-        useNoviFiatFormat?: (boolean|null);
+        useNoviFiatFormat?: (boolean | null);
 
         /** PaymentInfo primaryAmount */
-        primaryAmount?: (proto.IMoney|null);
+        primaryAmount?: (proto.IMoney | null);
 
         /** PaymentInfo exchangeAmount */
-        exchangeAmount?: (proto.IMoney|null);
+        exchangeAmount?: (proto.IMoney | null);
     }
 
     /** Represents a PaymentInfo. */
@@ -25337,7 +25337,7 @@ export namespace proto {
         public currencyDeprecated: proto.PaymentInfo.Currency;
 
         /** PaymentInfo amount1000. */
-        public amount1000: (number|Long);
+        public amount1000: (number | Long);
 
         /** PaymentInfo receiverJid. */
         public receiverJid: string;
@@ -25346,13 +25346,13 @@ export namespace proto {
         public status: proto.PaymentInfo.Status;
 
         /** PaymentInfo transactionTimestamp. */
-        public transactionTimestamp: (number|Long);
+        public transactionTimestamp: (number | Long);
 
         /** PaymentInfo requestMessageKey. */
-        public requestMessageKey?: (proto.IMessageKey|null);
+        public requestMessageKey?: (proto.IMessageKey | null);
 
         /** PaymentInfo expiryTimestamp. */
-        public expiryTimestamp: (number|Long);
+        public expiryTimestamp: (number | Long);
 
         /** PaymentInfo futureproofed. */
         public futureproofed: boolean;
@@ -25367,10 +25367,10 @@ export namespace proto {
         public useNoviFiatFormat: boolean;
 
         /** PaymentInfo primaryAmount. */
-        public primaryAmount?: (proto.IMoney|null);
+        public primaryAmount?: (proto.IMoney | null);
 
         /** PaymentInfo exchangeAmount. */
-        public exchangeAmount?: (proto.IMoney|null);
+        public exchangeAmount?: (proto.IMoney | null);
 
         /**
          * Creates a new PaymentInfo instance using the specified properties.
@@ -25403,7 +25403,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.PaymentInfo;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.PaymentInfo;
 
         /**
          * Decodes a PaymentInfo message from the specified reader or buffer, length delimited.
@@ -25412,14 +25412,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.PaymentInfo;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.PaymentInfo;
 
         /**
          * Verifies a PaymentInfo message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a PaymentInfo message from a plain object. Also converts values to their respective internal types.
@@ -25508,10 +25508,10 @@ export namespace proto {
     interface IPhoneNumberToLIDMapping {
 
         /** PhoneNumberToLIDMapping pnJid */
-        pnJid?: (string|null);
+        pnJid?: (string | null);
 
         /** PhoneNumberToLIDMapping lidJid */
-        lidJid?: (string|null);
+        lidJid?: (string | null);
     }
 
     /** Represents a PhoneNumberToLIDMapping. */
@@ -25560,7 +25560,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.PhoneNumberToLIDMapping;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.PhoneNumberToLIDMapping;
 
         /**
          * Decodes a PhoneNumberToLIDMapping message from the specified reader or buffer, length delimited.
@@ -25569,14 +25569,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.PhoneNumberToLIDMapping;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.PhoneNumberToLIDMapping;
 
         /**
          * Verifies a PhoneNumberToLIDMapping message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a PhoneNumberToLIDMapping message from a plain object. Also converts values to their respective internal types.
@@ -25604,13 +25604,13 @@ export namespace proto {
     interface IPhotoChange {
 
         /** PhotoChange oldPhoto */
-        oldPhoto?: (Uint8Array|null);
+        oldPhoto?: (Uint8Array | null);
 
         /** PhotoChange newPhoto */
-        newPhoto?: (Uint8Array|null);
+        newPhoto?: (Uint8Array | null);
 
         /** PhotoChange newPhotoId */
-        newPhotoId?: (number|null);
+        newPhotoId?: (number | null);
     }
 
     /** Represents a PhotoChange. */
@@ -25662,7 +25662,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.PhotoChange;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.PhotoChange;
 
         /**
          * Decodes a PhotoChange message from the specified reader or buffer, length delimited.
@@ -25671,14 +25671,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.PhotoChange;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.PhotoChange;
 
         /**
          * Verifies a PhotoChange message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a PhotoChange message from a plain object. Also converts values to their respective internal types.
@@ -25706,19 +25706,19 @@ export namespace proto {
     interface IPinInChat {
 
         /** PinInChat type */
-        type?: (proto.PinInChat.Type|null);
+        type?: (proto.PinInChat.Type | null);
 
         /** PinInChat key */
-        key?: (proto.IMessageKey|null);
+        key?: (proto.IMessageKey | null);
 
         /** PinInChat senderTimestampMs */
-        senderTimestampMs?: (number|Long|null);
+        senderTimestampMs?: (number | Long | null);
 
         /** PinInChat serverTimestampMs */
-        serverTimestampMs?: (number|Long|null);
+        serverTimestampMs?: (number | Long | null);
 
         /** PinInChat messageAddOnContextInfo */
-        messageAddOnContextInfo?: (proto.IMessageAddOnContextInfo|null);
+        messageAddOnContextInfo?: (proto.IMessageAddOnContextInfo | null);
     }
 
     /** Represents a PinInChat. */
@@ -25734,16 +25734,16 @@ export namespace proto {
         public type: proto.PinInChat.Type;
 
         /** PinInChat key. */
-        public key?: (proto.IMessageKey|null);
+        public key?: (proto.IMessageKey | null);
 
         /** PinInChat senderTimestampMs. */
-        public senderTimestampMs: (number|Long);
+        public senderTimestampMs: (number | Long);
 
         /** PinInChat serverTimestampMs. */
-        public serverTimestampMs: (number|Long);
+        public serverTimestampMs: (number | Long);
 
         /** PinInChat messageAddOnContextInfo. */
-        public messageAddOnContextInfo?: (proto.IMessageAddOnContextInfo|null);
+        public messageAddOnContextInfo?: (proto.IMessageAddOnContextInfo | null);
 
         /**
          * Creates a new PinInChat instance using the specified properties.
@@ -25776,7 +25776,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.PinInChat;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.PinInChat;
 
         /**
          * Decodes a PinInChat message from the specified reader or buffer, length delimited.
@@ -25785,14 +25785,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.PinInChat;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.PinInChat;
 
         /**
          * Verifies a PinInChat message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a PinInChat message from a plain object. Also converts values to their respective internal types.
@@ -25830,16 +25830,16 @@ export namespace proto {
     interface IPoint {
 
         /** Point xDeprecated */
-        xDeprecated?: (number|null);
+        xDeprecated?: (number | null);
 
         /** Point yDeprecated */
-        yDeprecated?: (number|null);
+        yDeprecated?: (number | null);
 
         /** Point x */
-        x?: (number|null);
+        x?: (number | null);
 
         /** Point y */
-        y?: (number|null);
+        y?: (number | null);
     }
 
     /** Represents a Point. */
@@ -25894,7 +25894,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Point;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Point;
 
         /**
          * Decodes a Point message from the specified reader or buffer, length delimited.
@@ -25903,14 +25903,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Point;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Point;
 
         /**
          * Verifies a Point message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a Point message from a plain object. Also converts values to their respective internal types.
@@ -25938,7 +25938,7 @@ export namespace proto {
     interface IPollAdditionalMetadata {
 
         /** PollAdditionalMetadata pollInvalidated */
-        pollInvalidated?: (boolean|null);
+        pollInvalidated?: (boolean | null);
     }
 
     /** Represents a PollAdditionalMetadata. */
@@ -25984,7 +25984,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.PollAdditionalMetadata;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.PollAdditionalMetadata;
 
         /**
          * Decodes a PollAdditionalMetadata message from the specified reader or buffer, length delimited.
@@ -25993,14 +25993,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.PollAdditionalMetadata;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.PollAdditionalMetadata;
 
         /**
          * Verifies a PollAdditionalMetadata message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a PollAdditionalMetadata message from a plain object. Also converts values to their respective internal types.
@@ -26028,10 +26028,10 @@ export namespace proto {
     interface IPollEncValue {
 
         /** PollEncValue encPayload */
-        encPayload?: (Uint8Array|null);
+        encPayload?: (Uint8Array | null);
 
         /** PollEncValue encIv */
-        encIv?: (Uint8Array|null);
+        encIv?: (Uint8Array | null);
     }
 
     /** Represents a PollEncValue. */
@@ -26080,7 +26080,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.PollEncValue;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.PollEncValue;
 
         /**
          * Decodes a PollEncValue message from the specified reader or buffer, length delimited.
@@ -26089,14 +26089,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.PollEncValue;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.PollEncValue;
 
         /**
          * Verifies a PollEncValue message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a PollEncValue message from a plain object. Also converts values to their respective internal types.
@@ -26124,19 +26124,19 @@ export namespace proto {
     interface IPollUpdate {
 
         /** PollUpdate pollUpdateMessageKey */
-        pollUpdateMessageKey?: (proto.IMessageKey|null);
+        pollUpdateMessageKey?: (proto.IMessageKey | null);
 
         /** PollUpdate vote */
-        vote?: (proto.Message.IPollVoteMessage|null);
+        vote?: (proto.Message.IPollVoteMessage | null);
 
         /** PollUpdate senderTimestampMs */
-        senderTimestampMs?: (number|Long|null);
+        senderTimestampMs?: (number | Long | null);
 
         /** PollUpdate serverTimestampMs */
-        serverTimestampMs?: (number|Long|null);
+        serverTimestampMs?: (number | Long | null);
 
         /** PollUpdate unread */
-        unread?: (boolean|null);
+        unread?: (boolean | null);
     }
 
     /** Represents a PollUpdate. */
@@ -26149,16 +26149,16 @@ export namespace proto {
         constructor(properties?: proto.IPollUpdate);
 
         /** PollUpdate pollUpdateMessageKey. */
-        public pollUpdateMessageKey?: (proto.IMessageKey|null);
+        public pollUpdateMessageKey?: (proto.IMessageKey | null);
 
         /** PollUpdate vote. */
-        public vote?: (proto.Message.IPollVoteMessage|null);
+        public vote?: (proto.Message.IPollVoteMessage | null);
 
         /** PollUpdate senderTimestampMs. */
-        public senderTimestampMs: (number|Long);
+        public senderTimestampMs: (number | Long);
 
         /** PollUpdate serverTimestampMs. */
-        public serverTimestampMs: (number|Long);
+        public serverTimestampMs: (number | Long);
 
         /** PollUpdate unread. */
         public unread: boolean;
@@ -26194,7 +26194,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.PollUpdate;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.PollUpdate;
 
         /**
          * Decodes a PollUpdate message from the specified reader or buffer, length delimited.
@@ -26203,14 +26203,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.PollUpdate;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.PollUpdate;
 
         /**
          * Verifies a PollUpdate message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a PollUpdate message from a plain object. Also converts values to their respective internal types.
@@ -26238,13 +26238,13 @@ export namespace proto {
     interface IPreKeyRecordStructure {
 
         /** PreKeyRecordStructure id */
-        id?: (number|null);
+        id?: (number | null);
 
         /** PreKeyRecordStructure publicKey */
-        publicKey?: (Uint8Array|null);
+        publicKey?: (Uint8Array | null);
 
         /** PreKeyRecordStructure privateKey */
-        privateKey?: (Uint8Array|null);
+        privateKey?: (Uint8Array | null);
     }
 
     /** Represents a PreKeyRecordStructure. */
@@ -26296,7 +26296,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.PreKeyRecordStructure;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.PreKeyRecordStructure;
 
         /**
          * Decodes a PreKeyRecordStructure message from the specified reader or buffer, length delimited.
@@ -26305,14 +26305,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.PreKeyRecordStructure;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.PreKeyRecordStructure;
 
         /**
          * Verifies a PreKeyRecordStructure message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a PreKeyRecordStructure message from a plain object. Also converts values to their respective internal types.
@@ -26340,22 +26340,22 @@ export namespace proto {
     interface IPreKeySignalMessage {
 
         /** PreKeySignalMessage registrationId */
-        registrationId?: (number|null);
+        registrationId?: (number | null);
 
         /** PreKeySignalMessage preKeyId */
-        preKeyId?: (number|null);
+        preKeyId?: (number | null);
 
         /** PreKeySignalMessage signedPreKeyId */
-        signedPreKeyId?: (number|null);
+        signedPreKeyId?: (number | null);
 
         /** PreKeySignalMessage baseKey */
-        baseKey?: (Uint8Array|null);
+        baseKey?: (Uint8Array | null);
 
         /** PreKeySignalMessage identityKey */
-        identityKey?: (Uint8Array|null);
+        identityKey?: (Uint8Array | null);
 
         /** PreKeySignalMessage message */
-        message?: (Uint8Array|null);
+        message?: (Uint8Array | null);
     }
 
     /** Represents a PreKeySignalMessage. */
@@ -26416,7 +26416,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.PreKeySignalMessage;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.PreKeySignalMessage;
 
         /**
          * Decodes a PreKeySignalMessage message from the specified reader or buffer, length delimited.
@@ -26425,14 +26425,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.PreKeySignalMessage;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.PreKeySignalMessage;
 
         /**
          * Verifies a PreKeySignalMessage message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a PreKeySignalMessage message from a plain object. Also converts values to their respective internal types.
@@ -26460,7 +26460,7 @@ export namespace proto {
     interface IPremiumMessageInfo {
 
         /** PremiumMessageInfo serverCampaignId */
-        serverCampaignId?: (string|null);
+        serverCampaignId?: (string | null);
     }
 
     /** Represents a PremiumMessageInfo. */
@@ -26506,7 +26506,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.PremiumMessageInfo;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.PremiumMessageInfo;
 
         /**
          * Decodes a PremiumMessageInfo message from the specified reader or buffer, length delimited.
@@ -26515,14 +26515,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.PremiumMessageInfo;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.PremiumMessageInfo;
 
         /**
          * Verifies a PremiumMessageInfo message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a PremiumMessageInfo message from a plain object. Also converts values to their respective internal types.
@@ -26550,10 +26550,10 @@ export namespace proto {
     interface IPushname {
 
         /** Pushname id */
-        id?: (string|null);
+        id?: (string | null);
 
         /** Pushname pushname */
-        pushname?: (string|null);
+        pushname?: (string | null);
     }
 
     /** Represents a Pushname. */
@@ -26602,7 +26602,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Pushname;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Pushname;
 
         /**
          * Decodes a Pushname message from the specified reader or buffer, length delimited.
@@ -26611,14 +26611,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Pushname;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Pushname;
 
         /**
          * Verifies a Pushname message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a Pushname message from a plain object. Also converts values to their respective internal types.
@@ -26686,7 +26686,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.QP;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.QP;
 
         /**
          * Decodes a QP message from the specified reader or buffer, length delimited.
@@ -26695,14 +26695,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.QP;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.QP;
 
         /**
          * Verifies a QP message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a QP message from a plain object. Also converts values to their respective internal types.
@@ -26742,10 +26742,10 @@ export namespace proto {
             filterName: string;
 
             /** Filter parameters */
-            parameters?: (proto.QP.IFilterParameters[]|null);
+            parameters?: (proto.QP.IFilterParameters[] | null);
 
             /** Filter filterResult */
-            filterResult?: (proto.QP.FilterResult|null);
+            filterResult?: (proto.QP.FilterResult | null);
 
             /** Filter clientNotSupportedConfig */
             clientNotSupportedConfig: proto.QP.FilterClientNotSupportedConfig;
@@ -26803,7 +26803,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.QP.Filter;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.QP.Filter;
 
             /**
              * Decodes a Filter message from the specified reader or buffer, length delimited.
@@ -26812,14 +26812,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.QP.Filter;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.QP.Filter;
 
             /**
              * Verifies a Filter message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a Filter message from a plain object. Also converts values to their respective internal types.
@@ -26850,10 +26850,10 @@ export namespace proto {
             clauseType: proto.QP.ClauseType;
 
             /** FilterClause clauses */
-            clauses?: (proto.QP.IFilterClause[]|null);
+            clauses?: (proto.QP.IFilterClause[] | null);
 
             /** FilterClause filters */
-            filters?: (proto.QP.IFilter[]|null);
+            filters?: (proto.QP.IFilter[] | null);
         }
 
         /** Represents a FilterClause. */
@@ -26905,7 +26905,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.QP.FilterClause;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.QP.FilterClause;
 
             /**
              * Decodes a FilterClause message from the specified reader or buffer, length delimited.
@@ -26914,14 +26914,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.QP.FilterClause;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.QP.FilterClause;
 
             /**
              * Verifies a FilterClause message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a FilterClause message from a plain object. Also converts values to their respective internal types.
@@ -26955,10 +26955,10 @@ export namespace proto {
         interface IFilterParameters {
 
             /** FilterParameters key */
-            key?: (string|null);
+            key?: (string | null);
 
             /** FilterParameters value */
-            value?: (string|null);
+            value?: (string | null);
         }
 
         /** Represents a FilterParameters. */
@@ -27007,7 +27007,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.QP.FilterParameters;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.QP.FilterParameters;
 
             /**
              * Decodes a FilterParameters message from the specified reader or buffer, length delimited.
@@ -27016,14 +27016,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.QP.FilterParameters;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.QP.FilterParameters;
 
             /**
              * Verifies a FilterParameters message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a FilterParameters message from a plain object. Also converts values to their respective internal types.
@@ -27059,19 +27059,19 @@ export namespace proto {
     interface IReaction {
 
         /** Reaction key */
-        key?: (proto.IMessageKey|null);
+        key?: (proto.IMessageKey | null);
 
         /** Reaction text */
-        text?: (string|null);
+        text?: (string | null);
 
         /** Reaction groupingKey */
-        groupingKey?: (string|null);
+        groupingKey?: (string | null);
 
         /** Reaction senderTimestampMs */
-        senderTimestampMs?: (number|Long|null);
+        senderTimestampMs?: (number | Long | null);
 
         /** Reaction unread */
-        unread?: (boolean|null);
+        unread?: (boolean | null);
     }
 
     /** Represents a Reaction. */
@@ -27084,7 +27084,7 @@ export namespace proto {
         constructor(properties?: proto.IReaction);
 
         /** Reaction key. */
-        public key?: (proto.IMessageKey|null);
+        public key?: (proto.IMessageKey | null);
 
         /** Reaction text. */
         public text: string;
@@ -27093,7 +27093,7 @@ export namespace proto {
         public groupingKey: string;
 
         /** Reaction senderTimestampMs. */
-        public senderTimestampMs: (number|Long);
+        public senderTimestampMs: (number | Long);
 
         /** Reaction unread. */
         public unread: boolean;
@@ -27129,7 +27129,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Reaction;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.Reaction;
 
         /**
          * Decodes a Reaction message from the specified reader or buffer, length delimited.
@@ -27138,14 +27138,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Reaction;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.Reaction;
 
         /**
          * Verifies a Reaction message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a Reaction message from a plain object. Also converts values to their respective internal types.
@@ -27173,10 +27173,10 @@ export namespace proto {
     interface IRecentEmojiWeight {
 
         /** RecentEmojiWeight emoji */
-        emoji?: (string|null);
+        emoji?: (string | null);
 
         /** RecentEmojiWeight weight */
-        weight?: (number|null);
+        weight?: (number | null);
     }
 
     /** Represents a RecentEmojiWeight. */
@@ -27225,7 +27225,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.RecentEmojiWeight;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.RecentEmojiWeight;
 
         /**
          * Decodes a RecentEmojiWeight message from the specified reader or buffer, length delimited.
@@ -27234,14 +27234,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.RecentEmojiWeight;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.RecentEmojiWeight;
 
         /**
          * Verifies a RecentEmojiWeight message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a RecentEmojiWeight message from a plain object. Also converts values to their respective internal types.
@@ -27269,10 +27269,10 @@ export namespace proto {
     interface IRecordStructure {
 
         /** RecordStructure currentSession */
-        currentSession?: (proto.ISessionStructure|null);
+        currentSession?: (proto.ISessionStructure | null);
 
         /** RecordStructure previousSessions */
-        previousSessions?: (proto.ISessionStructure[]|null);
+        previousSessions?: (proto.ISessionStructure[] | null);
     }
 
     /** Represents a RecordStructure. */
@@ -27285,7 +27285,7 @@ export namespace proto {
         constructor(properties?: proto.IRecordStructure);
 
         /** RecordStructure currentSession. */
-        public currentSession?: (proto.ISessionStructure|null);
+        public currentSession?: (proto.ISessionStructure | null);
 
         /** RecordStructure previousSessions. */
         public previousSessions: proto.ISessionStructure[];
@@ -27321,7 +27321,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.RecordStructure;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.RecordStructure;
 
         /**
          * Decodes a RecordStructure message from the specified reader or buffer, length delimited.
@@ -27330,14 +27330,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.RecordStructure;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.RecordStructure;
 
         /**
          * Verifies a RecordStructure message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a RecordStructure message from a plain object. Also converts values to their respective internal types.
@@ -27365,7 +27365,7 @@ export namespace proto {
     interface IReportingTokenInfo {
 
         /** ReportingTokenInfo reportingTag */
-        reportingTag?: (Uint8Array|null);
+        reportingTag?: (Uint8Array | null);
     }
 
     /** Represents a ReportingTokenInfo. */
@@ -27411,7 +27411,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ReportingTokenInfo;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ReportingTokenInfo;
 
         /**
          * Decodes a ReportingTokenInfo message from the specified reader or buffer, length delimited.
@@ -27420,14 +27420,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ReportingTokenInfo;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ReportingTokenInfo;
 
         /**
          * Verifies a ReportingTokenInfo message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a ReportingTokenInfo message from a plain object. Also converts values to their respective internal types.
@@ -27455,16 +27455,16 @@ export namespace proto {
     interface ISenderKeyDistributionMessage {
 
         /** SenderKeyDistributionMessage id */
-        id?: (number|null);
+        id?: (number | null);
 
         /** SenderKeyDistributionMessage iteration */
-        iteration?: (number|null);
+        iteration?: (number | null);
 
         /** SenderKeyDistributionMessage chainKey */
-        chainKey?: (Uint8Array|null);
+        chainKey?: (Uint8Array | null);
 
         /** SenderKeyDistributionMessage signingKey */
-        signingKey?: (Uint8Array|null);
+        signingKey?: (Uint8Array | null);
     }
 
     /** Represents a SenderKeyDistributionMessage. */
@@ -27519,7 +27519,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SenderKeyDistributionMessage;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SenderKeyDistributionMessage;
 
         /**
          * Decodes a SenderKeyDistributionMessage message from the specified reader or buffer, length delimited.
@@ -27528,14 +27528,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SenderKeyDistributionMessage;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SenderKeyDistributionMessage;
 
         /**
          * Verifies a SenderKeyDistributionMessage message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a SenderKeyDistributionMessage message from a plain object. Also converts values to their respective internal types.
@@ -27563,13 +27563,13 @@ export namespace proto {
     interface ISenderKeyMessage {
 
         /** SenderKeyMessage id */
-        id?: (number|null);
+        id?: (number | null);
 
         /** SenderKeyMessage iteration */
-        iteration?: (number|null);
+        iteration?: (number | null);
 
         /** SenderKeyMessage ciphertext */
-        ciphertext?: (Uint8Array|null);
+        ciphertext?: (Uint8Array | null);
     }
 
     /** Represents a SenderKeyMessage. */
@@ -27621,7 +27621,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SenderKeyMessage;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SenderKeyMessage;
 
         /**
          * Decodes a SenderKeyMessage message from the specified reader or buffer, length delimited.
@@ -27630,14 +27630,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SenderKeyMessage;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SenderKeyMessage;
 
         /**
          * Verifies a SenderKeyMessage message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a SenderKeyMessage message from a plain object. Also converts values to their respective internal types.
@@ -27665,7 +27665,7 @@ export namespace proto {
     interface ISenderKeyRecordStructure {
 
         /** SenderKeyRecordStructure senderKeyStates */
-        senderKeyStates?: (proto.ISenderKeyStateStructure[]|null);
+        senderKeyStates?: (proto.ISenderKeyStateStructure[] | null);
     }
 
     /** Represents a SenderKeyRecordStructure. */
@@ -27711,7 +27711,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SenderKeyRecordStructure;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SenderKeyRecordStructure;
 
         /**
          * Decodes a SenderKeyRecordStructure message from the specified reader or buffer, length delimited.
@@ -27720,14 +27720,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SenderKeyRecordStructure;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SenderKeyRecordStructure;
 
         /**
          * Verifies a SenderKeyRecordStructure message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a SenderKeyRecordStructure message from a plain object. Also converts values to their respective internal types.
@@ -27755,16 +27755,16 @@ export namespace proto {
     interface ISenderKeyStateStructure {
 
         /** SenderKeyStateStructure senderKeyId */
-        senderKeyId?: (number|null);
+        senderKeyId?: (number | null);
 
         /** SenderKeyStateStructure senderChainKey */
-        senderChainKey?: (proto.SenderKeyStateStructure.ISenderChainKey|null);
+        senderChainKey?: (proto.SenderKeyStateStructure.ISenderChainKey | null);
 
         /** SenderKeyStateStructure senderSigningKey */
-        senderSigningKey?: (proto.SenderKeyStateStructure.ISenderSigningKey|null);
+        senderSigningKey?: (proto.SenderKeyStateStructure.ISenderSigningKey | null);
 
         /** SenderKeyStateStructure senderMessageKeys */
-        senderMessageKeys?: (proto.SenderKeyStateStructure.ISenderMessageKey[]|null);
+        senderMessageKeys?: (proto.SenderKeyStateStructure.ISenderMessageKey[] | null);
     }
 
     /** Represents a SenderKeyStateStructure. */
@@ -27780,10 +27780,10 @@ export namespace proto {
         public senderKeyId: number;
 
         /** SenderKeyStateStructure senderChainKey. */
-        public senderChainKey?: (proto.SenderKeyStateStructure.ISenderChainKey|null);
+        public senderChainKey?: (proto.SenderKeyStateStructure.ISenderChainKey | null);
 
         /** SenderKeyStateStructure senderSigningKey. */
-        public senderSigningKey?: (proto.SenderKeyStateStructure.ISenderSigningKey|null);
+        public senderSigningKey?: (proto.SenderKeyStateStructure.ISenderSigningKey | null);
 
         /** SenderKeyStateStructure senderMessageKeys. */
         public senderMessageKeys: proto.SenderKeyStateStructure.ISenderMessageKey[];
@@ -27819,7 +27819,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SenderKeyStateStructure;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SenderKeyStateStructure;
 
         /**
          * Decodes a SenderKeyStateStructure message from the specified reader or buffer, length delimited.
@@ -27828,14 +27828,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SenderKeyStateStructure;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SenderKeyStateStructure;
 
         /**
          * Verifies a SenderKeyStateStructure message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a SenderKeyStateStructure message from a plain object. Also converts values to their respective internal types.
@@ -27865,10 +27865,10 @@ export namespace proto {
         interface ISenderChainKey {
 
             /** SenderChainKey iteration */
-            iteration?: (number|null);
+            iteration?: (number | null);
 
             /** SenderChainKey seed */
-            seed?: (Uint8Array|null);
+            seed?: (Uint8Array | null);
         }
 
         /** Represents a SenderChainKey. */
@@ -27917,7 +27917,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SenderKeyStateStructure.SenderChainKey;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SenderKeyStateStructure.SenderChainKey;
 
             /**
              * Decodes a SenderChainKey message from the specified reader or buffer, length delimited.
@@ -27926,14 +27926,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SenderKeyStateStructure.SenderChainKey;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SenderKeyStateStructure.SenderChainKey;
 
             /**
              * Verifies a SenderChainKey message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a SenderChainKey message from a plain object. Also converts values to their respective internal types.
@@ -27961,10 +27961,10 @@ export namespace proto {
         interface ISenderMessageKey {
 
             /** SenderMessageKey iteration */
-            iteration?: (number|null);
+            iteration?: (number | null);
 
             /** SenderMessageKey seed */
-            seed?: (Uint8Array|null);
+            seed?: (Uint8Array | null);
         }
 
         /** Represents a SenderMessageKey. */
@@ -28013,7 +28013,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SenderKeyStateStructure.SenderMessageKey;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SenderKeyStateStructure.SenderMessageKey;
 
             /**
              * Decodes a SenderMessageKey message from the specified reader or buffer, length delimited.
@@ -28022,14 +28022,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SenderKeyStateStructure.SenderMessageKey;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SenderKeyStateStructure.SenderMessageKey;
 
             /**
              * Verifies a SenderMessageKey message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a SenderMessageKey message from a plain object. Also converts values to their respective internal types.
@@ -28057,10 +28057,10 @@ export namespace proto {
         interface ISenderSigningKey {
 
             /** SenderSigningKey public */
-            "public"?: (Uint8Array|null);
+            "public"?: (Uint8Array | null);
 
             /** SenderSigningKey private */
-            "private"?: (Uint8Array|null);
+            "private"?: (Uint8Array | null);
         }
 
         /** Represents a SenderSigningKey. */
@@ -28109,7 +28109,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SenderKeyStateStructure.SenderSigningKey;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SenderKeyStateStructure.SenderSigningKey;
 
             /**
              * Decodes a SenderSigningKey message from the specified reader or buffer, length delimited.
@@ -28118,14 +28118,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SenderKeyStateStructure.SenderSigningKey;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SenderKeyStateStructure.SenderSigningKey;
 
             /**
              * Verifies a SenderSigningKey message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a SenderSigningKey message from a plain object. Also converts values to their respective internal types.
@@ -28154,7 +28154,7 @@ export namespace proto {
     interface IServerErrorReceipt {
 
         /** ServerErrorReceipt stanzaId */
-        stanzaId?: (string|null);
+        stanzaId?: (string | null);
     }
 
     /** Represents a ServerErrorReceipt. */
@@ -28200,7 +28200,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ServerErrorReceipt;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.ServerErrorReceipt;
 
         /**
          * Decodes a ServerErrorReceipt message from the specified reader or buffer, length delimited.
@@ -28209,14 +28209,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ServerErrorReceipt;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.ServerErrorReceipt;
 
         /**
          * Verifies a ServerErrorReceipt message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a ServerErrorReceipt message from a plain object. Also converts values to their respective internal types.
@@ -28244,43 +28244,43 @@ export namespace proto {
     interface ISessionStructure {
 
         /** SessionStructure sessionVersion */
-        sessionVersion?: (number|null);
+        sessionVersion?: (number | null);
 
         /** SessionStructure localIdentityPublic */
-        localIdentityPublic?: (Uint8Array|null);
+        localIdentityPublic?: (Uint8Array | null);
 
         /** SessionStructure remoteIdentityPublic */
-        remoteIdentityPublic?: (Uint8Array|null);
+        remoteIdentityPublic?: (Uint8Array | null);
 
         /** SessionStructure rootKey */
-        rootKey?: (Uint8Array|null);
+        rootKey?: (Uint8Array | null);
 
         /** SessionStructure previousCounter */
-        previousCounter?: (number|null);
+        previousCounter?: (number | null);
 
         /** SessionStructure senderChain */
-        senderChain?: (proto.SessionStructure.IChain|null);
+        senderChain?: (proto.SessionStructure.IChain | null);
 
         /** SessionStructure receiverChains */
-        receiverChains?: (proto.SessionStructure.IChain[]|null);
+        receiverChains?: (proto.SessionStructure.IChain[] | null);
 
         /** SessionStructure pendingKeyExchange */
-        pendingKeyExchange?: (proto.SessionStructure.IPendingKeyExchange|null);
+        pendingKeyExchange?: (proto.SessionStructure.IPendingKeyExchange | null);
 
         /** SessionStructure pendingPreKey */
-        pendingPreKey?: (proto.SessionStructure.IPendingPreKey|null);
+        pendingPreKey?: (proto.SessionStructure.IPendingPreKey | null);
 
         /** SessionStructure remoteRegistrationId */
-        remoteRegistrationId?: (number|null);
+        remoteRegistrationId?: (number | null);
 
         /** SessionStructure localRegistrationId */
-        localRegistrationId?: (number|null);
+        localRegistrationId?: (number | null);
 
         /** SessionStructure needsRefresh */
-        needsRefresh?: (boolean|null);
+        needsRefresh?: (boolean | null);
 
         /** SessionStructure aliceBaseKey */
-        aliceBaseKey?: (Uint8Array|null);
+        aliceBaseKey?: (Uint8Array | null);
     }
 
     /** Represents a SessionStructure. */
@@ -28308,16 +28308,16 @@ export namespace proto {
         public previousCounter: number;
 
         /** SessionStructure senderChain. */
-        public senderChain?: (proto.SessionStructure.IChain|null);
+        public senderChain?: (proto.SessionStructure.IChain | null);
 
         /** SessionStructure receiverChains. */
         public receiverChains: proto.SessionStructure.IChain[];
 
         /** SessionStructure pendingKeyExchange. */
-        public pendingKeyExchange?: (proto.SessionStructure.IPendingKeyExchange|null);
+        public pendingKeyExchange?: (proto.SessionStructure.IPendingKeyExchange | null);
 
         /** SessionStructure pendingPreKey. */
-        public pendingPreKey?: (proto.SessionStructure.IPendingPreKey|null);
+        public pendingPreKey?: (proto.SessionStructure.IPendingPreKey | null);
 
         /** SessionStructure remoteRegistrationId. */
         public remoteRegistrationId: number;
@@ -28362,7 +28362,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SessionStructure;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SessionStructure;
 
         /**
          * Decodes a SessionStructure message from the specified reader or buffer, length delimited.
@@ -28371,14 +28371,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SessionStructure;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SessionStructure;
 
         /**
          * Verifies a SessionStructure message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a SessionStructure message from a plain object. Also converts values to their respective internal types.
@@ -28408,16 +28408,16 @@ export namespace proto {
         interface IChain {
 
             /** Chain senderRatchetKey */
-            senderRatchetKey?: (Uint8Array|null);
+            senderRatchetKey?: (Uint8Array | null);
 
             /** Chain senderRatchetKeyPrivate */
-            senderRatchetKeyPrivate?: (Uint8Array|null);
+            senderRatchetKeyPrivate?: (Uint8Array | null);
 
             /** Chain chainKey */
-            chainKey?: (proto.SessionStructure.Chain.IChainKey|null);
+            chainKey?: (proto.SessionStructure.Chain.IChainKey | null);
 
             /** Chain messageKeys */
-            messageKeys?: (proto.SessionStructure.Chain.IMessageKey[]|null);
+            messageKeys?: (proto.SessionStructure.Chain.IMessageKey[] | null);
         }
 
         /** Represents a Chain. */
@@ -28436,7 +28436,7 @@ export namespace proto {
             public senderRatchetKeyPrivate: Uint8Array;
 
             /** Chain chainKey. */
-            public chainKey?: (proto.SessionStructure.Chain.IChainKey|null);
+            public chainKey?: (proto.SessionStructure.Chain.IChainKey | null);
 
             /** Chain messageKeys. */
             public messageKeys: proto.SessionStructure.Chain.IMessageKey[];
@@ -28472,7 +28472,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SessionStructure.Chain;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SessionStructure.Chain;
 
             /**
              * Decodes a Chain message from the specified reader or buffer, length delimited.
@@ -28481,14 +28481,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SessionStructure.Chain;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SessionStructure.Chain;
 
             /**
              * Verifies a Chain message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a Chain message from a plain object. Also converts values to their respective internal types.
@@ -28518,10 +28518,10 @@ export namespace proto {
             interface IChainKey {
 
                 /** ChainKey index */
-                index?: (number|null);
+                index?: (number | null);
 
                 /** ChainKey key */
-                key?: (Uint8Array|null);
+                key?: (Uint8Array | null);
             }
 
             /** Represents a ChainKey. */
@@ -28570,7 +28570,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SessionStructure.Chain.ChainKey;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SessionStructure.Chain.ChainKey;
 
                 /**
                  * Decodes a ChainKey message from the specified reader or buffer, length delimited.
@@ -28579,14 +28579,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SessionStructure.Chain.ChainKey;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SessionStructure.Chain.ChainKey;
 
                 /**
                  * Verifies a ChainKey message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a ChainKey message from a plain object. Also converts values to their respective internal types.
@@ -28614,16 +28614,16 @@ export namespace proto {
             interface IMessageKey {
 
                 /** MessageKey index */
-                index?: (number|null);
+                index?: (number | null);
 
                 /** MessageKey cipherKey */
-                cipherKey?: (Uint8Array|null);
+                cipherKey?: (Uint8Array | null);
 
                 /** MessageKey macKey */
-                macKey?: (Uint8Array|null);
+                macKey?: (Uint8Array | null);
 
                 /** MessageKey iv */
-                iv?: (Uint8Array|null);
+                iv?: (Uint8Array | null);
             }
 
             /** Represents a MessageKey. */
@@ -28678,7 +28678,7 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SessionStructure.Chain.MessageKey;
+                public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SessionStructure.Chain.MessageKey;
 
                 /**
                  * Decodes a MessageKey message from the specified reader or buffer, length delimited.
@@ -28687,14 +28687,14 @@ export namespace proto {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SessionStructure.Chain.MessageKey;
+                public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SessionStructure.Chain.MessageKey;
 
                 /**
                  * Verifies a MessageKey message.
                  * @param message Plain object to verify
                  * @returns `null` if valid, otherwise the reason why it is not
                  */
-                public static verify(message: { [k: string]: any }): (string|null);
+                public static verify(message: { [k: string]: any }): (string | null);
 
                 /**
                  * Creates a MessageKey message from a plain object. Also converts values to their respective internal types.
@@ -28723,25 +28723,25 @@ export namespace proto {
         interface IPendingKeyExchange {
 
             /** PendingKeyExchange sequence */
-            sequence?: (number|null);
+            sequence?: (number | null);
 
             /** PendingKeyExchange localBaseKey */
-            localBaseKey?: (Uint8Array|null);
+            localBaseKey?: (Uint8Array | null);
 
             /** PendingKeyExchange localBaseKeyPrivate */
-            localBaseKeyPrivate?: (Uint8Array|null);
+            localBaseKeyPrivate?: (Uint8Array | null);
 
             /** PendingKeyExchange localRatchetKey */
-            localRatchetKey?: (Uint8Array|null);
+            localRatchetKey?: (Uint8Array | null);
 
             /** PendingKeyExchange localRatchetKeyPrivate */
-            localRatchetKeyPrivate?: (Uint8Array|null);
+            localRatchetKeyPrivate?: (Uint8Array | null);
 
             /** PendingKeyExchange localIdentityKey */
-            localIdentityKey?: (Uint8Array|null);
+            localIdentityKey?: (Uint8Array | null);
 
             /** PendingKeyExchange localIdentityKeyPrivate */
-            localIdentityKeyPrivate?: (Uint8Array|null);
+            localIdentityKeyPrivate?: (Uint8Array | null);
         }
 
         /** Represents a PendingKeyExchange. */
@@ -28805,7 +28805,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SessionStructure.PendingKeyExchange;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SessionStructure.PendingKeyExchange;
 
             /**
              * Decodes a PendingKeyExchange message from the specified reader or buffer, length delimited.
@@ -28814,14 +28814,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SessionStructure.PendingKeyExchange;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SessionStructure.PendingKeyExchange;
 
             /**
              * Verifies a PendingKeyExchange message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PendingKeyExchange message from a plain object. Also converts values to their respective internal types.
@@ -28849,13 +28849,13 @@ export namespace proto {
         interface IPendingPreKey {
 
             /** PendingPreKey preKeyId */
-            preKeyId?: (number|null);
+            preKeyId?: (number | null);
 
             /** PendingPreKey signedPreKeyId */
-            signedPreKeyId?: (number|null);
+            signedPreKeyId?: (number | null);
 
             /** PendingPreKey baseKey */
-            baseKey?: (Uint8Array|null);
+            baseKey?: (Uint8Array | null);
         }
 
         /** Represents a PendingPreKey. */
@@ -28907,7 +28907,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SessionStructure.PendingPreKey;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SessionStructure.PendingPreKey;
 
             /**
              * Decodes a PendingPreKey message from the specified reader or buffer, length delimited.
@@ -28916,14 +28916,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SessionStructure.PendingPreKey;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SessionStructure.PendingPreKey;
 
             /**
              * Verifies a PendingPreKey message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PendingPreKey message from a plain object. Also converts values to their respective internal types.
@@ -28952,16 +28952,16 @@ export namespace proto {
     interface ISignalMessage {
 
         /** SignalMessage ratchetKey */
-        ratchetKey?: (Uint8Array|null);
+        ratchetKey?: (Uint8Array | null);
 
         /** SignalMessage counter */
-        counter?: (number|null);
+        counter?: (number | null);
 
         /** SignalMessage previousCounter */
-        previousCounter?: (number|null);
+        previousCounter?: (number | null);
 
         /** SignalMessage ciphertext */
-        ciphertext?: (Uint8Array|null);
+        ciphertext?: (Uint8Array | null);
     }
 
     /** Represents a SignalMessage. */
@@ -29016,7 +29016,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SignalMessage;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SignalMessage;
 
         /**
          * Decodes a SignalMessage message from the specified reader or buffer, length delimited.
@@ -29025,14 +29025,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SignalMessage;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SignalMessage;
 
         /**
          * Verifies a SignalMessage message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a SignalMessage message from a plain object. Also converts values to their respective internal types.
@@ -29060,19 +29060,19 @@ export namespace proto {
     interface ISignedPreKeyRecordStructure {
 
         /** SignedPreKeyRecordStructure id */
-        id?: (number|null);
+        id?: (number | null);
 
         /** SignedPreKeyRecordStructure publicKey */
-        publicKey?: (Uint8Array|null);
+        publicKey?: (Uint8Array | null);
 
         /** SignedPreKeyRecordStructure privateKey */
-        privateKey?: (Uint8Array|null);
+        privateKey?: (Uint8Array | null);
 
         /** SignedPreKeyRecordStructure signature */
-        signature?: (Uint8Array|null);
+        signature?: (Uint8Array | null);
 
         /** SignedPreKeyRecordStructure timestamp */
-        timestamp?: (number|Long|null);
+        timestamp?: (number | Long | null);
     }
 
     /** Represents a SignedPreKeyRecordStructure. */
@@ -29097,7 +29097,7 @@ export namespace proto {
         public signature: Uint8Array;
 
         /** SignedPreKeyRecordStructure timestamp. */
-        public timestamp: (number|Long);
+        public timestamp: (number | Long);
 
         /**
          * Creates a new SignedPreKeyRecordStructure instance using the specified properties.
@@ -29130,7 +29130,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SignedPreKeyRecordStructure;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SignedPreKeyRecordStructure;
 
         /**
          * Decodes a SignedPreKeyRecordStructure message from the specified reader or buffer, length delimited.
@@ -29139,14 +29139,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SignedPreKeyRecordStructure;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SignedPreKeyRecordStructure;
 
         /**
          * Verifies a SignedPreKeyRecordStructure message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a SignedPreKeyRecordStructure message from a plain object. Also converts values to their respective internal types.
@@ -29174,10 +29174,10 @@ export namespace proto {
     interface IStatusPSA {
 
         /** StatusPSA campaignId */
-        campaignId: (number|Long);
+        campaignId: (number | Long);
 
         /** StatusPSA campaignExpirationTimestamp */
-        campaignExpirationTimestamp?: (number|Long|null);
+        campaignExpirationTimestamp?: (number | Long | null);
     }
 
     /** Represents a StatusPSA. */
@@ -29190,10 +29190,10 @@ export namespace proto {
         constructor(properties?: proto.IStatusPSA);
 
         /** StatusPSA campaignId. */
-        public campaignId: (number|Long);
+        public campaignId: (number | Long);
 
         /** StatusPSA campaignExpirationTimestamp. */
-        public campaignExpirationTimestamp: (number|Long);
+        public campaignExpirationTimestamp: (number | Long);
 
         /**
          * Creates a new StatusPSA instance using the specified properties.
@@ -29226,7 +29226,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.StatusPSA;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.StatusPSA;
 
         /**
          * Decodes a StatusPSA message from the specified reader or buffer, length delimited.
@@ -29235,14 +29235,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.StatusPSA;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.StatusPSA;
 
         /**
          * Verifies a StatusPSA message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a StatusPSA message from a plain object. Also converts values to their respective internal types.
@@ -29270,37 +29270,37 @@ export namespace proto {
     interface IStickerMetadata {
 
         /** StickerMetadata url */
-        url?: (string|null);
+        url?: (string | null);
 
         /** StickerMetadata fileSha256 */
-        fileSha256?: (Uint8Array|null);
+        fileSha256?: (Uint8Array | null);
 
         /** StickerMetadata fileEncSha256 */
-        fileEncSha256?: (Uint8Array|null);
+        fileEncSha256?: (Uint8Array | null);
 
         /** StickerMetadata mediaKey */
-        mediaKey?: (Uint8Array|null);
+        mediaKey?: (Uint8Array | null);
 
         /** StickerMetadata mimetype */
-        mimetype?: (string|null);
+        mimetype?: (string | null);
 
         /** StickerMetadata height */
-        height?: (number|null);
+        height?: (number | null);
 
         /** StickerMetadata width */
-        width?: (number|null);
+        width?: (number | null);
 
         /** StickerMetadata directPath */
-        directPath?: (string|null);
+        directPath?: (string | null);
 
         /** StickerMetadata fileLength */
-        fileLength?: (number|Long|null);
+        fileLength?: (number | Long | null);
 
         /** StickerMetadata weight */
-        weight?: (number|null);
+        weight?: (number | null);
 
         /** StickerMetadata lastStickerSentTs */
-        lastStickerSentTs?: (number|Long|null);
+        lastStickerSentTs?: (number | Long | null);
     }
 
     /** Represents a StickerMetadata. */
@@ -29337,13 +29337,13 @@ export namespace proto {
         public directPath: string;
 
         /** StickerMetadata fileLength. */
-        public fileLength: (number|Long);
+        public fileLength: (number | Long);
 
         /** StickerMetadata weight. */
         public weight: number;
 
         /** StickerMetadata lastStickerSentTs. */
-        public lastStickerSentTs: (number|Long);
+        public lastStickerSentTs: (number | Long);
 
         /**
          * Creates a new StickerMetadata instance using the specified properties.
@@ -29376,7 +29376,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.StickerMetadata;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.StickerMetadata;
 
         /**
          * Decodes a StickerMetadata message from the specified reader or buffer, length delimited.
@@ -29385,14 +29385,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.StickerMetadata;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.StickerMetadata;
 
         /**
          * Verifies a StickerMetadata message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a StickerMetadata message from a plain object. Also converts values to their respective internal types.
@@ -29420,16 +29420,16 @@ export namespace proto {
     interface ISyncActionData {
 
         /** SyncActionData index */
-        index?: (Uint8Array|null);
+        index?: (Uint8Array | null);
 
         /** SyncActionData value */
-        value?: (proto.ISyncActionValue|null);
+        value?: (proto.ISyncActionValue | null);
 
         /** SyncActionData padding */
-        padding?: (Uint8Array|null);
+        padding?: (Uint8Array | null);
 
         /** SyncActionData version */
-        version?: (number|null);
+        version?: (number | null);
     }
 
     /** Represents a SyncActionData. */
@@ -29445,7 +29445,7 @@ export namespace proto {
         public index: Uint8Array;
 
         /** SyncActionData value. */
-        public value?: (proto.ISyncActionValue|null);
+        public value?: (proto.ISyncActionValue | null);
 
         /** SyncActionData padding. */
         public padding: Uint8Array;
@@ -29484,7 +29484,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionData;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionData;
 
         /**
          * Decodes a SyncActionData message from the specified reader or buffer, length delimited.
@@ -29493,14 +29493,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionData;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionData;
 
         /**
          * Verifies a SyncActionData message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a SyncActionData message from a plain object. Also converts values to their respective internal types.
@@ -29528,133 +29528,133 @@ export namespace proto {
     interface ISyncActionValue {
 
         /** SyncActionValue timestamp */
-        timestamp?: (number|Long|null);
+        timestamp?: (number | Long | null);
 
         /** SyncActionValue starAction */
-        starAction?: (proto.SyncActionValue.IStarAction|null);
+        starAction?: (proto.SyncActionValue.IStarAction | null);
 
         /** SyncActionValue contactAction */
-        contactAction?: (proto.SyncActionValue.IContactAction|null);
+        contactAction?: (proto.SyncActionValue.IContactAction | null);
 
         /** SyncActionValue muteAction */
-        muteAction?: (proto.SyncActionValue.IMuteAction|null);
+        muteAction?: (proto.SyncActionValue.IMuteAction | null);
 
         /** SyncActionValue pinAction */
-        pinAction?: (proto.SyncActionValue.IPinAction|null);
+        pinAction?: (proto.SyncActionValue.IPinAction | null);
 
         /** SyncActionValue securityNotificationSetting */
-        securityNotificationSetting?: (proto.SyncActionValue.ISecurityNotificationSetting|null);
+        securityNotificationSetting?: (proto.SyncActionValue.ISecurityNotificationSetting | null);
 
         /** SyncActionValue pushNameSetting */
-        pushNameSetting?: (proto.SyncActionValue.IPushNameSetting|null);
+        pushNameSetting?: (proto.SyncActionValue.IPushNameSetting | null);
 
         /** SyncActionValue quickReplyAction */
-        quickReplyAction?: (proto.SyncActionValue.IQuickReplyAction|null);
+        quickReplyAction?: (proto.SyncActionValue.IQuickReplyAction | null);
 
         /** SyncActionValue recentEmojiWeightsAction */
-        recentEmojiWeightsAction?: (proto.SyncActionValue.IRecentEmojiWeightsAction|null);
+        recentEmojiWeightsAction?: (proto.SyncActionValue.IRecentEmojiWeightsAction | null);
 
         /** SyncActionValue labelEditAction */
-        labelEditAction?: (proto.SyncActionValue.ILabelEditAction|null);
+        labelEditAction?: (proto.SyncActionValue.ILabelEditAction | null);
 
         /** SyncActionValue labelAssociationAction */
-        labelAssociationAction?: (proto.SyncActionValue.ILabelAssociationAction|null);
+        labelAssociationAction?: (proto.SyncActionValue.ILabelAssociationAction | null);
 
         /** SyncActionValue localeSetting */
-        localeSetting?: (proto.SyncActionValue.ILocaleSetting|null);
+        localeSetting?: (proto.SyncActionValue.ILocaleSetting | null);
 
         /** SyncActionValue archiveChatAction */
-        archiveChatAction?: (proto.SyncActionValue.IArchiveChatAction|null);
+        archiveChatAction?: (proto.SyncActionValue.IArchiveChatAction | null);
 
         /** SyncActionValue deleteMessageForMeAction */
-        deleteMessageForMeAction?: (proto.SyncActionValue.IDeleteMessageForMeAction|null);
+        deleteMessageForMeAction?: (proto.SyncActionValue.IDeleteMessageForMeAction | null);
 
         /** SyncActionValue keyExpiration */
-        keyExpiration?: (proto.SyncActionValue.IKeyExpiration|null);
+        keyExpiration?: (proto.SyncActionValue.IKeyExpiration | null);
 
         /** SyncActionValue markChatAsReadAction */
-        markChatAsReadAction?: (proto.SyncActionValue.IMarkChatAsReadAction|null);
+        markChatAsReadAction?: (proto.SyncActionValue.IMarkChatAsReadAction | null);
 
         /** SyncActionValue clearChatAction */
-        clearChatAction?: (proto.SyncActionValue.IClearChatAction|null);
+        clearChatAction?: (proto.SyncActionValue.IClearChatAction | null);
 
         /** SyncActionValue deleteChatAction */
-        deleteChatAction?: (proto.SyncActionValue.IDeleteChatAction|null);
+        deleteChatAction?: (proto.SyncActionValue.IDeleteChatAction | null);
 
         /** SyncActionValue unarchiveChatsSetting */
-        unarchiveChatsSetting?: (proto.SyncActionValue.IUnarchiveChatsSetting|null);
+        unarchiveChatsSetting?: (proto.SyncActionValue.IUnarchiveChatsSetting | null);
 
         /** SyncActionValue primaryFeature */
-        primaryFeature?: (proto.SyncActionValue.IPrimaryFeature|null);
+        primaryFeature?: (proto.SyncActionValue.IPrimaryFeature | null);
 
         /** SyncActionValue androidUnsupportedActions */
-        androidUnsupportedActions?: (proto.SyncActionValue.IAndroidUnsupportedActions|null);
+        androidUnsupportedActions?: (proto.SyncActionValue.IAndroidUnsupportedActions | null);
 
         /** SyncActionValue agentAction */
-        agentAction?: (proto.SyncActionValue.IAgentAction|null);
+        agentAction?: (proto.SyncActionValue.IAgentAction | null);
 
         /** SyncActionValue subscriptionAction */
-        subscriptionAction?: (proto.SyncActionValue.ISubscriptionAction|null);
+        subscriptionAction?: (proto.SyncActionValue.ISubscriptionAction | null);
 
         /** SyncActionValue userStatusMuteAction */
-        userStatusMuteAction?: (proto.SyncActionValue.IUserStatusMuteAction|null);
+        userStatusMuteAction?: (proto.SyncActionValue.IUserStatusMuteAction | null);
 
         /** SyncActionValue timeFormatAction */
-        timeFormatAction?: (proto.SyncActionValue.ITimeFormatAction|null);
+        timeFormatAction?: (proto.SyncActionValue.ITimeFormatAction | null);
 
         /** SyncActionValue nuxAction */
-        nuxAction?: (proto.SyncActionValue.INuxAction|null);
+        nuxAction?: (proto.SyncActionValue.INuxAction | null);
 
         /** SyncActionValue primaryVersionAction */
-        primaryVersionAction?: (proto.SyncActionValue.IPrimaryVersionAction|null);
+        primaryVersionAction?: (proto.SyncActionValue.IPrimaryVersionAction | null);
 
         /** SyncActionValue stickerAction */
-        stickerAction?: (proto.SyncActionValue.IStickerAction|null);
+        stickerAction?: (proto.SyncActionValue.IStickerAction | null);
 
         /** SyncActionValue removeRecentStickerAction */
-        removeRecentStickerAction?: (proto.SyncActionValue.IRemoveRecentStickerAction|null);
+        removeRecentStickerAction?: (proto.SyncActionValue.IRemoveRecentStickerAction | null);
 
         /** SyncActionValue chatAssignment */
-        chatAssignment?: (proto.SyncActionValue.IChatAssignmentAction|null);
+        chatAssignment?: (proto.SyncActionValue.IChatAssignmentAction | null);
 
         /** SyncActionValue chatAssignmentOpenedStatus */
-        chatAssignmentOpenedStatus?: (proto.SyncActionValue.IChatAssignmentOpenedStatusAction|null);
+        chatAssignmentOpenedStatus?: (proto.SyncActionValue.IChatAssignmentOpenedStatusAction | null);
 
         /** SyncActionValue pnForLidChatAction */
-        pnForLidChatAction?: (proto.SyncActionValue.IPnForLidChatAction|null);
+        pnForLidChatAction?: (proto.SyncActionValue.IPnForLidChatAction | null);
 
         /** SyncActionValue marketingMessageAction */
-        marketingMessageAction?: (proto.SyncActionValue.IMarketingMessageAction|null);
+        marketingMessageAction?: (proto.SyncActionValue.IMarketingMessageAction | null);
 
         /** SyncActionValue marketingMessageBroadcastAction */
-        marketingMessageBroadcastAction?: (proto.SyncActionValue.IMarketingMessageBroadcastAction|null);
+        marketingMessageBroadcastAction?: (proto.SyncActionValue.IMarketingMessageBroadcastAction | null);
 
         /** SyncActionValue externalWebBetaAction */
-        externalWebBetaAction?: (proto.SyncActionValue.IExternalWebBetaAction|null);
+        externalWebBetaAction?: (proto.SyncActionValue.IExternalWebBetaAction | null);
 
         /** SyncActionValue privacySettingRelayAllCalls */
-        privacySettingRelayAllCalls?: (proto.SyncActionValue.IPrivacySettingRelayAllCalls|null);
+        privacySettingRelayAllCalls?: (proto.SyncActionValue.IPrivacySettingRelayAllCalls | null);
 
         /** SyncActionValue callLogAction */
-        callLogAction?: (proto.SyncActionValue.ICallLogAction|null);
+        callLogAction?: (proto.SyncActionValue.ICallLogAction | null);
 
         /** SyncActionValue statusPrivacy */
-        statusPrivacy?: (proto.SyncActionValue.IStatusPrivacyAction|null);
+        statusPrivacy?: (proto.SyncActionValue.IStatusPrivacyAction | null);
 
         /** SyncActionValue botWelcomeRequestAction */
-        botWelcomeRequestAction?: (proto.SyncActionValue.IBotWelcomeRequestAction|null);
+        botWelcomeRequestAction?: (proto.SyncActionValue.IBotWelcomeRequestAction | null);
 
         /** SyncActionValue deleteIndividualCallLog */
-        deleteIndividualCallLog?: (proto.SyncActionValue.IDeleteIndividualCallLogAction|null);
+        deleteIndividualCallLog?: (proto.SyncActionValue.IDeleteIndividualCallLogAction | null);
 
         /** SyncActionValue labelReorderingAction */
-        labelReorderingAction?: (proto.SyncActionValue.ILabelReorderingAction|null);
+        labelReorderingAction?: (proto.SyncActionValue.ILabelReorderingAction | null);
 
         /** SyncActionValue paymentInfoAction */
-        paymentInfoAction?: (proto.SyncActionValue.IPaymentInfoAction|null);
+        paymentInfoAction?: (proto.SyncActionValue.IPaymentInfoAction | null);
 
         /** SyncActionValue customPaymentMethodsAction */
-        customPaymentMethodsAction?: (proto.SyncActionValue.ICustomPaymentMethodsAction|null);
+        customPaymentMethodsAction?: (proto.SyncActionValue.ICustomPaymentMethodsAction | null);
     }
 
     /** Represents a SyncActionValue. */
@@ -29667,133 +29667,133 @@ export namespace proto {
         constructor(properties?: proto.ISyncActionValue);
 
         /** SyncActionValue timestamp. */
-        public timestamp: (number|Long);
+        public timestamp: (number | Long);
 
         /** SyncActionValue starAction. */
-        public starAction?: (proto.SyncActionValue.IStarAction|null);
+        public starAction?: (proto.SyncActionValue.IStarAction | null);
 
         /** SyncActionValue contactAction. */
-        public contactAction?: (proto.SyncActionValue.IContactAction|null);
+        public contactAction?: (proto.SyncActionValue.IContactAction | null);
 
         /** SyncActionValue muteAction. */
-        public muteAction?: (proto.SyncActionValue.IMuteAction|null);
+        public muteAction?: (proto.SyncActionValue.IMuteAction | null);
 
         /** SyncActionValue pinAction. */
-        public pinAction?: (proto.SyncActionValue.IPinAction|null);
+        public pinAction?: (proto.SyncActionValue.IPinAction | null);
 
         /** SyncActionValue securityNotificationSetting. */
-        public securityNotificationSetting?: (proto.SyncActionValue.ISecurityNotificationSetting|null);
+        public securityNotificationSetting?: (proto.SyncActionValue.ISecurityNotificationSetting | null);
 
         /** SyncActionValue pushNameSetting. */
-        public pushNameSetting?: (proto.SyncActionValue.IPushNameSetting|null);
+        public pushNameSetting?: (proto.SyncActionValue.IPushNameSetting | null);
 
         /** SyncActionValue quickReplyAction. */
-        public quickReplyAction?: (proto.SyncActionValue.IQuickReplyAction|null);
+        public quickReplyAction?: (proto.SyncActionValue.IQuickReplyAction | null);
 
         /** SyncActionValue recentEmojiWeightsAction. */
-        public recentEmojiWeightsAction?: (proto.SyncActionValue.IRecentEmojiWeightsAction|null);
+        public recentEmojiWeightsAction?: (proto.SyncActionValue.IRecentEmojiWeightsAction | null);
 
         /** SyncActionValue labelEditAction. */
-        public labelEditAction?: (proto.SyncActionValue.ILabelEditAction|null);
+        public labelEditAction?: (proto.SyncActionValue.ILabelEditAction | null);
 
         /** SyncActionValue labelAssociationAction. */
-        public labelAssociationAction?: (proto.SyncActionValue.ILabelAssociationAction|null);
+        public labelAssociationAction?: (proto.SyncActionValue.ILabelAssociationAction | null);
 
         /** SyncActionValue localeSetting. */
-        public localeSetting?: (proto.SyncActionValue.ILocaleSetting|null);
+        public localeSetting?: (proto.SyncActionValue.ILocaleSetting | null);
 
         /** SyncActionValue archiveChatAction. */
-        public archiveChatAction?: (proto.SyncActionValue.IArchiveChatAction|null);
+        public archiveChatAction?: (proto.SyncActionValue.IArchiveChatAction | null);
 
         /** SyncActionValue deleteMessageForMeAction. */
-        public deleteMessageForMeAction?: (proto.SyncActionValue.IDeleteMessageForMeAction|null);
+        public deleteMessageForMeAction?: (proto.SyncActionValue.IDeleteMessageForMeAction | null);
 
         /** SyncActionValue keyExpiration. */
-        public keyExpiration?: (proto.SyncActionValue.IKeyExpiration|null);
+        public keyExpiration?: (proto.SyncActionValue.IKeyExpiration | null);
 
         /** SyncActionValue markChatAsReadAction. */
-        public markChatAsReadAction?: (proto.SyncActionValue.IMarkChatAsReadAction|null);
+        public markChatAsReadAction?: (proto.SyncActionValue.IMarkChatAsReadAction | null);
 
         /** SyncActionValue clearChatAction. */
-        public clearChatAction?: (proto.SyncActionValue.IClearChatAction|null);
+        public clearChatAction?: (proto.SyncActionValue.IClearChatAction | null);
 
         /** SyncActionValue deleteChatAction. */
-        public deleteChatAction?: (proto.SyncActionValue.IDeleteChatAction|null);
+        public deleteChatAction?: (proto.SyncActionValue.IDeleteChatAction | null);
 
         /** SyncActionValue unarchiveChatsSetting. */
-        public unarchiveChatsSetting?: (proto.SyncActionValue.IUnarchiveChatsSetting|null);
+        public unarchiveChatsSetting?: (proto.SyncActionValue.IUnarchiveChatsSetting | null);
 
         /** SyncActionValue primaryFeature. */
-        public primaryFeature?: (proto.SyncActionValue.IPrimaryFeature|null);
+        public primaryFeature?: (proto.SyncActionValue.IPrimaryFeature | null);
 
         /** SyncActionValue androidUnsupportedActions. */
-        public androidUnsupportedActions?: (proto.SyncActionValue.IAndroidUnsupportedActions|null);
+        public androidUnsupportedActions?: (proto.SyncActionValue.IAndroidUnsupportedActions | null);
 
         /** SyncActionValue agentAction. */
-        public agentAction?: (proto.SyncActionValue.IAgentAction|null);
+        public agentAction?: (proto.SyncActionValue.IAgentAction | null);
 
         /** SyncActionValue subscriptionAction. */
-        public subscriptionAction?: (proto.SyncActionValue.ISubscriptionAction|null);
+        public subscriptionAction?: (proto.SyncActionValue.ISubscriptionAction | null);
 
         /** SyncActionValue userStatusMuteAction. */
-        public userStatusMuteAction?: (proto.SyncActionValue.IUserStatusMuteAction|null);
+        public userStatusMuteAction?: (proto.SyncActionValue.IUserStatusMuteAction | null);
 
         /** SyncActionValue timeFormatAction. */
-        public timeFormatAction?: (proto.SyncActionValue.ITimeFormatAction|null);
+        public timeFormatAction?: (proto.SyncActionValue.ITimeFormatAction | null);
 
         /** SyncActionValue nuxAction. */
-        public nuxAction?: (proto.SyncActionValue.INuxAction|null);
+        public nuxAction?: (proto.SyncActionValue.INuxAction | null);
 
         /** SyncActionValue primaryVersionAction. */
-        public primaryVersionAction?: (proto.SyncActionValue.IPrimaryVersionAction|null);
+        public primaryVersionAction?: (proto.SyncActionValue.IPrimaryVersionAction | null);
 
         /** SyncActionValue stickerAction. */
-        public stickerAction?: (proto.SyncActionValue.IStickerAction|null);
+        public stickerAction?: (proto.SyncActionValue.IStickerAction | null);
 
         /** SyncActionValue removeRecentStickerAction. */
-        public removeRecentStickerAction?: (proto.SyncActionValue.IRemoveRecentStickerAction|null);
+        public removeRecentStickerAction?: (proto.SyncActionValue.IRemoveRecentStickerAction | null);
 
         /** SyncActionValue chatAssignment. */
-        public chatAssignment?: (proto.SyncActionValue.IChatAssignmentAction|null);
+        public chatAssignment?: (proto.SyncActionValue.IChatAssignmentAction | null);
 
         /** SyncActionValue chatAssignmentOpenedStatus. */
-        public chatAssignmentOpenedStatus?: (proto.SyncActionValue.IChatAssignmentOpenedStatusAction|null);
+        public chatAssignmentOpenedStatus?: (proto.SyncActionValue.IChatAssignmentOpenedStatusAction | null);
 
         /** SyncActionValue pnForLidChatAction. */
-        public pnForLidChatAction?: (proto.SyncActionValue.IPnForLidChatAction|null);
+        public pnForLidChatAction?: (proto.SyncActionValue.IPnForLidChatAction | null);
 
         /** SyncActionValue marketingMessageAction. */
-        public marketingMessageAction?: (proto.SyncActionValue.IMarketingMessageAction|null);
+        public marketingMessageAction?: (proto.SyncActionValue.IMarketingMessageAction | null);
 
         /** SyncActionValue marketingMessageBroadcastAction. */
-        public marketingMessageBroadcastAction?: (proto.SyncActionValue.IMarketingMessageBroadcastAction|null);
+        public marketingMessageBroadcastAction?: (proto.SyncActionValue.IMarketingMessageBroadcastAction | null);
 
         /** SyncActionValue externalWebBetaAction. */
-        public externalWebBetaAction?: (proto.SyncActionValue.IExternalWebBetaAction|null);
+        public externalWebBetaAction?: (proto.SyncActionValue.IExternalWebBetaAction | null);
 
         /** SyncActionValue privacySettingRelayAllCalls. */
-        public privacySettingRelayAllCalls?: (proto.SyncActionValue.IPrivacySettingRelayAllCalls|null);
+        public privacySettingRelayAllCalls?: (proto.SyncActionValue.IPrivacySettingRelayAllCalls | null);
 
         /** SyncActionValue callLogAction. */
-        public callLogAction?: (proto.SyncActionValue.ICallLogAction|null);
+        public callLogAction?: (proto.SyncActionValue.ICallLogAction | null);
 
         /** SyncActionValue statusPrivacy. */
-        public statusPrivacy?: (proto.SyncActionValue.IStatusPrivacyAction|null);
+        public statusPrivacy?: (proto.SyncActionValue.IStatusPrivacyAction | null);
 
         /** SyncActionValue botWelcomeRequestAction. */
-        public botWelcomeRequestAction?: (proto.SyncActionValue.IBotWelcomeRequestAction|null);
+        public botWelcomeRequestAction?: (proto.SyncActionValue.IBotWelcomeRequestAction | null);
 
         /** SyncActionValue deleteIndividualCallLog. */
-        public deleteIndividualCallLog?: (proto.SyncActionValue.IDeleteIndividualCallLogAction|null);
+        public deleteIndividualCallLog?: (proto.SyncActionValue.IDeleteIndividualCallLogAction | null);
 
         /** SyncActionValue labelReorderingAction. */
-        public labelReorderingAction?: (proto.SyncActionValue.ILabelReorderingAction|null);
+        public labelReorderingAction?: (proto.SyncActionValue.ILabelReorderingAction | null);
 
         /** SyncActionValue paymentInfoAction. */
-        public paymentInfoAction?: (proto.SyncActionValue.IPaymentInfoAction|null);
+        public paymentInfoAction?: (proto.SyncActionValue.IPaymentInfoAction | null);
 
         /** SyncActionValue customPaymentMethodsAction. */
-        public customPaymentMethodsAction?: (proto.SyncActionValue.ICustomPaymentMethodsAction|null);
+        public customPaymentMethodsAction?: (proto.SyncActionValue.ICustomPaymentMethodsAction | null);
 
         /**
          * Creates a new SyncActionValue instance using the specified properties.
@@ -29826,7 +29826,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue;
 
         /**
          * Decodes a SyncActionValue message from the specified reader or buffer, length delimited.
@@ -29835,14 +29835,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue;
 
         /**
          * Verifies a SyncActionValue message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a SyncActionValue message from a plain object. Also converts values to their respective internal types.
@@ -29872,13 +29872,13 @@ export namespace proto {
         interface IAgentAction {
 
             /** AgentAction name */
-            name?: (string|null);
+            name?: (string | null);
 
             /** AgentAction deviceID */
-            deviceID?: (number|null);
+            deviceID?: (number | null);
 
             /** AgentAction isDeleted */
-            isDeleted?: (boolean|null);
+            isDeleted?: (boolean | null);
         }
 
         /** Represents an AgentAction. */
@@ -29930,7 +29930,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.AgentAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.AgentAction;
 
             /**
              * Decodes an AgentAction message from the specified reader or buffer, length delimited.
@@ -29939,14 +29939,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.AgentAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.AgentAction;
 
             /**
              * Verifies an AgentAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an AgentAction message from a plain object. Also converts values to their respective internal types.
@@ -29974,7 +29974,7 @@ export namespace proto {
         interface IAndroidUnsupportedActions {
 
             /** AndroidUnsupportedActions allowed */
-            allowed?: (boolean|null);
+            allowed?: (boolean | null);
         }
 
         /** Represents an AndroidUnsupportedActions. */
@@ -30020,7 +30020,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.AndroidUnsupportedActions;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.AndroidUnsupportedActions;
 
             /**
              * Decodes an AndroidUnsupportedActions message from the specified reader or buffer, length delimited.
@@ -30029,14 +30029,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.AndroidUnsupportedActions;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.AndroidUnsupportedActions;
 
             /**
              * Verifies an AndroidUnsupportedActions message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an AndroidUnsupportedActions message from a plain object. Also converts values to their respective internal types.
@@ -30064,10 +30064,10 @@ export namespace proto {
         interface IArchiveChatAction {
 
             /** ArchiveChatAction archived */
-            archived?: (boolean|null);
+            archived?: (boolean | null);
 
             /** ArchiveChatAction messageRange */
-            messageRange?: (proto.SyncActionValue.ISyncActionMessageRange|null);
+            messageRange?: (proto.SyncActionValue.ISyncActionMessageRange | null);
         }
 
         /** Represents an ArchiveChatAction. */
@@ -30083,7 +30083,7 @@ export namespace proto {
             public archived: boolean;
 
             /** ArchiveChatAction messageRange. */
-            public messageRange?: (proto.SyncActionValue.ISyncActionMessageRange|null);
+            public messageRange?: (proto.SyncActionValue.ISyncActionMessageRange | null);
 
             /**
              * Creates a new ArchiveChatAction instance using the specified properties.
@@ -30116,7 +30116,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.ArchiveChatAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.ArchiveChatAction;
 
             /**
              * Decodes an ArchiveChatAction message from the specified reader or buffer, length delimited.
@@ -30125,14 +30125,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.ArchiveChatAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.ArchiveChatAction;
 
             /**
              * Verifies an ArchiveChatAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an ArchiveChatAction message from a plain object. Also converts values to their respective internal types.
@@ -30160,7 +30160,7 @@ export namespace proto {
         interface IBotWelcomeRequestAction {
 
             /** BotWelcomeRequestAction isSent */
-            isSent?: (boolean|null);
+            isSent?: (boolean | null);
         }
 
         /** Represents a BotWelcomeRequestAction. */
@@ -30206,7 +30206,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.BotWelcomeRequestAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.BotWelcomeRequestAction;
 
             /**
              * Decodes a BotWelcomeRequestAction message from the specified reader or buffer, length delimited.
@@ -30215,14 +30215,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.BotWelcomeRequestAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.BotWelcomeRequestAction;
 
             /**
              * Verifies a BotWelcomeRequestAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a BotWelcomeRequestAction message from a plain object. Also converts values to their respective internal types.
@@ -30250,7 +30250,7 @@ export namespace proto {
         interface ICallLogAction {
 
             /** CallLogAction callLogRecord */
-            callLogRecord?: (proto.ICallLogRecord|null);
+            callLogRecord?: (proto.ICallLogRecord | null);
         }
 
         /** Represents a CallLogAction. */
@@ -30263,7 +30263,7 @@ export namespace proto {
             constructor(properties?: proto.SyncActionValue.ICallLogAction);
 
             /** CallLogAction callLogRecord. */
-            public callLogRecord?: (proto.ICallLogRecord|null);
+            public callLogRecord?: (proto.ICallLogRecord | null);
 
             /**
              * Creates a new CallLogAction instance using the specified properties.
@@ -30296,7 +30296,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.CallLogAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.CallLogAction;
 
             /**
              * Decodes a CallLogAction message from the specified reader or buffer, length delimited.
@@ -30305,14 +30305,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.CallLogAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.CallLogAction;
 
             /**
              * Verifies a CallLogAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a CallLogAction message from a plain object. Also converts values to their respective internal types.
@@ -30340,7 +30340,7 @@ export namespace proto {
         interface IChatAssignmentAction {
 
             /** ChatAssignmentAction deviceAgentID */
-            deviceAgentID?: (string|null);
+            deviceAgentID?: (string | null);
         }
 
         /** Represents a ChatAssignmentAction. */
@@ -30386,7 +30386,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.ChatAssignmentAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.ChatAssignmentAction;
 
             /**
              * Decodes a ChatAssignmentAction message from the specified reader or buffer, length delimited.
@@ -30395,14 +30395,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.ChatAssignmentAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.ChatAssignmentAction;
 
             /**
              * Verifies a ChatAssignmentAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ChatAssignmentAction message from a plain object. Also converts values to their respective internal types.
@@ -30430,7 +30430,7 @@ export namespace proto {
         interface IChatAssignmentOpenedStatusAction {
 
             /** ChatAssignmentOpenedStatusAction chatOpened */
-            chatOpened?: (boolean|null);
+            chatOpened?: (boolean | null);
         }
 
         /** Represents a ChatAssignmentOpenedStatusAction. */
@@ -30476,7 +30476,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.ChatAssignmentOpenedStatusAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.ChatAssignmentOpenedStatusAction;
 
             /**
              * Decodes a ChatAssignmentOpenedStatusAction message from the specified reader or buffer, length delimited.
@@ -30485,14 +30485,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.ChatAssignmentOpenedStatusAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.ChatAssignmentOpenedStatusAction;
 
             /**
              * Verifies a ChatAssignmentOpenedStatusAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ChatAssignmentOpenedStatusAction message from a plain object. Also converts values to their respective internal types.
@@ -30520,7 +30520,7 @@ export namespace proto {
         interface IClearChatAction {
 
             /** ClearChatAction messageRange */
-            messageRange?: (proto.SyncActionValue.ISyncActionMessageRange|null);
+            messageRange?: (proto.SyncActionValue.ISyncActionMessageRange | null);
         }
 
         /** Represents a ClearChatAction. */
@@ -30533,7 +30533,7 @@ export namespace proto {
             constructor(properties?: proto.SyncActionValue.IClearChatAction);
 
             /** ClearChatAction messageRange. */
-            public messageRange?: (proto.SyncActionValue.ISyncActionMessageRange|null);
+            public messageRange?: (proto.SyncActionValue.ISyncActionMessageRange | null);
 
             /**
              * Creates a new ClearChatAction instance using the specified properties.
@@ -30566,7 +30566,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.ClearChatAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.ClearChatAction;
 
             /**
              * Decodes a ClearChatAction message from the specified reader or buffer, length delimited.
@@ -30575,14 +30575,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.ClearChatAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.ClearChatAction;
 
             /**
              * Verifies a ClearChatAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ClearChatAction message from a plain object. Also converts values to their respective internal types.
@@ -30610,16 +30610,16 @@ export namespace proto {
         interface IContactAction {
 
             /** ContactAction fullName */
-            fullName?: (string|null);
+            fullName?: (string | null);
 
             /** ContactAction firstName */
-            firstName?: (string|null);
+            firstName?: (string | null);
 
             /** ContactAction lidJid */
-            lidJid?: (string|null);
+            lidJid?: (string | null);
 
             /** ContactAction saveOnPrimaryAddressbook */
-            saveOnPrimaryAddressbook?: (boolean|null);
+            saveOnPrimaryAddressbook?: (boolean | null);
         }
 
         /** Represents a ContactAction. */
@@ -30674,7 +30674,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.ContactAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.ContactAction;
 
             /**
              * Decodes a ContactAction message from the specified reader or buffer, length delimited.
@@ -30683,14 +30683,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.ContactAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.ContactAction;
 
             /**
              * Verifies a ContactAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a ContactAction message from a plain object. Also converts values to their respective internal types.
@@ -30727,7 +30727,7 @@ export namespace proto {
             type: string;
 
             /** CustomPaymentMethod metadata */
-            metadata?: (proto.SyncActionValue.ICustomPaymentMethodMetadata[]|null);
+            metadata?: (proto.SyncActionValue.ICustomPaymentMethodMetadata[] | null);
         }
 
         /** Represents a CustomPaymentMethod. */
@@ -30782,7 +30782,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.CustomPaymentMethod;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.CustomPaymentMethod;
 
             /**
              * Decodes a CustomPaymentMethod message from the specified reader or buffer, length delimited.
@@ -30791,14 +30791,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.CustomPaymentMethod;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.CustomPaymentMethod;
 
             /**
              * Verifies a CustomPaymentMethod message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a CustomPaymentMethod message from a plain object. Also converts values to their respective internal types.
@@ -30878,7 +30878,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.CustomPaymentMethodMetadata;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.CustomPaymentMethodMetadata;
 
             /**
              * Decodes a CustomPaymentMethodMetadata message from the specified reader or buffer, length delimited.
@@ -30887,14 +30887,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.CustomPaymentMethodMetadata;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.CustomPaymentMethodMetadata;
 
             /**
              * Verifies a CustomPaymentMethodMetadata message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a CustomPaymentMethodMetadata message from a plain object. Also converts values to their respective internal types.
@@ -30922,7 +30922,7 @@ export namespace proto {
         interface ICustomPaymentMethodsAction {
 
             /** CustomPaymentMethodsAction customPaymentMethods */
-            customPaymentMethods?: (proto.SyncActionValue.ICustomPaymentMethod[]|null);
+            customPaymentMethods?: (proto.SyncActionValue.ICustomPaymentMethod[] | null);
         }
 
         /** Represents a CustomPaymentMethodsAction. */
@@ -30968,7 +30968,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.CustomPaymentMethodsAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.CustomPaymentMethodsAction;
 
             /**
              * Decodes a CustomPaymentMethodsAction message from the specified reader or buffer, length delimited.
@@ -30977,14 +30977,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.CustomPaymentMethodsAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.CustomPaymentMethodsAction;
 
             /**
              * Verifies a CustomPaymentMethodsAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a CustomPaymentMethodsAction message from a plain object. Also converts values to their respective internal types.
@@ -31012,7 +31012,7 @@ export namespace proto {
         interface IDeleteChatAction {
 
             /** DeleteChatAction messageRange */
-            messageRange?: (proto.SyncActionValue.ISyncActionMessageRange|null);
+            messageRange?: (proto.SyncActionValue.ISyncActionMessageRange | null);
         }
 
         /** Represents a DeleteChatAction. */
@@ -31025,7 +31025,7 @@ export namespace proto {
             constructor(properties?: proto.SyncActionValue.IDeleteChatAction);
 
             /** DeleteChatAction messageRange. */
-            public messageRange?: (proto.SyncActionValue.ISyncActionMessageRange|null);
+            public messageRange?: (proto.SyncActionValue.ISyncActionMessageRange | null);
 
             /**
              * Creates a new DeleteChatAction instance using the specified properties.
@@ -31058,7 +31058,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.DeleteChatAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.DeleteChatAction;
 
             /**
              * Decodes a DeleteChatAction message from the specified reader or buffer, length delimited.
@@ -31067,14 +31067,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.DeleteChatAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.DeleteChatAction;
 
             /**
              * Verifies a DeleteChatAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a DeleteChatAction message from a plain object. Also converts values to their respective internal types.
@@ -31102,10 +31102,10 @@ export namespace proto {
         interface IDeleteIndividualCallLogAction {
 
             /** DeleteIndividualCallLogAction peerJid */
-            peerJid?: (string|null);
+            peerJid?: (string | null);
 
             /** DeleteIndividualCallLogAction isIncoming */
-            isIncoming?: (boolean|null);
+            isIncoming?: (boolean | null);
         }
 
         /** Represents a DeleteIndividualCallLogAction. */
@@ -31154,7 +31154,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.DeleteIndividualCallLogAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.DeleteIndividualCallLogAction;
 
             /**
              * Decodes a DeleteIndividualCallLogAction message from the specified reader or buffer, length delimited.
@@ -31163,14 +31163,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.DeleteIndividualCallLogAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.DeleteIndividualCallLogAction;
 
             /**
              * Verifies a DeleteIndividualCallLogAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a DeleteIndividualCallLogAction message from a plain object. Also converts values to their respective internal types.
@@ -31198,10 +31198,10 @@ export namespace proto {
         interface IDeleteMessageForMeAction {
 
             /** DeleteMessageForMeAction deleteMedia */
-            deleteMedia?: (boolean|null);
+            deleteMedia?: (boolean | null);
 
             /** DeleteMessageForMeAction messageTimestamp */
-            messageTimestamp?: (number|Long|null);
+            messageTimestamp?: (number | Long | null);
         }
 
         /** Represents a DeleteMessageForMeAction. */
@@ -31217,7 +31217,7 @@ export namespace proto {
             public deleteMedia: boolean;
 
             /** DeleteMessageForMeAction messageTimestamp. */
-            public messageTimestamp: (number|Long);
+            public messageTimestamp: (number | Long);
 
             /**
              * Creates a new DeleteMessageForMeAction instance using the specified properties.
@@ -31250,7 +31250,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.DeleteMessageForMeAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.DeleteMessageForMeAction;
 
             /**
              * Decodes a DeleteMessageForMeAction message from the specified reader or buffer, length delimited.
@@ -31259,14 +31259,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.DeleteMessageForMeAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.DeleteMessageForMeAction;
 
             /**
              * Verifies a DeleteMessageForMeAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a DeleteMessageForMeAction message from a plain object. Also converts values to their respective internal types.
@@ -31294,7 +31294,7 @@ export namespace proto {
         interface IExternalWebBetaAction {
 
             /** ExternalWebBetaAction isOptIn */
-            isOptIn?: (boolean|null);
+            isOptIn?: (boolean | null);
         }
 
         /** Represents an ExternalWebBetaAction. */
@@ -31340,7 +31340,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.ExternalWebBetaAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.ExternalWebBetaAction;
 
             /**
              * Decodes an ExternalWebBetaAction message from the specified reader or buffer, length delimited.
@@ -31349,14 +31349,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.ExternalWebBetaAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.ExternalWebBetaAction;
 
             /**
              * Verifies an ExternalWebBetaAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an ExternalWebBetaAction message from a plain object. Also converts values to their respective internal types.
@@ -31384,7 +31384,7 @@ export namespace proto {
         interface IKeyExpiration {
 
             /** KeyExpiration expiredKeyEpoch */
-            expiredKeyEpoch?: (number|null);
+            expiredKeyEpoch?: (number | null);
         }
 
         /** Represents a KeyExpiration. */
@@ -31430,7 +31430,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.KeyExpiration;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.KeyExpiration;
 
             /**
              * Decodes a KeyExpiration message from the specified reader or buffer, length delimited.
@@ -31439,14 +31439,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.KeyExpiration;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.KeyExpiration;
 
             /**
              * Verifies a KeyExpiration message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a KeyExpiration message from a plain object. Also converts values to their respective internal types.
@@ -31474,7 +31474,7 @@ export namespace proto {
         interface ILabelAssociationAction {
 
             /** LabelAssociationAction labeled */
-            labeled?: (boolean|null);
+            labeled?: (boolean | null);
         }
 
         /** Represents a LabelAssociationAction. */
@@ -31520,7 +31520,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.LabelAssociationAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.LabelAssociationAction;
 
             /**
              * Decodes a LabelAssociationAction message from the specified reader or buffer, length delimited.
@@ -31529,14 +31529,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.LabelAssociationAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.LabelAssociationAction;
 
             /**
              * Verifies a LabelAssociationAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a LabelAssociationAction message from a plain object. Also converts values to their respective internal types.
@@ -31564,19 +31564,19 @@ export namespace proto {
         interface ILabelEditAction {
 
             /** LabelEditAction name */
-            name?: (string|null);
+            name?: (string | null);
 
             /** LabelEditAction color */
-            color?: (number|null);
+            color?: (number | null);
 
             /** LabelEditAction predefinedId */
-            predefinedId?: (number|null);
+            predefinedId?: (number | null);
 
             /** LabelEditAction deleted */
-            deleted?: (boolean|null);
+            deleted?: (boolean | null);
 
             /** LabelEditAction orderIndex */
-            orderIndex?: (number|null);
+            orderIndex?: (number | null);
         }
 
         /** Represents a LabelEditAction. */
@@ -31634,7 +31634,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.LabelEditAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.LabelEditAction;
 
             /**
              * Decodes a LabelEditAction message from the specified reader or buffer, length delimited.
@@ -31643,14 +31643,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.LabelEditAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.LabelEditAction;
 
             /**
              * Verifies a LabelEditAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a LabelEditAction message from a plain object. Also converts values to their respective internal types.
@@ -31678,7 +31678,7 @@ export namespace proto {
         interface ILabelReorderingAction {
 
             /** LabelReorderingAction sortedLabelIds */
-            sortedLabelIds?: (number[]|null);
+            sortedLabelIds?: (number[] | null);
         }
 
         /** Represents a LabelReorderingAction. */
@@ -31724,7 +31724,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.LabelReorderingAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.LabelReorderingAction;
 
             /**
              * Decodes a LabelReorderingAction message from the specified reader or buffer, length delimited.
@@ -31733,14 +31733,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.LabelReorderingAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.LabelReorderingAction;
 
             /**
              * Verifies a LabelReorderingAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a LabelReorderingAction message from a plain object. Also converts values to their respective internal types.
@@ -31768,7 +31768,7 @@ export namespace proto {
         interface ILocaleSetting {
 
             /** LocaleSetting locale */
-            locale?: (string|null);
+            locale?: (string | null);
         }
 
         /** Represents a LocaleSetting. */
@@ -31814,7 +31814,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.LocaleSetting;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.LocaleSetting;
 
             /**
              * Decodes a LocaleSetting message from the specified reader or buffer, length delimited.
@@ -31823,14 +31823,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.LocaleSetting;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.LocaleSetting;
 
             /**
              * Verifies a LocaleSetting message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a LocaleSetting message from a plain object. Also converts values to their respective internal types.
@@ -31858,10 +31858,10 @@ export namespace proto {
         interface IMarkChatAsReadAction {
 
             /** MarkChatAsReadAction read */
-            read?: (boolean|null);
+            read?: (boolean | null);
 
             /** MarkChatAsReadAction messageRange */
-            messageRange?: (proto.SyncActionValue.ISyncActionMessageRange|null);
+            messageRange?: (proto.SyncActionValue.ISyncActionMessageRange | null);
         }
 
         /** Represents a MarkChatAsReadAction. */
@@ -31877,7 +31877,7 @@ export namespace proto {
             public read: boolean;
 
             /** MarkChatAsReadAction messageRange. */
-            public messageRange?: (proto.SyncActionValue.ISyncActionMessageRange|null);
+            public messageRange?: (proto.SyncActionValue.ISyncActionMessageRange | null);
 
             /**
              * Creates a new MarkChatAsReadAction instance using the specified properties.
@@ -31910,7 +31910,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.MarkChatAsReadAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.MarkChatAsReadAction;
 
             /**
              * Decodes a MarkChatAsReadAction message from the specified reader or buffer, length delimited.
@@ -31919,14 +31919,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.MarkChatAsReadAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.MarkChatAsReadAction;
 
             /**
              * Verifies a MarkChatAsReadAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a MarkChatAsReadAction message from a plain object. Also converts values to their respective internal types.
@@ -31954,25 +31954,25 @@ export namespace proto {
         interface IMarketingMessageAction {
 
             /** MarketingMessageAction name */
-            name?: (string|null);
+            name?: (string | null);
 
             /** MarketingMessageAction message */
-            message?: (string|null);
+            message?: (string | null);
 
             /** MarketingMessageAction type */
-            type?: (proto.SyncActionValue.MarketingMessageAction.MarketingMessagePrototypeType|null);
+            type?: (proto.SyncActionValue.MarketingMessageAction.MarketingMessagePrototypeType | null);
 
             /** MarketingMessageAction createdAt */
-            createdAt?: (number|Long|null);
+            createdAt?: (number | Long | null);
 
             /** MarketingMessageAction lastSentAt */
-            lastSentAt?: (number|Long|null);
+            lastSentAt?: (number | Long | null);
 
             /** MarketingMessageAction isDeleted */
-            isDeleted?: (boolean|null);
+            isDeleted?: (boolean | null);
 
             /** MarketingMessageAction mediaId */
-            mediaId?: (string|null);
+            mediaId?: (string | null);
         }
 
         /** Represents a MarketingMessageAction. */
@@ -31994,10 +31994,10 @@ export namespace proto {
             public type: proto.SyncActionValue.MarketingMessageAction.MarketingMessagePrototypeType;
 
             /** MarketingMessageAction createdAt. */
-            public createdAt: (number|Long);
+            public createdAt: (number | Long);
 
             /** MarketingMessageAction lastSentAt. */
-            public lastSentAt: (number|Long);
+            public lastSentAt: (number | Long);
 
             /** MarketingMessageAction isDeleted. */
             public isDeleted: boolean;
@@ -32036,7 +32036,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.MarketingMessageAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.MarketingMessageAction;
 
             /**
              * Decodes a MarketingMessageAction message from the specified reader or buffer, length delimited.
@@ -32045,14 +32045,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.MarketingMessageAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.MarketingMessageAction;
 
             /**
              * Verifies a MarketingMessageAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a MarketingMessageAction message from a plain object. Also converts values to their respective internal types.
@@ -32088,7 +32088,7 @@ export namespace proto {
         interface IMarketingMessageBroadcastAction {
 
             /** MarketingMessageBroadcastAction repliedCount */
-            repliedCount?: (number|null);
+            repliedCount?: (number | null);
         }
 
         /** Represents a MarketingMessageBroadcastAction. */
@@ -32134,7 +32134,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.MarketingMessageBroadcastAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.MarketingMessageBroadcastAction;
 
             /**
              * Decodes a MarketingMessageBroadcastAction message from the specified reader or buffer, length delimited.
@@ -32143,14 +32143,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.MarketingMessageBroadcastAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.MarketingMessageBroadcastAction;
 
             /**
              * Verifies a MarketingMessageBroadcastAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a MarketingMessageBroadcastAction message from a plain object. Also converts values to their respective internal types.
@@ -32178,13 +32178,13 @@ export namespace proto {
         interface IMuteAction {
 
             /** MuteAction muted */
-            muted?: (boolean|null);
+            muted?: (boolean | null);
 
             /** MuteAction muteEndTimestamp */
-            muteEndTimestamp?: (number|Long|null);
+            muteEndTimestamp?: (number | Long | null);
 
             /** MuteAction autoMuted */
-            autoMuted?: (boolean|null);
+            autoMuted?: (boolean | null);
         }
 
         /** Represents a MuteAction. */
@@ -32200,7 +32200,7 @@ export namespace proto {
             public muted: boolean;
 
             /** MuteAction muteEndTimestamp. */
-            public muteEndTimestamp: (number|Long);
+            public muteEndTimestamp: (number | Long);
 
             /** MuteAction autoMuted. */
             public autoMuted: boolean;
@@ -32236,7 +32236,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.MuteAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.MuteAction;
 
             /**
              * Decodes a MuteAction message from the specified reader or buffer, length delimited.
@@ -32245,14 +32245,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.MuteAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.MuteAction;
 
             /**
              * Verifies a MuteAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a MuteAction message from a plain object. Also converts values to their respective internal types.
@@ -32280,7 +32280,7 @@ export namespace proto {
         interface INuxAction {
 
             /** NuxAction acknowledged */
-            acknowledged?: (boolean|null);
+            acknowledged?: (boolean | null);
         }
 
         /** Represents a NuxAction. */
@@ -32326,7 +32326,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.NuxAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.NuxAction;
 
             /**
              * Decodes a NuxAction message from the specified reader or buffer, length delimited.
@@ -32335,14 +32335,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.NuxAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.NuxAction;
 
             /**
              * Verifies a NuxAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a NuxAction message from a plain object. Also converts values to their respective internal types.
@@ -32370,7 +32370,7 @@ export namespace proto {
         interface IPaymentInfoAction {
 
             /** PaymentInfoAction cpi */
-            cpi?: (string|null);
+            cpi?: (string | null);
         }
 
         /** Represents a PaymentInfoAction. */
@@ -32416,7 +32416,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.PaymentInfoAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.PaymentInfoAction;
 
             /**
              * Decodes a PaymentInfoAction message from the specified reader or buffer, length delimited.
@@ -32425,14 +32425,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.PaymentInfoAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.PaymentInfoAction;
 
             /**
              * Verifies a PaymentInfoAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PaymentInfoAction message from a plain object. Also converts values to their respective internal types.
@@ -32460,7 +32460,7 @@ export namespace proto {
         interface IPinAction {
 
             /** PinAction pinned */
-            pinned?: (boolean|null);
+            pinned?: (boolean | null);
         }
 
         /** Represents a PinAction. */
@@ -32506,7 +32506,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.PinAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.PinAction;
 
             /**
              * Decodes a PinAction message from the specified reader or buffer, length delimited.
@@ -32515,14 +32515,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.PinAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.PinAction;
 
             /**
              * Verifies a PinAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PinAction message from a plain object. Also converts values to their respective internal types.
@@ -32550,7 +32550,7 @@ export namespace proto {
         interface IPnForLidChatAction {
 
             /** PnForLidChatAction pnJid */
-            pnJid?: (string|null);
+            pnJid?: (string | null);
         }
 
         /** Represents a PnForLidChatAction. */
@@ -32596,7 +32596,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.PnForLidChatAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.PnForLidChatAction;
 
             /**
              * Decodes a PnForLidChatAction message from the specified reader or buffer, length delimited.
@@ -32605,14 +32605,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.PnForLidChatAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.PnForLidChatAction;
 
             /**
              * Verifies a PnForLidChatAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PnForLidChatAction message from a plain object. Also converts values to their respective internal types.
@@ -32640,7 +32640,7 @@ export namespace proto {
         interface IPrimaryFeature {
 
             /** PrimaryFeature flags */
-            flags?: (string[]|null);
+            flags?: (string[] | null);
         }
 
         /** Represents a PrimaryFeature. */
@@ -32686,7 +32686,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.PrimaryFeature;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.PrimaryFeature;
 
             /**
              * Decodes a PrimaryFeature message from the specified reader or buffer, length delimited.
@@ -32695,14 +32695,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.PrimaryFeature;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.PrimaryFeature;
 
             /**
              * Verifies a PrimaryFeature message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PrimaryFeature message from a plain object. Also converts values to their respective internal types.
@@ -32730,7 +32730,7 @@ export namespace proto {
         interface IPrimaryVersionAction {
 
             /** PrimaryVersionAction version */
-            version?: (string|null);
+            version?: (string | null);
         }
 
         /** Represents a PrimaryVersionAction. */
@@ -32776,7 +32776,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.PrimaryVersionAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.PrimaryVersionAction;
 
             /**
              * Decodes a PrimaryVersionAction message from the specified reader or buffer, length delimited.
@@ -32785,14 +32785,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.PrimaryVersionAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.PrimaryVersionAction;
 
             /**
              * Verifies a PrimaryVersionAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PrimaryVersionAction message from a plain object. Also converts values to their respective internal types.
@@ -32820,7 +32820,7 @@ export namespace proto {
         interface IPrivacySettingRelayAllCalls {
 
             /** PrivacySettingRelayAllCalls isEnabled */
-            isEnabled?: (boolean|null);
+            isEnabled?: (boolean | null);
         }
 
         /** Represents a PrivacySettingRelayAllCalls. */
@@ -32866,7 +32866,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.PrivacySettingRelayAllCalls;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.PrivacySettingRelayAllCalls;
 
             /**
              * Decodes a PrivacySettingRelayAllCalls message from the specified reader or buffer, length delimited.
@@ -32875,14 +32875,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.PrivacySettingRelayAllCalls;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.PrivacySettingRelayAllCalls;
 
             /**
              * Verifies a PrivacySettingRelayAllCalls message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PrivacySettingRelayAllCalls message from a plain object. Also converts values to their respective internal types.
@@ -32910,7 +32910,7 @@ export namespace proto {
         interface IPushNameSetting {
 
             /** PushNameSetting name */
-            name?: (string|null);
+            name?: (string | null);
         }
 
         /** Represents a PushNameSetting. */
@@ -32956,7 +32956,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.PushNameSetting;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.PushNameSetting;
 
             /**
              * Decodes a PushNameSetting message from the specified reader or buffer, length delimited.
@@ -32965,14 +32965,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.PushNameSetting;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.PushNameSetting;
 
             /**
              * Verifies a PushNameSetting message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a PushNameSetting message from a plain object. Also converts values to their respective internal types.
@@ -33000,19 +33000,19 @@ export namespace proto {
         interface IQuickReplyAction {
 
             /** QuickReplyAction shortcut */
-            shortcut?: (string|null);
+            shortcut?: (string | null);
 
             /** QuickReplyAction message */
-            message?: (string|null);
+            message?: (string | null);
 
             /** QuickReplyAction keywords */
-            keywords?: (string[]|null);
+            keywords?: (string[] | null);
 
             /** QuickReplyAction count */
-            count?: (number|null);
+            count?: (number | null);
 
             /** QuickReplyAction deleted */
-            deleted?: (boolean|null);
+            deleted?: (boolean | null);
         }
 
         /** Represents a QuickReplyAction. */
@@ -33070,7 +33070,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.QuickReplyAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.QuickReplyAction;
 
             /**
              * Decodes a QuickReplyAction message from the specified reader or buffer, length delimited.
@@ -33079,14 +33079,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.QuickReplyAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.QuickReplyAction;
 
             /**
              * Verifies a QuickReplyAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a QuickReplyAction message from a plain object. Also converts values to their respective internal types.
@@ -33114,7 +33114,7 @@ export namespace proto {
         interface IRecentEmojiWeightsAction {
 
             /** RecentEmojiWeightsAction weights */
-            weights?: (proto.IRecentEmojiWeight[]|null);
+            weights?: (proto.IRecentEmojiWeight[] | null);
         }
 
         /** Represents a RecentEmojiWeightsAction. */
@@ -33160,7 +33160,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.RecentEmojiWeightsAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.RecentEmojiWeightsAction;
 
             /**
              * Decodes a RecentEmojiWeightsAction message from the specified reader or buffer, length delimited.
@@ -33169,14 +33169,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.RecentEmojiWeightsAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.RecentEmojiWeightsAction;
 
             /**
              * Verifies a RecentEmojiWeightsAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a RecentEmojiWeightsAction message from a plain object. Also converts values to their respective internal types.
@@ -33204,7 +33204,7 @@ export namespace proto {
         interface IRemoveRecentStickerAction {
 
             /** RemoveRecentStickerAction lastStickerSentTs */
-            lastStickerSentTs?: (number|Long|null);
+            lastStickerSentTs?: (number | Long | null);
         }
 
         /** Represents a RemoveRecentStickerAction. */
@@ -33217,7 +33217,7 @@ export namespace proto {
             constructor(properties?: proto.SyncActionValue.IRemoveRecentStickerAction);
 
             /** RemoveRecentStickerAction lastStickerSentTs. */
-            public lastStickerSentTs: (number|Long);
+            public lastStickerSentTs: (number | Long);
 
             /**
              * Creates a new RemoveRecentStickerAction instance using the specified properties.
@@ -33250,7 +33250,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.RemoveRecentStickerAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.RemoveRecentStickerAction;
 
             /**
              * Decodes a RemoveRecentStickerAction message from the specified reader or buffer, length delimited.
@@ -33259,14 +33259,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.RemoveRecentStickerAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.RemoveRecentStickerAction;
 
             /**
              * Verifies a RemoveRecentStickerAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a RemoveRecentStickerAction message from a plain object. Also converts values to their respective internal types.
@@ -33294,7 +33294,7 @@ export namespace proto {
         interface ISecurityNotificationSetting {
 
             /** SecurityNotificationSetting showNotification */
-            showNotification?: (boolean|null);
+            showNotification?: (boolean | null);
         }
 
         /** Represents a SecurityNotificationSetting. */
@@ -33340,7 +33340,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.SecurityNotificationSetting;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.SecurityNotificationSetting;
 
             /**
              * Decodes a SecurityNotificationSetting message from the specified reader or buffer, length delimited.
@@ -33349,14 +33349,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.SecurityNotificationSetting;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.SecurityNotificationSetting;
 
             /**
              * Verifies a SecurityNotificationSetting message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a SecurityNotificationSetting message from a plain object. Also converts values to their respective internal types.
@@ -33384,7 +33384,7 @@ export namespace proto {
         interface IStarAction {
 
             /** StarAction starred */
-            starred?: (boolean|null);
+            starred?: (boolean | null);
         }
 
         /** Represents a StarAction. */
@@ -33430,7 +33430,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.StarAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.StarAction;
 
             /**
              * Decodes a StarAction message from the specified reader or buffer, length delimited.
@@ -33439,14 +33439,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.StarAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.StarAction;
 
             /**
              * Verifies a StarAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a StarAction message from a plain object. Also converts values to their respective internal types.
@@ -33474,10 +33474,10 @@ export namespace proto {
         interface IStatusPrivacyAction {
 
             /** StatusPrivacyAction mode */
-            mode?: (proto.SyncActionValue.StatusPrivacyAction.StatusDistributionMode|null);
+            mode?: (proto.SyncActionValue.StatusPrivacyAction.StatusDistributionMode | null);
 
             /** StatusPrivacyAction userJid */
-            userJid?: (string[]|null);
+            userJid?: (string[] | null);
         }
 
         /** Represents a StatusPrivacyAction. */
@@ -33526,7 +33526,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.StatusPrivacyAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.StatusPrivacyAction;
 
             /**
              * Decodes a StatusPrivacyAction message from the specified reader or buffer, length delimited.
@@ -33535,14 +33535,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.StatusPrivacyAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.StatusPrivacyAction;
 
             /**
              * Verifies a StatusPrivacyAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a StatusPrivacyAction message from a plain object. Also converts values to their respective internal types.
@@ -33580,34 +33580,34 @@ export namespace proto {
         interface IStickerAction {
 
             /** StickerAction url */
-            url?: (string|null);
+            url?: (string | null);
 
             /** StickerAction fileEncSha256 */
-            fileEncSha256?: (Uint8Array|null);
+            fileEncSha256?: (Uint8Array | null);
 
             /** StickerAction mediaKey */
-            mediaKey?: (Uint8Array|null);
+            mediaKey?: (Uint8Array | null);
 
             /** StickerAction mimetype */
-            mimetype?: (string|null);
+            mimetype?: (string | null);
 
             /** StickerAction height */
-            height?: (number|null);
+            height?: (number | null);
 
             /** StickerAction width */
-            width?: (number|null);
+            width?: (number | null);
 
             /** StickerAction directPath */
-            directPath?: (string|null);
+            directPath?: (string | null);
 
             /** StickerAction fileLength */
-            fileLength?: (number|Long|null);
+            fileLength?: (number | Long | null);
 
             /** StickerAction isFavorite */
-            isFavorite?: (boolean|null);
+            isFavorite?: (boolean | null);
 
             /** StickerAction deviceIdHint */
-            deviceIdHint?: (number|null);
+            deviceIdHint?: (number | null);
         }
 
         /** Represents a StickerAction. */
@@ -33641,7 +33641,7 @@ export namespace proto {
             public directPath: string;
 
             /** StickerAction fileLength. */
-            public fileLength: (number|Long);
+            public fileLength: (number | Long);
 
             /** StickerAction isFavorite. */
             public isFavorite: boolean;
@@ -33680,7 +33680,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.StickerAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.StickerAction;
 
             /**
              * Decodes a StickerAction message from the specified reader or buffer, length delimited.
@@ -33689,14 +33689,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.StickerAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.StickerAction;
 
             /**
              * Verifies a StickerAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a StickerAction message from a plain object. Also converts values to their respective internal types.
@@ -33724,13 +33724,13 @@ export namespace proto {
         interface ISubscriptionAction {
 
             /** SubscriptionAction isDeactivated */
-            isDeactivated?: (boolean|null);
+            isDeactivated?: (boolean | null);
 
             /** SubscriptionAction isAutoRenewing */
-            isAutoRenewing?: (boolean|null);
+            isAutoRenewing?: (boolean | null);
 
             /** SubscriptionAction expirationDate */
-            expirationDate?: (number|Long|null);
+            expirationDate?: (number | Long | null);
         }
 
         /** Represents a SubscriptionAction. */
@@ -33749,7 +33749,7 @@ export namespace proto {
             public isAutoRenewing: boolean;
 
             /** SubscriptionAction expirationDate. */
-            public expirationDate: (number|Long);
+            public expirationDate: (number | Long);
 
             /**
              * Creates a new SubscriptionAction instance using the specified properties.
@@ -33782,7 +33782,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.SubscriptionAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.SubscriptionAction;
 
             /**
              * Decodes a SubscriptionAction message from the specified reader or buffer, length delimited.
@@ -33791,14 +33791,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.SubscriptionAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.SubscriptionAction;
 
             /**
              * Verifies a SubscriptionAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a SubscriptionAction message from a plain object. Also converts values to their respective internal types.
@@ -33826,10 +33826,10 @@ export namespace proto {
         interface ISyncActionMessage {
 
             /** SyncActionMessage key */
-            key?: (proto.IMessageKey|null);
+            key?: (proto.IMessageKey | null);
 
             /** SyncActionMessage timestamp */
-            timestamp?: (number|Long|null);
+            timestamp?: (number | Long | null);
         }
 
         /** Represents a SyncActionMessage. */
@@ -33842,10 +33842,10 @@ export namespace proto {
             constructor(properties?: proto.SyncActionValue.ISyncActionMessage);
 
             /** SyncActionMessage key. */
-            public key?: (proto.IMessageKey|null);
+            public key?: (proto.IMessageKey | null);
 
             /** SyncActionMessage timestamp. */
-            public timestamp: (number|Long);
+            public timestamp: (number | Long);
 
             /**
              * Creates a new SyncActionMessage instance using the specified properties.
@@ -33878,7 +33878,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.SyncActionMessage;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.SyncActionMessage;
 
             /**
              * Decodes a SyncActionMessage message from the specified reader or buffer, length delimited.
@@ -33887,14 +33887,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.SyncActionMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.SyncActionMessage;
 
             /**
              * Verifies a SyncActionMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a SyncActionMessage message from a plain object. Also converts values to their respective internal types.
@@ -33922,13 +33922,13 @@ export namespace proto {
         interface ISyncActionMessageRange {
 
             /** SyncActionMessageRange lastMessageTimestamp */
-            lastMessageTimestamp?: (number|Long|null);
+            lastMessageTimestamp?: (number | Long | null);
 
             /** SyncActionMessageRange lastSystemMessageTimestamp */
-            lastSystemMessageTimestamp?: (number|Long|null);
+            lastSystemMessageTimestamp?: (number | Long | null);
 
             /** SyncActionMessageRange messages */
-            messages?: (proto.SyncActionValue.ISyncActionMessage[]|null);
+            messages?: (proto.SyncActionValue.ISyncActionMessage[] | null);
         }
 
         /** Represents a SyncActionMessageRange. */
@@ -33941,10 +33941,10 @@ export namespace proto {
             constructor(properties?: proto.SyncActionValue.ISyncActionMessageRange);
 
             /** SyncActionMessageRange lastMessageTimestamp. */
-            public lastMessageTimestamp: (number|Long);
+            public lastMessageTimestamp: (number | Long);
 
             /** SyncActionMessageRange lastSystemMessageTimestamp. */
-            public lastSystemMessageTimestamp: (number|Long);
+            public lastSystemMessageTimestamp: (number | Long);
 
             /** SyncActionMessageRange messages. */
             public messages: proto.SyncActionValue.ISyncActionMessage[];
@@ -33980,7 +33980,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.SyncActionMessageRange;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.SyncActionMessageRange;
 
             /**
              * Decodes a SyncActionMessageRange message from the specified reader or buffer, length delimited.
@@ -33989,14 +33989,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.SyncActionMessageRange;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.SyncActionMessageRange;
 
             /**
              * Verifies a SyncActionMessageRange message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a SyncActionMessageRange message from a plain object. Also converts values to their respective internal types.
@@ -34024,7 +34024,7 @@ export namespace proto {
         interface ITimeFormatAction {
 
             /** TimeFormatAction isTwentyFourHourFormatEnabled */
-            isTwentyFourHourFormatEnabled?: (boolean|null);
+            isTwentyFourHourFormatEnabled?: (boolean | null);
         }
 
         /** Represents a TimeFormatAction. */
@@ -34070,7 +34070,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.TimeFormatAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.TimeFormatAction;
 
             /**
              * Decodes a TimeFormatAction message from the specified reader or buffer, length delimited.
@@ -34079,14 +34079,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.TimeFormatAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.TimeFormatAction;
 
             /**
              * Verifies a TimeFormatAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a TimeFormatAction message from a plain object. Also converts values to their respective internal types.
@@ -34114,7 +34114,7 @@ export namespace proto {
         interface IUnarchiveChatsSetting {
 
             /** UnarchiveChatsSetting unarchiveChats */
-            unarchiveChats?: (boolean|null);
+            unarchiveChats?: (boolean | null);
         }
 
         /** Represents an UnarchiveChatsSetting. */
@@ -34160,7 +34160,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.UnarchiveChatsSetting;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.UnarchiveChatsSetting;
 
             /**
              * Decodes an UnarchiveChatsSetting message from the specified reader or buffer, length delimited.
@@ -34169,14 +34169,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.UnarchiveChatsSetting;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.UnarchiveChatsSetting;
 
             /**
              * Verifies an UnarchiveChatsSetting message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates an UnarchiveChatsSetting message from a plain object. Also converts values to their respective internal types.
@@ -34204,7 +34204,7 @@ export namespace proto {
         interface IUserStatusMuteAction {
 
             /** UserStatusMuteAction muted */
-            muted?: (boolean|null);
+            muted?: (boolean | null);
         }
 
         /** Represents a UserStatusMuteAction. */
@@ -34250,7 +34250,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.UserStatusMuteAction;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncActionValue.UserStatusMuteAction;
 
             /**
              * Decodes a UserStatusMuteAction message from the specified reader or buffer, length delimited.
@@ -34259,14 +34259,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.UserStatusMuteAction;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncActionValue.UserStatusMuteAction;
 
             /**
              * Verifies a UserStatusMuteAction message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a UserStatusMuteAction message from a plain object. Also converts values to their respective internal types.
@@ -34295,7 +34295,7 @@ export namespace proto {
     interface ISyncdIndex {
 
         /** SyncdIndex blob */
-        blob?: (Uint8Array|null);
+        blob?: (Uint8Array | null);
     }
 
     /** Represents a SyncdIndex. */
@@ -34341,7 +34341,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncdIndex;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncdIndex;
 
         /**
          * Decodes a SyncdIndex message from the specified reader or buffer, length delimited.
@@ -34350,14 +34350,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncdIndex;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncdIndex;
 
         /**
          * Verifies a SyncdIndex message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a SyncdIndex message from a plain object. Also converts values to their respective internal types.
@@ -34385,10 +34385,10 @@ export namespace proto {
     interface ISyncdMutation {
 
         /** SyncdMutation operation */
-        operation?: (proto.SyncdMutation.SyncdOperation|null);
+        operation?: (proto.SyncdMutation.SyncdOperation | null);
 
         /** SyncdMutation record */
-        record?: (proto.ISyncdRecord|null);
+        record?: (proto.ISyncdRecord | null);
     }
 
     /** Represents a SyncdMutation. */
@@ -34404,7 +34404,7 @@ export namespace proto {
         public operation: proto.SyncdMutation.SyncdOperation;
 
         /** SyncdMutation record. */
-        public record?: (proto.ISyncdRecord|null);
+        public record?: (proto.ISyncdRecord | null);
 
         /**
          * Creates a new SyncdMutation instance using the specified properties.
@@ -34437,7 +34437,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncdMutation;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncdMutation;
 
         /**
          * Decodes a SyncdMutation message from the specified reader or buffer, length delimited.
@@ -34446,14 +34446,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncdMutation;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncdMutation;
 
         /**
          * Verifies a SyncdMutation message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a SyncdMutation message from a plain object. Also converts values to their respective internal types.
@@ -34490,7 +34490,7 @@ export namespace proto {
     interface ISyncdMutations {
 
         /** SyncdMutations mutations */
-        mutations?: (proto.ISyncdMutation[]|null);
+        mutations?: (proto.ISyncdMutation[] | null);
     }
 
     /** Represents a SyncdMutations. */
@@ -34536,7 +34536,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncdMutations;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncdMutations;
 
         /**
          * Decodes a SyncdMutations message from the specified reader or buffer, length delimited.
@@ -34545,14 +34545,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncdMutations;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncdMutations;
 
         /**
          * Verifies a SyncdMutations message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a SyncdMutations message from a plain object. Also converts values to their respective internal types.
@@ -34580,31 +34580,31 @@ export namespace proto {
     interface ISyncdPatch {
 
         /** SyncdPatch version */
-        version?: (proto.ISyncdVersion|null);
+        version?: (proto.ISyncdVersion | null);
 
         /** SyncdPatch mutations */
-        mutations?: (proto.ISyncdMutation[]|null);
+        mutations?: (proto.ISyncdMutation[] | null);
 
         /** SyncdPatch externalMutations */
-        externalMutations?: (proto.IExternalBlobReference|null);
+        externalMutations?: (proto.IExternalBlobReference | null);
 
         /** SyncdPatch snapshotMac */
-        snapshotMac?: (Uint8Array|null);
+        snapshotMac?: (Uint8Array | null);
 
         /** SyncdPatch patchMac */
-        patchMac?: (Uint8Array|null);
+        patchMac?: (Uint8Array | null);
 
         /** SyncdPatch keyId */
-        keyId?: (proto.IKeyId|null);
+        keyId?: (proto.IKeyId | null);
 
         /** SyncdPatch exitCode */
-        exitCode?: (proto.IExitCode|null);
+        exitCode?: (proto.IExitCode | null);
 
         /** SyncdPatch deviceIndex */
-        deviceIndex?: (number|null);
+        deviceIndex?: (number | null);
 
         /** SyncdPatch clientDebugData */
-        clientDebugData?: (Uint8Array|null);
+        clientDebugData?: (Uint8Array | null);
     }
 
     /** Represents a SyncdPatch. */
@@ -34617,13 +34617,13 @@ export namespace proto {
         constructor(properties?: proto.ISyncdPatch);
 
         /** SyncdPatch version. */
-        public version?: (proto.ISyncdVersion|null);
+        public version?: (proto.ISyncdVersion | null);
 
         /** SyncdPatch mutations. */
         public mutations: proto.ISyncdMutation[];
 
         /** SyncdPatch externalMutations. */
-        public externalMutations?: (proto.IExternalBlobReference|null);
+        public externalMutations?: (proto.IExternalBlobReference | null);
 
         /** SyncdPatch snapshotMac. */
         public snapshotMac: Uint8Array;
@@ -34632,10 +34632,10 @@ export namespace proto {
         public patchMac: Uint8Array;
 
         /** SyncdPatch keyId. */
-        public keyId?: (proto.IKeyId|null);
+        public keyId?: (proto.IKeyId | null);
 
         /** SyncdPatch exitCode. */
-        public exitCode?: (proto.IExitCode|null);
+        public exitCode?: (proto.IExitCode | null);
 
         /** SyncdPatch deviceIndex. */
         public deviceIndex: number;
@@ -34674,7 +34674,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncdPatch;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncdPatch;
 
         /**
          * Decodes a SyncdPatch message from the specified reader or buffer, length delimited.
@@ -34683,14 +34683,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncdPatch;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncdPatch;
 
         /**
          * Verifies a SyncdPatch message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a SyncdPatch message from a plain object. Also converts values to their respective internal types.
@@ -34718,13 +34718,13 @@ export namespace proto {
     interface ISyncdRecord {
 
         /** SyncdRecord index */
-        index?: (proto.ISyncdIndex|null);
+        index?: (proto.ISyncdIndex | null);
 
         /** SyncdRecord value */
-        value?: (proto.ISyncdValue|null);
+        value?: (proto.ISyncdValue | null);
 
         /** SyncdRecord keyId */
-        keyId?: (proto.IKeyId|null);
+        keyId?: (proto.IKeyId | null);
     }
 
     /** Represents a SyncdRecord. */
@@ -34737,13 +34737,13 @@ export namespace proto {
         constructor(properties?: proto.ISyncdRecord);
 
         /** SyncdRecord index. */
-        public index?: (proto.ISyncdIndex|null);
+        public index?: (proto.ISyncdIndex | null);
 
         /** SyncdRecord value. */
-        public value?: (proto.ISyncdValue|null);
+        public value?: (proto.ISyncdValue | null);
 
         /** SyncdRecord keyId. */
-        public keyId?: (proto.IKeyId|null);
+        public keyId?: (proto.IKeyId | null);
 
         /**
          * Creates a new SyncdRecord instance using the specified properties.
@@ -34776,7 +34776,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncdRecord;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncdRecord;
 
         /**
          * Decodes a SyncdRecord message from the specified reader or buffer, length delimited.
@@ -34785,14 +34785,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncdRecord;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncdRecord;
 
         /**
          * Verifies a SyncdRecord message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a SyncdRecord message from a plain object. Also converts values to their respective internal types.
@@ -34820,16 +34820,16 @@ export namespace proto {
     interface ISyncdSnapshot {
 
         /** SyncdSnapshot version */
-        version?: (proto.ISyncdVersion|null);
+        version?: (proto.ISyncdVersion | null);
 
         /** SyncdSnapshot records */
-        records?: (proto.ISyncdRecord[]|null);
+        records?: (proto.ISyncdRecord[] | null);
 
         /** SyncdSnapshot mac */
-        mac?: (Uint8Array|null);
+        mac?: (Uint8Array | null);
 
         /** SyncdSnapshot keyId */
-        keyId?: (proto.IKeyId|null);
+        keyId?: (proto.IKeyId | null);
     }
 
     /** Represents a SyncdSnapshot. */
@@ -34842,7 +34842,7 @@ export namespace proto {
         constructor(properties?: proto.ISyncdSnapshot);
 
         /** SyncdSnapshot version. */
-        public version?: (proto.ISyncdVersion|null);
+        public version?: (proto.ISyncdVersion | null);
 
         /** SyncdSnapshot records. */
         public records: proto.ISyncdRecord[];
@@ -34851,7 +34851,7 @@ export namespace proto {
         public mac: Uint8Array;
 
         /** SyncdSnapshot keyId. */
-        public keyId?: (proto.IKeyId|null);
+        public keyId?: (proto.IKeyId | null);
 
         /**
          * Creates a new SyncdSnapshot instance using the specified properties.
@@ -34884,7 +34884,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncdSnapshot;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncdSnapshot;
 
         /**
          * Decodes a SyncdSnapshot message from the specified reader or buffer, length delimited.
@@ -34893,14 +34893,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncdSnapshot;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncdSnapshot;
 
         /**
          * Verifies a SyncdSnapshot message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a SyncdSnapshot message from a plain object. Also converts values to their respective internal types.
@@ -34928,7 +34928,7 @@ export namespace proto {
     interface ISyncdValue {
 
         /** SyncdValue blob */
-        blob?: (Uint8Array|null);
+        blob?: (Uint8Array | null);
     }
 
     /** Represents a SyncdValue. */
@@ -34974,7 +34974,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncdValue;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncdValue;
 
         /**
          * Decodes a SyncdValue message from the specified reader or buffer, length delimited.
@@ -34983,14 +34983,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncdValue;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncdValue;
 
         /**
          * Verifies a SyncdValue message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a SyncdValue message from a plain object. Also converts values to their respective internal types.
@@ -35018,7 +35018,7 @@ export namespace proto {
     interface ISyncdVersion {
 
         /** SyncdVersion version */
-        version?: (number|Long|null);
+        version?: (number | Long | null);
     }
 
     /** Represents a SyncdVersion. */
@@ -35031,7 +35031,7 @@ export namespace proto {
         constructor(properties?: proto.ISyncdVersion);
 
         /** SyncdVersion version. */
-        public version: (number|Long);
+        public version: (number | Long);
 
         /**
          * Creates a new SyncdVersion instance using the specified properties.
@@ -35064,7 +35064,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncdVersion;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.SyncdVersion;
 
         /**
          * Decodes a SyncdVersion message from the specified reader or buffer, length delimited.
@@ -35073,14 +35073,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncdVersion;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.SyncdVersion;
 
         /**
          * Verifies a SyncdVersion message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a SyncdVersion message from a plain object. Also converts values to their respective internal types.
@@ -35108,16 +35108,16 @@ export namespace proto {
     interface ITemplateButton {
 
         /** TemplateButton index */
-        index?: (number|null);
+        index?: (number | null);
 
         /** TemplateButton quickReplyButton */
-        quickReplyButton?: (proto.TemplateButton.IQuickReplyButton|null);
+        quickReplyButton?: (proto.TemplateButton.IQuickReplyButton | null);
 
         /** TemplateButton urlButton */
-        urlButton?: (proto.TemplateButton.IURLButton|null);
+        urlButton?: (proto.TemplateButton.IURLButton | null);
 
         /** TemplateButton callButton */
-        callButton?: (proto.TemplateButton.ICallButton|null);
+        callButton?: (proto.TemplateButton.ICallButton | null);
     }
 
     /** Represents a TemplateButton. */
@@ -35133,16 +35133,16 @@ export namespace proto {
         public index: number;
 
         /** TemplateButton quickReplyButton. */
-        public quickReplyButton?: (proto.TemplateButton.IQuickReplyButton|null);
+        public quickReplyButton?: (proto.TemplateButton.IQuickReplyButton | null);
 
         /** TemplateButton urlButton. */
-        public urlButton?: (proto.TemplateButton.IURLButton|null);
+        public urlButton?: (proto.TemplateButton.IURLButton | null);
 
         /** TemplateButton callButton. */
-        public callButton?: (proto.TemplateButton.ICallButton|null);
+        public callButton?: (proto.TemplateButton.ICallButton | null);
 
         /** TemplateButton button. */
-        public button?: ("quickReplyButton"|"urlButton"|"callButton");
+        public button?: ("quickReplyButton" | "urlButton" | "callButton");
 
         /**
          * Creates a new TemplateButton instance using the specified properties.
@@ -35175,7 +35175,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.TemplateButton;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.TemplateButton;
 
         /**
          * Decodes a TemplateButton message from the specified reader or buffer, length delimited.
@@ -35184,14 +35184,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.TemplateButton;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.TemplateButton;
 
         /**
          * Verifies a TemplateButton message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a TemplateButton message from a plain object. Also converts values to their respective internal types.
@@ -35221,10 +35221,10 @@ export namespace proto {
         interface ICallButton {
 
             /** CallButton displayText */
-            displayText?: (proto.Message.IHighlyStructuredMessage|null);
+            displayText?: (proto.Message.IHighlyStructuredMessage | null);
 
             /** CallButton phoneNumber */
-            phoneNumber?: (proto.Message.IHighlyStructuredMessage|null);
+            phoneNumber?: (proto.Message.IHighlyStructuredMessage | null);
         }
 
         /** Represents a CallButton. */
@@ -35237,10 +35237,10 @@ export namespace proto {
             constructor(properties?: proto.TemplateButton.ICallButton);
 
             /** CallButton displayText. */
-            public displayText?: (proto.Message.IHighlyStructuredMessage|null);
+            public displayText?: (proto.Message.IHighlyStructuredMessage | null);
 
             /** CallButton phoneNumber. */
-            public phoneNumber?: (proto.Message.IHighlyStructuredMessage|null);
+            public phoneNumber?: (proto.Message.IHighlyStructuredMessage | null);
 
             /**
              * Creates a new CallButton instance using the specified properties.
@@ -35273,7 +35273,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.TemplateButton.CallButton;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.TemplateButton.CallButton;
 
             /**
              * Decodes a CallButton message from the specified reader or buffer, length delimited.
@@ -35282,14 +35282,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.TemplateButton.CallButton;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.TemplateButton.CallButton;
 
             /**
              * Verifies a CallButton message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a CallButton message from a plain object. Also converts values to their respective internal types.
@@ -35317,10 +35317,10 @@ export namespace proto {
         interface IQuickReplyButton {
 
             /** QuickReplyButton displayText */
-            displayText?: (proto.Message.IHighlyStructuredMessage|null);
+            displayText?: (proto.Message.IHighlyStructuredMessage | null);
 
             /** QuickReplyButton id */
-            id?: (string|null);
+            id?: (string | null);
         }
 
         /** Represents a QuickReplyButton. */
@@ -35333,7 +35333,7 @@ export namespace proto {
             constructor(properties?: proto.TemplateButton.IQuickReplyButton);
 
             /** QuickReplyButton displayText. */
-            public displayText?: (proto.Message.IHighlyStructuredMessage|null);
+            public displayText?: (proto.Message.IHighlyStructuredMessage | null);
 
             /** QuickReplyButton id. */
             public id: string;
@@ -35369,7 +35369,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.TemplateButton.QuickReplyButton;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.TemplateButton.QuickReplyButton;
 
             /**
              * Decodes a QuickReplyButton message from the specified reader or buffer, length delimited.
@@ -35378,14 +35378,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.TemplateButton.QuickReplyButton;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.TemplateButton.QuickReplyButton;
 
             /**
              * Verifies a QuickReplyButton message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a QuickReplyButton message from a plain object. Also converts values to their respective internal types.
@@ -35413,10 +35413,10 @@ export namespace proto {
         interface IURLButton {
 
             /** URLButton displayText */
-            displayText?: (proto.Message.IHighlyStructuredMessage|null);
+            displayText?: (proto.Message.IHighlyStructuredMessage | null);
 
             /** URLButton url */
-            url?: (proto.Message.IHighlyStructuredMessage|null);
+            url?: (proto.Message.IHighlyStructuredMessage | null);
         }
 
         /** Represents a URLButton. */
@@ -35429,10 +35429,10 @@ export namespace proto {
             constructor(properties?: proto.TemplateButton.IURLButton);
 
             /** URLButton displayText. */
-            public displayText?: (proto.Message.IHighlyStructuredMessage|null);
+            public displayText?: (proto.Message.IHighlyStructuredMessage | null);
 
             /** URLButton url. */
-            public url?: (proto.Message.IHighlyStructuredMessage|null);
+            public url?: (proto.Message.IHighlyStructuredMessage | null);
 
             /**
              * Creates a new URLButton instance using the specified properties.
@@ -35465,7 +35465,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.TemplateButton.URLButton;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.TemplateButton.URLButton;
 
             /**
              * Decodes a URLButton message from the specified reader or buffer, length delimited.
@@ -35474,14 +35474,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.TemplateButton.URLButton;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.TemplateButton.URLButton;
 
             /**
              * Verifies a URLButton message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a URLButton message from a plain object. Also converts values to their respective internal types.
@@ -35513,19 +35513,19 @@ export namespace proto {
         userJid: string;
 
         /** UserReceipt receiptTimestamp */
-        receiptTimestamp?: (number|Long|null);
+        receiptTimestamp?: (number | Long | null);
 
         /** UserReceipt readTimestamp */
-        readTimestamp?: (number|Long|null);
+        readTimestamp?: (number | Long | null);
 
         /** UserReceipt playedTimestamp */
-        playedTimestamp?: (number|Long|null);
+        playedTimestamp?: (number | Long | null);
 
         /** UserReceipt pendingDeviceJid */
-        pendingDeviceJid?: (string[]|null);
+        pendingDeviceJid?: (string[] | null);
 
         /** UserReceipt deliveredDeviceJid */
-        deliveredDeviceJid?: (string[]|null);
+        deliveredDeviceJid?: (string[] | null);
     }
 
     /** Represents a UserReceipt. */
@@ -35541,13 +35541,13 @@ export namespace proto {
         public userJid: string;
 
         /** UserReceipt receiptTimestamp. */
-        public receiptTimestamp: (number|Long);
+        public receiptTimestamp: (number | Long);
 
         /** UserReceipt readTimestamp. */
-        public readTimestamp: (number|Long);
+        public readTimestamp: (number | Long);
 
         /** UserReceipt playedTimestamp. */
-        public playedTimestamp: (number|Long);
+        public playedTimestamp: (number | Long);
 
         /** UserReceipt pendingDeviceJid. */
         public pendingDeviceJid: string[];
@@ -35586,7 +35586,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.UserReceipt;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.UserReceipt;
 
         /**
          * Decodes a UserReceipt message from the specified reader or buffer, length delimited.
@@ -35595,14 +35595,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.UserReceipt;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.UserReceipt;
 
         /**
          * Verifies a UserReceipt message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a UserReceipt message from a plain object. Also converts values to their respective internal types.
@@ -35630,13 +35630,13 @@ export namespace proto {
     interface IVerifiedNameCertificate {
 
         /** VerifiedNameCertificate details */
-        details?: (Uint8Array|null);
+        details?: (Uint8Array | null);
 
         /** VerifiedNameCertificate signature */
-        signature?: (Uint8Array|null);
+        signature?: (Uint8Array | null);
 
         /** VerifiedNameCertificate serverSignature */
-        serverSignature?: (Uint8Array|null);
+        serverSignature?: (Uint8Array | null);
     }
 
     /** Represents a VerifiedNameCertificate. */
@@ -35688,7 +35688,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.VerifiedNameCertificate;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.VerifiedNameCertificate;
 
         /**
          * Decodes a VerifiedNameCertificate message from the specified reader or buffer, length delimited.
@@ -35697,14 +35697,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.VerifiedNameCertificate;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.VerifiedNameCertificate;
 
         /**
          * Verifies a VerifiedNameCertificate message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a VerifiedNameCertificate message from a plain object. Also converts values to their respective internal types.
@@ -35734,19 +35734,19 @@ export namespace proto {
         interface IDetails {
 
             /** Details serial */
-            serial?: (number|Long|null);
+            serial?: (number | Long | null);
 
             /** Details issuer */
-            issuer?: (string|null);
+            issuer?: (string | null);
 
             /** Details verifiedName */
-            verifiedName?: (string|null);
+            verifiedName?: (string | null);
 
             /** Details localizedNames */
-            localizedNames?: (proto.ILocalizedName[]|null);
+            localizedNames?: (proto.ILocalizedName[] | null);
 
             /** Details issueTime */
-            issueTime?: (number|Long|null);
+            issueTime?: (number | Long | null);
         }
 
         /** Represents a Details. */
@@ -35759,7 +35759,7 @@ export namespace proto {
             constructor(properties?: proto.VerifiedNameCertificate.IDetails);
 
             /** Details serial. */
-            public serial: (number|Long);
+            public serial: (number | Long);
 
             /** Details issuer. */
             public issuer: string;
@@ -35771,7 +35771,7 @@ export namespace proto {
             public localizedNames: proto.ILocalizedName[];
 
             /** Details issueTime. */
-            public issueTime: (number|Long);
+            public issueTime: (number | Long);
 
             /**
              * Creates a new Details instance using the specified properties.
@@ -35804,7 +35804,7 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.VerifiedNameCertificate.Details;
+            public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.VerifiedNameCertificate.Details;
 
             /**
              * Decodes a Details message from the specified reader or buffer, length delimited.
@@ -35813,14 +35813,14 @@ export namespace proto {
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.VerifiedNameCertificate.Details;
+            public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.VerifiedNameCertificate.Details;
 
             /**
              * Verifies a Details message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-            public static verify(message: { [k: string]: any }): (string|null);
+            public static verify(message: { [k: string]: any }): (string | null);
 
             /**
              * Creates a Details message from a plain object. Also converts values to their respective internal types.
@@ -35849,10 +35849,10 @@ export namespace proto {
     interface IWallpaperSettings {
 
         /** WallpaperSettings filename */
-        filename?: (string|null);
+        filename?: (string | null);
 
         /** WallpaperSettings opacity */
-        opacity?: (number|null);
+        opacity?: (number | null);
     }
 
     /** Represents a WallpaperSettings. */
@@ -35901,7 +35901,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.WallpaperSettings;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.WallpaperSettings;
 
         /**
          * Decodes a WallpaperSettings message from the specified reader or buffer, length delimited.
@@ -35910,14 +35910,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.WallpaperSettings;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.WallpaperSettings;
 
         /**
          * Verifies a WallpaperSettings message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a WallpaperSettings message from a plain object. Also converts values to their respective internal types.
@@ -35945,139 +35945,139 @@ export namespace proto {
     interface IWebFeatures {
 
         /** WebFeatures labelsDisplay */
-        labelsDisplay?: (proto.WebFeatures.Flag|null);
+        labelsDisplay?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures voipIndividualOutgoing */
-        voipIndividualOutgoing?: (proto.WebFeatures.Flag|null);
+        voipIndividualOutgoing?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures groupsV3 */
-        groupsV3?: (proto.WebFeatures.Flag|null);
+        groupsV3?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures groupsV3Create */
-        groupsV3Create?: (proto.WebFeatures.Flag|null);
+        groupsV3Create?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures changeNumberV2 */
-        changeNumberV2?: (proto.WebFeatures.Flag|null);
+        changeNumberV2?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures queryStatusV3Thumbnail */
-        queryStatusV3Thumbnail?: (proto.WebFeatures.Flag|null);
+        queryStatusV3Thumbnail?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures liveLocations */
-        liveLocations?: (proto.WebFeatures.Flag|null);
+        liveLocations?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures queryVname */
-        queryVname?: (proto.WebFeatures.Flag|null);
+        queryVname?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures voipIndividualIncoming */
-        voipIndividualIncoming?: (proto.WebFeatures.Flag|null);
+        voipIndividualIncoming?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures quickRepliesQuery */
-        quickRepliesQuery?: (proto.WebFeatures.Flag|null);
+        quickRepliesQuery?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures payments */
-        payments?: (proto.WebFeatures.Flag|null);
+        payments?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures stickerPackQuery */
-        stickerPackQuery?: (proto.WebFeatures.Flag|null);
+        stickerPackQuery?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures liveLocationsFinal */
-        liveLocationsFinal?: (proto.WebFeatures.Flag|null);
+        liveLocationsFinal?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures labelsEdit */
-        labelsEdit?: (proto.WebFeatures.Flag|null);
+        labelsEdit?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures mediaUpload */
-        mediaUpload?: (proto.WebFeatures.Flag|null);
+        mediaUpload?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures mediaUploadRichQuickReplies */
-        mediaUploadRichQuickReplies?: (proto.WebFeatures.Flag|null);
+        mediaUploadRichQuickReplies?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures vnameV2 */
-        vnameV2?: (proto.WebFeatures.Flag|null);
+        vnameV2?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures videoPlaybackUrl */
-        videoPlaybackUrl?: (proto.WebFeatures.Flag|null);
+        videoPlaybackUrl?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures statusRanking */
-        statusRanking?: (proto.WebFeatures.Flag|null);
+        statusRanking?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures voipIndividualVideo */
-        voipIndividualVideo?: (proto.WebFeatures.Flag|null);
+        voipIndividualVideo?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures thirdPartyStickers */
-        thirdPartyStickers?: (proto.WebFeatures.Flag|null);
+        thirdPartyStickers?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures frequentlyForwardedSetting */
-        frequentlyForwardedSetting?: (proto.WebFeatures.Flag|null);
+        frequentlyForwardedSetting?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures groupsV4JoinPermission */
-        groupsV4JoinPermission?: (proto.WebFeatures.Flag|null);
+        groupsV4JoinPermission?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures recentStickers */
-        recentStickers?: (proto.WebFeatures.Flag|null);
+        recentStickers?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures catalog */
-        catalog?: (proto.WebFeatures.Flag|null);
+        catalog?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures starredStickers */
-        starredStickers?: (proto.WebFeatures.Flag|null);
+        starredStickers?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures voipGroupCall */
-        voipGroupCall?: (proto.WebFeatures.Flag|null);
+        voipGroupCall?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures templateMessage */
-        templateMessage?: (proto.WebFeatures.Flag|null);
+        templateMessage?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures templateMessageInteractivity */
-        templateMessageInteractivity?: (proto.WebFeatures.Flag|null);
+        templateMessageInteractivity?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures ephemeralMessages */
-        ephemeralMessages?: (proto.WebFeatures.Flag|null);
+        ephemeralMessages?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures e2ENotificationSync */
-        e2ENotificationSync?: (proto.WebFeatures.Flag|null);
+        e2ENotificationSync?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures recentStickersV2 */
-        recentStickersV2?: (proto.WebFeatures.Flag|null);
+        recentStickersV2?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures recentStickersV3 */
-        recentStickersV3?: (proto.WebFeatures.Flag|null);
+        recentStickersV3?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures userNotice */
-        userNotice?: (proto.WebFeatures.Flag|null);
+        userNotice?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures support */
-        support?: (proto.WebFeatures.Flag|null);
+        support?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures groupUiiCleanup */
-        groupUiiCleanup?: (proto.WebFeatures.Flag|null);
+        groupUiiCleanup?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures groupDogfoodingInternalOnly */
-        groupDogfoodingInternalOnly?: (proto.WebFeatures.Flag|null);
+        groupDogfoodingInternalOnly?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures settingsSync */
-        settingsSync?: (proto.WebFeatures.Flag|null);
+        settingsSync?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures archiveV2 */
-        archiveV2?: (proto.WebFeatures.Flag|null);
+        archiveV2?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures ephemeralAllowGroupMembers */
-        ephemeralAllowGroupMembers?: (proto.WebFeatures.Flag|null);
+        ephemeralAllowGroupMembers?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures ephemeral24HDuration */
-        ephemeral24HDuration?: (proto.WebFeatures.Flag|null);
+        ephemeral24HDuration?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures mdForceUpgrade */
-        mdForceUpgrade?: (proto.WebFeatures.Flag|null);
+        mdForceUpgrade?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures disappearingMode */
-        disappearingMode?: (proto.WebFeatures.Flag|null);
+        disappearingMode?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures externalMdOptInAvailable */
-        externalMdOptInAvailable?: (proto.WebFeatures.Flag|null);
+        externalMdOptInAvailable?: (proto.WebFeatures.Flag | null);
 
         /** WebFeatures noDeleteMessageTimeLimit */
-        noDeleteMessageTimeLimit?: (proto.WebFeatures.Flag|null);
+        noDeleteMessageTimeLimit?: (proto.WebFeatures.Flag | null);
     }
 
     /** Represents a WebFeatures. */
@@ -36255,7 +36255,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.WebFeatures;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.WebFeatures;
 
         /**
          * Decodes a WebFeatures message from the specified reader or buffer, length delimited.
@@ -36264,14 +36264,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.WebFeatures;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.WebFeatures;
 
         /**
          * Verifies a WebFeatures message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a WebFeatures message from a plain object. Also converts values to their respective internal types.
@@ -36313,163 +36313,163 @@ export namespace proto {
         key: proto.IMessageKey;
 
         /** WebMessageInfo message */
-        message?: (proto.IMessage|null);
+        message?: (proto.IMessage | null);
 
         /** WebMessageInfo messageTimestamp */
-        messageTimestamp?: (number|Long|null);
+        messageTimestamp?: (number | Long | null);
 
         /** WebMessageInfo status */
-        status?: (proto.WebMessageInfo.Status|null);
+        status?: (proto.WebMessageInfo.Status | null);
 
         /** WebMessageInfo participant */
-        participant?: (string|null);
+        participant?: (string | null);
 
         /** WebMessageInfo messageC2STimestamp */
-        messageC2STimestamp?: (number|Long|null);
+        messageC2STimestamp?: (number | Long | null);
 
         /** WebMessageInfo ignore */
-        ignore?: (boolean|null);
+        ignore?: (boolean | null);
 
         /** WebMessageInfo starred */
-        starred?: (boolean|null);
+        starred?: (boolean | null);
 
         /** WebMessageInfo broadcast */
-        broadcast?: (boolean|null);
+        broadcast?: (boolean | null);
 
         /** WebMessageInfo pushName */
-        pushName?: (string|null);
+        pushName?: (string | null);
 
         /** WebMessageInfo mediaCiphertextSha256 */
-        mediaCiphertextSha256?: (Uint8Array|null);
+        mediaCiphertextSha256?: (Uint8Array | null);
 
         /** WebMessageInfo multicast */
-        multicast?: (boolean|null);
+        multicast?: (boolean | null);
 
         /** WebMessageInfo urlText */
-        urlText?: (boolean|null);
+        urlText?: (boolean | null);
 
         /** WebMessageInfo urlNumber */
-        urlNumber?: (boolean|null);
+        urlNumber?: (boolean | null);
 
         /** WebMessageInfo messageStubType */
-        messageStubType?: (proto.WebMessageInfo.StubType|null);
+        messageStubType?: (proto.WebMessageInfo.StubType | null);
 
         /** WebMessageInfo clearMedia */
-        clearMedia?: (boolean|null);
+        clearMedia?: (boolean | null);
 
         /** WebMessageInfo messageStubParameters */
-        messageStubParameters?: (string[]|null);
+        messageStubParameters?: (string[] | null);
 
         /** WebMessageInfo duration */
-        duration?: (number|null);
+        duration?: (number | null);
 
         /** WebMessageInfo labels */
-        labels?: (string[]|null);
+        labels?: (string[] | null);
 
         /** WebMessageInfo paymentInfo */
-        paymentInfo?: (proto.IPaymentInfo|null);
+        paymentInfo?: (proto.IPaymentInfo | null);
 
         /** WebMessageInfo finalLiveLocation */
-        finalLiveLocation?: (proto.Message.ILiveLocationMessage|null);
+        finalLiveLocation?: (proto.Message.ILiveLocationMessage | null);
 
         /** WebMessageInfo quotedPaymentInfo */
-        quotedPaymentInfo?: (proto.IPaymentInfo|null);
+        quotedPaymentInfo?: (proto.IPaymentInfo | null);
 
         /** WebMessageInfo ephemeralStartTimestamp */
-        ephemeralStartTimestamp?: (number|Long|null);
+        ephemeralStartTimestamp?: (number | Long | null);
 
         /** WebMessageInfo ephemeralDuration */
-        ephemeralDuration?: (number|null);
+        ephemeralDuration?: (number | null);
 
         /** WebMessageInfo ephemeralOffToOn */
-        ephemeralOffToOn?: (boolean|null);
+        ephemeralOffToOn?: (boolean | null);
 
         /** WebMessageInfo ephemeralOutOfSync */
-        ephemeralOutOfSync?: (boolean|null);
+        ephemeralOutOfSync?: (boolean | null);
 
         /** WebMessageInfo bizPrivacyStatus */
-        bizPrivacyStatus?: (proto.WebMessageInfo.BizPrivacyStatus|null);
+        bizPrivacyStatus?: (proto.WebMessageInfo.BizPrivacyStatus | null);
 
         /** WebMessageInfo verifiedBizName */
-        verifiedBizName?: (string|null);
+        verifiedBizName?: (string | null);
 
         /** WebMessageInfo mediaData */
-        mediaData?: (proto.IMediaData|null);
+        mediaData?: (proto.IMediaData | null);
 
         /** WebMessageInfo photoChange */
-        photoChange?: (proto.IPhotoChange|null);
+        photoChange?: (proto.IPhotoChange | null);
 
         /** WebMessageInfo userReceipt */
-        userReceipt?: (proto.IUserReceipt[]|null);
+        userReceipt?: (proto.IUserReceipt[] | null);
 
         /** WebMessageInfo reactions */
-        reactions?: (proto.IReaction[]|null);
+        reactions?: (proto.IReaction[] | null);
 
         /** WebMessageInfo quotedStickerData */
-        quotedStickerData?: (proto.IMediaData|null);
+        quotedStickerData?: (proto.IMediaData | null);
 
         /** WebMessageInfo futureproofData */
-        futureproofData?: (Uint8Array|null);
+        futureproofData?: (Uint8Array | null);
 
         /** WebMessageInfo statusPsa */
-        statusPsa?: (proto.IStatusPSA|null);
+        statusPsa?: (proto.IStatusPSA | null);
 
         /** WebMessageInfo pollUpdates */
-        pollUpdates?: (proto.IPollUpdate[]|null);
+        pollUpdates?: (proto.IPollUpdate[] | null);
 
         /** WebMessageInfo pollAdditionalMetadata */
-        pollAdditionalMetadata?: (proto.IPollAdditionalMetadata|null);
+        pollAdditionalMetadata?: (proto.IPollAdditionalMetadata | null);
 
         /** WebMessageInfo agentId */
-        agentId?: (string|null);
+        agentId?: (string | null);
 
         /** WebMessageInfo statusAlreadyViewed */
-        statusAlreadyViewed?: (boolean|null);
+        statusAlreadyViewed?: (boolean | null);
 
         /** WebMessageInfo messageSecret */
-        messageSecret?: (Uint8Array|null);
+        messageSecret?: (Uint8Array | null);
 
         /** WebMessageInfo keepInChat */
-        keepInChat?: (proto.IKeepInChat|null);
+        keepInChat?: (proto.IKeepInChat | null);
 
         /** WebMessageInfo originalSelfAuthorUserJidString */
-        originalSelfAuthorUserJidString?: (string|null);
+        originalSelfAuthorUserJidString?: (string | null);
 
         /** WebMessageInfo revokeMessageTimestamp */
-        revokeMessageTimestamp?: (number|Long|null);
+        revokeMessageTimestamp?: (number | Long | null);
 
         /** WebMessageInfo pinInChat */
-        pinInChat?: (proto.IPinInChat|null);
+        pinInChat?: (proto.IPinInChat | null);
 
         /** WebMessageInfo premiumMessageInfo */
-        premiumMessageInfo?: (proto.IPremiumMessageInfo|null);
+        premiumMessageInfo?: (proto.IPremiumMessageInfo | null);
 
         /** WebMessageInfo is1PBizBotMessage */
-        is1PBizBotMessage?: (boolean|null);
+        is1PBizBotMessage?: (boolean | null);
 
         /** WebMessageInfo isGroupHistoryMessage */
-        isGroupHistoryMessage?: (boolean|null);
+        isGroupHistoryMessage?: (boolean | null);
 
         /** WebMessageInfo botMessageInvokerJid */
-        botMessageInvokerJid?: (string|null);
+        botMessageInvokerJid?: (string | null);
 
         /** WebMessageInfo commentMetadata */
-        commentMetadata?: (proto.ICommentMetadata|null);
+        commentMetadata?: (proto.ICommentMetadata | null);
 
         /** WebMessageInfo eventResponses */
-        eventResponses?: (proto.IEventResponse[]|null);
+        eventResponses?: (proto.IEventResponse[] | null);
 
         /** WebMessageInfo reportingTokenInfo */
-        reportingTokenInfo?: (proto.IReportingTokenInfo|null);
+        reportingTokenInfo?: (proto.IReportingTokenInfo | null);
 
         /** WebMessageInfo newsletterServerId */
-        newsletterServerId?: (number|Long|null);
- 
+        newsletterServerId?: (number | Long | null);
+
         /** WebMessageInfo viewOnceMessageV2 */
-        viewOnceMessageV2?: IViewOnceMessageV2 | null; //Adicionado ALEX
+        viewOnceMessageV2?: IViewOnceMessageV2 | null; //Adicionado ALEX 
 
         /** WebMessageInfo viewOnceMessageV2Extension **/
-        viewOnceMessageV2Extension?: IViewOnceMessageV2Extesion | null; //Adicionado ALEX
+        viewOnceMessageV2Extension?: IViewOnceMessageV2Extesion | null; //Adicionado ALEX 
     }
 
     /** Represents a WebMessageInfo. */
@@ -36485,10 +36485,10 @@ export namespace proto {
         public key: proto.IMessageKey;
 
         /** WebMessageInfo message. */
-        public message?: (proto.IMessage|null);
+        public message?: (proto.IMessage | null);
 
         /** WebMessageInfo messageTimestamp. */
-        public messageTimestamp: (number|Long);
+        public messageTimestamp: (number | Long);
 
         /** WebMessageInfo status. */
         public status: proto.WebMessageInfo.Status;
@@ -36497,7 +36497,7 @@ export namespace proto {
         public participant: string;
 
         /** WebMessageInfo messageC2STimestamp. */
-        public messageC2STimestamp: (number|Long);
+        public messageC2STimestamp: (number | Long);
 
         /** WebMessageInfo ignore. */
         public ignore: boolean;
@@ -36539,16 +36539,16 @@ export namespace proto {
         public labels: string[];
 
         /** WebMessageInfo paymentInfo. */
-        public paymentInfo?: (proto.IPaymentInfo|null);
+        public paymentInfo?: (proto.IPaymentInfo | null);
 
         /** WebMessageInfo finalLiveLocation. */
-        public finalLiveLocation?: (proto.Message.ILiveLocationMessage|null);
+        public finalLiveLocation?: (proto.Message.ILiveLocationMessage | null);
 
         /** WebMessageInfo quotedPaymentInfo. */
-        public quotedPaymentInfo?: (proto.IPaymentInfo|null);
+        public quotedPaymentInfo?: (proto.IPaymentInfo | null);
 
         /** WebMessageInfo ephemeralStartTimestamp. */
-        public ephemeralStartTimestamp: (number|Long);
+        public ephemeralStartTimestamp: (number | Long);
 
         /** WebMessageInfo ephemeralDuration. */
         public ephemeralDuration: number;
@@ -36566,10 +36566,10 @@ export namespace proto {
         public verifiedBizName: string;
 
         /** WebMessageInfo mediaData. */
-        public mediaData?: (proto.IMediaData|null);
+        public mediaData?: (proto.IMediaData | null);
 
         /** WebMessageInfo photoChange. */
-        public photoChange?: (proto.IPhotoChange|null);
+        public photoChange?: (proto.IPhotoChange | null);
 
         /** WebMessageInfo userReceipt. */
         public userReceipt: proto.IUserReceipt[];
@@ -36578,19 +36578,19 @@ export namespace proto {
         public reactions: proto.IReaction[];
 
         /** WebMessageInfo quotedStickerData. */
-        public quotedStickerData?: (proto.IMediaData|null);
+        public quotedStickerData?: (proto.IMediaData | null);
 
         /** WebMessageInfo futureproofData. */
         public futureproofData: Uint8Array;
 
         /** WebMessageInfo statusPsa. */
-        public statusPsa?: (proto.IStatusPSA|null);
+        public statusPsa?: (proto.IStatusPSA | null);
 
         /** WebMessageInfo pollUpdates. */
         public pollUpdates: proto.IPollUpdate[];
 
         /** WebMessageInfo pollAdditionalMetadata. */
-        public pollAdditionalMetadata?: (proto.IPollAdditionalMetadata|null);
+        public pollAdditionalMetadata?: (proto.IPollAdditionalMetadata | null);
 
         /** WebMessageInfo agentId. */
         public agentId: string;
@@ -36602,19 +36602,19 @@ export namespace proto {
         public messageSecret: Uint8Array;
 
         /** WebMessageInfo keepInChat. */
-        public keepInChat?: (proto.IKeepInChat|null);
+        public keepInChat?: (proto.IKeepInChat | null);
 
         /** WebMessageInfo originalSelfAuthorUserJidString. */
         public originalSelfAuthorUserJidString: string;
 
         /** WebMessageInfo revokeMessageTimestamp. */
-        public revokeMessageTimestamp: (number|Long);
+        public revokeMessageTimestamp: (number | Long);
 
         /** WebMessageInfo pinInChat. */
-        public pinInChat?: (proto.IPinInChat|null);
+        public pinInChat?: (proto.IPinInChat | null);
 
         /** WebMessageInfo premiumMessageInfo. */
-        public premiumMessageInfo?: (proto.IPremiumMessageInfo|null);
+        public premiumMessageInfo?: (proto.IPremiumMessageInfo | null);
 
         /** WebMessageInfo is1PBizBotMessage. */
         public is1PBizBotMessage: boolean;
@@ -36626,16 +36626,16 @@ export namespace proto {
         public botMessageInvokerJid: string;
 
         /** WebMessageInfo commentMetadata. */
-        public commentMetadata?: (proto.ICommentMetadata|null);
+        public commentMetadata?: (proto.ICommentMetadata | null);
 
         /** WebMessageInfo eventResponses. */
         public eventResponses: proto.IEventResponse[];
 
         /** WebMessageInfo reportingTokenInfo. */
-        public reportingTokenInfo?: (proto.IReportingTokenInfo|null);
+        public reportingTokenInfo?: (proto.IReportingTokenInfo | null);
 
         /** WebMessageInfo newsletterServerId. */
-        public newsletterServerId: (number|Long);
+        public newsletterServerId: (number | Long);
 
         /**
          * Creates a new WebMessageInfo instance using the specified properties.
@@ -36668,7 +36668,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.WebMessageInfo;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.WebMessageInfo;
 
         /**
          * Decodes a WebMessageInfo message from the specified reader or buffer, length delimited.
@@ -36677,14 +36677,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.WebMessageInfo;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.WebMessageInfo;
 
         /**
          * Verifies a WebMessageInfo message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a WebMessageInfo message from a plain object. Also converts values to their respective internal types.
@@ -36938,16 +36938,16 @@ export namespace proto {
     interface IWebNotificationsInfo {
 
         /** WebNotificationsInfo timestamp */
-        timestamp?: (number|Long|null);
+        timestamp?: (number | Long | null);
 
         /** WebNotificationsInfo unreadChats */
-        unreadChats?: (number|null);
+        unreadChats?: (number | null);
 
         /** WebNotificationsInfo notifyMessageCount */
-        notifyMessageCount?: (number|null);
+        notifyMessageCount?: (number | null);
 
         /** WebNotificationsInfo notifyMessages */
-        notifyMessages?: (proto.IWebMessageInfo[]|null);
+        notifyMessages?: (proto.IWebMessageInfo[] | null);
     }
 
     /** Represents a WebNotificationsInfo. */
@@ -36960,7 +36960,7 @@ export namespace proto {
         constructor(properties?: proto.IWebNotificationsInfo);
 
         /** WebNotificationsInfo timestamp. */
-        public timestamp: (number|Long);
+        public timestamp: (number | Long);
 
         /** WebNotificationsInfo unreadChats. */
         public unreadChats: number;
@@ -37002,7 +37002,7 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.WebNotificationsInfo;
+        public static decode(reader: ($protobuf.Reader | Uint8Array), length?: number): proto.WebNotificationsInfo;
 
         /**
          * Decodes a WebNotificationsInfo message from the specified reader or buffer, length delimited.
@@ -37011,14 +37011,14 @@ export namespace proto {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.WebNotificationsInfo;
+        public static decodeDelimited(reader: ($protobuf.Reader | Uint8Array)): proto.WebNotificationsInfo;
 
         /**
          * Verifies a WebNotificationsInfo message.
          * @param message Plain object to verify
          * @returns `null` if valid, otherwise the reason why it is not
          */
-        public static verify(message: { [k: string]: any }): (string|null);
+        public static verify(message: { [k: string]: any }): (string | null);
 
         /**
          * Creates a WebNotificationsInfo message from a plain object. Also converts values to their respective internal types.

@@ -10,6 +10,7 @@ import { areJidsSameUser, BinaryNode, BinaryNodeAttributes, getBinaryNodeChild, 
 import { makeGroupsSocket } from './groups'
 import ListType = proto.Message.ListMessage.ListType;
 
+
 export const makeMessagesSocket = (config: SocketConfig) => {
 	const {
 		logger,
@@ -127,6 +128,37 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 			await sendReceipt(jid, participant, messageIds, type)
 		}
 	}
+
+	//Tratar envio de listas
+	const patchMessageRequiresBeforeSending = (msg, recipientJids) => {
+		let deviceSentMessage, listMessage;
+	
+		if (deviceSentMessage = msg?.deviceSentMessage?.message?.listMessage) {
+			msg = JSON.parse(JSON.stringify(msg));
+			msg.deviceSentMessage.message.listMessage.listType = proto.Message.ListMessage.ListType.SINGLE_SELECT;
+		}
+	
+		if (listMessage = msg?.listMessage) {
+			msg = JSON.parse(JSON.stringify(msg));
+			msg.listMessage.listType = proto.Message.ListMessage.ListType.SINGLE_SELECT;
+		}
+		
+		if (listMessage = msg?.deviceSentMessage?.message?.buttonsMessage) {
+			msg = JSON.parse(JSON.stringify(msg));
+			// Ajustes necessários para buttonsMessage
+			msg.deviceSentMessage.message.buttonsMessage.headerType = proto.Message.ButtonsMessage.HeaderType.EMPTY; // Exemplo de ajuste
+		}
+	
+		if (listMessage = msg?.buttonsMessage) {
+			msg = JSON.parse(JSON.stringify(msg));
+			// Ajustes necessários para buttonsMessage
+			msg.buttonsMessage.headerType = proto.Message.ButtonsMessage.HeaderType.EMPTY; // Exemplo de ajuste
+		}
+	
+		console.log("patchMessageRequiresBeforeSending: ", JSON.stringify(msg));
+		return msg;
+	};
+	
 
 	/** Bulk read messages. Keys can be from different chats & participants */
 	const readMessages = async(keys: WAMessageKey[]) => {
@@ -271,7 +303,8 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 		extraAttrs?: BinaryNode['attrs']
 	) => {
 		const patched = await patchMessageBeforeSending(message, jids)
-		const bytes = encodeWAMessage(patched)
+		const requiredPatched = patchMessageRequiresBeforeSending(patched, jids);
+		const bytes = encodeWAMessage(requiredPatched)
 
 		let shouldIncludeDeviceIdentity = false
 		const nodes = await Promise.all(
@@ -383,7 +416,8 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 					}
 
 					const patched = await patchMessageBeforeSending(message, devices.map(d => jidEncode(d.user, isLid ? 'lid' : 's.whatsapp.net', d.device)))
-					const bytes = encodeWAMessage(patched)
+					const requiredPatched = patchMessageRequiresBeforeSending(patched, devices.map(d => jidEncode(d.user, isLid ? 'lid' : 's.whatsapp.net', d.device)));
+					const bytes = encodeWAMessage(requiredPatched)
 
 					const { ciphertext, senderKeyDistributionMessage } = await signalRepository.encryptGroupMessage(
 						{
@@ -516,11 +550,24 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 						content: encodeSignedDeviceIdentity(authState.creds.account!, true)
 					})
 
-					logger.debug({ jid }, 'adding device identity')
+					console.log( jid , 'adding device identity')
 				}
 
 				const buttonType = getButtonType(message)
 				if(buttonType) {
+					if(buttonType === 'buttons') {
+						(stanza.content as BinaryNode[]).push({
+							tag: 'biz',
+							attrs: getButtonArgs(message),
+							// content: [
+							// 	{
+							// 		tag: 'buttons',
+							// 		attrs: { },
+							// 		content: null
+							// 	}
+							// ]
+						})
+					}else{
 					(stanza.content as BinaryNode[]).push({
 						tag: 'biz',
 						attrs: { },
@@ -532,11 +579,12 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 						]
 					})
 
-					logger.debug({ jid }, 'adding business node')
+					console.log( jid , 'adding business node')
+					}
 				}
 
-				logger.debug({ msgId }, `sending message to ${participants.length} devices`)
-
+				console.log( msgId, `sending message to ${participants.length} devices`)
+				console.log( "msg stanza: ", JSON.stringify(stanza))
 				await sendNode(stanza)
 			}
 		)
@@ -601,7 +649,10 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 			}
 
 			return { v: '2', type: ListType[type].toLowerCase() }
-		} else {
+		} else if(message.buttonsMessage) {
+			const currentTimestamp = Math.floor(Date.now() / 1000); // Divide por 1000 para converter de milissegundos para segundos
+		return { actual_actors: '2', host_storage: '1', privacy_mode_ts: currentTimestamp.toString() }
+		}else{
 			return {}
 		}
 	}

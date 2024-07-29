@@ -87,7 +87,7 @@ export const makeMessagesRecvSocket = (config: SocketConfig) => {
 			attrs: {
 				id: attrs.id,
 				to: attrs.from,
-				class: tag,
+				class: tag || 'message',
 			}
 		}
 
@@ -699,6 +699,7 @@ export const makeMessagesRecvSocket = (config: SocketConfig) => {
 	}
 
 	const handleMessage = async(node: BinaryNode) => {
+		console.log("Receipt ", JSON.stringify(node));
 		if(shouldIgnoreJid(node.attrs.from!) && node.attrs.from! !== '@s.whatsapp.net') {
 			logger.debug({ key: node.attrs.key }, 'ignored message')
 			await sendMessageAck(node)
@@ -832,6 +833,7 @@ export const makeMessagesRecvSocket = (config: SocketConfig) => {
 		// device could not display the message
 		if(attrs.error) {
 			logger.warn({ attrs }, 'received error in ack')
+			console.log(attrs.error);
 			ev.emit(
 				'messages.update',
 				[
