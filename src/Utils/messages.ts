@@ -493,29 +493,73 @@ export const generateWAMessageContent = async(
 		)
 	}
 
+	const ulid = () => Date.now().toString(36) + Math.random().toString(36).substr(2, 9);
+
+
 	if('buttons' in message && !!message.buttons) {
 		const buttonsMessage: proto.Message.IButtonsMessage = {
-			buttons: message.buttons!.map(b => ({ ...b, type: proto.Message.ButtonsMessage.Button.Type.RESPONSE }))
-		}
+			buttons: message.buttons.map(b => ({
+				...b,
+				type: proto.Message.ButtonsMessage.Button.Type.RESPONSE
+			}))
+		};
+		
+		const interactiveButtons = message.buttons.map(button => ({
+			name: 'quick_reply',
+			buttonParamsJson: JSON.stringify({
+				display_text: button?.buttonText?.displayText,
+				id: button.buttonId
+			})
+		}));
+	
 		if('text' in message) {
-			buttonsMessage.contentText = message.text
-			buttonsMessage.headerType = ButtonType.EMPTY
+			buttonsMessage.contentText = message.text;
+			buttonsMessage.headerType = ButtonType.EMPTY;
 		} else {
 			if('caption' in message) {
-				buttonsMessage.contentText = message.caption
+				buttonsMessage.contentText = message.caption;
 			}
-
-			const type = Object.keys(m)[0].replace('Message', '').toUpperCase()
-			buttonsMessage.headerType = ButtonType[type]
-
-			Object.assign(buttonsMessage, m)
+	
+			const type = Object.keys(m)[0].replace('Message', '').toUpperCase();
+			buttonsMessage.headerType = ButtonType[type];
+	
+			Object.assign(buttonsMessage, m);
 		}
-
+	
 		if('footer' in message && !!message.footer) {
-			buttonsMessage.footerText = message.footer
+			buttonsMessage.footerText = message.footer;
 		}
-
-		m = { buttonsMessage }
+	
+		const interactiveMessage: proto.IMessage = {
+			viewOnceMessage: {
+					message: {
+						messageContextInfo: {
+							deviceListMetadata: {},
+							deviceListMetadataVersion: 2,
+						},
+					interactiveMessage: {
+						header: { 
+							hasMediaAttachment: false // Alterar para true se houver mídia
+						},
+						body: {
+							text: buttonsMessage.contentText
+						},
+						footer: {
+							text: buttonsMessage.footerText
+						},
+						nativeFlowMessage: {
+							buttons: interactiveButtons,
+							messageParamsJson: JSON.stringify({
+								from: 'api',
+								templateId: ulid(),
+							}),
+						}
+					}
+				}
+			}
+		};
+	
+		m = { buttonsMessage };
 	} else if('templateButtons' in message && !!message.templateButtons) {
 		const msg: proto.Message.TemplateMessage.IHydratedFourRowTemplate = {
 			hydratedButtons: message.templateButtons

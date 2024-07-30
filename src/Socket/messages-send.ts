@@ -129,35 +129,85 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 		}
 	}
 
-	//Tratar envio de listas
-	const patchMessageRequiresBeforeSending = (msg, recipientJids) => {
-		let deviceSentMessage, listMessage;
+	const isWhatsAppWeb = (recipientJids) => {
+		return recipientJids.some(jid => {
+		  const decoded = jidDecode(jid);
+		  return decoded && decoded.device === 0 && decoded.server === 's.whatsapp.net';
+		});
+	  };
+	  
+
+	  const patchMessageRequiresBeforeSending = (msg, recipientJids) => {
 	
-		if (deviceSentMessage = msg?.deviceSentMessage?.message?.listMessage) {
+		// Verificar se é uma mensagem de lista
+		if (msg?.deviceSentMessage?.message?.listMessage) {
 			msg = JSON.parse(JSON.stringify(msg));
 			msg.deviceSentMessage.message.listMessage.listType = proto.Message.ListMessage.ListType.SINGLE_SELECT;
 		}
 	
-		if (listMessage = msg?.listMessage) {
+		if (msg?.listMessage) {
 			msg = JSON.parse(JSON.stringify(msg));
 			msg.listMessage.listType = proto.Message.ListMessage.ListType.SINGLE_SELECT;
 		}
-		
-		if (listMessage = msg?.deviceSentMessage?.message?.buttonsMessage) {
+	
+		// Verificar se é uma mensagem de botões no formato antigo
+		if (msg?.deviceSentMessage?.message?.buttonsMessage) {
 			msg = JSON.parse(JSON.stringify(msg));
-			// Ajustes necessários para buttonsMessage
 			msg.deviceSentMessage.message.buttonsMessage.headerType = proto.Message.ButtonsMessage.HeaderType.EMPTY; // Exemplo de ajuste
 		}
 	
-		if (listMessage = msg?.buttonsMessage) {
-			msg = JSON.parse(JSON.stringify(msg));
-			// Ajustes necessários para buttonsMessage
+		// Verificar se o dispositivo é WhatsApp Web
+		if (isWhatsAppWeb(recipientJids)) {
+			//console.log("patchMessageRequiresBeforeSending (WhatsApp Web): ", JSON.stringify(msg.buttonsMessage));
 			msg.buttonsMessage.headerType = proto.Message.ButtonsMessage.HeaderType.EMPTY; // Exemplo de ajuste
-		}
+			return JSON.parse(JSON.stringify({ buttonsMessage: msg.buttonsMessage }));
+		} else if (msg.buttonsMessage && msg.buttonsMessage.buttons) {
+			const ulid = () => Date.now().toString(36) + Math.random().toString(36).substr(2, 9);
 	
-		console.log("patchMessageRequiresBeforeSending: ", JSON.stringify(msg));
-		return msg;
+			// Retornar interactiveMessage para outros dispositivos
+			const interactiveButtons = msg.buttonsMessage.buttons.map(button => ({
+				name: 'quick_reply',
+				buttonParamsJson: JSON.stringify({
+					display_text: button.buttonText.displayText,
+					id: button.buttonId
+				})
+			}));
+	
+			const interactiveMessage: proto.IMessage = {
+				viewOnceMessage: {
+					message: {
+						interactiveMessage: {
+							header: { 
+								hasMediaAttachment: false // Alterar para true se houver mídia
+							},
+							body: {
+								text: msg.buttonsMessage.contentText
+							},
+							footer: {
+								text: msg.buttonsMessage.footerText
+							},
+							nativeFlowMessage: {
+								buttons: interactiveButtons,
+								messageParamsJson: JSON.stringify({
+									from: 'api',
+									templateId: ulid(),
+								}),
+							}
+						}
+					}
+				}
+			};
+	
+			//console.log("patchMessageRequiresBeforeSending (Mobile): ", JSON.stringify(interactiveMessage));
+			return JSON.parse(JSON.stringify( interactiveMessage ));
+		} else {
+			// Se não for uma mensagem de lista ou botões, retornar a mensagem original
+			return JSON.parse(JSON.stringify(msg));
+		}
 	};
+	
+	
+	
 	
 
 	/** Bulk read messages. Keys can be from different chats & participants */
