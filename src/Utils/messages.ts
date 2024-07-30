@@ -325,6 +325,26 @@ export const generateWAMessageContent = async(
 	options: MessageContentGenerationOptions
 ) => {
 	let m: WAMessageContent = {}
+	console.log('generateWAMessageContent ', message);
+
+	if (message?.interactiveMessage) {
+		console.log('interactiveMessage', message?.interactiveMessage);
+		// Envolve o conteúdo da mensagem em `viewOnceMessage`
+		const interactiveMessage: proto.IMessage = {
+			interactiveMessage:  message?.interactiveMessage 
+		}
+		return interactiveMessage;
+	}
+	
+	if (message?.viewOnceMessage) {
+		console.log('viewOnce', message?.viewOnceMessage);
+		// Envolve o conteúdo da mensagem em `viewOnceMessage`
+		const viewOnceMessage: proto.IMessage = {
+			viewOnceMessage: { message: message?.viewOnceMessage?.message }
+		}
+		return viewOnceMessage;
+	}
+
 	if('text' in message) {
 		const extContent = { text: message.text } as WATextMessage
 
@@ -537,9 +557,6 @@ export const generateWAMessageContent = async(
 		m = { listMessage }
 	}
 
-	if('viewOnce' in message && !!message.viewOnce) {
-		m = { viewOnceMessage: { message: m } }
-	}
 
 	if('mentions' in message && message.mentions?.length) {
 		const [messageType] = Object.keys(m)

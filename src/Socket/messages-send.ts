@@ -575,6 +575,7 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 							{
 								tag: buttonType,
 								attrs: getButtonArgs(message),
+								
 							}
 						]
 					})
@@ -593,7 +594,7 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 	}
 
 	const getMediaType = (message: proto.IMessage) => {
-		if(message.imageMessage) {
+		if(message.imageMessage || message.viewOnceMessage?.message?.interactiveMessage || message.interactiveMessage) {
 			return 'image'
 		} else if(message.videoMessage) {
 			return message.videoMessage.gifPlayback ? 'gif' : 'video'
@@ -625,7 +626,8 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 	}
 
 	const getButtonType = (message: proto.IMessage) => {
-		if(message.buttonsMessage) {
+		if(message.viewOnceMessage?.message?.interactiveMessage || message.interactiveMessage) {
+			console.log("viewOnceMessage");
 			return 'buttons'
 		} else if(message.buttonsResponseMessage) {
 			return 'buttons_response'
@@ -813,6 +815,11 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 				} else if(isEditMsg) {
 					additionalAttributes.edit = '1'
 				}
+
+				// // Verifica se é uma mensagem interativa e ajusta os atributos adicionais, se necessário
+				// if ('interactiveMessage' in content) {
+				// 	additionalAttributes.interactive = 'true'
+				// }
 
 				await relayMessage(jid, fullMsg.message!, { messageId: fullMsg.key.id!, cachedGroupMetadata: options.cachedGroupMetadata, additionalAttributes, statusJidList: options.statusJidList })
 				if(config.emitOwnEvents) {

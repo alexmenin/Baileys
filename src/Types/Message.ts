@@ -37,6 +37,15 @@ export type MediaConnInfo = {
     fetchDate: Date
 }
 
+type InteractiveMessageable = {
+    interactiveMessage?: {
+        header?: proto.Message.InteractiveMessage.IHeader;
+        body?: proto.Message.InteractiveMessage.IBody;
+        footer?: proto.Message.InteractiveMessage.IFooter;
+        nativeFlowMessage?: proto.Message.InteractiveMessage.INativeFlowMessage;
+    };
+};
+
 export interface WAUrlInfo {
     'canonical-url': string
     'matched-text': string
@@ -58,6 +67,16 @@ type Contextable = {
 }
 type ViewOnce = {
     viewOnce?: boolean
+}
+
+type ViewOnceMessage = {
+    viewOnceMessage?: {
+        message: (proto.Message)
+    }
+}
+
+type interactiveMessage = {
+    interactiveMessage?: proto.Message.InteractiveMessage
 }
 
 type Buttonable = {
@@ -110,7 +129,7 @@ export type AnyMediaMessageContent = (
         image: WAMediaUpload
         caption?: string
         jpegThumbnail?: string
-    } & Mentionable & Contextable & Buttonable & Templatable & WithDimensions)
+    } & Mentionable & Contextable & Buttonable & Templatable & WithDimensions & ViewOnceMessage & interactiveMessage)
     | ({
         video: WAMediaUpload
         caption?: string
@@ -118,7 +137,7 @@ export type AnyMediaMessageContent = (
         jpegThumbnail?: string
         /** if set to true, will send as a `video note` */
         ptv?: boolean
-    } & Mentionable & Contextable & Buttonable & Templatable & WithDimensions)
+    } & Mentionable & Contextable & Buttonable & Templatable & WithDimensions & ViewOnceMessage & interactiveMessage)
     | {
         audio: WAMediaUpload
         /** if set to true, will send as a `voice note` */
@@ -134,8 +153,8 @@ export type AnyMediaMessageContent = (
         mimetype: string
         fileName?: string
         caption?: string
-    } & Contextable & Buttonable & Templatable))
-    & { mimetype?: string } & Editable
+    } & Contextable & Buttonable & Templatable & ViewOnceMessage & interactiveMessage))
+    & { mimetype?: string } & Editable & ViewOnceMessage & interactiveMessage
 
 export type ButtonReplyInfo = {
     displayText: string
@@ -149,48 +168,49 @@ export type WASendableProduct = Omit<proto.Message.ProductMessage.IProductSnapsh
 
 export type AnyRegularMessageContent = (
     ({
-	    text: string
-        linkPreview?: WAUrlInfo | null
+        text: string;
+        linkPreview?: WAUrlInfo | null;
     }
-    & Mentionable & Contextable & Buttonable & Templatable & Listable & Editable)
+    & Mentionable & Contextable & Buttonable & Templatable & Listable & Editable & ViewOnceMessage & interactiveMessage)
     | AnyMediaMessageContent
     | ({
-        poll: PollMessageOptions
-    } & Mentionable & Contextable & Buttonable & Templatable & Editable)
+        poll: PollMessageOptions;
+    } & Mentionable & Contextable & Buttonable & Templatable & Editable & ViewOnceMessage & interactiveMessage)
     | {
         contacts: {
-            displayName?: string
-            contacts: proto.Message.IContactMessage[]
-        }
+            displayName?: string;
+            contacts: proto.Message.IContactMessage[];
+        };
     }
     | {
-        location: WALocationMessage
+        location: WALocationMessage;
     }
     | { react: proto.Message.IReactionMessage }
     | {
-        buttonReply: ButtonReplyInfo
-        type: 'template' | 'plain'
+        buttonReply: ButtonReplyInfo;
+        type: 'template' | 'plain';
     }
     | {
-        listReply: Omit<proto.Message.IListResponseMessage, 'contextInfo'>
+        listReply: Omit<proto.Message.IListResponseMessage, 'contextInfo'>;
     }
     | {
-        product: WASendableProduct
-        businessOwnerJid?: string
-        body?: string
-        footer?: string
-    } | SharePhoneNumber | RequestPhoneNumber
-) & ViewOnce
+        product: WASendableProduct;
+        businessOwnerJid?: string;
+        body?: string;
+        footer?: string;
+    } | SharePhoneNumber | RequestPhoneNumber)
+    & ViewOnce & ViewOnceMessage & interactiveMessage;  // Adicionando suporte para mensagens interativas
+
+
 
 export type AnyMessageContent = AnyRegularMessageContent | {
-	forward: WAMessage
-	force?: boolean
-} | {
-    /** Delete your message or anyone's message in a group (admin required) */
-	delete: WAMessageKey
-} | {
-	disappearingMessagesInChat: boolean | number
-}
+    forward: WAMessage;
+    force?: boolean;
+} & ViewOnceMessage & interactiveMessage | {
+    delete: WAMessageKey;
+} & ViewOnceMessage & interactiveMessage | {
+    disappearingMessagesInChat: boolean | number;
+} & ViewOnceMessage & interactiveMessage;
 
 export type GroupMetadataParticipants = Pick<GroupMetadata, 'participants'>
 

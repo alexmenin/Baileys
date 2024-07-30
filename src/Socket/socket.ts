@@ -134,7 +134,7 @@ export const makeSocket = (config: SocketConfig) => {
 
 	/** send a binary node */
 	const sendNode = async(frame: BinaryNode) => {
-			console.log( 'xml:', binaryNodeToString(frame), 'msg: xml send' )
+			//console.log( 'xml:', binaryNodeToString(frame), 'msg: xml send' )
 		
 
 		const buff = encodeBinaryNode(frame);
@@ -323,7 +323,7 @@ export const makeSocket = (config: SocketConfig) => {
 			if(!(frame instanceof Uint8Array)) {
 				const msgId = frame.attrs.id
 
-					console.log('xml: ', binaryNodeToString(frame), ' msg: recv xml' )
+					// console.log('xml: ', binaryNodeToString(frame), ' msg: recv xml' )
 				
 
 				/* Check if this is a response to a message we sent */

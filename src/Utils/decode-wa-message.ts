@@ -143,6 +143,7 @@ export const decryptMessageNode = (
 					decryptables += 1
 
 					let msgBuffer: Uint8Array
+					
 
 					try {
 						const e2eType = attrs.type
@@ -168,6 +169,7 @@ export const decryptMessageNode = (
 						}
 
 						let msg: proto.IMessage = proto.Message.decode(unpadRandomMax16(msgBuffer))
+						//console.log("Proto decode: ",msg);
 						msg = msg.deviceSentMessage?.message || msg
 						if(msg.senderKeyDistributionMessage) {
 						    try {
@@ -185,6 +187,8 @@ export const decryptMessageNode = (
 						} else {
 							fullMessage.message = msg
 						}
+
+						//console.log("Full Message: ",fullMessage.message);
 					} catch(err) {
 						logger.error(
 							{ key: fullMessage.key, err },
@@ -195,6 +199,8 @@ export const decryptMessageNode = (
 					}
 				}
 			}
+
+			
 
 			// if nothing was found to decrypt
 			if(!decryptables) {

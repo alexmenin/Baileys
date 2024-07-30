@@ -9833,6 +9833,9 @@ export namespace proto {
 
         /** Message encEventUpdateMessage */
         encEventUpdateMessage?: (proto.Message.IEncEventUpdateMessage | null);
+
+        
+
     }
 
     /** Represents a Message. */
@@ -10047,6 +10050,26 @@ export namespace proto {
 
         /** Message encEventUpdateMessage. */
         public encEventUpdateMessage?: (proto.Message.IEncEventUpdateMessage | null);
+
+        public viewOnceMessage?: (proto.Message.IFutureProofMessage | null); //NOVOS
+
+        //NOVOS
+        public pollCreationMessageV2?: (proto.Message.IPollCreationMessage | null);
+        public scheduledCallCreationMessage?: (proto.Message.IScheduledCallCreationMessage | null);
+        public pinInChatMessage?: (proto.Message.IPinInChatMessage | null);
+        public pollCreationMessageV3?: (proto.Message.IPollCreationMessage | null);
+        public scheduledCallEditMessage?: (proto.Message.IScheduledCallEditMessage | null);
+        public botInvokeMessage?: (proto.Message.IFutureProofMessage | null);
+        public callLogMessage?: (proto.Message.ICallLogMessage | null); // Corrigido o nome do campo
+        public messageHistoryBundle?: (proto.Message.IMessageHistoryBundle | null);
+        public encCommentMessage?: (proto.Message.IEncCommentMessage | null);
+        public bcallMessage?: (proto.Message.IBCallMessage | null);
+        public lottieStickerMessage?: (proto.Message.IFutureProofMessage | null);
+        public commentMessage?: (proto.Message.ICommentMessage | null);
+        public newsletterAdminInviteMessage?: (proto.Message.INewsletterAdminInviteMessage | null);
+        public placeholderMessage?: (proto.Message.IPlaceholderMessage | null);
+        public encEventUpdateMessage?: (proto.Message.IEncEventUpdateMessage | null);
+
 
         /**
          * Creates a new Message instance using the specified properties.
@@ -15566,6 +15589,8 @@ export namespace proto {
 
             /** InteractiveMessage carouselMessage */
             carouselMessage?: (proto.Message.InteractiveMessage.ICarouselMessage | null);
+
+            buttonsMessage?: (proto.Message.InteractiveMessage.IButtonsMessage | null);
         }
 
         /** Represents an InteractiveMessage. */
@@ -15600,6 +15625,8 @@ export namespace proto {
 
             /** InteractiveMessage carouselMessage. */
             public carouselMessage?: (proto.Message.InteractiveMessage.ICarouselMessage | null);
+
+            public buttonsMessage?: (proto.Message.InteractiveMessage.IButtonsMessage | null);
 
             /** InteractiveMessage interactiveMessage. */
             public interactiveMessage?: ("shopStorefrontMessage" | "collectionMessage" | "nativeFlowMessage" | "carouselMessage");
